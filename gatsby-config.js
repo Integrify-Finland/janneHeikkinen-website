@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
     title: `Janne Heikkinen`,
@@ -11,6 +13,13 @@ module.exports = {
         data:
           '@import "_variables.scss";@import "_mixins.scss";@import "_layout.scss";',
         includePaths: ["src/assets/styles"],
+      },
+    },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
     `gatsby-plugin-react-helmet`,
