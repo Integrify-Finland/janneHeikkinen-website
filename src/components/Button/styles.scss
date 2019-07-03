@@ -1,0 +1,62 @@
+.button {
+    border-radius: 50px;
+    border: none;
+    margin: $spacing-01;
+    font-family: $font-family;
+    transition: 90ms ease;
+
+    &--heroPrimary {
+    background-color: $orange;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: $spacing-00-50;
+    }
+
+    &--heroSecondary {
+    background-color: $primary;
+    color: $secondary;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: $spacing-00-25;
+    }
+
+    &--blog {
+    background-color: $secondary;
+    color: white;
+    font-weight: bold;   
+    }
+
+    &--message {
+    background-color: $orange;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    letter-spacing: $spacing-00-25;
+    }
+
+    &--sm {
+    @include font-size-s;
+    padding: $spacing-00-25 $spacing-03;
+    }
+    
+    &--md {
+    @include font-size-l-x;
+    padding: $spacing-00-75 $spacing-02;
+    }    
+
+    &--lg {
+    @include font-size-l-xx;
+    padding: $spacing-01 $spacing-03;
+    }
+}
+
+.button:focus {
+    outline-color: $secondary;
+}
+
+.button:hover {
+    transform: scale(1.04);
+    transition: 210ms ease;
+    cursor: pointer;
+}
+
