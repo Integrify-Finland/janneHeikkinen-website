@@ -8,6 +8,7 @@
     "@storybook/addon-backgrounds": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
     "babel-plugin-remove-graphql-queries": "^2.7.0",
+    "classnames": "^2.2.6",
     "css-loader": "^3.0.0",
     "dotenv": "^8.0.0",
     "gatsby": "^2.11.6",
@@ -27,6 +28,7 @@
     "react-helmet": "^5.2.1",
     "sass-loader": "^7.1.0",
     "sass-resources-loader": "^2.0.1",
+    "storybook": "^1.0.0",
     "storybook-addon-jsx": "^7.1.2",
     "style-loader": "^0.23.1"
   },
