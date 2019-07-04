@@ -1,0 +1,53 @@
+.footer {
+  display: flex;
+  font-family: $font-family;
+  color: $white;
+
+  .left-box {
+    flex-grow: 2;
+    background-color: $primary;
+    border-radius: 0px 50px 0px 0px;
+    padding: $spacing-02 $spacing-06 0 $spacing-06;
+
+    .copyright {
+      color: $secondary;
+      @include font-size-s;
+      text-align: center;
+      margin-top: $spacing-02;
+      font-weight: 700;
+      letter-spacing: 3px;
+    }
+  }
+
+  .social-media {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 12rem;
+  }
+
+  .contact-container {
+    display: flex;
+
+    h1 {
+      @include font-size-l;
+      margin: $spacing-02 $spacing-10 $spacing-00-50 0;
+    }
+
+    p {
+      @include font-size-s-x;
+      line-height: $spacing-00-75;
+      color: $light;
+    }
+  }
+
+  .logo-container {
+    flex-grow: 0;
+    padding: $spacing-03;
+    display: flex;
+
+    img {
+      max-width: 20vw;
+    }
+  }
+}
