@@ -6,7 +6,6 @@ import PropTypes from 'prop-types'
 const Button = ({ variant, label, size, disabled, onClick }) => {
     const classes = classNames({
         button: true,
-        'hvr-ripple-out': true,
         'button--heroPrimary': variant === 'heroPrimary',
         'button--heroSecondary': variant === 'heroSecondary',
         'button--message': variant === 'message',
