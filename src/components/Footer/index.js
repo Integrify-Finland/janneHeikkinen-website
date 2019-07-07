@@ -8,7 +8,16 @@ import InstagramIcon from "../SocialMediaIcons/Instagram/index"
 import LinkedInIcon from "../SocialMediaIcons/Linkedin/index"
 import YouTubeIcon from "../SocialMediaIcons/Youtube/index"
 
-const Footer = () => {
+const Footer = ({
+  firstPersonName,
+  secondPersonName,
+  firstPersonTitle,
+  secondPersonTitle,
+  firstPersonPhone,
+  secondPersonPhone,
+  firstPersonEmail,
+  secondPersonEmail,
+}) => {
   const year = new Date().getFullYear()
 
   const copyright = `Copyright ${String.fromCharCode(
@@ -44,31 +53,31 @@ const Footer = () => {
 
         <div className="footer__contact-container">
           <div className="footer__contact1">
-            <h1>Janne&nbsp;Heikkinen</h1>
+            <h1>{firstPersonName}</h1>
             <p>
-              Kansanedustaja <br />
+              {firstPersonTitle} <br />
               Puhelin:
               <br />
-              +358 (0) 40 5554263
+              {firstPersonPhone}
               <br />
               Sähköposti:
               <br />
-              janne.heikkinen (at) eduskunta.fi
+              {firstPersonEmail}
             </p>
           </div>
 
           <div className="footer__contact2">
-            <h1>Mikko&nbsp;Laakso</h1>
+            <h1>{secondPersonName}</h1>
             <p>
-              Kansanedustajan avustaja
+              {secondPersonTitle}
               <br />
               Puhelin:
               <br />
-              +358 (0) 50 383 9432
+              {secondPersonPhone}
               <br />
               Sähköposti:
               <br />
-              mikko.laakso (at) eduskunta.fi
+              {secondPersonEmail}
             </p>
           </div>
         </div>
@@ -81,6 +90,17 @@ const Footer = () => {
       </div>
     </div>
   )
+}
+
+Footer.propTypes = {
+  firstPersonName: PropTypes.string,
+  secondPersonName: PropTypes.string,
+  firstPersonTitle: PropTypes.string,
+  secondPersonTitle: PropTypes.string,
+  firstPersonPhone: PropTypes.string,
+  secondPersonPhone: PropTypes.string,
+  firstPersonEmail: PropTypes.string,
+  secondPersonEmail: PropTypes.string,
 }
 
 export default Footer
