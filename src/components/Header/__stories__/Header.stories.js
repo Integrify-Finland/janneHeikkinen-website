@@ -7,4 +7,4 @@ import Header from ".."
 
 storiesOf("Header", module)
   .addDecorator(jsxDecorator)
-  .add("with siteTitle", () => <Header siteTitle="Site title" isGreen />)
+  .add("with siteTitle", () => <Header Subtext="Kansanedustaja, yhteiskuntatieteiden maisteri ja intohimoinen perhokalastaja."/>)

@@ -1,12 +1,75 @@
 .header {
-  &__title {
-    a {
-      color: $primary;
-    }
+
+  height:100vh;
+  background-image: url('../Header/assets/heroBG.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow: hidden;
+
+  &__textbox {
+    width:50vw;
+     background-color: #6ccff6cc;
+     box-shadow: 0px 95px 0px #023b561a inset;
+     border-radius: 0px 0px 0px 50px;
+     color: $white;
+     position: absolute;
+     top: 10%;  
+     right:5%;
+     padding: $spacing-01;
+     font-family: $font-family;
+     z-index: 5;
+     animation: textbox-animation 900ms ease-out 2000ms both;
+
   }
-  &__green {
-    a {
-      color: green;
-    }
+  &__headline {
+    text-transform: uppercase;
+    @include font-size-l-xxxx;
+    font-style: italic;
+   animation: headline-animation 900ms ease-out 2500ms both;
+    position: relative;
   }
+
+  &__subtext {
+    @include font-size-l-xxx;
+    line-height: $spacing-03;
+    animation: subtext-animation 600ms ease-out 3500ms both;
+    position: relative;
+
+  }
+
+  &__image {
+    animation: image-animation 1600ms ease-out 600ms forwards;
+    max-height: 110%;
+    left: 5%;
+    top: -10%;
+    position: absolute;
+   
+    
+  }
+}
+
+@keyframes image-animation {
+  from {transform: scale(0.01) translateX(-2500px) translateY(800px);}
+  
+  to {transform: scale(1) translateX(0px) translateY(0px);}
+}
+
+@keyframes textbox-animation {
+  from {transform: scale(0.01) translateX(3500px) translateY(200px);}
+         
+  to {transform: scale(1) translateX(0px) translateY(0px);}
+}
+
+
+@keyframes headline-animation {
+  from {transform: scale(0.01) translateX(-500px) translateY(-800px);}
+  
+  to {transform: scale(1) translateX(0px) translateY(0px);}
+}
+
+
+@keyframes subtext-animation {
+  from {transform: scale(0) translateX(2500px) translateY(0px);}
+  
+  to {transform: scale(1) translateX(0px) translateY(0px);}
 }
