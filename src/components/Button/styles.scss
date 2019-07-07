@@ -5,14 +5,7 @@
     font-family: $font-family;
     transition: 90ms ease;
 
-    &--heroPrimary {
-    background-color: $orange;
-    text-transform: uppercase;
-    color: white;
-    letter-spacing: $spacing-00-50;
-    }
-
-    &--heroSecondary {
+    &--primary {
     background-color: $primary;
     color: $secondary;
     text-transform: uppercase;
@@ -20,18 +13,17 @@
     letter-spacing: $spacing-00-25;
     }
 
-    &--blog {
+    &--secondary {
     background-color: $secondary;
     color: white;
     font-weight: bold;   
     }
 
-    &--message {
-    background-color: $orange;
-    text-transform: uppercase;
-    color: white;
-    font-weight: bold;
-    letter-spacing: $spacing-00-25;
+    &--orange {
+        background-color: $orange;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: $spacing-00-50;
     }
 
     &--sm {
@@ -58,5 +50,6 @@
     transform: scale(1.04);
     transition: 210ms ease;
     cursor: pointer;
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 

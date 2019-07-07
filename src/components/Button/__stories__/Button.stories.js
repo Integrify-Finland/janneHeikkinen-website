@@ -6,32 +6,25 @@ import { jsxDecorator } from "storybook-addon-jsx"
 import Button from ".."
 storiesOf("Button", module)
     .addDecorator(jsxDecorator)
-    .add("Hero primary", () => 
+    .add("orange", () => 
     <Button 
     label="Tilaa uutiskirje →"
     size="lg"
-    variant="heroPrimary"
+    variant="orange"
     onClick={() => {}}
     />)
-    .add("Hero secondary", () => 
+    .add("primary", () => 
     <Button 
     label="Lähetä →"
     size='md'
-    variant="heroSecondary"
+    variant="primary"
     onClick={() => {}}
     />)
-    .add("Message", () => 
-    <Button 
-    label="Lähetä"
-    size="sm"
-    variant="message"
-    onClick={() => {}}
-    />)
-    .add("Blog", () => 
+    .add("secondary", () => 
     <Button 
     label="Lue lisää"
     size="sm"
-    variant="blog"
+    variant="secondary"
     onClick={() => {}}
     />)
 
