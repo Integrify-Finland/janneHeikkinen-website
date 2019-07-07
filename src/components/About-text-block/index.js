@@ -6,18 +6,21 @@ import "./styles.scss"
 
 const AboutTextBlock = ({ title, text, icon, isLeft }) => {
   const classes = classNames({
-    iconRight: isLeft
-})
+    iconRight: isLeft,
+  })
 
-return (
-  <div className="aboutTextBlock">
-    <img className={classes} src={icon} />
-    <div>
-    <h1 className="aboutTextBlock__title"><u>{title}</u></h1>
-    <p className="aboutTextBlock__paragraph">{text}</p>
+  return (
+    <div className="about-text-block">
+      <img className={classes} src={icon} />
+      <div class="about-text-block__text-wrapper">
+        <h1 className="about-text-block__title">
+          <u>{title}</u>
+        </h1>
+        <p className="about-text-block__paragraph">{text}</p>
+      </div>
     </div>
-  </div>
-)}
+  )
+}
 
 AboutTextBlock.propTypes = {
   headline: PropTypes.string,
@@ -27,7 +30,6 @@ AboutTextBlock.propTypes = {
 }
 
 AboutTextBlock.defaultProps = {
-  title: `Headline`,
   isLeft: false,
 }
 
