@@ -17,8 +17,8 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <div className="left-box">
-        <div className="social-media">
+      <div className="footer__left-box">
+        <div className="footer__social-media">
           <a href="#" target="blank" rel="noopener" title="Go to Facebook">
             <FacebookIcon iconSize="big" />
           </a>
@@ -42,9 +42,9 @@ const Footer = () => {
           }
         </div>
 
-        <div className="contact-container">
-          <div className="contact-container__contact1">
-            <h1>Janne Heikkinen</h1>
+        <div className="footer__contact-container">
+          <div className="footer__contact1">
+            <h1>Janne&nbsp;Heikkinen</h1>
             <p>
               Kansanedustaja <br />
               Puhelin:
@@ -57,8 +57,8 @@ const Footer = () => {
             </p>
           </div>
 
-          <div className="contact-container__contact2">
-            <h1>Mikko Laakso</h1>
+          <div className="footer__contact2">
+            <h1>Mikko&nbsp;Laakso</h1>
             <p>
               Kansanedustajan avustaja
               <br />
@@ -73,10 +73,10 @@ const Footer = () => {
           </div>
         </div>
 
-        <p className="copyright">{copyright}</p>
+        <p className="footer__copyright">{copyright}</p>
       </div>
 
-      <div className="logo-container">
+      <div className="footer__logo-container">
         <img src={kokoomusLogo} alt="Kokoomus Logo" />
       </div>
     </div>

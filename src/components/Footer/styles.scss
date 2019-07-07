@@ -2,31 +2,34 @@
   display: flex;
   font-family: $font-family;
   color: $white;
+  width: 100%;
 
-  .left-box {
-    flex-grow: 2;
+&__left-box {
+    width: 70%;
     background-color: $primary;
     border-radius: 0px 50px 0px 0px;
     padding: $spacing-02 $spacing-06 0 $spacing-06;
 
-    .copyright {
-      color: $secondary;
-      @include font-size-s;
-      text-align: center;
-      margin-top: $spacing-02;
-      font-weight: 700;
-      letter-spacing: 3px;
-    }
+    
   }
 
-  .social-media {
+  &__copyright {
+    color: $secondary;
+    @include font-size-s;
+    text-align: center;
+    margin-top: $spacing-02;
+    font-weight: 700;
+    letter-spacing: 3px;
+  }
+
+  &__social-media {
     margin: 0;
     display: flex;
     justify-content: space-between;
     width: 12rem;
   }
 
-  .contact-container {
+  &__contact-container {
     display: flex;
 
     h1 {
@@ -41,8 +44,8 @@
     }
   }
 
-  .logo-container {
-    flex-grow: 0;
+  &__logo-container {
+    width: 30%;
     padding: $spacing-03;
     display: flex;
 
