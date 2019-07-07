@@ -21,24 +21,25 @@
 
     &--orange {
         background-color: $orange;
+        font-weight: bold;
         text-transform: uppercase;
         color: white;
-        letter-spacing: $spacing-00-50;
+        letter-spacing: $spacing-00-25;
     }
 
     &--sm {
-    @include font-size-s;
-    padding: $spacing-00-25 $spacing-03;
+    @include font-size-s-x;
+    padding: 0 $spacing-03;
     }
     
     &--md {
-    @include font-size-l-x;
-    padding: $spacing-00-75 $spacing-02;
+    @include font-size-l;
+    padding: $spacing-00-50 $spacing-01-50;
     }    
 
     &--lg {
-    @include font-size-l-xx;
-    padding: $spacing-01 $spacing-03;
+    @include font-size-l;
+    padding: $spacing-01 $spacing-02;
     }
 }
 

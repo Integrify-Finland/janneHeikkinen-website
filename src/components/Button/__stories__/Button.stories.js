@@ -15,7 +15,7 @@ storiesOf("Button", module)
     />)
     .add("primary", () => 
     <Button 
-    label="Lähetä →"
+    label="Lähetä→"
     size='md'
     variant="primary"
     onClick={() => {}}
