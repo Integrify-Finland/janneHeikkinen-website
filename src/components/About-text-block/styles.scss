@@ -1,39 +1,42 @@
- .aboutTextBlock {
-
+.about-text-block {
   display: flex;
   font-family: $font-family;
 
-  &__title {
-    
-      color: $grey;
+  @include for-tablet-portrait-down {
+    display: block;
+  }
 
-      u {
-        text-decoration: none;
-        border-bottom: 5px solid $secondary;
-      }
-    
+  &__title {
+    color: $grey;
+    @include font-size-l-xxx;
+
+    u {
+      text-decoration: none;
+      border-bottom: 5px solid $secondary;
+    }
+
+    @include for-tablet-portrait-down {
+      text-align: center;
+    }
   }
   &__paragraph {
-      color: $grey;
+    color: $grey;
+    line-height: 1.2rem;
+    @include font-size-m;
   }
 
   img {
     align-self: center;
     max-height: 30vh;
     margin: 0px $spacing-02;
+    @include for-tablet-portrait-down {
+      margin: $spacing-01 auto;
+      max-height: 50vh;
+      display: block;
+    }
   }
-
-} 
-
-.iconRight {
-
-  order:1;
-  
 }
 
-
-
-
-
-
-
+.iconRight {
+  order: 1;
+}
