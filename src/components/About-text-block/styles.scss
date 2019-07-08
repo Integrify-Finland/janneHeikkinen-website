@@ -1,0 +1,39 @@
+ .aboutTextBlock {
+
+  display: flex;
+  font-family: $font-family;
+
+  &__title {
+    
+      color: $grey;
+
+      u {
+        text-decoration: none;
+        border-bottom: 5px solid $secondary;
+      }
+    
+  }
+  &__paragraph {
+      color: $grey;
+  }
+
+  img {
+    align-self: center;
+    max-height: 30vh;
+    margin: 0px $spacing-02;
+  }
+
+} 
+
+.iconRight {
+
+  order:1;
+  
+}
+
+
+
+
+
+
+

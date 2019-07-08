@@ -1,0 +1,89 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: $spacing-00-50 17px;
+  font-family: $font-family;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba($on-dark, 0.7);
+  z-index: 1;
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo img {
+    height: 2.2rem;
+    margin-top: $spacing-00-50;
+    margin-right: $spacing-00-50;
+    margin-bottom: 0;
+  }
+
+
+  .position {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: transparent;
+    font-size: 0.9rem;
+  }
+
+  &__links {
+    // margin-right: $spacing-01;
+    display: flex;
+    justify-content: flex-end;
+    width: 50%;
+    max-width: 900px;
+    align-items: center;
+    font-weight: 400;
+  }
+
+  &__nav-link {
+    margin-left: $spacing-02;
+    transition: all ease-in-out 0.3s;
+    @include underline(
+      $font-color: $on-light,
+      $underline-color: lighten($primary, 5%)
+    );
+
+    //Active style for gatsby internal links
+    &--active {
+      color: lighten($primary, 5%);
+    }
+  }
+
+  &__nav-media-link {
+    margin-left: $spacing-02;
+
+    //Hover, active style for mediaIcon
+    &:hover,
+    &:active {
+      svg {
+        path {
+          fill: lighten($primary, 5%);
+        }
+      }
+    }
+  }
+
+  &__menu {
+    margin-right: $spacing-00-75;
+    @include font-size-l-xxx;
+    color: $primary;
+    outline: none;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: all ease-in-out 0.3s;
+    }
+  }
+}
+
+
