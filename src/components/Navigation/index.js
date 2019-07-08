@@ -1,9 +1,9 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import Logo from '../assets/logo.svg'
-import FacebookIcon from '../../../SocialMediaIcons/Facebook/index'
-import TwitterIcon from '../../../SocialMediaIcons/Twitter/index'
-import InstagramIcon from '../../../SocialMediaIcons/Instagram/index'
+import Logo from "./assets/logo.svg"
+import FacebookIcon from "../SocialMediaIcons/Facebook/index"
+import TwitterIcon from "../SocialMediaIcons/Twitter/index"
+import InstagramIcon from "../SocialMediaIcons/Instagram/index"
 
 import './styles.scss'
 
@@ -16,7 +16,8 @@ const Navigation = () => (
     </div>
 
     <div className="navbar__links">
-      {<Link
+      
+      <Link
         to="/"
         className="navbar__nav-link"
         activeClassName="navbar__nav-link--active"
@@ -63,8 +64,6 @@ const Navigation = () => (
       >
         Yhteystiedot
       </Link>
-
-      }
 
       <a
         href="#"

@@ -8,7 +8,7 @@
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: rgba($on-dark, 0.7);
+  background-color: $primary;
   z-index: 1;
 
   &__logo {
@@ -34,24 +34,24 @@
   }
 
   &__links {
-    // margin-right: $spacing-01;
+    margin-right: $spacing-01;
     display: flex;
-    justify-content: flex-end;
-    width: 50%;
     max-width: 900px;
     align-items: center;
-    font-weight: 400;
   }
 
   &__nav-link {
     margin-left: $spacing-02;
     transition: all ease-in-out 0.3s;
+    text-transform: uppercase;
+    
+    @include font-size-s;
+    
     @include underline(
-      $font-color: $on-light,
-      $underline-color: lighten($primary, 5%)
+      $font-color: $secondary,
+      $underline-color: $orange
     );
 
-    //Active style for gatsby internal links
     &--active {
       color: lighten($primary, 5%);
     }
@@ -65,7 +65,7 @@
     &:active {
       svg {
         path {
-          fill: lighten($primary, 5%);
+          fill: $orange;
         }
       }
     }
