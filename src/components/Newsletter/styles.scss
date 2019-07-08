@@ -1,0 +1,105 @@
+.newsletter-container {
+    font-family: $font-family;
+    letter-spacing: $spacing-00-25;
+    background-color: $orange;
+    border-radius: 40px;
+    // border-top: 140px solid $primary;
+    height: 370px;
+    width: 330px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0px 140px 0px #023b56 inset;
+    animation: newsletter-animation;
+    animation-duration: 500ms;
+    animation-delay: 1s;
+    animation-timing-function: ease-in ease-out;
+    animation-fill-mode: forwards;
+    transform-origin: bottom;
+
+
+    &__text-top {
+        color: white;
+        text-transform: uppercase;
+        // position: absolute;
+        // top: -80px;
+        // left: 30px;
+        // @include font-size-l;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: $spacing-04;
+        animation: vanishing-animation;
+        animation-delay: 1s;
+        animation-duration: 210ms;
+        animation-fill-mode: both;
+    }
+
+    &__text-bottom {
+        color: $primary;
+        text-transform: uppercase;
+        // @include font-size-l;
+        font-size: 22px;
+        font-weight: bold;
+        padding-top: $spacing-04;
+        margin-bottom: $spacing-00-50;
+        animation: vanishing-animation;
+        animation-delay: 1s;
+        animation-duration: 210ms;
+        animation-fill-mode: both;
+    }
+    
+    &__input {
+        border-radius: 5px;
+        border: none;
+        width: 85%;
+        height: 50px;
+        padding: $spacing-00-50 $spacing-01;
+        color: $primary;
+        margin-bottom: $spacing-00-75;
+        animation: vanishing-animation;
+        animation-delay: 1s;
+        animation-duration: 210ms;
+        animation-fill-mode: both;
+    }
+
+    &__invisible-text {
+        color: white;
+        font-size: 22px;
+        font-weight: bold;
+        position: relative;
+        text-transform: uppercase;
+        top: -327px;
+        animation: appearing-animation;
+        animation-delay: 1s;
+        animation-duration: 210ms;
+        animation-fill-mode: both;
+    }
+}
+
+
+@keyframes newsletter-animation {
+    from {
+        height: 370px;
+        box-shadow: 0px 140px 0px $primary inset;
+        top: 0;
+    } to {
+        height: 70px;
+        box-shadow: 0px 0px 0px $primary inset;
+        top: 300px;
+    }
+}
+
+@keyframes vanishing-animation {
+    from {
+        opacity: 1;
+    } to {
+        opacity: 0;
+    }
+}
+
+@keyframes appearing-animation {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
