@@ -1,7 +1,7 @@
+import React from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 import PropTypes from "prop-types"
-import React from "react"
 import "./styles.scss"
 
 const Header = ({ siteTitle, isGreen }) => {
