@@ -6,6 +6,12 @@
   background-size: cover;
   background-attachment: fixed;
 
+  @include for-phone-only {
+    height: 80vh;
+
+  }
+  
+
 
   &__textbox {
     width: 50vw;
@@ -20,6 +26,18 @@
     font-family: $font-family;
     z-index: 5;
     animation: textbox-animation 900ms ease-out 2000ms both;
+
+    @include for-phone-only {
+    width: 90vw;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 35%;
+    box-shadow: 0px 50px 0px #023b561a inset;
+    padding: $spacing-00-50 $spacing-01;
+    }
+
   }
   &__headline {
     text-transform: uppercase;
@@ -27,6 +45,12 @@
     font-style: italic;
     animation: headline-animation 900ms ease-out 2500ms both;
     position: relative;
+    white-space: nowrap;
+
+    @include for-phone-only {
+   
+    
+    }
   }
 
   &__subtext {
@@ -34,6 +58,12 @@
     line-height: $spacing-03;
     animation: subtext-animation 600ms ease-out 3500ms both;
     position: relative;
+
+    @include for-phone-only {
+      line-height: $spacing-02;
+      @include font-size-l-xxxx;
+
+    }
   }
 
   &__image {
@@ -42,6 +72,15 @@
     left: 5%;
     top: -10%;
     position: absolute;
+    
+    @include for-phone-only {
+    z-index: 0;
+    margin: auto;
+    position: realtive;
+    left: 0%;
+    top: -5%;
+    }
+
   }
 }
 
