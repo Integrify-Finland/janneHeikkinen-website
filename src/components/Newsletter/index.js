@@ -6,62 +6,48 @@ import Button from '../Button'
 
 const Newsletter = () => {
 
-    const [animationStage, setAnimationStage] = useState('first stage')
+    const [animationStage, setAnimationStage] = useState('initial')
     
-    // function toggle() {
-    //     animated ? setAnimated(true) : setAnimated(false)
-    // }
-
-    if (animationStage === 'first stage') {
+    if (animationStage === 'initial') {
+        return (
+            <>
+            <div className="newsletter-container--initial"> 
+            </div>
+            <Button 
+                variant="orange"
+                size="lg"
+                label="tilaa uutiskirje→"
+                onClick={() => setAnimationStage('first stage')}
+                />
+                </>
+        )
+    } else if (animationStage === 'first stage') {
         return (    
-            <div className="newsletter-container">
-                <p className="newsletter-container__text-top">Tilaa uutiskirje</p>
-                <p className="newsletter-container__text-bottom">Sähköposti:</p>
-                <input className="newsletter-container__input" type="email"></input>
+            <div className="newsletter-container--first-stage">
+                <p className="newsletter-container--first-stage__text-top">Tilaa uutiskirje</p>
+                <p className="newsletter-container--first-stage__text-bottom">Sähköposti:</p>
+                <input className="newsletter-container--first-stage__input" type="email"></input>
                 <Button 
                 variant="primary"
                 size="md"
                 label="lähetä→"
                 onClick={() => setAnimationStage('second stage')}
                 />
-                <p className="newsletter-container__invisible-text">Kiitos paljon!</p> 
+                <p className="newsletter-container--first-stage__invisible-text">Kiitos paljon!</p> 
             </div>
         )
     } else {
         return (
-            <div className="newsletter-container__animated">
-                <p className="newsletter-container__animated__text-top">Tilaa uutiskirje</p>
-                <p className="newsletter-container__animated__text-bottom">Sähköposti:</p>
-                <input className="newsletter-container__animated__input" type="email"></input>
-                {/* <Button 
-                variant="primary"
-                size="md"
-                label="lähetä→"
-                onClick={toggle}
-                /> */}
-                <p className="newsletter-container__animated__invisible-text">Kiitos paljon!</p>
+            <div className="newsletter-container--second-stage">
+                <p className="newsletter-container--second-stage__text-top">Tilaa uutiskirje</p>
+                <p className="newsletter-container--second-stage__text-bottom">Sähköposti:</p>
+                <input className="newsletter-container--second-stage__input" type="email"></input>
+                <p className="newsletter-container--second-stage__invisible-text">Kiitos paljon!</p>
             </div>
         )
     }
 }
 
 
-
-//     return (
-
-//         <div className="newsletter-container">
-//             <p className="newsletter-container__text-top">Tilaa uutiskirje</p>
-//             <p className="newsletter-container__text-bottom">Sähköposti:</p>
-//             <input className="newsletter-container__input" type="email"></input>
-//             <Button 
-//             variant="primary"
-//             size="md"
-//             label="lähetä→"
-//             />
-//             <p className="newsletter-container__invisible-text">Kiitos paljon!</p>
-//         </div>
-    
-//     )
-// }
 
 export default Newsletter;
