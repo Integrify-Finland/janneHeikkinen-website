@@ -3,7 +3,7 @@
     width: 330px;
     border-radius: 40px;
     z-index: -1;
-    margin: $spacing-01;
+    margin: $spacing-01; 
 }
 
 .newsletter-container--first-stage {
@@ -180,6 +180,10 @@
         animation-delay: 300ms;
         animation-duration: 210ms;
         animation-fill-mode: both;
+
+        @include for-phone-only {
+            top: -245px;
+        }
     }
 
     @keyframes newsletter-animation2 {
