@@ -1,0 +1,23 @@
+.social-svg-icons {
+  min-width: 1rem;
+  min-height: auto;
+
+  &--small {
+    height: 0.8rem;
+  }
+
+  &--big {
+    width: 1.5rem;
+    height: 1.3rem;
+
+    &:hover path {
+      transition: all 0.3s;
+      fill: $orange;
+    }
+
+    @include for-phone-only {
+      width: 1.8rem;
+      height: 1.6rem;
+    }
+  }
+}

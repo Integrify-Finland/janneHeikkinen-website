@@ -16,6 +16,14 @@ module.exports = {
       },
     },
     {
+    resolve: `gatsby-source-youtube-v2`,
+    options: {
+      channelId: ['UCnwzt3vtqtYyRMIpVf-EFLg'],
+      apiKey: '<< Add your Youtube api key here>>',
+      maxVideos: 50 // Defaults to 50
+    },
+  },
+    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,

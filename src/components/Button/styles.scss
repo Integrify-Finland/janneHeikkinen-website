@@ -1,0 +1,56 @@
+.button {
+    border-radius: 50px;
+    border: none;
+    margin: $spacing-01;
+    font-family: $font-family;
+    transition: 90ms ease;
+
+    &--primary {
+    background-color: $primary;
+    color: $secondary;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: $spacing-00-25;
+    }
+
+    &--secondary {
+    background-color: $secondary;
+    color: white;
+    font-weight: bold;   
+    }
+
+    &--orange {
+        background-color: $orange;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: white;
+        letter-spacing: $spacing-00-25;
+    }
+
+    &--sm {
+    @include font-size-s-x;
+    padding: 0 $spacing-03;
+    }
+    
+    &--md {
+    @include font-size-l;
+    padding: $spacing-00-50 $spacing-01-50;
+    }    
+
+    &--lg {
+    @include font-size-l;
+    padding: $spacing-01 $spacing-02;
+    }
+}
+
+.button:focus {
+    outline-color: $secondary;
+}
+
+.button:hover {
+    transform: scale(1.04);
+    transition: 210ms ease;
+    cursor: pointer;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
