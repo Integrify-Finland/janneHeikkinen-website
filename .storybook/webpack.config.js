@@ -35,7 +35,10 @@ module.exports = ({ config }) => {
       {
         loader: "sass-resources-loader",
         options: {
-          resources: path.resolve(__dirname, "../src/assets/styles/_*.scss"),
+          resources: path.resolve(
+            __dirname,
+            "../src/assets/styles/_utils.scss"
+          ),
         },
       },
     ],
