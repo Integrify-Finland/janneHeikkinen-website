@@ -18,8 +18,7 @@
     box-shadow: 0px 140px 0px $primary inset;
     margin: $spacing-01;
 
-
-    animation: newsletter-animation2;
+    animation: newsletter-animation;
     animation-duration: 600ms;
     animation-delay: 0s;
     animation-timing-function: ease-in ease-out;
@@ -33,7 +32,7 @@
         font-size: 22px;
         font-weight: bold;
         padding-top: $spacing-04;
-        animation: vanishing-animation2;
+        animation: vanishing-animation;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
@@ -46,7 +45,7 @@
         font-weight: bold;
         padding-top: $spacing-04;
         margin-bottom: $spacing-00-50;
-        animation: vanishing-animation2;
+        animation: vanishing-animation;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
@@ -60,7 +59,7 @@
         padding: $spacing-00-50 $spacing-01;
         color: $primary;
         margin-bottom: $spacing-00-75;
-        animation: vanishing-animation2;
+        animation: vanishing-animation;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
@@ -75,14 +74,14 @@
         text-transform: uppercase;
         top: -327px;
         opacity: 0;
-        animation: appearing-animation2;
+        animation: appearing-animation;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
         opacity: 0;
     }
 
-    @keyframes newsletter-animation2 {
+    @keyframes newsletter-animation {
     from {
         height: 70px;
         box-shadow: 0px 0px 0px $primary inset;
@@ -94,7 +93,7 @@
     }
     }
 
-    @keyframes vanishing-animation2 {
+    @keyframes vanishing-animation {
         from {
             opacity: 0;
         } to {
@@ -102,7 +101,7 @@
         }
     }
 
-    @keyframes appearing-animation2 {
+    @keyframes appearing-animation {
         from {
             opacity: 1;
         } to {
@@ -122,7 +121,7 @@
     text-align: center;
     position: relative;
     box-shadow: 0px 140px 0px $primary inset;
-    animation: newsletter-animation;
+    animation: newsletter-animation2;
     animation-duration: 500ms;
     animation-delay: 0s;
     animation-timing-function: ease-in ease-out;
@@ -137,7 +136,7 @@
         font-size: 22px;
         font-weight: bold;
         padding-top: $spacing-04;
-        animation: vanishing-animation;
+        animation: vanishing-animation2;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
@@ -150,7 +149,7 @@
         font-weight: bold;
         padding-top: $spacing-04;
         margin-bottom: $spacing-00-50;
-        animation: vanishing-animation;
+        animation: vanishing-animation2;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
@@ -164,7 +163,7 @@
         padding: $spacing-00-50 $spacing-01;
         color: $primary;
         margin-bottom: $spacing-00-75;
-        animation: vanishing-animation;
+        animation: vanishing-animation2;
         animation-delay: 0s;
         animation-duration: 210ms;
         animation-fill-mode: both;
@@ -177,13 +176,13 @@
         position: relative;
         text-transform: uppercase;
         top: -252px;
-        animation: appearing-animation;
+        animation: appearing-animation2;
         animation-delay: 300ms;
         animation-duration: 210ms;
         animation-fill-mode: both;
     }
 
-    @keyframes newsletter-animation {
+    @keyframes newsletter-animation2 {
         from {
             height: 370px;
             box-shadow: 0px 140px 0px $primary inset;
@@ -195,7 +194,7 @@
         }
     }
     
-    @keyframes vanishing-animation {
+    @keyframes vanishing-animation2 {
         from {
             opacity: 1;
         } to {
@@ -203,7 +202,7 @@
         }
     }
     
-    @keyframes appearing-animation {
+    @keyframes appearing-animation2 {
         from {
             opacity: 0;
         } to {

@@ -11,15 +11,15 @@ const Newsletter = () => {
     if (animationStage === 'initial') {
         return (
             <>
-            <div className="newsletter-container--initial"> 
-            </div>
-            <Button 
-                variant="orange"
-                size="lg"
-                label="tilaa uutiskirje→"
-                onClick={() => setAnimationStage('first stage')}
+                <div className="newsletter-container--initial"> 
+                </div>
+                <Button 
+                    variant="orange"
+                    size="lg"
+                    label="tilaa uutiskirje→"
+                    onClick={() => setAnimationStage('first stage')}
                 />
-                </>
+            </>
         )
     } else if (animationStage === 'first stage') {
         return (    
