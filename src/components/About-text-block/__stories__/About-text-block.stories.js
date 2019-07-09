@@ -10,8 +10,8 @@ storiesOf("AboutTextBlock", module)
 
   .add("Text right", () => <AboutTextBlock title="That's another title" text="This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!" icon={imageFile} isLeft={false} />)
 
-  .addDecorator(jsxDecorator)
+
   .add("Text left", () => <AboutTextBlock title="That's title three" text="This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!"  icon={imageFile} isLeft={true} />)
 
-  .addDecorator(jsxDecorator)
+
   .add("Text left", () => <AboutTextBlock title="That's the title number four" text="This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!"  icon={imageFile} isLeft={false} />)
