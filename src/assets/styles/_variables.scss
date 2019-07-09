@@ -1,24 +1,15 @@
-$font-family: "Open Sans", sans-serif;
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+
+$font-family: "Roboto", sans-serif;
 
 /* colors */
-$primary: #dd7f45;
-$primary-light: rgba(221, 127, 69, 0.5);
-$secondary: #dadada;
-$danger: #d24848;
-$duplicate: #307e7e;
-$light: #fff;
+$primary: #023b56;
+$secondary: #6ccff6;
+$light: #edf5f8;
 $dark: #000000;
-$dark-light-1: #232323;
-$dark-light: #303030;
-
 $white: #fff;
-$green: #37c095;
-$grey-light: #a1a1a1;
-$grey-light-1: #e5e5e5;
-$grey-light-2: #bdbdbd;
-
-$disabled: rgb(165, 164, 164);
-$disabled-dark: grey;
+$orange: #ff7d2c;
+$grey: #707070;
 
 $spacing-base: 16px;
 
@@ -33,6 +24,7 @@ $spacing-03: $spacing-base * 3;
 $spacing-04: $spacing-base * 4;
 $spacing-06: $spacing-base * 6;
 $spacing-08: $spacing-base * 8;
+$spacing-08: $spacing-base * 10;
 $spacing-12: $spacing-base * 12;
 $spacing-16: $spacing-base * 16;
 $spacing-24: $spacing-base * 24;
