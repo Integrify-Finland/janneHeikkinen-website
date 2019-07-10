@@ -33,6 +33,7 @@ const IndexPage = ({ data }) => {
     )
   }
 
+  // console.log(blogPost.)
   return (
     <Layout>
       <SEO title="Home" />
@@ -41,6 +42,15 @@ const IndexPage = ({ data }) => {
       <div style={{ maxWidth: `300px`, marginTop: `10rem` }}>
         <Image />
       </div>
+      <h1>{blogPost.title}</h1>
+      <span>Tags are: </span>
+      {blogPost.tags.split(",").map(tag => (
+        <>
+          <span style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}>
+            {tag}{" "}
+          </span>
+        </>
+      ))}
       {renderBlogPost()}
     </Layout>
   )
@@ -80,6 +90,8 @@ export const query = graphql`
       }
     }
     blogPost: contentfulBlogPost {
+      title
+      tags
       childContentfulBlogPostContentRichTextNode {
         json
       }
