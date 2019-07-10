@@ -15,7 +15,7 @@ const BlogItem = ({ date,  title, number, image, text, link }) => {
       <img src={image}></img>
       <div className="blog-item__text">
         <p>{text}</p>
-        <Button variant="blog" size="sm" label="Read more" /> 
+        <Button variant="secondary" size="sm" label="Lue lisää" /> 
      </div>
     </Link>
   
