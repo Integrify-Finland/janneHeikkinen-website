@@ -12,7 +12,7 @@ const AboutTextBlock = ({ title, text, icon, isLeft }) => {
   return (
     <div className="about-text-block">
       <img className={classes} src={icon} />
-      <div class="about-text-block__text-wrapper">
+      <div className="about-text-block__text-wrapper">
         <h1 className="about-text-block__title">
           <u>{title}</u>
         </h1>

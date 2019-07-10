@@ -6,7 +6,9 @@ import Image from "../components/Image"
 import SEO from "../components/SEO"
 
 const IndexPage = ({ data }) => {
-  const { aboutMe } = data
+  const { aboutMe, wordPressBlogs, youTubeVid } = data
+  console.log(wordPressBlogs.edges)
+  console.log(youTubeVid.edges)
   return (
     <Layout>
       <SEO title="Home" />
@@ -24,8 +26,33 @@ export default IndexPage
 export const query = graphql`
   query {
     aboutMe: contentfulAboutMe {
+      id
       title
       description
+    }
+    youTubeVid: allYoutubeVideo {
+      edges {
+        node {
+          id
+          title
+          description
+          videoId
+          publishedAt
+          privacyStatus
+          channelTitle
+        }
+      }
+    }
+    wordPressBlogs: allWordpressPost {
+      edges {
+        node {
+          id
+          title
+          tags {
+            name
+          }
+        }
+      }
     }
   }
 `
