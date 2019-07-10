@@ -5,6 +5,8 @@
   background-image: url("../Header/assets/heroBG.jpg");
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+
 
   @include for-phone-only {
     height: 80vh;
@@ -68,10 +70,11 @@
 
   &__image {
     animation: image-animation 1600ms ease-out 600ms both;
-    max-height: 110%;
-    left: 5%;
-    top: -10%;
+    max-height: 105%;
+    left: 8%;
+    top: -5%;
     position: absolute;
+    z-index: 2;
     
     @include for-phone-only {
     z-index: 0;

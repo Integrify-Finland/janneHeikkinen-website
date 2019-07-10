@@ -4,10 +4,14 @@ import classNames from "classnames"
 import PropTypes from "prop-types"
 import "./styles.scss"
 import janneImage from "./assets/janneHeader.png"
+import Navigation from "../Navigation"
 
 const Header = ({ Headline, Subtext }) => {
   
   return (
+   
+    <div className="header-wrapper"> 
+    <Navigation />
     <header className="header">
       <div className="header__textbox">
       <h1 className="header__headline">{Headline}</h1>
@@ -15,6 +19,7 @@ const Header = ({ Headline, Subtext }) => {
       </div>
       <img className="header__image" src={janneImage} />
     </header>
+    </div>
   )
 }
 
