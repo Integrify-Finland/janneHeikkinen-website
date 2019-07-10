@@ -14,14 +14,13 @@ const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
 const IndexPage = ({ data }) => {
   const { aboutMe, wordPressBlogs, youTubeVid, blogPost } = data
+
   const options = {
     renderMark: {
       [MARKS.BOLD]: text => <Bold>{text}</Bold>,
     },
     renderNode: {
       [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-    },
-    renderNode: {
       [BLOCKS.UL_LIST]: (node, children) => <ULlists>{children}</ULlists>,
     },
   }
@@ -61,9 +60,41 @@ export default IndexPage
 export const query = graphql`
   query {
     aboutMe: contentfulAboutMe {
-      id
+      kotiPaikka
+      syntynyt
+      perhe
+      sotilasarvo
+      ammatti
+      harrastukset
+      koulutus
+      luottamustehtava
+    }
+    blogPost: contentfulBlogPost {
       title
-      description
+      tags
+      childContentfulBlogPostContentRichTextNode {
+        json
+      }
+    }
+    contactUs: allContentfulContactUs {
+      edges {
+        node {
+          name
+          title
+          phoneNumber
+          email
+        }
+      }
+    }
+    DetailsAboutMe: allContentfulDetailsAboutMe {
+      edges {
+        node {
+          title
+          description {
+            description
+          }
+        }
+      }
     }
     youTubeVid: allYoutubeVideo {
       edges {
@@ -87,13 +118,6 @@ export const query = graphql`
             name
           }
         }
-      }
-    }
-    blogPost: contentfulBlogPost {
-      title
-      tags
-      childContentfulBlogPostContentRichTextNode {
-        json
       }
     }
   }
