@@ -9,6 +9,7 @@
   width: 100%;
   background-color: $primary;
   z-index: 1;
+  border-bottom: 7px $secondary solid;
 
   &__logo {
     display: flex;
@@ -43,6 +44,7 @@
     margin-left: $spacing-02;
     transition: all ease-in-out 0.3s;
     text-transform: uppercase;
+    font-weight: 700;
     
     @include font-size-s;
     
