@@ -4,7 +4,9 @@
   color: $white;
   width: 100%;
   overflow: hidden;
+  @include for-phone-only {
   flex-wrap: wrap;
+  }
 
   &__left-box {
     background-color: $primary;
@@ -39,6 +41,9 @@
 
   &__contact-container {
     display: flex;
+    @include for-phone-only {
+    flex-wrap: wrap;
+    }
 
     h1 {
       @include font-size-l;
@@ -66,13 +71,14 @@
     @include for-tablet-portrait-down {
     }
 
-    @include for-phone-only {
-      display: none;
-    }
+ 
 
     img {
       max-width: 20vw;
       margin: auto;
+      @include for-phone-only {
+        max-width: 60vw;
+      }
     }
   }
 }
