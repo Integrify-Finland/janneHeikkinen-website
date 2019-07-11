@@ -1,12 +1,125 @@
+
+
 .header {
-  &__title {
-    a {
-      color: $primary;
+  height: 100vh;
+  background-image: url("../Header/assets/heroBG.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+
+  @include for-phone-only {
+    height: 80vh;
+
+  }
+  
+
+
+  &__textbox {
+    width: 50vw;
+    background-color: #6ccff6cc;
+    box-shadow: 0px 95px 0px #023b561a inset;
+    border-radius: 0px 0px 0px 50px;
+    color: $white;
+    position: absolute;
+    top: 10%;
+    right: 5%;
+    padding: $spacing-01;
+    font-family: $font-family;
+    z-index: 5;
+    animation: textbox-animation 900ms ease-out 2000ms both;
+
+    @include for-phone-only {
+    width: 90vw;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    top: 35%;
+    box-shadow: 0px 50px 0px #023b561a inset;
+    padding: $spacing-00-50 $spacing-01;
+    }
+
+  }
+  &__headline {
+    text-transform: uppercase;
+    @include font-size-l-xxxx;
+    font-style: italic;
+    animation: headline-animation 900ms ease-out 2500ms both;
+    position: relative;
+    white-space: nowrap;
+
+    @include for-phone-only {
+   
+    
     }
   }
-  &__green {
-    a {
-      color: green;
+
+  &__subtext {
+    @include font-size-l-xxx;
+    line-height: $spacing-03;
+    animation: subtext-animation 600ms ease-out 3500ms both;
+    position: relative;
+
+    @include for-phone-only {
+      line-height: $spacing-02;
+      @include font-size-l-xxxx;
+
     }
+  }
+
+  &__image {
+    animation: image-animation 1600ms ease-out 600ms both;
+    max-height: 110%;
+    left: 5%;
+    top: -10%;
+    position: absolute;
+    
+    @include for-phone-only {
+    z-index: 0;
+    margin: auto;
+    position: realtive;
+    left: 0%;
+    top: -5%;
+    }
+
+  }
+}
+
+@keyframes image-animation {
+  from {
+    transform: translateX(-1500px) translateY(800px);
+  }
+
+  to {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes textbox-animation {
+  from {
+    transform: translateX(3500px) translateY(200px);
+  }
+
+  to {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes headline-animation {
+  from {
+    transform: translateX(-500px) translateY(-800px);
+  }
+
+  to {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+
+@keyframes subtext-animation {
+  from {
+    transform: translateX(2500px) translateY(0px);
+  }
+
+  to {
+    transform: translateX(0px) translateY(0px);
   }
 }
