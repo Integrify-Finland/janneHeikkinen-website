@@ -76,7 +76,7 @@
   &__menu {
     margin-right: $spacing-00-75;
     @include font-size-l-xxx;
-    color: $primary;
+    color: $secondary;
     outline: none;
     cursor: pointer;
     transition: all ease-in-out 0.3s;
@@ -86,6 +86,26 @@
       transition: all ease-in-out 0.3s;
     }
   }
+}
+
+.mobile-menu__button {
+  display: none;
+}
+
+@include for-tablet-portrait-down {
+  .mobile-menu__button {
+    display: initial;
+  }
+
+  .navbar__links {
+    display: none;
+  }
+}
+
+.nav-dots {
+  font-weight: bolder;
+  padding-left: $spacing-01;
+  height: 35px;
 }
 
 

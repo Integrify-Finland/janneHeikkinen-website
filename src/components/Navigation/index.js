@@ -1,105 +1,62 @@
-import React from 'react'
-import { Link } from 'gatsby'
-import Logo from "./assets/logo.svg"
-import FacebookIcon from "../SocialMediaIcons/Facebook/index"
-import TwitterIcon from "../SocialMediaIcons/Twitter/index"
-import InstagramIcon from "../SocialMediaIcons/Instagram/index"
+import React, { Component } from 'react'
 
-import './styles.scss'
+import MenuBar from './components/MenuBar/index'
+import SideBar from './components/SideBar/index'
+import BackDrop from './components/BackDrop/index'
 
-const Navigation = () => (
-  <nav className="navbar">
-    <div className="navbar__logo">
-      <Link to="/">
-        <img src={Logo} alt="Janne Heikkinen logo" />
-      </Link>
-    </div>
+class Navbar extends Component {
+  state = {
+    sideDrawer: false,
+  }
 
-    <div className="navbar__links">
-      
-      <Link
-        to="/"
-        className="navbar__nav-link"
-        activeClassName="navbar__nav-link--active"
-      >
-        Etusivu
-      </Link>
+  componentDidMount() {
+    document.addEventListener('keydown', this.onEscButton, false)
+  }
 
-      <Link
-        to="/janne"
-        className="navbar__nav-link"
-        activeClassName="navbar__nav-link--active"
-      >
-        Janne
-      </Link>
+  componentWillUnmount() {
+    document.removeEventListener('keydown', this.onEscButton, false)
+  }
 
-      <Link
-        to="/blogi"
-        className="navbar__nav-link"
-        activeClassName="navbar__nav-link--active"
-      >
-        Blogi
-      </Link>
+  toggleMenu = () => {
+    this.setState(prevState => ({ sideDrawer: !prevState.sideDrawer }))
+  }
 
-      <Link
-        to="/videot"
-        className="navbar__nav-link"
-        activeClassName="navbar__nav-link--active"
-      >
-        Videot
-      </Link>
+  onEscButton = e => {
+    if (e.keyCode === 27) {
+      this.setState({
+        sideDrawer: false,
+      })
+    }
+  }
 
-      <Link
-        to="/medialle"
-        className="navbar__nav-link"
-        activeClassName="navbar__nav-link--active"
-      >
-        Medialle
-      </Link>
+  backDropClickHandler = () => {
+    this.setState({
+      sideDrawer: false,
+    })
+  }
 
-      <Link
-        to="/yhteystiedot"
-        className="navbar__nav-link"
-        activeClassName="navbar__nav-link--active"
-      >
-        Yhteystiedot
-      </Link>
+  render() {
+    const { sideDrawer } = this.state
 
-      <a
-        href="#"
-        className="navbar__nav-media-link"
-        target="blank"
-        rel="noopener"
-        title="Go to Facebook"
-      >
-        <FacebookIcon iconSize="small" />
-      </a>
+    return (
+      <>
+        {sideDrawer && <BackDrop click={this.backDropClickHandler} />}
+        <MenuBar
+        
+          toggleMenu={this.toggleMenu}
+          location={this.props.location}
+        />
 
-      <a
-        href="#"
-        className="navbar__nav-media-link"
-        target="blank"
-        rel="noopener"
-        title="Go to Twitter"
-      >
-        <TwitterIcon iconSize="small" />
-      </a>
+        <SideBar
+       
+          show={sideDrawer}
+          onEscButton={this.onEscButton}
+          toggleMenu={this.toggleMenu}
+          location={this.props.location}
+        />
+      </>
+    )
+  }
+}
 
-      <a
-        href="#"
-        className="navbar__nav-media-link"
-        target="blank"
-        rel="noopener"
-        title="Go to Instagram"
-      >
-        <InstagramIcon iconSize="small" />
-      </a>
-      
-      
-    </div>
-   
-  </nav>
-)
-
-
-export default Navigation
+export default Navbar
