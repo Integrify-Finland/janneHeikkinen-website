@@ -4,6 +4,9 @@
 
   @include for-tablet-portrait-down {
     display: block;
+      padding: $spacing-00-75;
+      
+    
   }
 
   &__title {
@@ -23,6 +26,7 @@
     color: $grey;
     line-height: 1.2rem;
     @include font-size-m;
+   
   }
 
   img {

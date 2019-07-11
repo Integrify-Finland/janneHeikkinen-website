@@ -8,7 +8,7 @@ storiesOf("AboutTextBlock", module)
   .addDecorator(jsxDecorator)
   .add("Text left", () => (
     <AboutTextBlock
-      title="That's title three"
+      title="Title goes here"
       text="This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!"
       icon={imageFile}
       isLeft={true}
@@ -17,7 +17,7 @@ storiesOf("AboutTextBlock", module)
 
   .add("Text right", () => (
     <AboutTextBlock
-      title="That's the title number four"
+      title="Title title"
       text="This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!This is some random text. Enjoy!"
       icon={imageFile}
       isLeft={false}
