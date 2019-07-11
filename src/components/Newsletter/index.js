@@ -17,11 +17,11 @@ const Newsletter = () => {
                     variant="orange"
                     size="lg"
                     label="tilaa uutiskirje→"
-                    onClick={() => setAnimationStage('first stage')}
+                    onClick={() => setAnimationStage('first-stage')}
                 />
             </>
         )
-    } else if (animationStage === 'first stage') {
+    } else if (animationStage === 'first-stage') {
         return (    
             <div className="newsletter-container--first-stage">
                 <p className="newsletter-container--first-stage__text-top">Tilaa uutiskirje</p>
@@ -31,7 +31,7 @@ const Newsletter = () => {
                 variant="primary"
                 size="md"
                 label="lähetä→"
-                onClick={() => setAnimationStage('second stage')}
+                onClick={() => setAnimationStage('second-stage')}
                 />
                 <p className="newsletter-container--first-stage__invisible-text">Kiitos paljon!</p> 
             </div>
