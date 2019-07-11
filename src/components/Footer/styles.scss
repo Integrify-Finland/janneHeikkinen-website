@@ -4,6 +4,7 @@
   color: $white;
   width: 100%;
   overflow: hidden;
+  flex-wrap: wrap;
 
   &__left-box {
     background-color: $primary;
