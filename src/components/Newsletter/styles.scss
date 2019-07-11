@@ -1,23 +1,10 @@
-.newsletter-container--initial {
-  height: 270px;
-  width: 330px;
-  border-radius: 40px;
-  z-index: -1;
-  margin: $spacing-01;
-}
-
 .newsletter-container--first-stage {
   font-family: $font-family;
   letter-spacing: $spacing-00-25;
   background-color: $orange;
   border-radius: 40px;
-  height: 70px;
   width: 330px;
   text-align: center;
-  position: relative;
-  box-shadow: 0px 140px 0px $primary inset;
-  margin: $spacing-01;
-
   animation: newsletter-animation;
   animation-duration: 600ms;
   animation-delay: 0s;
@@ -115,18 +102,17 @@
 .newsletter-container--second-stage {
   font-family: $font-family;
   letter-spacing: $spacing-00-25;
-  background-color: $primary;
+  background-color: $orange;
   border-radius: 40px;
-  height: 370px;
   width: 330px;
+  height: 71px;
   text-align: center;
   animation: newsletter-animation2;
   animation-duration: 500ms;
   animation-delay: 0s;
   animation-timing-function: ease-in ease-out;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   transform-origin: bottom;
-  margin: $spacing-01;
 
   &__invisible-text {
     color: white;
