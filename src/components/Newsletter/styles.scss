@@ -1,214 +1,174 @@
 .newsletter-container--initial {
-    height: 270px;
-    width: 330px;
-    border-radius: 40px;
-    z-index: -1;
-    margin: $spacing-01;
+  height: 270px;
+  width: 330px;
+  border-radius: 40px;
+  z-index: -1;
+  margin: $spacing-01;
 }
 
 .newsletter-container--first-stage {
-    font-family: $font-family;
-    letter-spacing: $spacing-00-25;
-    background-color: $orange;
-    border-radius: 40px;
-    height: 70px;
-    width: 330px;
-    text-align: center;
-    position: relative;
-    box-shadow: 0px 140px 0px $primary inset;
-    margin: $spacing-01;
+  font-family: $font-family;
+  letter-spacing: $spacing-00-25;
+  background-color: $orange;
+  border-radius: 40px;
+  height: 70px;
+  width: 330px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0px 140px 0px $primary inset;
+  margin: $spacing-01;
 
-    animation: newsletter-animation;
-    animation-duration: 600ms;
+  animation: newsletter-animation;
+  animation-duration: 600ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+
+  &__text-top {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: $spacing-04;
+    animation: vanishing-animation;
     animation-delay: 0s;
-    animation-timing-function: ease-in ease-out;
-    animation-fill-mode: forwards;
-    transform-origin: bottom;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+  }
 
+  &__text-bottom {
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: $spacing-04;
+    margin-bottom: $spacing-00-50;
+    animation: vanishing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+  }
 
-    &__text-top {
-        color: white;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: bold;
-        padding-top: $spacing-04;
-        animation: vanishing-animation;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
-    }
+  &__input {
+    border-radius: 5px;
+    border: none;
+    width: 85%;
+    height: 50px;
+    padding: $spacing-00-50 $spacing-01;
+    color: $primary;
+    margin-bottom: $spacing-00-75;
+    animation: vanishing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+  }
 
-    &__text-bottom {
-        color: $primary;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: bold;
-        padding-top: $spacing-04;
-        margin-bottom: $spacing-00-50;
-        animation: vanishing-animation;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
-    }
-    
-    &__input {
-        border-radius: 5px;
-        border: none;
-        width: 85%;
-        height: 50px;
-        padding: $spacing-00-50 $spacing-01;
-        color: $primary;
-        margin-bottom: $spacing-00-75;
-        animation: vanishing-animation;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
-    }
+  &__invisible-text {
+    color: white;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    top: -327px;
+    opacity: 0;
+    animation: appearing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+    opacity: 0;
+  }
 
-    &__invisible-text {
-        color: white;
-        font-size: 22px;
-        line-height: 22px;
-        font-weight: bold;
-        position: relative;
-        text-transform: uppercase;
-        top: -327px;
-        opacity: 0;
-        animation: appearing-animation;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
-        opacity: 0;
-    }
-
-    @keyframes newsletter-animation {
+  @keyframes newsletter-animation {
     from {
-        height: 70px;
-        box-shadow: 0px 0px 0px $primary inset;
-        top: 300px;
-    } to {
-        height: 370px;
-        box-shadow: 0px 140px 0px $primary inset;
-        top: 0;
+      height: 70px;
+      box-shadow: 0px 0px 0px $primary inset;
+      top: 300px;
     }
+    to {
+      height: 370px;
+      box-shadow: 0px 140px 0px $primary inset;
+      top: 0;
     }
+  }
 
-    @keyframes vanishing-animation {
-        from {
-            opacity: 0;
-        } to {
-            opacity: 1;
-        }
+  @keyframes vanishing-animation {
+    from {
+      opacity: 0;
     }
+    to {
+      opacity: 1;
+    }
+  }
 
-    @keyframes appearing-animation {
-        from {
-            opacity: 1;
-        } to {
-            opacity: 0;
-        }
+  @keyframes appearing-animation {
+    from {
+      opacity: 1;
     }
+    to {
+      opacity: 0;
+    }
+  }
 }
-
 
 .newsletter-container--second-stage {
-    font-family: $font-family;
-    letter-spacing: $spacing-00-25;
-    background-color: $orange;
-    border-radius: 40px;
-    height: 370px;
-    width: 330px;
-    text-align: center;
+  font-family: $font-family;
+  letter-spacing: $spacing-00-25;
+  background-color: $primary;
+  border-radius: 40px;
+  height: 370px;
+  width: 330px;
+  text-align: center;
+  animation: newsletter-animation2;
+  animation-duration: 500ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+  margin: $spacing-01;
+
+  &__invisible-text {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
     position: relative;
-    box-shadow: 0px 140px 0px $primary inset;
-    animation: newsletter-animation2;
-    animation-duration: 500ms;
-    animation-delay: 0s;
-    animation-timing-function: ease-in ease-out;
-    animation-fill-mode: forwards;
-    transform-origin: bottom;
-    margin: $spacing-01;
-    
+    text-transform: uppercase;
+    line-height: 68px;
+    animation: appearing-animation2;
+    animation-delay: 300ms;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+  }
 
-    &__text-top {
-        color: white;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: bold;
-        padding-top: $spacing-04;
-        animation: vanishing-animation2;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
+  @keyframes newsletter-animation2 {
+    from {
+      height: 370px;
+      box-shadow: 0px 140px 0px $primary inset;
+      top: 0;
     }
+    to {
+      height: 70px;
+      box-shadow: 0px 0px 0px $primary inset;
+      top: 300px;
+    }
+  }
 
-    &__text-bottom {
-        color: $primary;
-        text-transform: uppercase;
-        font-size: 22px;
-        font-weight: bold;
-        padding-top: $spacing-04;
-        margin-bottom: $spacing-00-50;
-        animation: vanishing-animation2;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
+  @keyframes vanishing-animation2 {
+    from {
+      opacity: 1;
     }
-    
-    &__input {
-        border-radius: 5px;
-        border: none;
-        width: 85%;
-        height: 50px;
-        padding: $spacing-00-50 $spacing-01;
-        color: $primary;
-        margin-bottom: $spacing-00-75;
-        animation: vanishing-animation2;
-        animation-delay: 0s;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
+    to {
+      opacity: 0;
     }
+  }
 
-    &__invisible-text {
-        color: white;
-        font-size: 22px;
-        font-weight: bold;
-        position: relative;
-        text-transform: uppercase;
-        top: -252px;
-        animation: appearing-animation2;
-        animation-delay: 300ms;
-        animation-duration: 210ms;
-        animation-fill-mode: both;
+  @keyframes appearing-animation2 {
+    from {
+      opacity: 0;
     }
-
-    @keyframes newsletter-animation2 {
-        from {
-            height: 370px;
-            box-shadow: 0px 140px 0px $primary inset;
-            top: 0;
-        } to {
-            height: 70px;
-            box-shadow: 0px 0px 0px $primary inset;
-            top: 300px;
-        }
+    to {
+      opacity: 1;
     }
-    
-    @keyframes vanishing-animation2 {
-        from {
-            opacity: 1;
-        } to {
-            opacity: 0;
-        }
-    }
-    
-    @keyframes appearing-animation2 {
-        from {
-            opacity: 0;
-        } to {
-            opacity: 1;
-        }
-    }
+  }
 }
-
-
