@@ -89,10 +89,12 @@
 
   @keyframes newsletter-animation {
     from {
-      top: 300px;
+      // top: 300px;
+      transform: translateY(300px);
     }
     to {
-      top: 0;
+      // top: 0;
+      transform: translateY(0px);
     }
   }
 
@@ -142,9 +144,9 @@
   height: 55px;
   text-align: center;
   animation: newsletter-animation2;
-  animation-duration: 600ms;
+  animation-duration: 500ms;
   animation-delay: 0s;
-  animation-timing-function: ease-in ease-out;
+  animation-timing-function: cubic-bezier(0.510, 0.110, 0.335, 1.385);
   animation-fill-mode: backwards;
   transform-origin: bottom;
 
@@ -172,12 +174,10 @@
 
   @keyframes newsletter-animation2 {
     from {
-      height: 370px;
-      top: 0;
+      transform: scaleY(6);
     }
     to {
-      height: 55px;
-      top: 300px;
+      transform: scaleY(1);
     }
   }
 
