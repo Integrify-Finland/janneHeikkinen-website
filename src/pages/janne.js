@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const Janne = ({ data }) => {
-  const { aboutMe, DetailsAboutMe, resume } = data
+  //   const { aboutMe, DetailsAboutMe, resume } = data
 
   return (
     <Layout>

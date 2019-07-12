@@ -12,7 +12,7 @@ const Text = ({ children }) => <p className="custom-class">{children}</p>
 const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
 const BlogPostTemplate = ({ data }) => {
-  const { aboutMe, wordPressBlog, youTubeVid, contentfulBlog } = data
+  const { wordPressBlog, contentfulBlog } = data
 
   const options = {
     renderMark: {

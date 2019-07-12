@@ -4,7 +4,6 @@ import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../components/Layout"
-import Image from "../components/Image"
 import SEO from "../components/SEO"
 
 // these are UI components for customising the blog posts from contentful
@@ -13,7 +12,7 @@ const Text = ({ children }) => <p className="custom-class">{children}</p>
 const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
 const IndexPage = ({ data }) => {
-  const { aboutMe, wordPressBlogs, youTubeVid, blogPost } = data
+  const { aboutMe, blogPost } = data
 
   const options = {
     renderMark: {

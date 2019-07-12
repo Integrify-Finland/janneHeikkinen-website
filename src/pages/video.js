@@ -5,7 +5,7 @@ import Layout from "../components/Layout"
 import SEO from "../components/SEO"
 
 const Video = ({ data }) => {
-  const { youTubeVid } = data
+  //   const { youTubeVid } = data
 
   return (
     <Layout>
