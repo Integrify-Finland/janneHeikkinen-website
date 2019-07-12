@@ -23,7 +23,7 @@ const blogs = [
 // the pagination depends on the parent to have these states and function
 const PostsWithPagi = () => {
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(1)
+  const [postsPerPage] = useState(3)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
 

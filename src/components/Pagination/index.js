@@ -23,7 +23,7 @@ const Pagination = ({ postsPerPage, totalPosts, paginate, currentPage }) => {
             }`}
             onClick={() => paginate(number)}
           >
-            <span className="page-link">{number}</span>
+            <span>{number}</span>
           </li>
         ))}
       </ul>
