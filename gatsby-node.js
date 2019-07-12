@@ -1,13 +1,8 @@
 const path = require(`path`)
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
-  createRedirect({
-    fromPath: "/",
-    toPath: "/fi/",
-    isPermanent: true,
-    redirectInBrowser: true,
-  })
+  const { createPage } = actions
+
   return graphql(`
     {
       allContentfulBlogPost {
