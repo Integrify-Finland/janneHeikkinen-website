@@ -3,17 +3,16 @@ import { graphql } from "gatsby"
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/Layout"
-import Image from "../components/Image"
-import SEO from "../components/SEO"
+import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
 
 // these are UI components for customising the blog posts from contentful
 const Bold = ({ children }) => <span className="bold">{children}</span>
 const Text = ({ children }) => <p className="custom-class">{children}</p>
 const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
-const IndexPage = ({ data }) => {
-  const { aboutMe, wordPressBlogs, youTubeVid, blogPost } = data
+const BlogPostTemplate = ({ data }) => {
+  const { aboutMe, wordPressBlog, youTubeVid, contentfulBlog } = data
 
   const options = {
     renderMark: {
@@ -27,54 +26,50 @@ const IndexPage = ({ data }) => {
 
   const renderBlogPost = () => {
     return documentToReactComponents(
-      blogPost.childContentfulBlogPostContentRichTextNode.json,
+      contentfulBlog.childContentfulBlogPostContentRichTextNode.json,
       options
     )
   }
-
+  const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
+  console.log(whichBlog)
   return (
     <Layout>
-      <SEO title="Home" />
-      <h1>{aboutMe.title}</h1>
-      <p>{aboutMe.description}</p>
+      <SEO title="blogi" />
 
-      <h1>{blogPost.title}</h1>
+      <h1>{whichBlog.title}</h1>
       <span>Tags are: </span>
-      {blogPost.tags.map((tag, i) => (
-        <>
-          <span
-            style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
-            key={i}
-          >
-            {tag}
-          </span>
-        </>
-      ))}
-      {renderBlogPost()}
+      {contentfulBlog &&
+        contentfulBlog.tags.map((tag, i) => (
+          <>
+            <span
+              style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
+              key={i}
+            >
+              {tag}
+            </span>
+          </>
+        ))}
+      {contentfulBlog && renderBlogPost()}
     </Layout>
   )
 }
 
-export default IndexPage
+export default BlogPostTemplate
 
 export const query = graphql`
-  query {
-    blogPost: contentfulBlogPost {
+  query($slug: String!) {
+    contentfulBlog: contentfulBlogPost(id: { eq: $slug }) {
       title
       tags
       childContentfulBlogPostContentRichTextNode {
         json
       }
     }
-    wordPressBlogs: allWordpressPost {
-      edges {
-        node {
-          id
-          title
-          tags {
-            name
-          }
-        }
+    wordPressBlog: wordpressPost(slug: { eq: $slug }) {
+      id
+      title
+      tags {
+        name
       }
     }
   }
