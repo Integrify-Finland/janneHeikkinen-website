@@ -1,11 +1,21 @@
 .header {
-  height: 100vh;
   background-image: url("../Header/assets/heroBG.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+  // overflow-: hidden;
+  height: 100vh;
 
+  -ms-overflow-style: none; // IE 10+
+  scrollbar-width: none; // Firefox
 
+  &::-webkit-scrollbar {
+    display: none; // Safari and Chrome
+  }
+  @include for-phone-only {
+    height: 431px;
+    max-height: 510px;
+  }
   &__textbox {
     background-color: #6ccff6cc;
     box-shadow: 0px 95px 0px #023b561a inset;
@@ -59,8 +69,8 @@
   &__subtext {
     @include font-size-l-xxx;
     line-height: $spacing-03;
-    animation: subtext-animation 600ms cubic-bezier(0, 0.015, 0.005, 1.10)
-      3500ms both;
+    animation: subtext-animation 600ms cubic-bezier(0, 0.015, 0.005, 1.1) 3500ms
+      both;
     position: relative;
 
     @include for-tablet-portrait-down {
@@ -74,7 +84,6 @@
     }
   }
 
-
   &__image {
     animation: image-animation 1400ms cubic-bezier(0.68, -0.15, 0.465, 1.35)
       600ms both;
@@ -87,12 +96,11 @@
     transform-origin: bottom;
 
     @include for-phone-only {
-      width: 120%;
       z-index: 1;
       left: -10%;
-      top:-3%;
-     
-
+      top: -3%;
+      height: 444px;
+      max-height: 450px;
     }
   }
 }
