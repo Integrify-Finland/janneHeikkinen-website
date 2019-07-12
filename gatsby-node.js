@@ -14,7 +14,7 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             id
-            url
+            slug
           }
         }
       }
@@ -29,7 +29,7 @@ exports.createPages = ({ graphql, actions }) => {
   `).then(result => {
     result.data.allContentfulBlogPost.edges.forEach(({ node }) => {
       createPage({
-        path: `blogi/${node.url
+        path: `blogi/${node.slug
           .toLowerCase()
           .replace(/[']/gi, "")
           .replace(/ /gi, "-")
@@ -44,7 +44,13 @@ exports.createPages = ({ graphql, actions }) => {
     })
     result.data.allWordpressPost.edges.forEach(({ node }) => {
       createPage({
-        path: `blogi/${node.slug}`,
+        path: `blogi/${node.slug
+          .toLowerCase()
+          .replace(/[']/gi, "")
+          .replace(/ /gi, "-")
+          .replace(/[,]/gi, "")
+          .replace(/[ä]/gi, "a")
+          .replace(/[ö]/gi, "o")}`,
         component: path.resolve(`./src/templates/blogPost/index.js`),
         context: {
           slug: node.slug,

@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -9,7 +9,7 @@ const Blogi = ({ data }) => {
   const { contentfulBlog, wordPressBlogs } = data
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(4)
+  const [postsPerPage] = useState(15)
 
   const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
 
@@ -22,7 +22,19 @@ const Blogi = ({ data }) => {
     <Layout>
       <SEO title="Blogit" />
       {allBlogs.slice(indexOfFirstPost, indexOfLastPost).map(({ node }) => (
-        <p key={node.id}>{node.title}</p>
+        <Link
+          to={`blogi/${node.slug
+            .toLowerCase()
+            .replace(/[']/gi, "")
+            .replace(/ /gi, "-")
+            .replace(/[,]/gi, "")
+            .replace(/[ä]/gi, "a")
+            .replace(/[ö]/gi, "o")}`}
+          key={node.id}
+          style={{ display: "block" }}
+        >
+          {node.title}
+        </Link>
       ))}
       <Pagination
         postsPerPage={postsPerPage}
@@ -44,6 +56,7 @@ export const query = graphql`
           title
           tags
           id
+          slug
         }
       }
     }
@@ -52,6 +65,7 @@ export const query = graphql`
         node {
           id
           title
+          slug
         }
       }
     }

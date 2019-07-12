@@ -30,26 +30,37 @@ const BlogPostTemplate = ({ data }) => {
       options
     )
   }
+  const createMarkup = () => {
+    return { __html: wordPressBlog.content }
+  }
   const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
-  console.log(whichBlog)
+
   return (
     <Layout>
       <SEO title="blogi" />
-
       <h1>{whichBlog.title}</h1>
-      <span>Tags are: </span>
       {contentfulBlog &&
         contentfulBlog.tags.map((tag, i) => (
-          <>
-            <span
-              style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
-              key={i}
-            >
-              {tag}
-            </span>
-          </>
+          <span
+            style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
+            key={i}
+          >
+            {tag}
+          </span>
         ))}
       {contentfulBlog && renderBlogPost()}
+      {wordPressBlog &&
+        wordPressBlog.tags !== null &&
+        wordPressBlog.tags.map((tag, i) => (
+          <span
+            style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
+            key={i}
+          >
+            {tag.name}
+          </span>
+        ))}
+
+      {wordPressBlog && <div dangerouslySetInnerHTML={createMarkup()}></div>}
     </Layout>
   )
 }
@@ -68,6 +79,7 @@ export const query = graphql`
     wordPressBlog: wordpressPost(slug: { eq: $slug }) {
       id
       title
+      content
       tags {
         name
       }
