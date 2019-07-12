@@ -18,6 +18,7 @@ const Header = ({ Headline, Subtext }) => {
       <p className="header__subtext">{Subtext}</p>
       </div>
       <img className="header__image" src={janneImage} />
+
     </header>
     </div>
   )

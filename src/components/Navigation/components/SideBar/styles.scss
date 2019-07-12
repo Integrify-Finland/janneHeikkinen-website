@@ -10,7 +10,7 @@
   font-family: $font-family;
   background-color: $primary;
   transform: translateX(101%);
-  transition: transform 0.5s ease;
+  transition: transform 0.5s cubic-bezier(0.385, 0.035, 0.155, 1.465);
   z-index: 5;
   padding: $spacing-03;
   padding-right: 0;
