@@ -5,6 +5,7 @@ import PropTypes from "prop-types"
 import "./styles.scss"
 import janneImage from "./assets/janneHeader.png"
 import Navigation from "../Navigation"
+import Newsletter from "../Newsletter"
 
 const Header = ({ Headline, Subtext }) => {
   
@@ -16,7 +17,12 @@ const Header = ({ Headline, Subtext }) => {
       <div className="header__textbox">
       <h1 className="header__headline">{Headline}</h1>
       <p className="header__subtext">{Subtext}</p>
+     
       </div>
+      <div className="header__newsletter-wrapper">
+      
+      <Newsletter />
+   </div>
       <img className="header__image" src={janneImage} />
 
     </header>

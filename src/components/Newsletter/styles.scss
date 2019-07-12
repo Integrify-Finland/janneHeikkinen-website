@@ -1,0 +1,201 @@
+.newsletter-container--first-stage {
+
+  font-family: $font-family;
+  letter-spacing: $spacing-00-25;
+  background-color: $orange;
+  border-radius: 40px;
+  width: 330px;
+  text-align: center;
+  padding-bottom: $spacing-01;
+  position: relative;
+  z-index: 9;
+  animation: newsletter-animation;
+  animation-duration: 600ms;
+  animation-delay: 0s;
+  animation-timing-function: ease-in ease-out;
+  animation-fill-mode: forwards;
+  transform-origin: bottom;
+
+  @include for-phone-only {
+          width: 280px;
+        }
+
+  &__text-top {
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: $spacing-04;
+    animation: vanishing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+
+    @include for-phone-only {
+            font-size: 18px;
+          }
+  }
+
+  &__text-bottom {
+    color: $primary;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: bold;
+    padding-top: $spacing-04;
+    margin-bottom: $spacing-00-50;
+    animation: vanishing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+
+    @include for-phone-only {
+            font-size: 18px;
+          }
+  }
+
+  &__input {
+    border-radius: 5px;
+    border: none;
+    width: 85%;
+    height: 50px;
+    padding: $spacing-00-50 $spacing-01;
+    color: $primary;
+    margin-bottom: $spacing-00-75;
+    animation: vanishing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+
+    @include for-phone-only {
+            width: 80%;
+            height: 40px;
+          }
+  }
+
+  &__invisible-text {
+    color: white;
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    top: -327px;
+    opacity: 0;
+    animation: appearing-animation;
+    animation-delay: 0s;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+  }
+
+  @keyframes newsletter-animation {
+    from {
+      // top: 300px;
+      transform: translateY(300px);
+    }
+    to {
+      // top: 0;
+      transform: translateY(0px);
+    }
+  }
+
+  @keyframes vanishing-animation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes appearing-animation {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+}
+
+.newsletter-container--first-stage::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  bottom: 65%;
+  left: 0;
+  background: $primary;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+
+  @include for-phone-only {
+    bottom: 60%;
+  }
+  }
+
+
+.newsletter-container--second-stage {
+  font-family: $font-family;
+  letter-spacing: $spacing-00-25;
+  background-color: $orange;
+  border-radius: 40px;
+  width: 330px;
+  height: 55px;
+  text-align: center;
+  animation: newsletter-animation2;
+  animation-duration: 500ms;
+  animation-delay: 0s;
+  animation-timing-function: cubic-bezier(0.510, 0.110, 0.335, 1.385);
+  animation-fill-mode: backwards;
+  transform-origin: bottom;
+
+  @include for-phone-only {
+        width: 280px;
+      }
+
+  &__invisible-text {
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    position: relative;
+    text-transform: uppercase;
+    line-height: 53px;
+    animation: appearing-animation2;
+    animation-delay: 300ms;
+    animation-duration: 210ms;
+    animation-fill-mode: both;
+
+    @include for-phone-only {
+            font-size: 18px;
+            line-height: 51px;
+          }
+  }
+
+  @keyframes newsletter-animation2 {
+    from {
+      transform: scaleY(6);
+    }
+    to {
+      transform: scaleY(1);
+    }
+  }
+
+  @keyframes vanishing-animation2 {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes appearing-animation2 {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+}
