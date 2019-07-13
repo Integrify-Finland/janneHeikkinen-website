@@ -1,14 +1,15 @@
 .about-text-block {
   display: flex;
+  justify-content: space-between;
   font-family: $font-family;
-
+  width: 100%;
   @include for-tablet-portrait-down {
     display: block;
-      padding: $spacing-00-75;
-      
-    
+    padding: $spacing-00-75;
   }
-
+  &__text-wrapper {
+    width: 70%;
+  }
   &__title {
     color: $grey;
     @include font-size-l-xxx;
@@ -24,15 +25,12 @@
   }
   &__paragraph {
     color: $grey;
-    line-height: 1.2rem;
-    @include font-size-m;
-   
   }
 
   img {
     align-self: center;
     max-height: 30vh;
-    margin: 0px $spacing-02;
+    margin: 0px;
     @include for-tablet-portrait-down {
       margin: $spacing-01 auto;
       max-height: 50vh;
