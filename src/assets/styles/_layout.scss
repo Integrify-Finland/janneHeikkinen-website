@@ -63,7 +63,7 @@ dfn {
   font-style: italic;
 }
 h1 {
-  font-size: 2em;
+  @include font-size-l;
   margin: 0.67em 0;
 }
 mark {
@@ -236,7 +236,7 @@ h1 {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 2.25rem;
+  @include font-size-l-xx;
   line-height: 1.1;
 }
 h2 {
@@ -253,7 +253,7 @@ h2 {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.62671rem;
+  @include font-size-l-x;
   line-height: 1.1;
 }
 h3 {
@@ -270,7 +270,7 @@ h3 {
     Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   font-weight: bold;
   text-rendering: optimizeLegibility;
-  font-size: 1.38316rem;
+  @include font-size-l;
   line-height: 1.1;
 }
 h4 {
