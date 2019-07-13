@@ -3,13 +3,20 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import Resume from "../components/Resume"
 
 const Janne = ({ data }) => {
-  //   const { aboutMe, DetailsAboutMe, resume } = data
+  const { resume } = data
 
   return (
     <Layout>
       <SEO title="Janne" />
+      <Resume
+        opinnot={resume.opinnot}
+        varusmies={resume.varusmiespalvelus}
+        tyo={resume.tyoelamassa}
+        luottamus={resume.luottamustoimet}
+      />
     </Layout>
   )
 }

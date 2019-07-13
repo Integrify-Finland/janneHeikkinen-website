@@ -9,6 +9,7 @@
   border-style: solid;
   border-left: 0;
   border-right: 0;
+  margin-bottom: $spacing-04;
   @include for-ipad-pro {
     padding: $spacing-04;
   }
