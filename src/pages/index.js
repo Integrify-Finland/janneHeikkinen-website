@@ -34,8 +34,6 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-      <h1>{aboutMe.title}</h1>
-      <p>{aboutMe.description}</p>
 
       <h1>{blogPost.title}</h1>
       <span>Tags are: </span>
