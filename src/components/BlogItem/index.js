@@ -6,9 +6,9 @@ import PropTypes from 'prop-types'
 import Button from '../Button'
 
 
-const BlogItem = ({ date,  title, number, image, text, link }) => {
+const BlogItem = ({ date,  title, number, image, text }) => {
   const content =  
-    <Link className="blog-item" to={link}>
+    <div className="blog-item">
       <p className="blog-item__date">{date}</p>
       <p className="blog-item__title">{title}</p>
       <p className="blog-item__number">{number}</p>
@@ -16,8 +16,8 @@ const BlogItem = ({ date,  title, number, image, text, link }) => {
       <div className="blog-item__text">
         <p>{text}</p>
         <Button variant="secondary" size="sm" label="Lue lisää" /> 
-     </div>
-    </Link>
+      </div>
+    </div>
   
 
   return (
