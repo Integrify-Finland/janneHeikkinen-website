@@ -2,7 +2,7 @@ import React from "react"
 
 import { storiesOf } from "@storybook/react"
 import { jsxDecorator } from "storybook-addon-jsx"
-import image from "../../../images/gatsby-astronaut.png"
+import image from "../../../images/JANNE_HEIKKINEN_260619_77.jpg"
 
 import BlogItem from ".."
 
@@ -13,7 +13,7 @@ const styles = {
     height: "100vh",
     backgroundColor: "#EDF5F8",
     paddingTop: "20px"
-  }
+}
 
 storiesOf("BlogItem", module)
     .addDecorator(jsxDecorator)
@@ -25,7 +25,7 @@ storiesOf("BlogItem", module)
             number="1"
             image={image}
             link='/'
-            text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            text="Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
             />
         </div>
     ))
