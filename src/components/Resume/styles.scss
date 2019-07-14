@@ -1,0 +1,90 @@
+.resume {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: $spacing-06;
+  background-color: $secondary;
+  border-width: 15px;
+  border-color: $primary;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  margin-bottom: $spacing-04;
+  @include for-ipad-pro {
+    padding: $spacing-04;
+  }
+  @include for-phone {
+    padding: $spacing-02;
+  }
+  &--title {
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+    margin: 0 auto;
+    width: 350px;
+    padding: $spacing-01;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    @include for-phone {
+      width: 70%;
+    }
+  }
+  &__col-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    @include for-tablet-portait {
+      width: 90%;
+    }
+    @include for-phone {
+      width: 100%;
+    }
+    &--wrapper {
+      @include for-tablet-portait {
+        margin-bottom: $spacing-04;
+      }
+      @include for-phone {
+        margin-bottom: $spacing-02;
+      }
+      h1 {
+        color: $white;
+      }
+      ul {
+        margin: 0;
+        list-style-type: none;
+        font-size: 0.9rem;
+        li {
+          color: $grey;
+          margin: $spacing-00-25;
+        }
+      }
+    }
+  }
+  &__col-2 {
+    width: 45%;
+    @include for-ipad-pro {
+      width: 50%;
+    }
+    @include for-tablet-portait {
+      width: 90%;
+    }
+    @include for-phone {
+      width: 100%;
+    }
+    &--wrapper {
+      h1 {
+        color: $white;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        font-size: 0.9rem;
+        li {
+          margin: $spacing-00-25;
+          color: $grey;
+        }
+      }
+    }
+  }
+}

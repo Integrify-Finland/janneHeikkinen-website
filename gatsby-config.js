@@ -7,6 +7,7 @@ module.exports = {
     author: `Integrify`,
   },
   plugins: [
+    `gatsby-transformer-remark`,
     {
       resolve: `gatsby-plugin-sass`,
       options: {

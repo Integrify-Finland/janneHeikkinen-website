@@ -3,16 +3,16 @@ import { graphql } from "gatsby"
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
-import Layout from "../components/Layout"
-import SEO from "../components/SEO"
+import Layout from "../../components/Layout"
+import SEO from "../../components/SEO"
 
 // these are UI components for customising the blog posts from contentful
 const Bold = ({ children }) => <span className="bold">{children}</span>
 const Text = ({ children }) => <p className="custom-class">{children}</p>
 const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
-const IndexPage = ({ data }) => {
-  const { aboutMe, blogPost } = data
+const BlogPostTemplate = ({ data }) => {
+  const { wordPressBlog, contentfulBlog } = data
 
   const options = {
     renderMark: {
@@ -26,52 +26,62 @@ const IndexPage = ({ data }) => {
 
   const renderBlogPost = () => {
     return documentToReactComponents(
-      blogPost.childContentfulBlogPostContentRichTextNode.json,
+      contentfulBlog.childContentfulBlogPostContentRichTextNode.json,
       options
     )
   }
+  const createMarkup = () => {
+    return { __html: wordPressBlog.content }
+  }
+  const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
 
   return (
     <Layout>
-      <SEO title="Home" />
-
-      <h1>{blogPost.title}</h1>
-      <span>Tags are: </span>
-      {blogPost.tags.map((tag, i) => (
-        <>
+      <SEO title="blogi" />
+      <h1>{whichBlog.title}</h1>
+      {contentfulBlog &&
+        contentfulBlog.tags.map((tag, i) => (
           <span
             style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
             key={i}
           >
             {tag}
           </span>
-        </>
-      ))}
-      {renderBlogPost()}
+        ))}
+      {contentfulBlog && renderBlogPost()}
+      {wordPressBlog &&
+        wordPressBlog.tags !== null &&
+        wordPressBlog.tags.map((tag, i) => (
+          <span
+            style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
+            key={i}
+          >
+            {tag.name}
+          </span>
+        ))}
+
+      {wordPressBlog && <div dangerouslySetInnerHTML={createMarkup()}></div>}
     </Layout>
   )
 }
 
-export default IndexPage
+export default BlogPostTemplate
 
 export const query = graphql`
-  query {
-    blogPost: contentfulBlogPost {
+  query($slug: String!) {
+    contentfulBlog: contentfulBlogPost(id: { eq: $slug }) {
       title
       tags
       childContentfulBlogPostContentRichTextNode {
         json
       }
     }
-    wordPressBlogs: allWordpressPost {
-      edges {
-        node {
-          id
-          title
-          tags {
-            name
-          }
-        }
+    wordPressBlog: wordpressPost(slug: { eq: $slug }) {
+      id
+      title
+      content
+      tags {
+        name
       }
     }
   }

@@ -1,0 +1,22 @@
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  font-family: $font-family;
+  & > li {
+    color: $white;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    @include font-size-l-xx;
+    margin-right: $spacing-02;
+    cursor: pointer;
+  }
+  &__numbers {
+    background-color: $light-grey;
+    &--active {
+      background-color: $secondary;
+    }
+  }
+}

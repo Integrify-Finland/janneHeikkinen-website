@@ -28,18 +28,34 @@
     }
 
     &--sm {
-    @include font-size-s-x;
-    padding: 0 $spacing-03;
+    @include font-size-m;
+    padding: $spacing-00-25 $spacing-03;
+        
+        @include for-phone-only {
+            @include font-size-m;
+            padding: $spacing-00-25 $spacing-03;
+    }
+        
     }
     
     &--md {
     @include font-size-l;
-    padding: $spacing-00-50 $spacing-01-50;
+    padding: $spacing-00-50 $spacing-01;
+
+        @include for-phone-only {
+            @include font-size-m;
+            padding: $spacing-00-50 $spacing-01;
+        }
     }    
 
     &--lg {
     @include font-size-l;
-    padding: $spacing-01 $spacing-02;
+    padding: $spacing-00-75 $spacing-01-50;
+
+        @include for-phone-only {
+            @include font-size-m;
+            padding: $spacing-00-75 $spacing-01-50;
+        }
     }
 }
 
