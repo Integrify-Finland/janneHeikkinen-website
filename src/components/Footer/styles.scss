@@ -9,12 +9,13 @@
   }
 
   &__left-box {
+    width: 70%;
     background-color: $primary;
     border-radius: 0px 50px 0px 0px;
     padding: $spacing-02 $spacing-06 0 $spacing-06;
 
     @include for-tablet-portrait-down {
-      padding: $spacing-02 $spacing-03 0 $spacing-03;
+      padding: $spacing-02 $spacing-06 0 $spacing-03;
     }
 
     @include for-phone-only {
@@ -41,43 +42,43 @@
 
   &__contact-container {
     display: flex;
-    @include for-phone-only {
+    @include for-tablet-portrait-down{
     flex-wrap: wrap;
     }
 
     h1 {
       @include font-size-l;
-      margin: $spacing-02 $spacing-06 $spacing-00-50 0;
+      margin: $spacing-02 $spacing-10 $spacing-00-50 0;
       @include for-tablet-portrait-down {
         @include font-size-m;
-        margin: $spacing-02 $spacing-04 $spacing-00-50 0;
+        margin: $spacing-02 $spacing-06 $spacing-00-50 0;
       }
     }
 
     p {
-      @include font-size-s-x;
-      line-height: $spacing-00-75;
+      @include font-size-s;
+      line-height: $spacing-01;
       color: $light;
-      @include for-tablet-portrait-down {
-        @include font-size-s-xx;
-      }
+   
     }
   }
 
   &__logo-container {
     padding: $spacing-03;
-    width: 100%;
+    width: 30%;
     display: flex;
-    @include for-tablet-portrait-down {
+    @include for-phone-only {
+      width: 100%;
     }
 
  
 
     img {
-      max-width: 20vw;
+      max-width: 100%;
       margin: auto;
       @include for-phone-only {
         max-width: 60vw;
+       
       }
     }
   }

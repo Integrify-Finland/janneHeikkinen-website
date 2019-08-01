@@ -1,106 +1,148 @@
-
-
 .header {
-  height: 100vh;
   background-image: url("../Header/assets/heroBG.jpg");
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
+  // overflow-: hidden;
+  height: 100vh;
 
-  @include for-phone-only {
-    height: 80vh;
+  -ms-overflow-style: none; // IE 10+
+  scrollbar-width: none; // Firefox
 
+  &::-webkit-scrollbar {
+    display: none; // Safari and Chrome
   }
-  
-
-
+  @include for-phone-only {
+    height: 431px;
+    max-height: 510px;
+  }
   &__textbox {
-    width: 50vw;
     background-color: #6ccff6cc;
     box-shadow: 0px 95px 0px #023b561a inset;
     border-radius: 0px 0px 0px 50px;
     color: $white;
     position: absolute;
+    left: 40%;
     top: 10%;
+    display: inline-block;
     right: 5%;
     padding: $spacing-01;
     font-family: $font-family;
-    z-index: 5;
-    animation: textbox-animation 900ms ease-out 2000ms both;
+    z-index: 4;
+    animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
+      2000ms both;
 
-    @include for-phone-only {
-    width: 90vw;
-    left: 0; 
-    right: 0; 
-    margin-left: auto; 
-    margin-right: auto; 
-    top: 35%;
-    box-shadow: 0px 50px 0px #023b561a inset;
-    padding: $spacing-00-50 $spacing-01;
+    @include for-tablet-portrait-down {
+      box-shadow: 0px 65px 0px #023b561a inset;
     }
 
+    @include for-phone-only {
+      width: 90vw;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+      top: 35%;
+      box-shadow: 0px 50px 0px #023b561a inset;
+      padding: $spacing-00-50 $spacing-01;
+      z-index: 2;
+    }
   }
+
+
+
   &__headline {
     text-transform: uppercase;
     @include font-size-l-xxxx;
     font-style: italic;
-    animation: headline-animation 900ms ease-out 2500ms both;
+    animation: headline-animation 900ms cubic-bezier(0.68, 0.45, 0.665, 1.15)
+      2500ms both;
     position: relative;
     white-space: nowrap;
 
+    @include for-tablet-portrait-down {
+      @include font-size-l-xxx;
+    }
+
     @include for-phone-only {
-   
-    
+      text-align: center;
     }
   }
 
   &__subtext {
     @include font-size-l-xxx;
     line-height: $spacing-03;
-    animation: subtext-animation 600ms ease-out 3500ms both;
+    animation: subtext-animation 600ms cubic-bezier(0, 0.015, 0.005, 1.1) 3500ms
+      both;
     position: relative;
+
+    @include for-tablet-portrait-down {
+      line-height: $spacing-02;
+    }
 
     @include for-phone-only {
       line-height: $spacing-02;
       @include font-size-l-xxxx;
-
+      text-align: center;
     }
   }
 
-  &__image {
-    animation: image-animation 1600ms ease-out 600ms both;
-    max-height: 110%;
-    left: 5%;
-    top: -10%;
+  &__newsletter-wrapper {
+
     position: absolute;
-    
+    right: 20%;
+    bottom: -100px;
+    z-index: 10;
+    animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
+    4000ms both;
+
     @include for-phone-only {
-    z-index: 0;
-    margin: auto;
-    position: realtive;
-    left: 0%;
-    top: -5%;
+  
+     margin: auto;
+      z-index: 10;
+      bottom: 0%;
     }
 
+  }
+
+  &__image {
+    animation: image-animation 1400ms cubic-bezier(0.68, -0.15, 0.465, 1.35)
+      600ms both;
+    max-height: 105%;
+    max-width: 120%;
+    left: 8%;
+    top: -5%;
+    position: absolute;
+    z-index: 2;
+    transform-origin: bottom;
+
+    @include for-phone-only {
+      z-index: 1;
+      left: -10%;
+      top: -3%;
+      height: 444px;
+      max-height: 450px;
+    }
   }
 }
 
 @keyframes image-animation {
   from {
-    transform: translateX(-1500px) translateY(800px);
+    transform: translateX(-500px) scale(0.01);
   }
 
   to {
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) scale(1);
   }
 }
 
 @keyframes textbox-animation {
   from {
-    transform: translateX(3500px) translateY(200px);
+    transform: translateX(1000px) skew(55deg);
   }
 
   to {
-    transform: translateX(0px) translateY(0px);
+    transform: translateX(0px) skew(0deg);
   }
 }
 
