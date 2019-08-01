@@ -90,8 +90,8 @@
   &__newsletter-wrapper {
 
     position: absolute;
-    right: 18%;
-    bottom: 10%;
+    right: 20%;
+    bottom: -100px;
     z-index: 10;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
     4000ms both;
