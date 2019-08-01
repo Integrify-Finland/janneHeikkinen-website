@@ -15,6 +15,9 @@ const styles = {
     paddingTop: "20px"
 }
 
+const text = "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
+const shortText = text.substr(0, 416) + '...'
+
 storiesOf("BlogItem", module)
     .addDecorator(jsxDecorator)
     .add("BlogItem", () => (
@@ -24,8 +27,7 @@ storiesOf("BlogItem", module)
             title="Pienyrittäjälle kohtuuttomat maksuajat"
             number="1"
             image={image}
-            link='/'
-            text="Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
+            text={shortText}
             />
         </div>
     ))

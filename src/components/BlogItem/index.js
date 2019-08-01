@@ -2,7 +2,7 @@ import React from 'react'
 import './styles.scss'
 import { Link } from 'gatsby'
 import PropTypes from 'prop-types'
-// import formatDate from '../../../../utilities/FormatDate'
+// import formatDate from '../../utilities/FormatDate'
 import Button from '../Button'
 
 
@@ -11,6 +11,7 @@ const BlogItem = ({ date, title, number, image, text }) => {
   const styles = {
     textAlign: "center"
   }
+  
   const content =  
     <div className="blog-item">
       <p className="blog-item__date">{date}</p>
@@ -47,8 +48,3 @@ BlogItem.propTypes = {
   link: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired
 }
-
-// BlogItem.defaultProps = {
-//   media: null,
-//   wrapper: false,
-// }
