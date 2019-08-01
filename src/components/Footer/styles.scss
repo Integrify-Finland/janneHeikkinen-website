@@ -14,7 +14,7 @@
     padding: $spacing-02 $spacing-06 0 $spacing-06;
 
     @include for-tablet-portrait-down {
-      padding: $spacing-02 $spacing-03 0 $spacing-03;
+      padding: $spacing-02 $spacing-06 0 $spacing-03;
     }
 
     @include for-phone-only {
@@ -55,12 +55,10 @@
     }
 
     p {
-      @include font-size-s-x;
-      line-height: $spacing-00-75;
+      @include font-size-s;
+      line-height: $spacing-01;
       color: $light;
-      @include for-tablet-portrait-down {
-        @include font-size-s-xx;
-      }
+   
     }
   }
 
