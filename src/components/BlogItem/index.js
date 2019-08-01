@@ -1,18 +1,16 @@
-import React from 'react'
-import './styles.scss'
-import { Link } from 'gatsby'
-import PropTypes from 'prop-types'
+import React from "react"
+import "./styles.scss"
+import { Link } from "gatsby"
+import PropTypes from "prop-types"
 // import formatDate from '../../utilities/FormatDate'
-import Button from '../Button'
+import Button from "../Button"
 
-
-const BlogItem = ({ date, title, number, image, text }) => {
-
+const BlogItem = ({ date, title, number, image, text, link }) => {
   const styles = {
-    textAlign: "center"
+    textAlign: "center",
   }
-  
-  const content =  
+
+  const content = (
     <div className="blog-item">
       <p className="blog-item__date">{date}</p>
       <p className="blog-item__title">{title}</p>
@@ -23,20 +21,15 @@ const BlogItem = ({ date, title, number, image, text }) => {
       <div className="blog-item__text">
         <p>{text}</p>
         <div style={styles}>
-          <Button 
-          variant="secondary" 
-          size="sm" 
-          label="Lue lisää" />
+          <Link to={link}>
+            <Button variant="secondary" size="sm" label="Lue lisää" />
+          </Link>
         </div>
       </div>
     </div>
-  
-
-  return (
-    <>
-        {content}
-    </>
   )
+
+  return <>{content}</>
 }
 
 export default BlogItem
@@ -46,5 +39,5 @@ BlogItem.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.func.isRequired,
   link: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
 }
