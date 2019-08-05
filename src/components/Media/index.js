@@ -14,4 +14,23 @@ const Media = ({ name, birthday, text }) => {
   )
 }
 
+Media.propTypes = {
+  name: PropTypes.string,
+  birthday: PropTypes.string,
+  text: PropTypes.string,
+}
+
+Media.defaultProps = {
+  name: `Janne Heikkinen`,
+  birthday: `s. 1990, Oulu`,
+  text: `on kokoomuslainen kansanedustaja,yrittäjätaustainen yhteiskuntatieteiden maisteri ja kolmannen kauden 
+  kaupunginvaltuutettu. Hän toimi aikaisemmin 
+  Kempeleen kunnanvaltuuston puheenjohtajana ja toimii 
+  tällä hetkellä kansanedustajana ja Oulun 
+  kaupunginvaltuutettuna.`,
+}
+
+
+
+
 export default Media
