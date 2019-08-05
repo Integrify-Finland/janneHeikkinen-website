@@ -1,0 +1,33 @@
+.textbox {
+
+
+  width: 40vw;
+
+    h1 {
+      @include font-size-l;
+      display: inline-block;
+      color: $secondary;
+      margin-right: $spacing-00-25;
+    
+      @include for-tablet-portrait-down {
+        @include font-size-m;
+      }
+    }
+
+    span {
+
+      color: $primary;
+      @include font-size-s;
+
+    }
+
+    p {
+      @include font-size-s;
+      line-height: $spacing-01;
+      color: $primary;
+      margin: 0;
+   
+    }
+  }
+
+
