@@ -31,6 +31,7 @@
     z-index: 4;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
       2000ms both;
+    
 
     @include for-tablet-portrait-down {
       box-shadow: 0px 65px 0px #023b561a inset;
@@ -46,9 +47,20 @@
       box-shadow: 0px 50px 0px #023b561a inset;
       padding: $spacing-00-50 $spacing-01;
       z-index: 2;
+
     }
+
   }
 
+  .first-stage {
+    animation: textbox-animation-2 700ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
+  100ms both;
+  }
+
+  .second-stage {
+    animation: textbox-animation 700ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
+  100ms both;
+  }
 
 
   &__headline {
@@ -91,7 +103,7 @@
 
     position: absolute;
     right: 20%;
-    bottom: -100px;
+    bottom: 60px;
     z-index: 10;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
     4000ms both;
@@ -138,11 +150,21 @@
 
 @keyframes textbox-animation {
   from {
-    transform: translateX(1000px) skew(55deg);
+    transform: translateX(1400px) skew(55deg);
   }
 
   to {
     transform: translateX(0px) skew(0deg);
+  }
+}
+
+@keyframes textbox-animation-2 {
+  from {
+    transform: translateX(0px) skew(0deg);
+  }
+
+  to {
+    transform: translateX(1400px) skew(55deg);
   }
 }
 

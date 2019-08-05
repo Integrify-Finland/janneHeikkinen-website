@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 import PropTypes from "prop-types"
@@ -9,25 +9,41 @@ import Newsletter from "../Newsletter"
 
 const Header = ({ Headline, Subtext }) => {
   
-  return (
-   
-    <div className="header-wrapper"> 
-    <Navigation />
-    <header className="header">
-      <div className="header__textbox">
-      <h1 className="header__headline">{Headline}</h1>
-      <p className="header__subtext">{Subtext}</p>
-      <div className="header__newsletter-wrapper">
-      
-      <Newsletter />
-   </div>
-      </div>
+  const [animationStage, setAnimationStage] = useState("initial")
   
-      <img className="header__image" src={janneImage} />
+  const textboxClassName = classNames({
+    'header__textbox': true,
+    'first-stage': animationStage === "first stage",
+    'second-stage': animationStage === "second stage",
+  });
 
-    </header>
-    </div>
-  )
+
+  const content = (
+    <div className="header-wrapper"> 
+      <Navigation />
+      <header className="header">
+        <div className="header__box">
+          <div className={textboxClassName}>
+            <h1 className="header__headline">{Headline}</h1>
+            <p className="header__subtext">{Subtext}</p>
+          </div>
+          <div className="header__newsletter-wrapper">
+        
+            <Newsletter
+            animationStage={animationStage}
+            setAnimationStage={setAnimationStage}
+            />
+
+          </div>
+        </div>
+    
+        <img className="header__image" src={janneImage} />
+  
+      </header>
+    </div>)
+
+    return content
+
 }
 
 Header.propTypes = {

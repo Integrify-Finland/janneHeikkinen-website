@@ -1,12 +1,10 @@
-import React, { useState } from "react"
+import React from "react"
 import classNames from "classnames"
 import "./styles.scss"
 import PropTypes from "prop-types"
 import Button from "../Button"
 
-const Newsletter = () => {
-    
-    const [animationStage, setAnimationStage] = useState("initial")
+const Newsletter = ({ animationStage, setAnimationStage }) => {
 
     if (animationStage === "initial") {
         return (
