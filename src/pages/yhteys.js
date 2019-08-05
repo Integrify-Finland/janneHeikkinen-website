@@ -3,6 +3,8 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import ContactForm from "../components/ContactForm"
+import Section from "../components/Section"
 
 const Yhteys = ({ data }) => {
   //   const { contactUs } = data
@@ -10,6 +12,9 @@ const Yhteys = ({ data }) => {
   return (
     <Layout>
       <SEO title="Yhteys" />
+      <Section>
+        <ContactForm />
+      </Section>
     </Layout>
   )
 }

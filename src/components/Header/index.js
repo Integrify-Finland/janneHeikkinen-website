@@ -73,6 +73,7 @@ const Header = ({
         </header>
       </div>
     )
+
 }
 
 Header.propTypes = {
