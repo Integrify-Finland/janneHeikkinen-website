@@ -1,85 +1,33 @@
-.footer {
-  display: flex;
-  font-family: $font-family;
-  color: $white;
-  width: 100%;
-  overflow: hidden;
-  @include for-phone-only {
-  flex-wrap: wrap;
-  }
+.textbox {
 
-  &__left-box {
-    width: 70%;
-    background-color: $primary;
-    border-radius: 0px 50px 0px 0px;
-    padding: $spacing-02 $spacing-06 0 $spacing-06;
 
-    @include for-tablet-portrait-down {
-      padding: $spacing-02 $spacing-06 0 $spacing-03;
-    }
-
-    @include for-phone-only {
-      border-radius: 0px 0px 0px 0px;
-      width: 100%;
-    }
-  }
-
-  &__copyright {
-    color: $secondary;
-    @include font-size-s;
-    text-align: center;
-    margin-top: $spacing-02;
-    font-weight: 700;
-    letter-spacing: 3px;
-  }
-
-  &__social-media {
-    margin: 0;
-    display: flex;
-    justify-content: space-between;
-    width: 12rem;
-  }
-
-  &__contact-container {
-    display: flex;
-    @include for-tablet-portrait-down{
-    flex-wrap: wrap;
-    }
+  width: 40vw;
 
     h1 {
       @include font-size-l;
-      margin: $spacing-02 $spacing-10 $spacing-00-50 0;
+      display: inline-block;
+      color: $secondary;
+      margin-right: $spacing-00-25;
+    
       @include for-tablet-portrait-down {
         @include font-size-m;
-        margin: $spacing-02 $spacing-06 $spacing-00-50 0;
       }
+    }
+
+    span {
+
+      color: $primary;
+      @include font-size-s;
+
     }
 
     p {
       @include font-size-s;
       line-height: $spacing-01;
-      color: $light;
+      color: $primary;
+      margin: 0;
    
     }
   }
 
-  &__logo-container {
-    padding: $spacing-03;
-    width: 30%;
-    display: flex;
-    @include for-phone-only {
-      width: 100%;
-    }
 
- 
-
-    img {
-      max-width: 100%;
-      margin: auto;
-      @include for-phone-only {
-        max-width: 60vw;
-       
-      }
-    }
-  }
-}

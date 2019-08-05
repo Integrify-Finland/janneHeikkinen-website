@@ -5,6 +5,11 @@ import { jsxDecorator } from "storybook-addon-jsx"
 import Media from ".."
 storiesOf("Media", module)
   .addDecorator(jsxDecorator)
-  .add("Footer", () => <Footer  firstPersonName="Janne&nbsp;Heikkinen" firstPersonTitle="Kansanedustaja" firstPersonPhone="+358 (0) 40 5554263" firstPersonEmail="janne.heikkinen (at) eduskunta.fi" secondPersonName="Mikko&nbsp;Laakso"secondPersonTitle="Kansanedustajan avustaja" secondPersonPhone="+358 (0) 50 383 9432" secondPersonEmail="mikko.laakso (at) eduskunta.fi"/>)
-
-  
+  .add("Media", () => (
+    <Media name="Janne&nbsp;Heikkinen" birthday="s. 1990, Oulu" text="on kokoomuslainen kansanedustaja,yrittäjätaustainen yhteiskuntatieteiden maisteri ja kolmannen kauden 
+  kaupunginvaltuutettu. Hän toimi aikaisemmin 
+  Kempeleen kunnanvaltuuston puheenjohtajana ja toimii 
+  tällä hetkellä kansanedustajana ja Oulun 
+  kaupunginvaltuutettuna."
+    />
+  ))
