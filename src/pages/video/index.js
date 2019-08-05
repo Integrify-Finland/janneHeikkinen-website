@@ -2,7 +2,6 @@ import React, { useState } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../../components/Layout"
-import Navigation from "../../components/Navigation"
 import SEO from "../../components/SEO"
 import Section from "../../components/Section"
 
@@ -81,7 +80,7 @@ const Video = ({ data }) => {
   return (
     <Layout>
       <SEO title="Videos" />
-      <Navigation />
+
       <Section>
         <div className="youtube">
           {renderActiveVideo()}
