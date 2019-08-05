@@ -5,6 +5,10 @@
   margin: 0 auto;
   max-width: 960px;
   padding: 0;
+
+  &__children {
+    width: 100%;
+  }
   &__children > * {
     margin-bottom: $spacing-04;
     @include for-phone-only {

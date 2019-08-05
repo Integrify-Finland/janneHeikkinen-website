@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: $spacing-00-50 17px;
   font-family: $font-family;
   overflow: hidden;
   top: 0;
@@ -22,7 +21,6 @@
     margin-right: $spacing-00-50;
     margin-bottom: 0;
   }
-
 
   .position {
     position: absolute;
@@ -45,13 +43,10 @@
     transition: all ease-in-out 0.3s;
     text-transform: uppercase;
     font-weight: 700;
-    
+
     @include font-size-s;
-    
-    @include underline(
-      $font-color: $secondary,
-      $underline-color: $orange
-    );
+
+    @include underline($font-color: $secondary, $underline-color: $orange);
 
     &--active {
       color: lighten($primary, 5%);
@@ -106,5 +101,3 @@
   padding-left: $spacing-01;
   height: 35px;
 }
-
-
