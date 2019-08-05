@@ -5,7 +5,7 @@ const Image = ({ fluid }) => {
   return (
     <Img
       fluid={fluid}
-      style={{ maxWidth: `100%`, width: "300px", marginRight: "1rem" }}
+      style={{ maxWidth: `100%`, width: "200px", marginRight: "0.5rem" }}
     />
   )
 }
