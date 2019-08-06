@@ -18,6 +18,7 @@ const Video = ({ data }) => {
     const filtered = vids.edges.filter((vid, i) => i !== index)
     const combined = { edges: [...pop, ...filtered] }
     setVids(combined)
+    window.scrollTo(0, 0)
   }
 
   const renderActiveVideo = () => {
