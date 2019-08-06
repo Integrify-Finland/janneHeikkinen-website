@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import Image from "../components/Image"
 import SEO from "../components/SEO"
+import Media from "../components/Media"
 
 const Medialle = ({ data }) => {
   const { forMedia } = data
@@ -11,13 +12,14 @@ const Medialle = ({ data }) => {
   return (
     <Layout>
       <SEO title="Medialle" />
-
+   
       <div
         style={{
           display: "flex",
           flexWrap: "wrap",
         }}
       >
+           <Media />
         {forMedia.pictures.map((data, i) => (
           <Image fluid={data.fluid} key={i} />
         ))}

@@ -1,33 +1,19 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
+import { BLOCKS, MARKS, INLINES } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
-
-// these are UI components for customising the blog posts from contentful
-const Bold = ({ children }) => <span className="bold">{children}</span>
-const Text = ({ children }) => <p className="custom-class">{children}</p>
-const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
+import OPTIONS from "../../helpers/rich-text-options"
 
 const BlogPostTemplate = ({ data }) => {
   const { wordPressBlog, contentfulBlog } = data
 
-  const options = {
-    renderMark: {
-      [MARKS.BOLD]: text => <Bold>{text}</Bold>,
-    },
-    renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-      [BLOCKS.UL_LIST]: (node, children) => <ULlists>{children}</ULlists>,
-    },
-  }
-
   const renderBlogPost = () => {
     return documentToReactComponents(
       contentfulBlog.childContentfulBlogPostContentRichTextNode.json,
-      options
+      OPTIONS
     )
   }
   const createMarkup = () => {
