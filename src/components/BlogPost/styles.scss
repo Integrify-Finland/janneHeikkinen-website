@@ -1,0 +1,76 @@
+.blog-post{
+    
+    width: 80vw;
+
+    @include for-phone {
+        width: 100vw;
+    }
+
+    &__date {
+    color: $secondary;
+    background-color: $primary;
+    @include font-size-m;
+    font-weight: 400;
+    padding: $spacing-00-50;
+    padding-left: $spacing-01;
+
+    @include for-phone {
+        @include font-size-s-x;
+        padding: $spacing-00-25;
+        padding-left: $spacing-00-50;
+    }
+    }
+
+
+    &__title {
+    text-transform: uppercase;
+    padding-left: $spacing-01;
+    padding-top: $spacing-00-50;
+    padding-bottom: $spacing-00-50;
+    background-color: $secondary;
+    color: white;
+    font-weight: bold;
+    @include font-size-l-x;
+    margin-bottom: 0;
+    margin-top: 0;
+
+    @include for-phone {
+        @include font-size-m;
+        padding: $spacing-00-25;
+        padding-left: $spacing-00-50;
+      }
+    }
+
+    &__image {
+
+        img {
+        width: 100%;
+        display: block;
+        }
+    }
+
+    &__content {
+        padding: $spacing-01-50 $spacing-03;
+        background-color: white;
+        border-bottom-right-radius: 50px;
+        color: $primary;
+        @include font-size-m;
+
+        @include for-phone {
+            @include font-size-s-x;
+            padding: $spacing-00-50;
+            padding-left: $spacing-01;
+            padding-right: $spacing-01;
+            border-bottom-right-radius: 0;
+        }
+
+        @include for-tablet-portait {
+            @include font-size-m;
+            padding: $spacing-00-50;
+            padding-left: $spacing-02;
+            padding-right: $spacing-02;
+            border-bottom-right-radius: 0;
+        }
+    }
+
+}
