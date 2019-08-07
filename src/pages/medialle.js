@@ -5,6 +5,7 @@ import Layout from "../components/Layout"
 import Image from "../components/Image"
 import SEO from "../components/SEO"
 import Media from "../components/Media"
+import Section from "../components/Section"
 
 const Medialle = ({ data }) => {
   const { forMedia } = data
@@ -12,14 +13,13 @@ const Medialle = ({ data }) => {
   return (
     <Layout>
       <SEO title="Medialle" />
-      <div style={{width: "86vw", margin: "auto"}}><Media /></div>
+      <Section>
+      <Media />
       <div
         style={{
           display: "flex",
           flexWrap: "wrap",
-          margin: "3rem auto",
-          width: "86vw",
-          justifyContent: "space-between"
+          justifyContent: "space-between",
 
         }}
       >
@@ -29,6 +29,7 @@ const Medialle = ({ data }) => {
         ))}
       </div>
           <p style= {{textAlign:"center", fontWeight:"bold", color:"$primary"}}>Oheisia kuvia saa käyttää vapaasti median julkaisuissa.</p>
+          </Section>
 
     </Layout>
   )
