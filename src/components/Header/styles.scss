@@ -17,6 +17,10 @@
     max-height: 510px;
   }
 
+  @include for-phone-small {
+    height: 437px;
+  }
+
   @include for-phone-landscape {
     height: 431px;
     max-height: 510px;
@@ -71,7 +75,7 @@
       width: 50vw;
     }
 
-    @include for-phone-landscape {
+     @include for-phone-landscape {
       padding: $spacing-00-50 $spacing-01;
       right: 2%;
       left: 50%;
@@ -151,6 +155,13 @@
       padding: $spacing-00-50;
     }
 
+    @include for-phone-small {
+      line-height: $spacing-02;
+      @include font-size-l-xx;
+      text-align: center;
+      padding: $spacing-00-50;
+    }
+
     @include for-phone-landscape {
       @include font-size-l-xx;
       line-height: $spacing-02;
@@ -168,11 +179,20 @@
     4000ms both;
 
     @include for-phone-only {
-  
       z-index: 10;
       bottom: -50px;
       right: 50%;
       transform: translateX(100%);
+    }
+
+    @include for-phone-small {
+      box-sizing: border-box;
+      z-index: 10;
+      bottom: -6px;
+      width: 100%;
+      right: 0;
+      padding: 0;
+      text-align: center;
     }
 
     @include for-phone-small-landscape {
@@ -203,6 +223,13 @@
       top: -3%;
       height: 444px;
       max-height: 450px;
+    }
+
+    @include for-phone-small {
+      z-index: 1;
+      left: -10%;
+      top: -3%;
+      height: 450px;
     }
 
     @include for-phone-landscape {
