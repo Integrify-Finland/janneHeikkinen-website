@@ -179,14 +179,14 @@
   background-position: left top;
   height: 90vh;
 
-
   &__textbox {
+    display: block;
     background-color: #023b56d0;
     color: $white;
     width: 30%;
     right: 0;
     position: absolute;
-    padding: $spacing-03;
+    padding: $spacing-02-50 $spacing-03;
     font-family: $font-family;
     z-index: 4;
     margin-top: $spacing-02;
@@ -209,12 +209,11 @@
       text-transform: uppercase;
       @include font-size-m;
       margin: 0;
-    
     }
 
 
     p {
-      @include font-size-s;
+      font-size: 0.9rem;
       margin: 0 0 $spacing-01 0;
     }
 

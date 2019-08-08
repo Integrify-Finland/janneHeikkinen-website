@@ -6,6 +6,7 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import OPTIONS from "../../helpers/rich-text-options"
+import BlogPost from "../../components/BlogPost"
 
 const BlogPostTemplate = ({ data }) => {
   const { wordPressBlog, contentfulBlog } = data
@@ -34,7 +35,7 @@ const BlogPostTemplate = ({ data }) => {
             {tag}
           </span>
         ))}
-      {contentfulBlog && renderBlogPost()}
+      {contentfulBlog && <BlogPost>{renderBlogPost()}</BlogPost>}
       {wordPressBlog &&
         wordPressBlog.tags !== null &&
         wordPressBlog.tags.map((tag, i) => (

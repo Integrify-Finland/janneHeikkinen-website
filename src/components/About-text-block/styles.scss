@@ -3,12 +3,26 @@
   justify-content: space-between;
   font-family: $font-family;
   width: 100%;
+  margin-top: $spacing-06;
+  margin-bottom: $spacing-06;
   @include for-tablet-portrait-down {
     display: block;
     padding: $spacing-00-75;
+    margin-bottom: $spacing-03;
   }
+
+  @include for-phone {
+    padding: 0;
+  }
+
   &__text-wrapper {
     width: 70%;
+    @include for-phone {
+      width: 100%;
+    }
+    @include for-tablet-portrait-down {
+      width: 100%;
+    }
   }
   &__title {
     color: $grey;
@@ -21,24 +35,42 @@
 
     @include for-tablet-portrait-down {
       text-align: center;
+      margin-bottom: $spacing-02;
     }
   }
   &__paragraph {
     color: $grey;
+    @include font-size-l-x;
   }
 
   img {
     align-self: center;
-    max-height: 30vh;
-    margin: 0px;
+    height: 100%;
+    max-width: 25%;
     @include for-tablet-portrait-down {
       margin: $spacing-01 auto;
-      max-height: 50vh;
+      max-width: 50%;
       display: block;
+    }
+    @include for-phone {
+      width: 80%;
+      max-width: 80%;
+      margin-bottom: $spacing-03;
     }
   }
 }
 
 .iconRight {
   order: 1;
+  margin-left: $spacing-08;
+  @include for-phone {
+    margin: 0;
+  }
+}
+
+.iconLeft {
+  margin-right: $spacing-08;
+  @include for-phone {
+    margin: 0;
+  }
 }
