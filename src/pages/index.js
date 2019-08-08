@@ -12,7 +12,7 @@ const Text = ({ children }) => <p className="custom-class">{children}</p>
 const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
 const IndexPage = ({ data }) => {
-  const { aboutMe, blogPost } = data
+  const { aboutMe, blogPost ,insta} = data
 
   const options = {
     renderMark: {
@@ -34,7 +34,9 @@ const IndexPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Home" />
-
+      
+              <div dangerouslySetInnerHTML={{ __html: insta.edges[0].node.html }} />
+          
       <h1>{blogPost.title}</h1>
       <span>Tags are: </span>
       {blogPost.tags.map((tag, i) => (
@@ -71,6 +73,14 @@ export const query = graphql`
           tags {
             name
           }
+        }
+      }
+    }
+    insta: allMarkdownRemark {
+      edges {
+        node { 
+          fileAbsolutePath        
+          html
         }
       }
     }

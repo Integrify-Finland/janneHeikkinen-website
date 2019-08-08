@@ -32,28 +32,35 @@ module.exports = {
         name: "SocialMedia"
       }
     },
-
     {
-      resolve: `@raae/gatsby-remark-oembed`,
+      resolve: `gatsby-transformer-remark`,
       options: {
-        // usePrefix defaults to false
-        // usePrefix: true is the same as ["oembed"]
-        usePrefix: false,
-        providers: {
-          include: ['Twitter','Instagram','Facebook'],
-          settings: {
-            // Ex. Show all Twitter embeds with the dark theme
-            Twitter: { theme: 'dark' },
-            // Ex. Hide all Instagram comments by default
-            Instagram: { hidecaption: true },
+        plugins: [
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              // usePrefix defaults to false
+              // usePrefix: true is the same as ["oembed"]
+              usePrefix: false,
+              providers: {
+                include: ['Twitter','Instagram','Facebook'],
+                settings: {
+                  // Ex. Show all Twitter embeds with the dark theme
+                  Twitter: { theme: 'dark' },
+                  // Ex. Hide all Instagram comments by default
+                  Instagram: { hidecaption: true },
+                },
+                // Important to exclude providers
+                // that adds js to the page.
+                // If you do not need them.
+                exclude: ["Reddit", "Flickr,"]
+              }
+            }
           },
-          // Important to exclude providers
-          // that adds js to the page.
-          // If you do not need them.
-          exclude: ["Reddit", "Flickr,"]
-        }
+        ]
       }
     },
+    
 
     {
       resolve: `gatsby-source-contentful`,
