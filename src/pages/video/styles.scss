@@ -7,6 +7,7 @@
   &-lists {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     width: 100%;
     margin-top: $spacing-02;
     margin-bottom: $spacing-04;
@@ -16,8 +17,9 @@
       margin-bottom: $spacing-04;
     }
   }
+
   &__player {
-    margin-right: $spacing-01;
+    width: 225px;
     margin-bottom: $spacing-02;
     iframe {
       width: 225px;
@@ -40,7 +42,7 @@
     border-width: 10px;
     border-color: $primary;
     border-style: solid;
-    width: 100%;
+    width: 98%;
     margin: 0 auto;
     @include for-phone-small {
       width: 90%;
