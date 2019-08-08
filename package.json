@@ -7,6 +7,7 @@
   "dependencies": {
     "@contentful/rich-text-react-renderer": "^13.2.0",
     "@contentful/rich-text-types": "^13.1.0",
+    "@raae/gatsby-remark-oembed": "^0.1.1",
     "@storybook/addon-backgrounds": "^5.1.9",
     "@storybook/addon-viewport": "^5.1.9",
     "babel-plugin-remove-graphql-queries": "^2.7.0",
@@ -21,7 +22,7 @@
     "gatsby-plugin-sass": "^2.1.0",
     "gatsby-plugin-sharp": "^2.2.1",
     "gatsby-source-contentful": "2.1.4",
-    "gatsby-source-filesystem": "^2.1.1",
+    "gatsby-source-filesystem": "^2.1.9",
     "gatsby-source-wordpress": "^3.1.4",
     "gatsby-source-youtube-v2": "^1.0.1",
     "gatsby-transformer-remark": "^2.6.1",
