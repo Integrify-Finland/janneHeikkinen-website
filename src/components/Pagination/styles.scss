@@ -3,14 +3,17 @@
   flex-wrap: wrap;
   list-style-type: none;
   font-family: $font-family;
+  justify-content: center;
+  padding: 0;
   & > li {
     color: $white;
-    width: 60px;
-    height: 60px;
-    line-height: 60px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
     text-align: center;
-    @include font-size-l-xx;
-    margin-right: $spacing-02;
+    @include font-size-l;
+    margin-right: $spacing-01;
+    margin-bottom: $spacing-01;
     cursor: pointer;
   }
   &__numbers {
