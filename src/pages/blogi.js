@@ -17,7 +17,7 @@ const Blogi = ({ data }) => {
   const { contentfulBlog, wordPressBlogs } = data
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(10)
+  const [postsPerPage] = useState(8)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => setCurrentPage(pageNumber)
@@ -62,6 +62,8 @@ const Blogi = ({ data }) => {
       })
       .filter(blog => blog.tags.length > 0)
     isCat ? setChosenBlogs(filteredCat) : setChosenBlogs(filteredTag)
+    setCurrentPage(1)
+    window.scrollTo(0, 0)
   }
 
   return (
