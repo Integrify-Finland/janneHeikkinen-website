@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 import "./styles.scss"
 import janneImage from "./assets/janneHeader.png"
 import Logo from "./assets/logo.svg"
-import Navigation from "../Navigation"
+// import Navigation from "../Navigation"
 import Newsletter from "../Newsletter"
 
 const Header = ({
@@ -32,7 +32,6 @@ const Header = ({
   if (!isAbout) {
     return (
       <div className="header-wrapper">
-        <Navigation />
         <header className="header">
           <div className="header__box">
             <div className={textboxClassName}>
@@ -54,7 +53,6 @@ const Header = ({
   } else
     return (
       <div className="about-header-wrapper">
-        <Navigation />
         <header className="about-header">
           <div className="about-header__textbox">
             <img src={Logo} alt="Janne Heikkinen logo" />
@@ -79,7 +77,7 @@ const Header = ({
             <h3>Koulutus:</h3>
             <p>{Koulutus}</p>
 
-            <h3>Nykyinen luottamustehtävä</h3>
+            <h3>Nykyinen luottamustehtävä:</h3>
             <p>{Luottamustehtava}</p>
           </div>
         </header>
