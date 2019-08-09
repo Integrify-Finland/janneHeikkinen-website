@@ -1,3 +1,5 @@
+.blog-post {
+
 .bold {
     font-weight: 700;
     color: $primary;
@@ -15,38 +17,59 @@
 
 h1 {
     color: $primary;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    @include for-phone-only {
+        font-size: 2.3rem;
+    }
 }
 
 h2 {
     color: $primary;
     font-size: 2.3rem;
+    @include for-phone-only {
+        font-size: 2.1rem;
+    }
 }
 
 h3 {
     color: $primary;
     font-size: 2.1rem;
+    @include for-phone-only {
+        font-size: 1.9rem;
+    }
 }
 
 h4 {
     color: $primary;
     font-size: 1.9rem;
+    @include for-phone-only {
+        font-size: 1.7rem;
+    }
 }
 
 h5 {
     color: $primary;
     font-size: 1.7rem;
+    @include for-phone-only {
+        font-size: 1.5rem;
+    }
 }
 
 h6 {
     color: $primary;
     font-size: 1.5rem;
+    @include for-phone-only {
+        font-size: 1.3rem;
+    }
 }
 
 p {
     font-family: $font-family;
     @include font-size-l;
     color: $primary;
+    @include for-phone-only {
+        @include font-size-m;
+    }
 }
 
 ul {
@@ -54,12 +77,18 @@ ul {
     color: $primary;
     @include font-size-l;
     list-style-type: disc;
+    @include for-phone-only {
+        @include font-size-m;
+    }
 }
 
 ol {
     font-weight: 700;
     color: $primary;
     @include font-size-l;
+    @include for-phone-only {
+        @include font-size-m;
+    }
 }
 
 q {
@@ -67,6 +96,9 @@ q {
     color: $secondary;
     @include font-size-l-xx;
     font-style: italic;
+    @include for-phone-only {
+        @include font-size-l-x;
+    }
 }
 
 q:before {
@@ -92,3 +124,4 @@ img {
     color: grey;
 }
 
+}
