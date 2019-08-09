@@ -13,3 +13,82 @@
     color: $primary;
 }
 
+h1 {
+    color: $primary;
+    font-size: 2rem;
+}
+
+h2 {
+    color: $primary;
+    font-size: 2.3rem;
+}
+
+h3 {
+    color: $primary;
+    font-size: 2.1rem;
+}
+
+h4 {
+    color: $primary;
+    font-size: 1.9rem;
+}
+
+h5 {
+    color: $primary;
+    font-size: 1.7rem;
+}
+
+h6 {
+    color: $primary;
+    font-size: 1.5rem;
+}
+
+p {
+    font-family: $font-family;
+    @include font-size-l;
+    color: $primary;
+}
+
+ul {
+    font-weight: 700;
+    color: $primary;
+    @include font-size-l;
+    list-style-type: disc;
+}
+
+ol {
+    font-weight: 700;
+    color: $primary;
+    @include font-size-l;
+}
+
+q {
+    quotes: "«" "»";
+    color: $secondary;
+    @include font-size-l-xx;
+    font-style: italic;
+}
+
+q:before {
+    content: open-quote;
+}
+
+q:after {
+    content: close-quote;
+}
+
+hr {
+    width: 90vw;
+    border: 0.5px solid $secondary;
+}
+
+a {
+    color: $secondary;
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    color: grey;
+}
+

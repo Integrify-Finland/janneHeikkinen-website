@@ -54,7 +54,7 @@
         background-color: white;
         border-bottom-right-radius: 50px;
         color: $primary;
-        @include font-size-m;
+        @include font-size-l;
 
         @include for-phone {
             @include font-size-s-x;
