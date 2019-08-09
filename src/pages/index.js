@@ -11,6 +11,8 @@ const Bold = ({ children }) => <span className="bold">{children}</span>
 const Text = ({ children }) => <p className="custom-class">{children}</p>
 const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
+
+
 const IndexPage = ({ data }) => {
   const { aboutMe, blogPost ,insta} = data
 
@@ -30,9 +32,11 @@ const IndexPage = ({ data }) => {
       options
     )
   }
-
+  console.log(insta.edges[0].node.fileAbsolutePath.includes('SocialMedia'));
   return (
+    
     <Layout>
+      
       <SEO title="Home" />
       
               <div dangerouslySetInnerHTML={{ __html: insta.edges[0].node.html }} />
