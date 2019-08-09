@@ -172,12 +172,17 @@
 /*************************************************************** About Page Header *********************************/
 
 
-
 .about-header {
   background-image: url("../Header/assets/aboutBG.jpg");
   background-size: cover;
   background-position: left top;
-  height: 90vh;
+  height: 95vh;
+  @include for-tablet-portrait-down {
+    background-position: 20% 50%;
+  }
+  @include for-phone-only {
+    
+  }
 
   &__textbox {
     display: block;
@@ -196,25 +201,52 @@
     
 
     @include for-tablet-portrait-down {
-      width: 50%;
+      width: 90vw;
+      margin-top: $spacing-08;
+    }
+
+    @include for-ipad-pro {
+      width: 90vw;
+      margin-top: $spacing-08;
     }
 
     @include for-phone-only {
-      width: 100%;
+      width: 88%;
       position: initial;
       margin: 0;
+      padding-left: $spacing-01-50;
     }
 
     h3 {
       text-transform: uppercase;
       @include font-size-m;
       margin: 0;
+      @include for-tablet-portrait-down {
+        @include font-size-l-x;
+      }
+
+      @include for-ipad-pro {
+        @include font-size-l-x;
+      }
+
+      @include for-phone-only {
+        @include font-size-m;
+      }
     }
 
 
     p {
       font-size: 0.9rem;
       margin: 0 0 $spacing-01 0;
+      @include for-tablet-portrait-down {
+        @include font-size-l;
+      }
+      @include for-ipad-pro {
+        @include font-size-l;
+      }
+      @include for-phone-only {
+        @include font-size-s;
+      }
     }
 
     img {
@@ -225,6 +257,14 @@
 
       @include for-phone-only {
 
+        display: none;
+      }
+
+      @include for-tablet-portrait-down {
+        display: none;
+      }
+
+      @include for-ipad-pro {
         display: none;
       }
 

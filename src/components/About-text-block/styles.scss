@@ -34,13 +34,16 @@
     }
 
     @include for-tablet-portrait-down {
-      text-align: center;
+      text-align: left;
       margin-bottom: $spacing-02;
     }
   }
   &__paragraph {
     color: $grey;
     @include font-size-l-x;
+    @include for-phone-only {
+      @include font-size-s;
+    }
   }
 
   img {
