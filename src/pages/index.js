@@ -2,6 +2,7 @@ import React from "react"
 import { graphql } from "gatsby"
 import { BLOCKS, MARKS } from "@contentful/rich-text-types"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+import Blogi from "./blogi"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
@@ -16,7 +17,7 @@ const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
 
 const IndexPage = ({ data }) => {
-  const { aboutMe, blogPost ,insta} = data
+  const { blogPost } = data
 
   const options = {
     renderMark: {
@@ -34,6 +35,8 @@ const IndexPage = ({ data }) => {
       options
     )
   }
+
+  
 
   return (
     
