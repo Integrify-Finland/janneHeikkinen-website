@@ -1,0 +1,32 @@
+.fb-column {
+  width: 100%;
+  text-align: left;
+
+  &__title {
+    @include font-size-l;
+  }
+
+  &__link {
+    text-align: left;
+  }
+
+  blockquote {
+    margin-left: 0;
+  }
+
+  @include for-phone-only {
+    padding: 0 $spacing-01;
+    text-align: center;
+  }
+}
+
+.fb-page {
+  .fb-page span,
+  .fb-page span iframe[style],
+  #u_0_0 ._2p3a,
+  div[style] {
+    width: 100% !important;
+    max-width: 500px !important;
+    margin: auto !important;
+  }
+}

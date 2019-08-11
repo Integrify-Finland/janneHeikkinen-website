@@ -1,0 +1,13 @@
+.twitter-column {
+  width: 100%;
+  text-align: left;
+
+  &__title {
+    @include font-size-l;
+  }
+
+  @include for-phone-only {
+    padding: 0 $spacing-01;
+    text-align: center;
+  }
+}

@@ -1,10 +1,12 @@
-import React from "react"
-import { storiesOf } from "@storybook/react"
-import { jsxDecorator } from "storybook-addon-jsx"
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withViewport } from '@storybook/addon-viewport'
 
-import SocialMedia from ".."
-storiesOf("SocialMedia", module)
-  .addDecorator(jsxDecorator)
-  .add("SocialMedia", () => (
-    <SocialMedia />
-  ))
+import SocialMedia from '../index'
+
+storiesOf(`Social Media`, module)
+  .addDecorator(withViewport())
+  .addWithJSX(`default`, () => <SocialMedia sectionTitle="Sosiaalinen media" />)
+  .add('mobile', () => <SocialMedia sectionTitle="Sosiaalinen media" />, {
+    viewport: 'iphone8p',
+  })
