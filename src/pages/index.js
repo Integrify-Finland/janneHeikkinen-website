@@ -5,6 +5,8 @@ import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import SocialMedia from '../components/SocialMedia/index'
+import Section from "../components/Section"
 
 // these are UI components for customising the blog posts from contentful
 const Bold = ({ children }) => <span className="bold">{children}</span>
@@ -32,16 +34,13 @@ const IndexPage = ({ data }) => {
       options
     )
   }
-  console.log(insta.edges[0].node.fileAbsolutePath.includes('SocialMedia'));
+
   return (
     
     <Layout>
-      
+      <Section>
       <SEO title="Home" />
-      
-              <div dangerouslySetInnerHTML={{ __html: insta.edges[0].node.html }} />
-          
-      <h1>{blogPost.title}</h1>
+          <h1>{blogPost.title}</h1>
       <span>Tags are: </span>
       {blogPost.tags.map((tag, i) => (
         <>
@@ -54,6 +53,10 @@ const IndexPage = ({ data }) => {
         </>
       ))}
       {renderBlogPost()}
+      </Section>
+<Section>
+      <SocialMedia />
+      </Section>
     </Layout>
   )
 }
@@ -80,13 +83,6 @@ export const query = graphql`
         }
       }
     }
-    insta: allMarkdownRemark {
-      edges {
-        node { 
-          fileAbsolutePath        
-          html
-        }
-      }
-    }
+    
   }
 `

@@ -2,8 +2,10 @@
   width: 100%;
   text-align: left;
 
+
   &__title {
-    @include font-size-l;
+    @include font-size-m;
+    text-align: center;
   }
 
   #instafeed {
