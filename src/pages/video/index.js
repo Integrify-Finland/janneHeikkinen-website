@@ -12,12 +12,13 @@ import "./styles.scss"
 const Video = ({ data }) => {
   const { youTubeVid } = data
   const [vids, setVids] = useState(youTubeVid)
-
+  console.log(vids)
   const handlePlayVid = index => {
     const pop = vids.edges.filter((vid, i) => i === index)
     const filtered = vids.edges.filter((vid, i) => i !== index)
     const combined = { edges: [...pop, ...filtered] }
     setVids(combined)
+    window.scrollTo(0, 0)
   }
 
   const renderActiveVideo = () => {

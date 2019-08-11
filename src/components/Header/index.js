@@ -1,11 +1,11 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 import classNames from "classnames"
 import PropTypes from "prop-types"
 import "./styles.scss"
 import janneImage from "./assets/janneHeader.png"
 import Logo from "./assets/logo.svg"
-import Navigation from "../Navigation"
+// import Navigation from "../Navigation"
 import Newsletter from "../Newsletter"
 
 const Header = ({
@@ -21,16 +21,28 @@ const Header = ({
   Koulutus,
   Luottamustehtava,
 }) => {
+  const [animationStage, setAnimationStage] = useState("initial")
+
+  const textboxClassName = classNames({
+    header__textbox: true,
+    "first-stage": animationStage === "first stage",
+    "second-stage": animationStage === "second stage",
+  })
+
   if (!isAbout) {
     return (
       <div className="header-wrapper">
-        <Navigation />
         <header className="header">
-          <div className="header__textbox">
-            <h1 className="header__headline">{Headline}</h1>
-            <p className="header__subtext">{Subtext}</p>
+          <div className="header__box">
+            <div className={textboxClassName}>
+              <h1 className="header__headline">{Headline}</h1>
+              <p className="header__subtext">{Subtext}</p>
+            </div>
             <div className="header__newsletter-wrapper">
-              <Newsletter />
+              <Newsletter
+                animationStage={animationStage}
+                setAnimationStage={setAnimationStage}
+              />
             </div>
           </div>
 
@@ -41,7 +53,6 @@ const Header = ({
   } else
     return (
       <div className="about-header-wrapper">
-        <Navigation />
         <header className="about-header">
           <div className="about-header__textbox">
             <img src={Logo} alt="Janne Heikkinen logo" />
@@ -66,14 +77,12 @@ const Header = ({
             <h3>Koulutus:</h3>
             <p>{Koulutus}</p>
 
-            <h3>Nykyinen luottamustehtävä</h3>
+            <h3>Nykyinen luottamustehtävä:</h3>
             <p>{Luottamustehtava}</p>
-          
           </div>
         </header>
       </div>
     )
-
 }
 
 Header.propTypes = {

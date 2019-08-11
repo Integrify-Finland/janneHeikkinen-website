@@ -1,15 +1,18 @@
 .navbar {
+  &__wrapper {
+    background-color: $primary;
+    border-bottom: 7px $secondary solid;
+    z-index: 1;
+    width: 100%;
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
   font-family: $font-family;
   overflow: hidden;
   top: 0;
-  width: 100%;
-  background-color: $primary;
-  z-index: 1;
-  border-bottom: 7px $secondary solid;
-
+  width: 70%;
+  margin: 0 auto;
   &__logo {
     display: flex;
     align-items: center;
@@ -32,9 +35,7 @@
   }
 
   &__links {
-    margin-right: $spacing-01;
     display: flex;
-    max-width: 900px;
     align-items: center;
   }
 
@@ -43,7 +44,6 @@
     transition: all ease-in-out 0.3s;
     text-transform: uppercase;
     font-weight: 700;
-
     @include font-size-s;
 
     @include underline($font-color: $secondary, $underline-color: $orange);
@@ -54,7 +54,7 @@
   }
 
   &__nav-media-link {
-    margin-left: $spacing-02;
+    margin-left: $spacing-01;
 
     //Hover, active style for mediaIcon
     &:hover,
