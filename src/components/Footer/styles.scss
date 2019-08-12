@@ -29,7 +29,7 @@
     color: $secondary;
     @include font-size-s;
     text-align: center;
-    margin-top: $spacing-02;
+    margin: $spacing-04 0 $spacing-01 0;
     font-weight: 700;
     letter-spacing: 3px;
   }
