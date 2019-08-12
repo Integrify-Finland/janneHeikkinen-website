@@ -7,6 +7,7 @@ import "./styles.scss"
 const AboutTextBlock = ({ title, text, icon, isLeft }) => {
   const classes = classNames({
     iconRight: isLeft,
+    iconLeft: !isLeft
   })
 
   return (

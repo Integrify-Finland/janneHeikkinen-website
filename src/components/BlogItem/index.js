@@ -5,7 +5,7 @@ import PropTypes from "prop-types"
 // import formatDate from '../../utilities/FormatDate'
 import Button from "../Button"
 
-const BlogItem = ({ date, title, number, image, text, link }) => {
+const BlogItem = ({ isSidebar, date, title, number, image, text, link }) => {
   const styles = {
     textAlign: "center",
   }
@@ -28,8 +28,19 @@ const BlogItem = ({ date, title, number, image, text, link }) => {
       </div>
     </div>
   )
+  const forSidebar = (
+    <Link to={link}>
+      <div className="blog-item-mini">
+        <div className="blog-item-mini__wrapper">
+          <p className="blog-item-mini__title">{title}</p>
+          <p className="blog-item-mini__date">{date}</p>
+        </div>
 
-  return <>{content}</>
+        <img src={image} alt="for blog post" />
+      </div>
+    </Link>
+  )
+  return <>{!isSidebar ? content : forSidebar}</>
 }
 
 export default BlogItem

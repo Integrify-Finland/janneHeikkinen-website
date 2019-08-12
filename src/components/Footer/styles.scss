@@ -2,10 +2,11 @@
   display: flex;
   font-family: $font-family;
   color: $white;
+  background-color: $white;
   width: 100%;
   overflow: hidden;
   @include for-phone-only {
-  flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   &__left-box {
@@ -42,8 +43,8 @@
 
   &__contact-container {
     display: flex;
-    @include for-tablet-portrait-down{
-    flex-wrap: wrap;
+    @include for-tablet-portrait-down {
+      flex-wrap: wrap;
     }
 
     h1 {
@@ -59,7 +60,6 @@
       @include font-size-s;
       line-height: $spacing-01;
       color: $light;
-   
     }
   }
 
@@ -71,14 +71,11 @@
       width: 100%;
     }
 
- 
-
     img {
       max-width: 100%;
       margin: auto;
       @include for-phone-only {
         max-width: 60vw;
-       
       }
     }
   }

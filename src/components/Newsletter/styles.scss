@@ -1,5 +1,7 @@
 .newsletter-container--first-stage {
-
+  .header__textbox {
+    background-color: red !important;
+  }
   font-family: $font-family;
   letter-spacing: $spacing-00-25;
   background-color: $orange;
@@ -10,15 +12,15 @@
   position: relative;
   z-index: 9;
   animation: newsletter-animation;
-  animation-duration: 600ms;
+  animation-duration: 800ms;
   animation-delay: 0s;
   animation-timing-function: ease-in ease-out;
   animation-fill-mode: forwards;
   transform-origin: bottom;
 
   @include for-phone-only {
-          width: 280px;
-        }
+    width: 280px;
+  }
 
   &__text-top {
     color: white;
@@ -32,8 +34,8 @@
     animation-fill-mode: both;
 
     @include for-phone-only {
-            font-size: 18px;
-          }
+      font-size: 18px;
+    }
   }
 
   &__text-bottom {
@@ -49,8 +51,8 @@
     animation-fill-mode: both;
 
     @include for-phone-only {
-            font-size: 18px;
-          }
+      font-size: 18px;
+    }
   }
 
   &__input {
@@ -67,9 +69,9 @@
     animation-fill-mode: both;
 
     @include for-phone-only {
-            width: 80%;
-            height: 40px;
-          }
+      width: 80%;
+      height: 40px;
+    }
   }
 
   &__invisible-text {
@@ -132,8 +134,7 @@
   @include for-phone-only {
     bottom: 60%;
   }
-  }
-
+}
 
 .newsletter-container--second-stage {
   font-family: $font-family;
@@ -146,13 +147,13 @@
   animation: newsletter-animation2;
   animation-duration: 500ms;
   animation-delay: 0s;
-  animation-timing-function: cubic-bezier(0.510, 0.110, 0.335, 1.385);
+  animation-timing-function: cubic-bezier(0.51, 0.11, 0.335, 1.385);
   animation-fill-mode: backwards;
   transform-origin: bottom;
 
   @include for-phone-only {
-        width: 280px;
-      }
+    width: 280px;
+  }
 
   &__invisible-text {
     color: white;
@@ -167,9 +168,9 @@
     animation-fill-mode: both;
 
     @include for-phone-only {
-            font-size: 18px;
-            line-height: 51px;
-          }
+      font-size: 18px;
+      line-height: 51px;
+    }
   }
 
   @keyframes newsletter-animation2 {

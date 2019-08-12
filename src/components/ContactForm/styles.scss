@@ -1,0 +1,58 @@
+.contact-form__container {
+    width: 50vw;
+    background-color: $secondary;
+    text-align: center;
+    font-family: $font-family;
+    border-radius: 40px;
+    @include for-phone-only {
+        width: 90vw;
+    }
+    
+}
+
+.contact-form__top {
+    background-color: $primary;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 40px;
+    letter-spacing: 0.2em;
+    @include font-size-l;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: $secondary;
+    padding: $spacing-01;
+}
+
+.contact-form__input {
+    border: none;
+    border-radius: 30px;
+    width: 85%;
+    margin-top: 10px;
+    padding: $spacing-00-50 $spacing-01;
+    color: $primary;
+    @include for-phone-only {
+        width: 80%;
+    }
+}
+
+.contact-form__textarea {
+    resize: none;
+    border: none;
+    border-radius: 30px;
+    width: 85%;
+    margin-top: 10px;
+    padding: $spacing-00-50 $spacing-01;
+    color: $primary;
+    @include for-phone-only {
+        width: 80%;
+    }
+}
+
+label {
+    font-weight: bold;
+    color: $primary;
+}
+
+p {
+    margin-bottom: 0;
+    margin-top: 15px;
+}

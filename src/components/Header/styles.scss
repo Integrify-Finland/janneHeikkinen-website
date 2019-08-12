@@ -13,9 +13,15 @@
     display: none; // Safari and Chrome
   }
   @include for-phone-only {
+    height: 450px;
+    max-height: 510px;
+  }
+
+  @include for-phone-landscape {
     height: 431px;
     max-height: 510px;
   }
+
   &__textbox {
     background-color: #6ccff6cc;
     box-shadow: 0px 95px 0px #023b561a inset;
@@ -31,9 +37,21 @@
     z-index: 4;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
       2000ms both;
+    
 
     @include for-tablet-portrait-down {
       box-shadow: 0px 65px 0px #023b561a inset;
+      width: 100vw;
+      left: 0;
+      top: 40%;
+      padding: $spacing-00-50;
+    }
+
+    @include for-tablet-landscape-down {
+      right: 2%;
+      left: 45%;
+      top: 20%;
+      padding: $spacing-01;
     }
 
     @include for-phone-only {
@@ -42,13 +60,58 @@
       right: 0;
       margin-left: auto;
       margin-right: auto;
-      top: 35%;
+      top: 38%;
       box-shadow: 0px 50px 0px #023b561a inset;
       padding: $spacing-00-50 $spacing-01;
       z-index: 2;
     }
+
+    @include for-phone-landscape {
+      left: 40%;
+      top: 5%;
+      padding: $spacing-01;
+      padding-bottom: 0;
+    }
+
+    @include for-phone-small-landscape {
+      left: 40%;
+      top: 10%;
+      padding: $spacing-01;
+      padding-bottom: 0;
+      margin-right: 10px;
+      width: 50vw;
+    }
+
+     @include for-phone-landscape {
+      padding: $spacing-00-50 $spacing-01;
+      right: 2%;
+      left: 50%;
+      top: 8%;
+    }
+
   }
 
+  .first-stage {
+    animation: textbox-animation-2 700ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
+  100ms both;
+
+  }
+
+  .second-stage {
+    animation: textbox-animation 700ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
+  100ms both;
+
+    @include for-phone-small-landscape {
+      padding: $spacing-00-50 $spacing-01;
+    }
+
+    @include for-phone-landscape {
+      padding: $spacing-00-50 $spacing-01;
+      right: 2%;
+      left: 50%;
+      top: 8%;
+    }
+  }
 
 
   &__headline {
@@ -59,13 +122,25 @@
       2500ms both;
     position: relative;
     white-space: nowrap;
+    margin: 0;
 
     @include for-tablet-portrait-down {
-      @include font-size-l-xxx;
+      font-size: 4rem;
+      text-align: center;
     }
 
     @include for-phone-only {
       text-align: center;
+      @include font-size-l-xxxx;
+    }
+
+    @include for-phone-small-landscape {
+      padding: 0;
+    }
+
+    @include for-phone-landscape {
+      @include font-size-l-xxx;
+      padding-top: $spacing-00-50;
     }
   }
 
@@ -75,15 +150,33 @@
     animation: subtext-animation 600ms cubic-bezier(0, 0.015, 0.005, 1.1) 3500ms
       both;
     position: relative;
+    padding: $spacing-01;
+    padding-bottom: $spacing-02;
 
     @include for-tablet-portrait-down {
-      line-height: $spacing-02;
+      line-height: $spacing-04;
+      @include font-size-l-xxxx;
+      text-align: center;
     }
 
     @include for-phone-only {
       line-height: $spacing-02;
-      @include font-size-l-xxxx;
+      @include font-size-l-xxx;
       text-align: center;
+      padding: $spacing-00-50;
+    }
+
+    @include for-phone-small {
+      line-height: $spacing-02;
+      @include font-size-l-xx;
+      text-align: center;
+      padding: $spacing-00-50;
+    }
+
+    @include for-phone-landscape {
+      @include font-size-l-xx;
+      line-height: $spacing-02;
+      padding: $spacing-00-50 $spacing-01;
     }
   }
 
@@ -91,18 +184,59 @@
 
     position: absolute;
     right: 20%;
-    bottom: -100px;
+    bottom: 120px;
     z-index: 10;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
     4000ms both;
+    text-align: center;
+    text-align: -webkit-center;
 
-    @include for-phone-only {
-  
-     margin: auto;
-      z-index: 10;
-      bottom: 0%;
+    // @include for-phone-only {
+    //   z-index: 10;
+    //   bottom: -10%;
+    //   right: 50%;
+    //   transform: translateX(100%);
+    // }
+    @include for-tablet-portrait-down {
+      bottom: 15%;
+      right: 27%;
+      text-align: center;
+      text-align: -webkit-center;
     }
 
+    @include for-tablet-landscape-down {
+      bottom: 18%;
+      right: 12%;
+      // text-align: center;
+      // text-align: -webkit-center;
+    }
+
+
+    @include for-phone-only {
+      box-sizing: border-box;
+      z-index: 10;
+      bottom: 1%;
+      width: 100%;
+      right: 0;
+      padding: 0;
+      text-align: center;
+      text-align: -webkit-center;
+    }
+
+   
+
+    @include for-phone-small-landscape {
+      bottom: 50px;
+      text-align: center;
+      text-align: -webkit-center;
+    }
+
+    @include for-phone-landscape {
+      bottom: 40px;
+      // right: 1%;
+      text-align: center;
+      text-align: -webkit-center;
+    }
   }
 
   &__image {
@@ -116,9 +250,28 @@
     z-index: 2;
     transform-origin: bottom;
 
+    @include for-tablet-landscape-down {
+      left: 1%;
+    }
+
     @include for-phone-only {
       z-index: 1;
       left: -10%;
+      top: 1%;
+      height: 444px;
+      max-height: 450px;
+    }
+
+    // @include for-phone-small {
+    //   z-index: 1;
+    //   left: -10%;
+    //   top: 1%;
+    //   height: 450px;
+    // }
+
+    @include for-phone-landscape {
+      z-index: 1;
+      left: 1%;
       top: -3%;
       height: 444px;
       max-height: 450px;
@@ -138,11 +291,21 @@
 
 @keyframes textbox-animation {
   from {
-    transform: translateX(1000px) skew(55deg);
+    transform: translateX(1400px) skew(55deg);
   }
 
   to {
     transform: translateX(0px) skew(0deg);
+  }
+}
+
+@keyframes textbox-animation-2 {
+  from {
+    transform: translateX(0px) skew(0deg);
+  }
+
+  to {
+    transform: translateX(1400px) skew(55deg);
   }
 }
 
@@ -172,21 +335,26 @@
 /*************************************************************** About Page Header *********************************/
 
 
-
 .about-header {
   background-image: url("../Header/assets/aboutBG.jpg");
   background-size: cover;
   background-position: left top;
-  height: 90vh;
-
+  height: 95vh;
+  @include for-tablet-portrait-down {
+    background-position: 20% 50%;
+  }
+  @include for-phone-only {
+    
+  }
 
   &__textbox {
+    display: block;
     background-color: #023b56d0;
     color: $white;
     width: 30%;
     right: 0;
     position: absolute;
-    padding: $spacing-03;
+    padding: $spacing-02-50 $spacing-03;
     font-family: $font-family;
     z-index: 4;
     margin-top: $spacing-02;
@@ -196,26 +364,52 @@
     
 
     @include for-tablet-portrait-down {
-      width: 50%;
+      width: 90vw;
+      margin-top: $spacing-08;
+    }
+
+    @include for-ipad-pro {
+      width: 90vw;
+      margin-top: $spacing-08;
     }
 
     @include for-phone-only {
-      width: 100%;
+      width: 88%;
       position: initial;
       margin: 0;
+      padding-left: $spacing-01-50;
     }
 
     h3 {
       text-transform: uppercase;
       @include font-size-m;
       margin: 0;
-    
+      @include for-tablet-portrait-down {
+        @include font-size-l-x;
+      }
+
+      @include for-ipad-pro {
+        @include font-size-l-x;
+      }
+
+      @include for-phone-only {
+        @include font-size-m;
+      }
     }
 
 
     p {
-      @include font-size-s;
+      font-size: 0.9rem;
       margin: 0 0 $spacing-01 0;
+      @include for-tablet-portrait-down {
+        @include font-size-l;
+      }
+      @include for-ipad-pro {
+        @include font-size-l;
+      }
+      @include for-phone-only {
+        @include font-size-s;
+      }
     }
 
     img {
@@ -226,6 +420,14 @@
 
       @include for-phone-only {
 
+        display: none;
+      }
+
+      @include for-tablet-portrait-down {
+        display: none;
+      }
+
+      @include for-ipad-pro {
         display: none;
       }
 
