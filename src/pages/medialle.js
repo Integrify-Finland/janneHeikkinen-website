@@ -28,7 +28,7 @@ const Medialle = ({ data }) => {
           <Image fluid={data.fluid} key={i} />
         ))}
       </div>
-          <p style= {{textAlign:"center", fontWeight:"bold", color:"$primary"}}>Oheisia kuvia saa käyttää vapaasti median julkaisuissa.</p>
+          <p style= {{textAlign:"center", fontWeight:"400", color:"#023b56"}}>Oheisia kuvia saa käyttää vapaasti median julkaisuissa.</p>
           </Section>
 
     </Layout>
