@@ -3,6 +3,16 @@
 
   width: 40vw;
 
+  @include for-tablet-portrait-down {
+
+    width: 60vw;
+  }
+
+  @include for-phone-only {
+
+    width: 100%;
+  }
+
     h1 {
       @include font-size-l;
       display: inline-block;

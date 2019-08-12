@@ -7,7 +7,7 @@ module.exports = {
     author: `Integrify`,
   },
   plugins: [
-    `gatsby-transformer-remark`,
+    `gatsby-transformer-remark`, 
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -15,7 +15,7 @@ module.exports = {
           '@import "_variables.scss";@import "_mixins.scss";@import "_layout.scss";',
         includePaths: ["src/assets/styles"],
       },
-    },
+    } ,
     {
       resolve: `gatsby-source-youtube-v2`,
       options: {
@@ -24,6 +24,51 @@ module.exports = {
         maxVideos: 50, // Defaults to 50
       },
     },
+
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/components/SocialMedia`,
+        name: "SocialMedia"
+      }
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `@raae/gatsby-remark-oembed`,
+            options: {
+              // usePrefix defaults to false
+              // usePrefix: true is the same as ["oembed"]
+              usePrefix: false,
+              providers: {
+                include: ['Twitter','Instagram','Facebook'],
+                settings: {
+                  // Ex. Show all Twitter embeds with the dark theme
+                  Twitter: { theme: 'dark' },
+                  // Ex. Hide all Instagram comments by default
+                  Instagram: { hidecaption: true },
+                },
+                // Important to exclude providers
+                // that adds js to the page.
+                // If you do not need them.
+                exclude: ["Reddit", "Flickr,"]
+              }
+            }
+          },
+
+          {
+            resolve: `gatsby-remark-responsive-iframe`,
+            options: {
+              wrapperStyle: `margin-bottom: 1.0725rem`
+            }
+          },
+        ]
+      }
+    },
+    
+
     {
       resolve: `gatsby-source-contentful`,
       options: {

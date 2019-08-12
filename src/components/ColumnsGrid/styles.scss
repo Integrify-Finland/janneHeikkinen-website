@@ -1,0 +1,39 @@
+$columns: 12;
+
+@mixin columns-num {
+  @for $i from 1 through $columns {
+    &--#{$i} {
+      grid-template-columns: repeat($i, 1fr);
+    }
+  }
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  border: 1px solid $secondary;
+  margin-bottom: $spacing-02;
+
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax($maximum-width / $columns, auto)
+  );
+  grid-auto-rows: auto;
+  grid-gap: $spacing-02;
+  justify-content: center;
+
+  @include columns-num;
+}
+
+@include for-tablet-landscape-down {
+  .grid-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include for-phone-only {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}

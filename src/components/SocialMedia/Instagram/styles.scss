@@ -1,0 +1,29 @@
+.instagram-column {
+  width: 100%;
+  text-align: left;
+
+
+  &__title {
+    @include font-size-m;
+    text-align: center;
+  }
+
+  #instafeed {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: $spacing-00-75;
+    grid-row-gap: $spacing-00-25;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 500px;
+
+    img {
+      margin-bottom: 0;
+    }
+  }
+
+  @include for-phone-only {
+    padding: 0 $spacing-01;
+    text-align: center;
+  }
+}

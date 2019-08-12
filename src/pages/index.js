@@ -1,53 +1,84 @@
-import React from "react"
+import React, { useState } from "react"
 import { graphql } from "gatsby"
-import { BLOCKS, MARKS } from "@contentful/rich-text-types"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-
+import { switchToNums, switchToCat } from "../utilities/switches"
+import BlogItem from "../components/BlogItem"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"
+import SocialMedia from '../components/SocialMedia/index'
+import Section from "../components/Section"
+import image from "../images/JANNE_HEIKKINEN_260619_77.jpg"
+import Header from "../components/Header";
 
-// these are UI components for customising the blog posts from contentful
-const Bold = ({ children }) => <span className="bold">{children}</span>
-const Text = ({ children }) => <p className="custom-class">{children}</p>
-const ULlists = ({ children }) => <ul className="custom-class">{children}</ul>
 
-const IndexPage = ({ data }) => {
-  const { aboutMe, blogPost } = data
 
-  const options = {
-    renderMark: {
-      [MARKS.BOLD]: text => <Bold>{text}</Bold>,
-    },
-    renderNode: {
-      [BLOCKS.PARAGRAPH]: (node, children) => <Text>{children}</Text>,
-      [BLOCKS.UL_LIST]: (node, children) => <ULlists>{children}</ULlists>,
-    },
-  }
 
-  const renderBlogPost = () => {
-    return documentToReactComponents(
-      blogPost.childContentfulBlogPostContentRichTextNode.json,
-      options
-    )
-  }
+const Blog = ({ data }) => {
+  const { contentfulBlog, wordPressBlogs } = data
+  const [currentPage, setCurrentPage] = useState(1)
+  const [postsPerPage] = useState(3)
+  const indexOfLastPost = currentPage * postsPerPage
+  const indexOfFirstPost = indexOfLastPost - postsPerPage
+  const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
+  const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
+
+  const text =
+  "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
+const shortText = text.substr(0, 416) + "..."
+
+
 
   return (
-    <Layout>
-      <SEO title="Home" />
+      <div style={{ display: "flex" }}>
+       <Section>
+          {chosenBlogs
+            .map((blog, i) => ({
+              blog,
+              number: i + 1,
+            }))
+            .slice(indexOfFirstPost, indexOfLastPost)
+            .map(({ blog, number }) => {
+              const link = blog.node ? blog.node.slug : blog.slug
+              return (
+                <BlogItem
+                  date="5.6.2018"
+                  title={blog.node ? blog.node.title : blog.title}
+                  number={number}
+                  image={image}
+                  text={shortText}
+                  link={`blogi/${link
+                    .toLowerCase()
+                    .replace(/[']/gi, "")
+                    .replace(/ /gi, "-")
+                    .replace(/[,]/gi, "")
+                    .replace(/[ä]/gi, "a")
+                    .replace(/[ö]/gi, "o")}`}
+                />
+              )
+            })}
+        
+        </Section>
+      </div>
 
-      <h1>{blogPost.title}</h1>
-      <span>Tags are: </span>
-      {blogPost.tags.map((tag, i) => (
-        <>
-          <span
-            style={{ backgroundColor: "#bada55", marginLeft: "1rem" }}
-            key={i}
-          >
-            {tag}
-          </span>
-        </>
-      ))}
-      {renderBlogPost()}
+  )
+}
+
+
+const IndexPage = ({ data }) => {
+
+  
+  return (
+    
+    <Layout>
+     
+     <Header isAbout={false}/>
+      <Section>
+      <SEO title="Home" />
+     
+      </Section>
+      <Blog data={data}/>
+<Section>
+      <SocialMedia />
+      </Section>
     </Layout>
   )
 }
@@ -56,18 +87,26 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    blogPost: contentfulBlogPost {
-      title
-      tags
-      childContentfulBlogPostContentRichTextNode {
-        json
+    contentfulBlog: allContentfulBlogPost {
+      edges {
+        node {
+          title
+          tags
+          categories
+          id
+          slug
+          date
+        }
       }
     }
     wordPressBlogs: allWordpressPost {
       edges {
         node {
           id
+          categories
           title
+          slug
+          date
           tags {
             name
           }
