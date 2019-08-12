@@ -32,8 +32,8 @@
     }
 
     p {
-      @include font-size-s;
-      line-height: $spacing-01;
+      @include font-size-l;
+      line-height: 1.6rem;
       color: $primary;
       margin: 0;
    
