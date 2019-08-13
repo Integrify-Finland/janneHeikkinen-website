@@ -1,0 +1,22 @@
+.blogi-wrapper {
+  display: flex;
+  .blog-item {
+    margin-top: $spacing-08;
+  }
+  @include for-tablet-portrait-down {
+    flex-direction: column;
+    .blogs-sidebar {
+      width: 100%;
+      order: 2;
+      &__wrapper {
+        width: 270px;
+        margin: 0 auto;
+        padding: 0;
+      }
+      .blogs-sidebar__categories,
+      .blogs-sidebar__tags {
+        display: none;
+      }
+    }
+  }
+}

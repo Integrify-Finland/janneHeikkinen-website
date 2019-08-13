@@ -25,7 +25,7 @@
     height: 4rem;
 
     &::before {
-      content: 'x';
+      content: "x";
       @include font-size-l-x;
       padding-right: $spacing-02;
       color: $orange;
@@ -51,13 +51,12 @@
   }
 
   &__nav-link {
-    
     text-decoration: none;
     font-weight: 700;
     line-height: 3rem;
     padding-bottom: $spacing-01;
     color: $secondary;
-  
+
     &:active,
     &--active {
       color: $orange;
