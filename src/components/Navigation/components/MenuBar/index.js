@@ -42,7 +42,7 @@ const MenuBar = ({ toggleMenu }) => (
         </Link>
 
         <Link
-          to="/videot"
+          to="/video"
           className="navbar__nav-link"
           activeClassName="navbar__nav-link--active"
         >
