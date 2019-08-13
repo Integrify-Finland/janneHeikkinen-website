@@ -1,6 +1,8 @@
 import React from "react"
 import BlogItem from "../BlogItem"
 
+import { selectImg } from "../../utilities/WPImages"
+import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
 
 const Sidebar = ({
@@ -16,23 +18,31 @@ const Sidebar = ({
       <div className="blogs-sidebar__wrapper">
         <div className="blogs-sidebar__blogs">
           <h3>Recommended blogs:</h3>
-          {blogs.slice(0, 3).map(({ node, number }) => (
-            <BlogItem
-              isSidebar
-              date="5.6.2018"
-              title={node.title}
-              number={number}
-              image={image}
-              text={shortText}
-              link={`blogi/${node.slug
-                .toLowerCase()
-                .replace(/[']/gi, "")
-                .replace(/ /gi, "-")
-                .replace(/[,]/gi, "")
-                .replace(/[ä]/gi, "a")
-                .replace(/[ö]/gi, "o")}`}
-            />
-          ))}
+          {blogs.slice(0, 3).map(({ node, number }) => {
+            const img = node.entryImage
+              ? node.entryImage
+              : selectImg(node.id, image)
+            const date = formatDate(node.date)
+            console.log(node)
+            return (
+              <BlogItem
+                isSidebar
+                isFluid={!!node.entryImage}
+                date={date}
+                title={node.title}
+                number={number}
+                image={img}
+                text={shortText}
+                link={`blogi/${node.slug
+                  .toLowerCase()
+                  .replace(/[']/gi, "")
+                  .replace(/ /gi, "-")
+                  .replace(/[,]/gi, "")
+                  .replace(/[ä]/gi, "a")
+                  .replace(/[ö]/gi, "o")}`}
+              />
+            )
+          })}
         </div>
         <div className="blogs-sidebar__categories">
           <h3>Categories:</h3>

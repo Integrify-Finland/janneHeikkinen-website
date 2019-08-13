@@ -82,7 +82,7 @@ const Blogi = ({ data }) => {
 
       <div className="blogi-wrapper">
         <Sidebar
-          blogs={wordPressBlogs.edges}
+          blogs={allBlogs}
           image={image}
           shortText={shortText}
           categories={categories}

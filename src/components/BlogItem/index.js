@@ -31,10 +31,9 @@ const BlogItem = ({
         </div>
       )}
       {isFluid && (
-        <Img
-          fluid={image.fluid}
-          style={{ maxWidth: `100%`, width: "300px" }}
-        ></Img>
+        <div className="blog-item__image">
+          <Img fluid={image.fluid} className="blog-item__image--fluid"></Img>
+        </div>
       )}
       <div className="blog-item__text">
         <p>{text}</p>
@@ -54,7 +53,13 @@ const BlogItem = ({
           <p className="blog-item-mini__date">{date}</p>
         </div>
 
-        <img src={image} alt="for blog post" />
+        {!isFluid && <img alt="for blog item" src={image}></img>}
+        {isFluid && (
+          <Img
+            fluid={image.fluid}
+            className="blog-item-mini__image--fluid"
+          ></Img>
+        )}
       </div>
     </Link>
   )
