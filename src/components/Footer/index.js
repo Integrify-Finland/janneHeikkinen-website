@@ -29,27 +29,18 @@ const Footer = ({
     <div className="footer">
       <div className="footer__left-box">
         <div className="footer__social-media">
-          <a href="#" target="blank" rel="noopener" title="Go to Facebook">
+          <a href="https://www.facebook.com/janneheikkinenpage/" target="blank" rel="noopener" title="Go to Facebook">
             <FacebookIcon iconSize="big" />
           </a>
 
-          <a href="#" target="blank" rel="noopener" title="Go to Twitter">
+          <a href="https://twitter.com/heikkinenjanne" target="blank" rel="noopener" title="Go to Twitter">
             <TwitterIcon iconSize="big" />
           </a>
 
-          <a href="#" target="blank" rel="noopener" title="Go to Instagram">
+          <a href="https://www.instagram.com/janneheikkinen/" target="blank" rel="noopener" title="Go to Instagram">
             <InstagramIcon iconSize="big" />
           </a>
-
-          <a href="#" target="blank" rel="noopener" title="Go to LinkedIn">
-            <LinkedInIcon iconSize="big" />
-          </a>
-
-          {
-            <a href="#" target="blank" rel="noopener" title="Go to YouTube">
-              <YouTubeIcon iconSize="big" />
-            </a>
-          }
+          
         </div>
 
         <div className="footer__contact-container">

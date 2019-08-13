@@ -1,13 +1,15 @@
 import React, { useState } from "react"
 import { graphql, Link } from "gatsby"
-import { switchToNums, switchToCat } from "../utilities/switches"
-import Layout from "../components/Layout"
-import BlogItem from "../components/BlogItem"
-import SEO from "../components/SEO"
-import Pagination from "../components/Pagination"
-import Section from "../components/Section"
-import Sidebar from "../components/Sidebar"
-import image from "../images/JANNE_HEIKKINEN_260619_77.jpg"
+import { switchToNums, switchToCat } from "../../utilities/switches"
+import Layout from "../../components/Layout"
+import BlogItem from "../../components/BlogItem"
+import SEO from "../../components/SEO"
+import Pagination from "../../components/Pagination"
+import Section from "../../components/Section"
+import Sidebar from "../../components/Sidebar"
+import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
+
+import "./styles.scss"
 
 const text =
   "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
@@ -69,7 +71,7 @@ const Blogi = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blogit" />
-      <div style={{ display: "flex" }}>
+      <div className="blogi-wrapper">
         <Sidebar
           blogs={wordPressBlogs.edges}
           image={image}
@@ -89,10 +91,11 @@ const Blogi = ({ data }) => {
               const link = blog.node ? blog.node.slug : blog.slug
               return (
                 <BlogItem
+                  isFluid={!!blog.node.entryImage}
                   date="5.6.2018"
                   title={blog.node ? blog.node.title : blog.title}
                   number={number}
-                  image={image}
+                  image={blog.node.entryImage ? blog.node.entryImage : image}
                   text={shortText}
                   link={`blogi/${link
                     .toLowerCase()
@@ -129,6 +132,17 @@ export const query = graphql`
           id
           slug
           date
+          entryImage {
+            fluid {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+            }
+          }
         }
       }
     }

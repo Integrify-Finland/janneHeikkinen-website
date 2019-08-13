@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { graphql } from "gatsby"
 
 import Layout from "../../components/Layout"
@@ -12,19 +12,24 @@ import "./styles.scss"
 const Video = ({ data }) => {
   const { youTubeVid } = data
   const [vids, setVids] = useState(youTubeVid)
-  console.log(vids)
+  console.log("vid:", vids)
+
   const handlePlayVid = index => {
     const pop = vids.edges.filter((vid, i) => i === index)
+    console.log("pop:", pop)
     const filtered = vids.edges.filter((vid, i) => i !== index)
+    console.log("filtered:", filtered)
     const combined = { edges: [...pop, ...filtered] }
+    console.log("combined:", combined)
     setVids(combined)
+
     window.scrollTo(0, 0)
   }
 
   const renderActiveVideo = () => {
     return vids.edges.map(({ node }, index) => {
       return (
-        <React.Fragment key={node.title}>
+        <React.Fragment key={node.videoId}>
           {index === 0 && (
             <div className="youtube__player--active" key={node.title}>
               <iframe
@@ -43,7 +48,7 @@ const Video = ({ data }) => {
   const renderVideoLists = () => {
     return vids.edges.map(({ node }, index) => {
       return (
-        <React.Fragment key={node.title}>
+        <React.Fragment key={node.videoId}>
           {index !== 0 && (
             <div className="youtube__player">
               <div className="wrapper--overlay">
