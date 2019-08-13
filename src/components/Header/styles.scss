@@ -1,9 +1,48 @@
+.header__box {
+  position: absolute;
+  right: 5%;
+  left: 45%;
+  top: 20%;
+
+  @include for-ipad-pro-big-portrait {
+    right: 10%;
+    left: 10%;
+    top: 45%;
+  }
+
+  @include for-tablet-portrait-down {
+    right: 0;
+    left: 0;
+    top: 45%;
+  }
+
+  @include for-phone-big-landscape {
+    right: 5%;
+    left: 35%;
+    top: 15%;
+  }
+
+
+  @include for-phone-only {
+    top: 39%;
+  }
+
+
+  @include for-phone-small-landscape {
+    right: 3%;
+    left: 40%;
+    top: 15%;
+  }
+
+
+}
+
 .header {
   background-image: url("../Header/assets/heroBG.jpg");
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  // overflow-: hidden;
+
   height: 100vh;
 
   -ms-overflow-style: none; // IE 10+
@@ -12,8 +51,17 @@
   &::-webkit-scrollbar {
     display: none; // Safari and Chrome
   }
+
+  @include for-phone-giant-landscape {
+      height: 630px;
+  }
+
+  @include for-phone-big-landscape {
+    height: 457px;
+  } 
+
   @include for-phone-only {
-    height: 450px;
+    height: 457px;
     max-height: 510px;
   }
 
@@ -27,66 +75,29 @@
     box-shadow: 0px 95px 0px #023b561a inset;
     border-radius: 0px 0px 0px 50px;
     color: $white;
-    position: absolute;
-    left: 40%;
-    top: 10%;
-    display: inline-block;
-    right: 5%;
+    position: relative;
+    margin-bottom: $spacing-02;
     padding: $spacing-01;
     font-family: $font-family;
     z-index: 4;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
       2000ms both;
-    
 
-    @include for-tablet-portrait-down {
+
+    @include for-ipad-portrait-down {
       box-shadow: 0px 65px 0px #023b561a inset;
-      width: 100vw;
-      left: 0;
-      top: 40%;
       padding: $spacing-00-50;
     }
 
-    @include for-tablet-landscape-down {
-      right: 2%;
-      left: 45%;
-      top: 20%;
+    @include for-ipad-landscape-down {
+      box-shadow: 0px 65px 0px #023b561a inset;
       padding: $spacing-01;
     }
 
     @include for-phone-only {
-      width: 90vw;
-      left: 0;
-      right: 0;
-      margin-left: auto;
-      margin-right: auto;
-      top: 38%;
       box-shadow: 0px 50px 0px #023b561a inset;
       padding: $spacing-00-50 $spacing-01;
       z-index: 2;
-    }
-
-    @include for-phone-landscape {
-      left: 40%;
-      top: 5%;
-      padding: $spacing-01;
-      padding-bottom: 0;
-    }
-
-    @include for-phone-small-landscape {
-      left: 40%;
-      top: 10%;
-      padding: $spacing-01;
-      padding-bottom: 0;
-      margin-right: 10px;
-      width: 50vw;
-    }
-
-     @include for-phone-landscape {
-      padding: $spacing-00-50 $spacing-01;
-      right: 2%;
-      left: 50%;
-      top: 8%;
     }
 
   }
@@ -107,9 +118,6 @@
 
     @include for-phone-landscape {
       padding: $spacing-00-50 $spacing-01;
-      right: 2%;
-      left: 50%;
-      top: 8%;
     }
   }
 
@@ -124,9 +132,17 @@
     white-space: nowrap;
     margin: 0;
 
+    @include for-ipad-pro {
+      text-align: center;
+    }
+
     @include for-tablet-portrait-down {
       font-size: 4rem;
       text-align: center;
+    }
+
+    @include for-phone-big-landscape {
+      @include font-size-l-xxx;
     }
 
     @include for-phone-only {
@@ -159,6 +175,11 @@
       text-align: center;
     }
 
+    @include for-phone-big-landscape {
+      @include font-size-l-xx;
+      line-height: 1.3;
+    }
+
     @include for-phone-only {
       line-height: $spacing-02;
       @include font-size-l-xxx;
@@ -170,7 +191,6 @@
       line-height: $spacing-02;
       @include font-size-l-xx;
       text-align: center;
-      padding: $spacing-00-50;
     }
 
     @include for-phone-landscape {
@@ -183,59 +203,38 @@
   &__newsletter-wrapper {
 
     position: absolute;
-    right: 20%;
-    bottom: 120px;
+    margin: auto;
+    right: 0;  
+    left: 0;
+    bottom: -15%;
     z-index: 10;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
     4000ms both;
     text-align: center;
     text-align: -webkit-center;
 
-    // @include for-phone-only {
-    //   z-index: 10;
-    //   bottom: -10%;
-    //   right: 50%;
-    //   transform: translateX(100%);
-    // }
-    @include for-tablet-portrait-down {
-      bottom: 15%;
-      right: 27%;
-      text-align: center;
-      text-align: -webkit-center;
+    @include for-ipad-pro-big-portrait {
+      bottom: -30%;
     }
 
-    @include for-tablet-landscape-down {
-      bottom: 18%;
-      right: 12%;
-      // text-align: center;
-      // text-align: -webkit-center;
+    @include for-ipad-portrait-down {
+      bottom: -15%;
+    }
+
+    @include for-ipad-landscape-down {
+      bottom: -18%;
     }
 
 
     @include for-phone-only {
-      box-sizing: border-box;
-      z-index: 10;
-      bottom: 1%;
-      width: 100%;
-      right: 0;
+      bottom: -15%;
       padding: 0;
-      text-align: center;
-      text-align: -webkit-center;
     }
 
-   
 
-    @include for-phone-small-landscape {
-      bottom: 50px;
-      text-align: center;
-      text-align: -webkit-center;
-    }
 
     @include for-phone-landscape {
-      bottom: 40px;
-      // right: 1%;
-      text-align: center;
-      text-align: -webkit-center;
+      bottom: -25%;
     }
   }
 
@@ -250,24 +249,40 @@
     z-index: 2;
     transform-origin: bottom;
 
-    @include for-tablet-landscape-down {
+    @include for-ipad-pro {
+      top: 1%;
+    }
+
+    @include for-ipad-pro-landscape {
       left: 1%;
+      height: 115%;
+    }
+
+    @include for-ipad-pro-big-portrait {
+      left: 1%;
+      height: 99%;
+    }
+
+    @include for-ipad-landscape-down {
+      left: 1%;
+      height: 99%;
+    }
+
+    @include for-ipad-portrait-down {
+      height: 99%;
+    }
+
+    @include for-phone-big-landscape {
+      height: 452px;
     }
 
     @include for-phone-only {
       z-index: 1;
       left: -10%;
-      top: 1%;
-      height: 444px;
+      top: 2%;
+      height: 448px;
       max-height: 450px;
     }
-
-    // @include for-phone-small {
-    //   z-index: 1;
-    //   left: -10%;
-    //   top: 1%;
-    //   height: 450px;
-    // }
 
     @include for-phone-landscape {
       z-index: 1;
@@ -339,76 +354,111 @@
   background-image: url("../Header/assets/aboutBG.jpg");
   background-size: cover;
   background-position: left top;
-  height: 95vh;
-  @include for-tablet-portrait-down {
-    background-position: 20% 50%;
+  display: flex;
+  justify-content: flex-end;
+
+  @include for-ipad-pro-big-landscape {
+    background-position: 60% 50%;
   }
-  @include for-phone-only {
-    
+
+  @include for-ipad-pro-big-portrait {
+    background-position: 30% 50%;
+    flex-direction: column;
+  }
+
+  @include for-ipad-portrait-down {
+    flex-direction: column;
+    background-position: 23% 50%;
+  }
+
+  @include for-phone-big-landscape {
+    display: block;
+  }
+
+  @include for-phone-landscape {
+    display: block;
+    background-size: 100%;
+  }
+
+  @include for-phone-portrait {
+    flex-direction: column;
   }
 
   &__textbox {
-    display: block;
     background-color: #023b56d0;
     color: $white;
-    width: 30%;
-    right: 0;
-    position: absolute;
+    max-width: 37%;
+    max-height: 100%;
     padding: $spacing-02-50 $spacing-03;
     font-family: $font-family;
     z-index: 4;
-    margin-top: $spacing-02;
+    align-self: center;
     border-bottom: 20px $secondary solid;
     animation: textbox-animation 1000ms cubic-bezier(0.585, -0.275, 0.415, 1.29)
      both;
-    
 
-    @include for-tablet-portrait-down {
-      width: 90vw;
-      margin-top: $spacing-08;
+    @include for-ipad-pro-big-portrait {
+      align-self: stretch;
+      max-width: 100%;
     }
 
-    @include for-ipad-pro {
-      width: 90vw;
-      margin-top: $spacing-08;
+    @include for-ipad-landscape-down {
+      justify-self: flex-end;
+      padding-bottom: $spacing-04;
     }
 
-    @include for-phone-only {
-      width: 88%;
-      position: initial;
-      margin: 0;
-      padding-left: $spacing-01-50;
+    @include for-ipad-portrait-down {
+      align-self: stretch;
+      max-width: 100%;
     }
+
+    @include for-phone-big-landscape {
+      max-width: 100%;
+      padding: $spacing-01-50;
+      padding-bottom: 0;
+    }
+
+    @include for-phone-landscape {
+      max-width: 100%;
+      padding: $spacing-01;
+      max-height: 100%;
+    }
+
+    @include for-phone-portrait {
+      padding: $spacing-01;
+    }
+
 
     h3 {
       text-transform: uppercase;
       @include font-size-m;
       margin: 0;
-      @include for-tablet-portrait-down {
-        @include font-size-l-x;
+
+      @include for-ipad-pro-big-portrait {
+        @include font-size-l;
       }
 
-      @include for-ipad-pro {
-        @include font-size-l-x;
+      @include for-phone-big-landscape {
+        @include font-size-s;
       }
 
-      @include for-phone-only {
-        @include font-size-m;
+      @include for-phone-landscape {
+        @include font-size-s-x;
       }
+
     }
 
 
     p {
       font-size: 0.9rem;
       margin: 0 0 $spacing-01 0;
-      @include for-tablet-portrait-down {
-        @include font-size-l;
+
+      @include for-ipad-pro-big-portrait {
+        font-size: 1.1rem;
       }
-      @include for-ipad-pro {
-        @include font-size-l;
-      }
-      @include for-phone-only {
-        @include font-size-s;
+
+      @include for-phone-landscape {
+        @include font-size-s-xx;
       }
     }
 
