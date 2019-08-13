@@ -197,7 +197,6 @@
   }
 }
 
-
 @mixin for-ipad-portrait-down {
   @media (max-width: 900px) and (orientation: portrait) {
     @content;
@@ -221,6 +220,12 @@
   }
 }
 
+@mixin for-ipad-pro-big-landscape {
+  @media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+    @content;
+  }
+}
+
 @mixin for-phone-big-landscape {
   @media (max-width: 900px) and (orientation: landscape) {
     @content;
@@ -229,6 +234,12 @@
 
 @mixin for-phone-giant-landscape {
   @media (max-width: 1000px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-phone-portrait {
+  @media (max-width: 600px) and (orientation: portrait) {
     @content;
   }
 }
