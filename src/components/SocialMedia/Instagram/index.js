@@ -24,8 +24,9 @@ class Instagram extends Component {
     return (
       <div className="instagram-column">
         <h3 className="instagram-column__title">Instagram</h3>
-     
-        <iframe src="//lightwidget.com/widgets/2509aa84361d587bbc1819be8a3f33a0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style= {{ width:"100%", border: "0", overflow: "hidden"}}></iframe>
+     <div style = {{height: "590px" ,overflow: "hidden"}}>
+        <iframe src="//lightwidget.com/widgets/decfd76050a05b8c94ae883db7ee1a02.html" scrolling="yes" allowtransparency="true" class="lightwidget-widget" style= {{ width: "100%" , border: "0", overflow: "hidden"}}></iframe>
+        </div>
       </div>
     )
   }
@@ -34,6 +35,9 @@ class Instagram extends Component {
 
 
 export default Instagram
+
+
+
 
 
 

@@ -36,7 +36,7 @@ class Twitter extends Component {
         <h3 className="twitter-column__title">Twitter</h3>
         <a
           className="twitter-timeline"
-          data-height="500"
+          data-height="580"
           data-width="500"
           data-adapt-container-width="true"
           href={twitterURL}
