@@ -58,7 +58,7 @@ const MenuBar = ({ toggleMenu }) => (
         </Link>
 
         <Link
-          to="/yhteystiedot"
+          to="/yhteys"
           className="navbar__nav-link"
           activeClassName="navbar__nav-link--active"
         >
