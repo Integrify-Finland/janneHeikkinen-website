@@ -196,3 +196,39 @@
     @content;
   }
 }
+
+
+@mixin for-ipad-portrait-down {
+  @media (max-width: 900px) and (orientation: portrait) {
+    @content;
+  }
+}
+@mixin for-ipad-pro-landscape {
+  @media (max-width: 1200px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-ipad-landscape-down {
+  @media (max-width: 1024px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-ipad-pro-big-portrait {
+  @media (min-width: 1024px) and (max-width: 1366px) and (orientation: portrait) {
+    @content;
+  }
+}
+
+@mixin for-phone-big-landscape {
+  @media (max-width: 900px) and (orientation: landscape) {
+    @content;
+  }
+}
+
+@mixin for-phone-giant-landscape {
+  @media (max-width: 1000px) and (orientation: landscape) {
+    @content;
+  }
+}
