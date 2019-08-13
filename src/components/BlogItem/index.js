@@ -27,7 +27,7 @@ const BlogItem = ({
       <div className="blog-item__number">{number}</div>
       {!isFluid && (
         <div className="blog-item__image">
-          <img src={image}></img>
+          <img alt="for blog item" src={image}></img>
         </div>
       )}
       {isFluid && (

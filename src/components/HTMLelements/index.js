@@ -1,5 +1,5 @@
 import React from "react"
-import './styles.scss'
+import "./styles.scss"
 
 export const Bold = ({ children }) => <span className="bold">{children}</span>
 export const Italic = ({ children }) => (
@@ -22,7 +22,7 @@ export const OlLists = ({ children }) => <ul>{children}</ul>
 
 export const QUOTE = ({ children }) => <q>{children}</q>
 export const HR = ({ children }) => <hr />
-export const HYPERLINK = ({ children, node }) => <a href="#">{children}</a>
+export const HYPERLINK = ({ children, node }) => <a href="/#">{children}</a>
 export const Image = ({ children, url }) => (
   <img src={url} alt="related to the blog post" />
 )

@@ -1,6 +1,6 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql } from "gatsby"
-import { switchToNums, switchToCat } from "../utilities/switches"
+
 import BlogItem from "../components/BlogItem"
 import Layout from "../components/Layout"
 import SEO from "../components/SEO"

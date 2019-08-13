@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { switchToNums, switchToCat } from "../../utilities/switches"
 import Layout from "../../components/Layout"
 import BlogItem from "../../components/BlogItem"
@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
-import axios from "axios"
+
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
@@ -19,31 +19,13 @@ const shortText = text.substr(0, 416) + "..."
 
 const Blogi = ({ data }) => {
   const { contentfulBlog, wordPressBlogs } = data
-  const fetchImages = async () => {
-    const promises = wordPressBlogs.edges.reduce(async (acc, node) => {
-      // request details from GitHub’s API with Axios
-      const url =
-        node.node._links.wp_featuredmedia !== null
-          ? node.node._links.wp_featuredmedia[0].href
-          : ""
-      const response = await axios.get(url)
 
-      console.log({
-        ...acc,
-        [node.node.title]:
-          node.node._links.wp_featuredmedia !== null
-            ? response.data.guid.rendered
-            : null,
-      })
-    })
-  }
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(8)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => setCurrentPage(pageNumber)
 
-  // const allBlogs = [...wordPressBlogs.edges]
   const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
 

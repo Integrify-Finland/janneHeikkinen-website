@@ -1,4 +1,3 @@
-import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import classNames from "classnames"
 import React from "react"
@@ -7,12 +6,12 @@ import "./styles.scss"
 const AboutTextBlock = ({ title, text, icon, isLeft }) => {
   const classes = classNames({
     iconRight: isLeft,
-    iconLeft: !isLeft
+    iconLeft: !isLeft,
   })
 
   return (
     <div className="about-text-block">
-      <img className={classes} src={icon} />
+      <img className={classes} src={icon} alt="icons" />
       <div className="about-text-block__text-wrapper">
         <h1 className="about-text-block__title">
           <u>{title}</u>

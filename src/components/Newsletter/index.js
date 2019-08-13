@@ -1,8 +1,7 @@
 import React from "react"
-import classNames from "classnames"
-import "./styles.scss"
-import PropTypes from "prop-types"
+
 import Button from "../Button"
+import "./styles.scss"
 
 const Newsletter = ({ animationStage, setAnimationStage }) => {
   if (animationStage === "initial") {
