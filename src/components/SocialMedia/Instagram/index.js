@@ -17,17 +17,23 @@ class Instagram extends Component {
   }
 
   componentDidMount = () => {
-    this.loadInstagramLogin()
+   // this.loadInstagramLogin()
   }
 
   render() {
     return (
       <div className="instagram-column">
         <h3 className="instagram-column__title">Instagram</h3>
-        <div id="instafeed" />
+     
+        <iframe src="//lightwidget.com/widgets/2509aa84361d587bbc1819be8a3f33a0.html" scrolling="no" allowtransparency="true" class="lightwidget-widget" style= {{ width:"100%", border: "0", overflow: "hidden"}}></iframe>
       </div>
     )
   }
 }
 
+
+
 export default Instagram
+
+
+
