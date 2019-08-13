@@ -180,6 +180,11 @@
       margin: 0;
       object-fit: cover;
     }
+    &--fluid {
+      min-width: 100%;
+      width: 300px;
+      height: 100%;
+    }
 
     @include for-tablet-portait {
       grid-row: 2/3;
@@ -196,6 +201,12 @@
       grid-row: 2/3;
       grid-column: 1/4;
       width: 100%;
+      &--fluid {
+        max-width: 100%;
+        grid-row: 2/3;
+        grid-column: 1/4;
+        width: 100%;
+      }
     }
   }
 
@@ -242,15 +253,14 @@
 
 .blog-item-mini {
   padding: 0;
-
+  margin-bottom: $spacing-02;
   &__wrapper {
     display: flex;
     width: 100%;
-    align-items: center;
     background-color: $primary;
   }
   &__date {
-    width: 25%;
+    width: 30%;
     padding: $spacing-00-50;
     text-align: center;
     color: $secondary;
@@ -262,18 +272,23 @@
   }
   &__title {
     padding: $spacing-00-50;
-    width: 75%;
+    width: 60%;
     text-transform: uppercase;
     background-color: $secondary;
     color: white;
     font-weight: bold;
-    @include font-size-m;
+    @include font-size-s;
     margin-bottom: 0;
     margin-top: 0;
   }
 
   img {
-    height: 180px;
+    height: 100%;
+    width: 100%;
     margin: 0;
+  }
+  &__image--fluid {
+    min-width: 100%;
+    height: 100%;
   }
 }

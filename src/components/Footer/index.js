@@ -6,8 +6,6 @@ import kokoomusLogo from "./assets/kokoomus-logo.svg"
 import FacebookIcon from "../SocialMediaIcons/Facebook/index"
 import TwitterIcon from "../SocialMediaIcons/Twitter/index"
 import InstagramIcon from "../SocialMediaIcons/Instagram/index"
-import LinkedInIcon from "../SocialMediaIcons/Linkedin/index"
-import YouTubeIcon from "../SocialMediaIcons/Youtube/index"
 
 const Footer = ({
   firstPersonName,
@@ -29,18 +27,32 @@ const Footer = ({
     <div className="footer">
       <div className="footer__left-box">
         <div className="footer__social-media">
-          <a href="https://www.facebook.com/janneheikkinenpage/" target="blank" rel="noopener" title="Go to Facebook">
+          <a
+            href="https://www.facebook.com/janneheikkinenpage/"
+            target="blank"
+            rel="noopener"
+            title="Go to Facebook"
+          >
             <FacebookIcon iconSize="big" />
           </a>
 
-          <a href="https://twitter.com/heikkinenjanne" target="blank" rel="noopener" title="Go to Twitter">
+          <a
+            href="https://twitter.com/heikkinenjanne"
+            target="blank"
+            rel="noopener"
+            title="Go to Twitter"
+          >
             <TwitterIcon iconSize="big" />
           </a>
 
-          <a href="https://www.instagram.com/janneheikkinen/" target="blank" rel="noopener" title="Go to Instagram">
+          <a
+            href="https://www.instagram.com/janneheikkinen/"
+            target="blank"
+            rel="noopener"
+            title="Go to Instagram"
+          >
             <InstagramIcon iconSize="big" />
           </a>
-          
         </div>
 
         <div className="footer__contact-container">

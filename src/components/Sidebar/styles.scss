@@ -1,6 +1,9 @@
 .blogs-sidebar {
-  width: 270px;
-  padding: $spacing-03;
+  &__wrapper {
+    width: 270px;
+    padding: $spacing-03;
+    padding-top: $spacing-08;
+  }
   background-color: $white;
   a {
     text-decoration: none;
@@ -32,6 +35,7 @@
   &__blogs h3,
   &__categories h3,
   &__tags h3 {
+    margin-top: 0;
     text-align: center;
   }
 }

@@ -1,11 +1,11 @@
 import React, { useState } from "react"
-import { Link } from "gatsby"
+
 import classNames from "classnames"
 import PropTypes from "prop-types"
 import "./styles.scss"
 import janneImage from "./assets/janneHeader.png"
 import Logo from "./assets/logo.svg"
-// import Navigation from "../Navigation"
+
 import Newsletter from "../Newsletter"
 
 const Header = ({
@@ -46,7 +46,11 @@ const Header = ({
             </div>
           </div>
 
-          <img className="header__image" src={janneImage} />
+          <img
+            alt="Janne Heikkinen"
+            className="header__image"
+            src={janneImage}
+          />
         </header>
       </div>
     )

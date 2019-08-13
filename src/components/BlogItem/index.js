@@ -4,8 +4,18 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 // import formatDate from '../../utilities/FormatDate'
 import Button from "../Button"
+import Img from "gatsby-image"
 
-const BlogItem = ({ isSidebar, date, title, number, image, text, link }) => {
+const BlogItem = ({
+  isSidebar,
+  isFluid,
+  date,
+  title,
+  number,
+  image,
+  text,
+  link,
+}) => {
   const styles = {
     textAlign: "center",
   }
@@ -15,9 +25,16 @@ const BlogItem = ({ isSidebar, date, title, number, image, text, link }) => {
       <p className="blog-item__date">{date}</p>
       <p className="blog-item__title">{title}</p>
       <div className="blog-item__number">{number}</div>
-      <div className="blog-item__image">
-        <img src={image}></img>
-      </div>
+      {!isFluid && (
+        <div className="blog-item__image">
+          <img alt="for blog item" src={image}></img>
+        </div>
+      )}
+      {isFluid && (
+        <div className="blog-item__image">
+          <Img fluid={image.fluid} className="blog-item__image--fluid"></Img>
+        </div>
+      )}
       <div className="blog-item__text">
         <p>{text}</p>
         <div style={styles}>
@@ -36,7 +53,13 @@ const BlogItem = ({ isSidebar, date, title, number, image, text, link }) => {
           <p className="blog-item-mini__date">{date}</p>
         </div>
 
-        <img src={image} alt="for blog post" />
+        {!isFluid && <img alt="for blog item" src={image}></img>}
+        {isFluid && (
+          <Img
+            fluid={image.fluid}
+            className="blog-item-mini__image--fluid"
+          ></Img>
+        )}
       </div>
     </Link>
   )

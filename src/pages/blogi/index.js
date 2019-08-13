@@ -1,13 +1,17 @@
 import React, { useState } from "react"
-import { graphql, Link } from "gatsby"
-import { switchToNums, switchToCat } from "../utilities/switches"
-import Layout from "../components/Layout"
-import BlogItem from "../components/BlogItem"
-import SEO from "../components/SEO"
-import Pagination from "../components/Pagination"
-import Section from "../components/Section"
-import Sidebar from "../components/Sidebar"
-import image from "../images/JANNE_HEIKKINEN_260619_77.jpg"
+import { graphql } from "gatsby"
+import { switchToNums, switchToCat } from "../../utilities/switches"
+import Layout from "../../components/Layout"
+import BlogItem from "../../components/BlogItem"
+import SEO from "../../components/SEO"
+import Pagination from "../../components/Pagination"
+import Section from "../../components/Section"
+import Sidebar from "../../components/Sidebar"
+import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
+
+import { selectImg } from "../../utilities/WPImages"
+import { formatDate } from "../../utilities/FormatDate"
+import "./styles.scss"
 
 const text =
   "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
@@ -47,20 +51,26 @@ const Blogi = ({ data }) => {
   const renderBlogs = (value, isCat) => {
     const filteredCat = allBlogs
       .map(({ node }) => ({
-        ...node,
-        categories: node.categories.filter(cat => cat === switchToNums(value)),
+        node: {
+          ...node,
+          categories: node.categories.filter(
+            cat => cat === switchToNums(value)
+          ),
+        },
       }))
-      .filter(blog => blog.categories.length > 0)
+      .filter(blog => blog.node.categories.length > 0)
 
     const filteredTag = allBlogs
       .map(({ node }) => {
         return {
-          ...node,
-          tags:
-            node.tags !== null && node.tags.filter(tag => tag.name === value),
+          node: {
+            ...node,
+            tags:
+              node.tags !== null && node.tags.filter(tag => tag.name === value),
+          },
         }
       })
-      .filter(blog => blog.tags.length > 0)
+      .filter(blog => blog.node.tags.length > 0)
     isCat ? setChosenBlogs(filteredCat) : setChosenBlogs(filteredTag)
     setCurrentPage(1)
     window.scrollTo(0, 0)
@@ -69,9 +79,10 @@ const Blogi = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blogit" />
-      <div style={{ display: "flex" }}>
+
+      <div className="blogi-wrapper">
         <Sidebar
-          blogs={wordPressBlogs.edges}
+          blogs={allBlogs}
           image={image}
           shortText={shortText}
           categories={categories}
@@ -85,16 +96,20 @@ const Blogi = ({ data }) => {
               number: i + 1,
             }))
             .slice(indexOfFirstPost, indexOfLastPost)
-            .map(({ blog, number }) => {
-              const link = blog.node ? blog.node.slug : blog.slug
+            .map(({ blog, number }, index) => {
+              const img = blog.node.entryImage
+                ? blog.node.entryImage
+                : selectImg(blog.node.id, image)
+              const date = formatDate(blog.node.date)
               return (
                 <BlogItem
-                  date="5.6.2018"
-                  title={blog.node ? blog.node.title : blog.title}
+                  isFluid={!!blog.node.entryImage}
+                  date={date}
+                  title={blog.node.title}
                   number={number}
-                  image={image}
+                  image={img}
                   text={shortText}
-                  link={`blogi/${link
+                  link={`blogi/${blog.node.slug
                     .toLowerCase()
                     .replace(/[']/gi, "")
                     .replace(/ /gi, "-")
@@ -104,6 +119,7 @@ const Blogi = ({ data }) => {
                 />
               )
             })}
+
           <Pagination
             postsPerPage={postsPerPage}
             totalPosts={chosenBlogs.length}
@@ -129,6 +145,17 @@ export const query = graphql`
           id
           slug
           date
+          entryImage {
+            fluid {
+              base64
+              aspectRatio
+              src
+              srcSet
+              srcWebp
+              srcSetWebp
+              sizes
+            }
+          }
         }
       }
     }
@@ -140,6 +167,11 @@ export const query = graphql`
           title
           slug
           date
+          _links {
+            wp_featuredmedia {
+              href
+            }
+          }
           tags {
             name
           }

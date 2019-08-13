@@ -6,7 +6,7 @@ import './styles.scss'
 class Facebook extends Component {
   state = {
     width: 500,
-    height: 500,
+    height: 580,
   }
 
   loadFBLoginApi = () => {
