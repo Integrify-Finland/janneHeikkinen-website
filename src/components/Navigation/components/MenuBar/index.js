@@ -42,7 +42,7 @@ const MenuBar = ({ toggleMenu }) => (
         </Link>
 
         <Link
-          to="/videot"
+          to="/video"
           className="navbar__nav-link"
           activeClassName="navbar__nav-link--active"
         >
@@ -67,7 +67,7 @@ const MenuBar = ({ toggleMenu }) => (
       </div>
       <div className="navbar__links">
         <a
-          href="#"
+          href="https://www.facebook.com/janneheikkinenpage/"
           className="navbar__nav-media-link"
           target="blank"
           rel="noopener"
@@ -77,7 +77,7 @@ const MenuBar = ({ toggleMenu }) => (
         </a>
 
         <a
-          href="#"
+          href="https://twitter.com/heikkinenjanne"
           className="navbar__nav-media-link"
           target="blank"
           rel="noopener"
@@ -87,7 +87,7 @@ const MenuBar = ({ toggleMenu }) => (
         </a>
 
         <a
-          href="#"
+          href="https://www.instagram.com/janneheikkinen/"
           className="navbar__nav-media-link"
           target="blank"
           rel="noopener"
