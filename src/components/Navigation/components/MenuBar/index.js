@@ -77,8 +77,8 @@ const MenuBar = ({ toggleMenu }) => (
         </a>
 
         <a
-          href="#"
-          className="https://twitter.com/heikkinenjanne"
+          href="https://twitter.com/heikkinenjanne"
+          className="navbar__nav-media-link"
           target="blank"
           rel="noopener"
           title="Go to Twitter"
