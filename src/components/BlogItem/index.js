@@ -19,7 +19,6 @@ const BlogItem = ({
   const styles = {
     textAlign: "center",
   }
-  console.log(image)
 
   const content = (
     <div className="blog-item">

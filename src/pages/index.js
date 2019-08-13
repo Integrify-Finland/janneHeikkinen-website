@@ -58,7 +58,12 @@ const Blog = ({ data }) => {
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <Header isAbout={false} Subtext={"Kansanedustaja, yhteiskuntatieteiden maisteri ja intohimoinen perhokalastaja."}/>
+      <Header
+        isAbout={false}
+        Subtext={
+          "Kansanedustaja, yhteiskuntatieteiden maisteri ja intohimoinen perhokalastaja."
+        }
+      />
       <Section>
         <SEO title="Home" />
         <h1

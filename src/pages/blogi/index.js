@@ -8,7 +8,8 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
-
+import axios from "axios"
+import { selectImg } from "../../utilities/WPImages"
 import "./styles.scss"
 
 const text =
@@ -17,13 +18,31 @@ const shortText = text.substr(0, 416) + "..."
 
 const Blogi = ({ data }) => {
   const { contentfulBlog, wordPressBlogs } = data
+  const fetchImages = async () => {
+    const promises = wordPressBlogs.edges.reduce(async (acc, node) => {
+      // request details from GitHub’s API with Axios
+      const url =
+        node.node._links.wp_featuredmedia !== null
+          ? node.node._links.wp_featuredmedia[0].href
+          : ""
+      const response = await axios.get(url)
 
+      console.log({
+        ...acc,
+        [node.node.title]:
+          node.node._links.wp_featuredmedia !== null
+            ? response.data.guid.rendered
+            : null,
+      })
+    })
+  }
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(8)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => setCurrentPage(pageNumber)
 
+  // const allBlogs = [...wordPressBlogs.edges]
   const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
 
@@ -49,28 +68,45 @@ const Blogi = ({ data }) => {
   const renderBlogs = (value, isCat) => {
     const filteredCat = allBlogs
       .map(({ node }) => ({
-        ...node,
-        categories: node.categories.filter(cat => cat === switchToNums(value)),
+        node: {
+          ...node,
+          categories: node.categories.filter(
+            cat => cat === switchToNums(value)
+          ),
+        },
       }))
-      .filter(blog => blog.categories.length > 0)
+      .filter(blog => blog.node.categories.length > 0)
 
     const filteredTag = allBlogs
       .map(({ node }) => {
         return {
-          ...node,
-          tags:
-            node.tags !== null && node.tags.filter(tag => tag.name === value),
+          node: {
+            ...node,
+            tags:
+              node.tags !== null && node.tags.filter(tag => tag.name === value),
+          },
         }
       })
-      .filter(blog => blog.tags.length > 0)
+      .filter(blog => blog.node.tags.length > 0)
     isCat ? setChosenBlogs(filteredCat) : setChosenBlogs(filteredTag)
     setCurrentPage(1)
     window.scrollTo(0, 0)
   }
+  //   const WPwithImg = Object.values(WP_IMAGES).map(value =>{
+
+  //   }
+  //     wordPressBlogs.edges.reduce(
+  //       (acc, node) => ({ ...acc, ...node.node, img: value }),
+  //       []
+  //     )
+  //   )
+  //   console.log("WPwithImg:", WPwithImg)
+  // //
 
   return (
     <Layout>
       <SEO title="Blogit" />
+
       <div className="blogi-wrapper">
         <Sidebar
           blogs={wordPressBlogs.edges}
@@ -87,17 +123,20 @@ const Blogi = ({ data }) => {
               number: i + 1,
             }))
             .slice(indexOfFirstPost, indexOfLastPost)
-            .map(({ blog, number }) => {
-              const link = blog.node ? blog.node.slug : blog.slug
+            .map(({ blog, number }, index) => {
+              const img = blog.node.entryImage
+                ? blog.node.entryImage
+                : selectImg(blog.node.id, image)
+
               return (
                 <BlogItem
                   isFluid={!!blog.node.entryImage}
-                  date="5.6.2018"
-                  title={blog.node ? blog.node.title : blog.title}
+                  date={blog.node.id}
+                  title={blog.node.title}
                   number={number}
-                  image={blog.node.entryImage ? blog.node.entryImage : image}
+                  image={img}
                   text={shortText}
-                  link={`blogi/${link
+                  link={`blogi/${blog.node.slug
                     .toLowerCase()
                     .replace(/[']/gi, "")
                     .replace(/ /gi, "-")
@@ -107,6 +146,7 @@ const Blogi = ({ data }) => {
                 />
               )
             })}
+
           <Pagination
             postsPerPage={postsPerPage}
             totalPosts={chosenBlogs.length}
@@ -154,6 +194,11 @@ export const query = graphql`
           title
           slug
           date
+          _links {
+            wp_featuredmedia {
+              href
+            }
+          }
           tags {
             name
           }

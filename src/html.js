@@ -3,7 +3,7 @@
 /* eslint-disable react/destructuring-assignment */
 /* eslint-disable react/prefer-stateless-function */
 /* eslint-disable react/jsx-no-literals */
-import React from 'react'
+import React from "react"
 
 export default class HTML extends React.Component {
   render() {
@@ -18,7 +18,7 @@ export default class HTML extends React.Component {
             content="width=device-width, initial-scale=1, shrink-to-fit=no"
           />
 
-          <title>Janne</title>
+          <title>Janne Heikkinen</title>
           {this.props.headComponents}
         </head>
         <body {...this.props.bodyAttributes}>
