@@ -10,6 +10,7 @@ import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
 import axios from "axios"
 import { selectImg } from "../../utilities/WPImages"
+import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
 
 const text =
@@ -92,16 +93,6 @@ const Blogi = ({ data }) => {
     setCurrentPage(1)
     window.scrollTo(0, 0)
   }
-  //   const WPwithImg = Object.values(WP_IMAGES).map(value =>{
-
-  //   }
-  //     wordPressBlogs.edges.reduce(
-  //       (acc, node) => ({ ...acc, ...node.node, img: value }),
-  //       []
-  //     )
-  //   )
-  //   console.log("WPwithImg:", WPwithImg)
-  // //
 
   return (
     <Layout>
@@ -127,11 +118,11 @@ const Blogi = ({ data }) => {
               const img = blog.node.entryImage
                 ? blog.node.entryImage
                 : selectImg(blog.node.id, image)
-
+              const date = formatDate(blog.node.date)
               return (
                 <BlogItem
                   isFluid={!!blog.node.entryImage}
-                  date={blog.node.id}
+                  date={date}
                   title={blog.node.title}
                   number={number}
                   image={img}
