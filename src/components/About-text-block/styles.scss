@@ -55,7 +55,12 @@
       max-width: 50%;
       display: block;
     }
-    @include for-phone {
+    @include for-phone-landscape {
+      width: 60%;
+      max-width: 80%;
+      margin-bottom: $spacing-03;
+    }
+    @include for-phone-portrait {
       width: 80%;
       max-width: 80%;
       margin-bottom: $spacing-03;
