@@ -23,11 +23,11 @@ class Instagram extends Component {
         <div style={{ height: "590px", overflow: "hidden" }}>
           <iframe
             title="Janne's Instagram"
-            src="//lightwidget.com/widgets/decfd76050a05b8c94ae883db7ee1a02.html"
+            src="https://www.juicer.io/api/feeds/charliefeatherlight/iframe"
             scrolling="yes"
             allowtransparency="true"
             class="lightwidget-widget"
-            style={{ width: "100%", border: "0", overflow: "hidden" }}
+            style={{ width: "100%", border: "0", overflow: "hidden", height: "580px" }}
           ></iframe>
         </div>
       </div>
