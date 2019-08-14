@@ -5,9 +5,11 @@
   margin: 0 auto;
   max-width: 85%;
   padding: 0;
-
   &__children {
     width: 90%;
+  }
+  &--blog-post {
+    max-width: 95%;
   }
   &__children > * {
     margin-bottom: $spacing-04;

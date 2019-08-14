@@ -32,7 +32,7 @@ const BlogPostTemplate = ({ data }) => {
     <Layout>
       <SEO title="blogi" />
       <div style={{ marginTop: "128px" }}>
-        <Section>
+        <Section isBlog>
           {contentfulBlog && (
             <BlogPost
               isFluid={!!contentfulBlog.entryImage}
