@@ -8,6 +8,11 @@
 
   &__children {
     width: 90%;
+
+    @include for-phone-only {
+      width: 100vw;
+    }
+
   }
   &__children > * {
     margin-bottom: $spacing-04;

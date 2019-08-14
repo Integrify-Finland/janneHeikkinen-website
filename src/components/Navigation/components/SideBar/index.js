@@ -35,7 +35,7 @@ const SideBar = ({ show, toggleMenu }) => {
           <Link to="/medialle" className="mobile-menu__nav-link">Medialle</Link>
 
           <Link
-            to="/yhteystiedot"
+            to="/yhteys"
             className="mobile-menu__nav-link"
             activeClassName="mobile-menu__nav-link--active"
           >Yhteystiedot</Link>

@@ -85,12 +85,12 @@
 
 
     @include for-ipad-portrait-down {
-      box-shadow: 0px 65px 0px #023b561a inset;
+      box-shadow: 0px 90px 0px #023b561a inset;
       padding: $spacing-00-50;
     }
 
     @include for-ipad-landscape-down {
-      box-shadow: 0px 65px 0px #023b561a inset;
+      box-shadow: 0px 70px 0px #023b561a inset;
       padding: $spacing-01;
     }
 
@@ -227,7 +227,7 @@
 
 
     @include for-phone-only {
-      bottom: -15%;
+      bottom: -19%;
       padding: 0;
     }
 

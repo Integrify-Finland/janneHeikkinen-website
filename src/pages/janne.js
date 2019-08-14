@@ -20,7 +20,7 @@ const Janne = ({ data }) => {
       Kotipaikka={aboutMe.kotiPaikka}
       Syntynyt={aboutMe.syntynyt}
       Perhe={aboutMe.perhe}
-      Sotilasarvo_aselinja={aboutMe.sotilasArvo}
+      Sotilasarvo_aselinja={aboutMe.sotilasarvo}
       Ammatti={aboutMe.ammatti}
       Harrastukset={aboutMe.harrastukset}
       Koulutus={aboutMe.koulutus}
