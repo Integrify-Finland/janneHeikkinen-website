@@ -1,14 +1,20 @@
 import React from "react"
-import "./styles.scss"
+import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
-const BlogPost = ({ image, title, date, children }) => {
+import "./styles.scss"
+const BlogPost = ({ isFluid, image, title, date, children }) => {
   return (
     <div className="blog-post">
       <div className="blog-post__date">{date}</div>
       <div className="blog-post__title">{title}</div>
       <div className="blog-post__image">
-        <img alt="blog entry" src={image}></img>
+        {!isFluid && <img alt="blog entry" src={image}></img>}
+        {isFluid && (
+          <div className="blog-item__image">
+            <Img fluid={image.fluid} className="blog-item__image--fluid"></Img>
+          </div>
+        )}
       </div>
       <div className="blog-post__content">
         {children && (
@@ -21,7 +27,7 @@ const BlogPost = ({ image, title, date, children }) => {
 
 BlogPost.propTypes = {
   title: PropTypes.string.isRequired,
-  date: PropTypes.func.isRequired,
+  date: PropTypes.string.isRequired,
   image: PropTypes.string.isRequired,
 }
 
