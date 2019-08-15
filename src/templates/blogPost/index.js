@@ -14,7 +14,7 @@ import { formatDate } from "../../utilities/FormatDate"
 import { WPContent } from "../../utilities/WPblogs.js"
 
 const BlogPostTemplate = ({ data, location }) => {
-  const { wordPressBlog, contentfulBlog } = data
+  const { contentfulBlog } = data
   const currentBlog = WPContent.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
@@ -90,15 +90,6 @@ export const query = graphql`
       }
       childContentfulBlogPostContentRichTextNode {
         json
-      }
-    }
-    wordPressBlog: wordpressPost(slug: { eq: $slug }) {
-      id
-      title
-      content
-      date
-      tags {
-        name
       }
     }
   }

@@ -1,4 +1,5 @@
 const path = require(`path`)
+const WP_NODE = require("./src/utilities/blogs-node")
 
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
@@ -9,13 +10,6 @@ exports.createPages = ({ graphql, actions }) => {
         edges {
           node {
             id
-            slug
-          }
-        }
-      }
-      allWordpressPost {
-        edges {
-          node {
             slug
           }
         }
@@ -37,7 +31,7 @@ exports.createPages = ({ graphql, actions }) => {
         },
       })
     })
-    result.data.allWordpressPost.edges.forEach(({ node }) => {
+    WP_NODE.edges.forEach(({ node }) => {
       createPage({
         path: `blogi/${node.slug
           .toLowerCase()

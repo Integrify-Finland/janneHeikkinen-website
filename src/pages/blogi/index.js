@@ -18,13 +18,16 @@ const text =
 const shortText = text.substr(0, 416) + "..."
 
 const Blogi = ({ data }) => {
-  const { contentfulBlog, wordPressBlogs } = data
+  const { contentfulBlog } = data
 
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(8)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
-  const paginate = pageNumber => setCurrentPage(pageNumber)
+  const paginate = pageNumber => {
+    setCurrentPage(pageNumber)
+    window.scrollTo(0, 0)
+  }
 
   const allBlogs = [...contentfulBlog.edges, ...WP.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
@@ -155,25 +158,6 @@ export const query = graphql`
               srcSetWebp
               sizes
             }
-          }
-        }
-      }
-    }
-    wordPressBlogs: allWordpressPost {
-      edges {
-        node {
-          id
-          categories
-          title
-          slug
-          date
-          _links {
-            wp_featuredmedia {
-              href
-            }
-          }
-          tags {
-            name
           }
         }
       }

@@ -7,7 +7,7 @@ import Resume from "../components/Resume"
 import AboutTextBlock from "../components/About-text-block"
 import Section from "../components/Section"
 
-import Header from "../components/Header";
+import Header from "../components/Header"
 
 const Janne = ({ data }) => {
   const { resume, DetailsAboutMe, aboutMe } = data
@@ -16,15 +16,15 @@ const Janne = ({ data }) => {
     <Layout>
       <SEO title="Janne" />
       <Header
-      isAbout={true}
-      Kotipaikka={aboutMe.kotiPaikka}
-      Syntynyt={aboutMe.syntynyt}
-      Perhe={aboutMe.perhe}
-      Sotilasarvo_aselinja={aboutMe.sotilasarvo}
-      Ammatti={aboutMe.ammatti}
-      Harrastukset={aboutMe.harrastukset}
-      Koulutus={aboutMe.koulutus}
-      Luottamustehtava={aboutMe.luottamustehtava}
+        isAbout={true}
+        Kotipaikka={aboutMe.kotiPaikka}
+        Syntynyt={aboutMe.syntynyt}
+        Perhe={aboutMe.perhe}
+        Sotilasarvo_aselinja={aboutMe.sotilasarvo}
+        Ammatti={aboutMe.ammatti}
+        Harrastukset={aboutMe.harrastukset}
+        Koulutus={aboutMe.koulutus}
+        Luottamustehtava={aboutMe.luottamustehtava}
       />
       <Section>
         {revertedDetails.map(({ node }, i) => {
@@ -75,10 +75,13 @@ export const query = graphql`
       luottamustehtava
     }
 
-    DetailsAboutMe: allContentfulDetailsAboutMe {
+    DetailsAboutMe: allContentfulDetailsAboutMe(
+      sort: { fields: [dateForOrder], order: DESC }
+    ) {
       edges {
         node {
           title
+          dateForOrder
           image {
             file {
               url
