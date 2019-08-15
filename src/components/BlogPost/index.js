@@ -2,8 +2,21 @@ import React from "react"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 
+import { FacebookShareButton, TwitterShareButton, FacebookIcon,
+  TwitterIcon, } from "react-share"
+
 import "./styles.scss"
-const BlogPost = ({ isFluid, image, title, date, children }) => {
+const BlogPost = ({
+  isFluid,
+  image,
+  title,
+  date,
+  children,
+  categories,
+  tags,
+  shareUrl,
+}) => {
+
   return (
     <div className="blog-post">
       <div className="blog-post__date">{date}</div>
@@ -20,6 +33,36 @@ const BlogPost = ({ isFluid, image, title, date, children }) => {
         {children && (
           <div className="blog-post__content__children">{children}</div>
         )}
+
+    <div className="blog-post__footer">
+          <div>
+        <div className="blog-post__categories">
+          Categories:<span>{categories}</span>
+        </div>
+        <div className="blog-post__tags">
+          Tags:<span>{tags}</span>
+        </div>
+        </div>
+        <div>
+        <FacebookShareButton
+            url={shareUrl}
+            quote={title}
+            className="blog-post__share-button">
+            <FacebookIcon
+              size={64}
+              round />
+          </FacebookShareButton>
+
+          <TwitterShareButton
+            url={shareUrl}
+            quote={title}
+            className="blog-post__share-button">
+            <TwitterIcon
+              size={64}
+              round />
+          </TwitterShareButton>
+          </div>
+          </div>
       </div>
     </div>
   )

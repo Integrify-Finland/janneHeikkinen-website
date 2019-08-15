@@ -11,8 +11,12 @@ import Section from "../../components/Section"
 import OPTIONS from "../../helpers/rich-text-options"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
+import { switchToNums, switchToCat } from "../../utilities/switches"
+
 
 const BlogPostTemplate = ({ data }) => {
+
+
   const { wordPressBlog, contentfulBlog } = data
 
   const renderBlogPost = () => {
@@ -24,6 +28,17 @@ const BlogPostTemplate = ({ data }) => {
   const createMarkup = () => {
     return { __html: wordPressBlog.content }
   }
+
+  
+  let categories = " none"
+  if (wordPressBlog.categories) categories = wordPressBlog.categories.map(cat => (" " + switchToCat(cat)))
+
+  let tags = " none"
+  if (wordPressBlog.tags) tags =  wordPressBlog.tags.map(tags => (" " + tags.name))
+
+
+
+
   const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
   const date = wordPressBlog
     ? formatDate(wordPressBlog.date)
@@ -39,6 +54,9 @@ const BlogPostTemplate = ({ data }) => {
               date={date}
               title={contentfulBlog.title}
               image={contentfulBlog.entryImage}
+              tags={contentfulBlog.tags}
+              categories={contentfulBlog.categories}
+              shareUrl={"http://www.janneheikkinen.fi/blogi/" + contentfulBlog.slug}
             >
               {renderBlogPost()}
             </BlogPost>
@@ -51,6 +69,9 @@ const BlogPostTemplate = ({ data }) => {
               date={date}
               title={wordPressBlog.title}
               image={selectImg(wordPressBlog.id)}
+              categories={categories}
+              tags={tags}
+              shareUrl={"http://www.janneheikkinen.fi/blogi/" + wordPressBlog.slug}
             >
               <div
                 className="blog-post"
@@ -62,6 +83,8 @@ const BlogPostTemplate = ({ data }) => {
       </div>
     </Layout>
   )
+
+  
 }
 
 export default BlogPostTemplate
@@ -72,6 +95,7 @@ export const query = graphql`
       title
       tags
       date
+      categories
       entryImage {
         fluid {
           base64
@@ -92,7 +116,9 @@ export const query = graphql`
       id
       title
       content
+      slug
       date
+      categories
       tags {
         name
       }

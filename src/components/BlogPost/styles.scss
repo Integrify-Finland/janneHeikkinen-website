@@ -66,5 +66,65 @@
       padding-right: $spacing-02;
       border-bottom-right-radius: 0;
     }
+
+     
+
   }
+
+&__share-button {
+
+  display: inline-block;
+  transition: 90ms ease;
+  margin-left: $spacing-01;
+
+
+}
+
+&__share-button:hover {
+
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: 210ms ease;
+
+
+}
+
+&__footer {
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-top: $spacing-04;
+
+}
+
+
+
+  &__categories {
+
+    font-weight: bold;
+    @include font-size-m;
+
+    span {
+      font-weight: normal;
+      color: $secondary;
+
+    }
+  }
+
+  &__tags{
+
+    font-weight: bold;
+    margin-top: $spacing-00-25;
+    @include font-size-m;
+
+    span {
+
+      color: $primary;
+      font-weight: normal;
+      @include font-size-s;
+
+    }
+  }
+
 }
