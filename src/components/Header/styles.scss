@@ -221,9 +221,12 @@
     }
 
     @include for-ipad-landscape-down {
-      bottom: -18%;
+      bottom: -12%;
     }
 
+    @include for-phone-big-landscape {
+      bottom: -16%;
+    }
 
     @include for-phone-only {
       bottom: -19%;
@@ -248,6 +251,10 @@
     z-index: 2;
     transform-origin: bottom;
 
+    @include for-ipad-pro-big-landscape {
+    left: 1%;
+    }
+
     @include for-ipad-pro {
       top: 1%;
     }
@@ -269,6 +276,7 @@
 
     @include for-ipad-portrait-down {
       height: 99%;
+      left: -14%;
     }
 
     @include for-phone-big-landscape {
@@ -277,7 +285,7 @@
 
     @include for-phone-only {
       z-index: 1;
-      left: -10%;
+      left: 0;
       top: 2%;
       height: 448px;
       max-height: 450px;
@@ -357,7 +365,7 @@
   justify-content: flex-end;
 
   @include for-ipad-pro-big-landscape {
-    background-position: 60% 50%;
+    background-position: 60% 0%;
   }
 
   @include for-ipad-pro-big-portrait {

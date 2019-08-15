@@ -3,22 +3,34 @@
   justify-content: space-between;
   font-family: $font-family;
   width: 100%;
-  margin-top: $spacing-06;
-  margin-bottom: $spacing-06;
+  // margin-top: $spacing-06;
+  // margin-bottom: $spacing-06;
+  margin: $spacing-03 auto $spacing-08 auto;
+
+  @include for-tablet-landscape-down {
+    margin-top: $spacing-03;
+  }
+
   @include for-tablet-portrait-down {
     display: block;
     padding: $spacing-00-75;
-    margin-bottom: $spacing-03;
+    margin-bottom: $spacing-06;
   }
 
-  @include for-phone {
-    padding: 0;
+  @include for-phone-landscape {
+    width: 90%;
+    margin: $spacing-03 auto $spacing-03 auto;
+  }
+
+  @include for-phone-portrait {
+    width: 90%;
+    margin: $spacing-03 auto $spacing-03 auto;
   }
 
   &__text-wrapper {
     width: 70%;
     @include for-phone {
-      width: 100%;
+      width: 90%;
     }
     @include for-tablet-portrait-down {
       width: 100%;
@@ -42,7 +54,7 @@
     color: $grey;
     @include font-size-l-x;
     @include for-phone-only {
-      @include font-size-s;
+      @include font-size-m;
     }
   }
 
@@ -56,12 +68,12 @@
       display: block;
     }
     @include for-phone-landscape {
-      width: 60%;
+      width: 55%;
       max-width: 80%;
       margin-bottom: $spacing-03;
     }
     @include for-phone-portrait {
-      width: 80%;
+      width: 60%;
       max-width: 80%;
       margin-bottom: $spacing-03;
     }
