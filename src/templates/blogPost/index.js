@@ -11,10 +11,14 @@ import Section from "../../components/Section"
 import OPTIONS from "../../helpers/rich-text-options"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
+import { WPContent } from "../../utilities/WPblogs.js"
 
-const BlogPostTemplate = ({ data }) => {
+const BlogPostTemplate = ({ data, location }) => {
   const { wordPressBlog, contentfulBlog } = data
-
+  const currentBlog = WPContent.edges
+    .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
+    .map(blog => blog.node)[0]
+  console.log("currentBlog:", currentBlog)
   const renderBlogPost = () => {
     return documentToReactComponents(
       contentfulBlog.childContentfulBlogPostContentRichTextNode.json,
@@ -22,17 +26,17 @@ const BlogPostTemplate = ({ data }) => {
     )
   }
   const createMarkup = () => {
-    return { __html: wordPressBlog.content }
+    return { __html: currentBlog.content }
   }
-  const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
-  const date = wordPressBlog
-    ? formatDate(wordPressBlog.date)
+  const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
+  const date = currentBlog
+    ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
   return (
     <Layout>
       <SEO title="blogi" />
       <div style={{ marginTop: "128px" }}>
-        <Section>
+        <Section isBlog>
           {contentfulBlog && (
             <BlogPost
               isFluid={!!contentfulBlog.entryImage}
@@ -45,12 +49,12 @@ const BlogPostTemplate = ({ data }) => {
           )}
         </Section>
         <Section>
-          {wordPressBlog && (
+          {currentBlog && (
             <BlogPost
               isFluid={false}
               date={date}
-              title={wordPressBlog.title}
-              image={selectImg(wordPressBlog.id)}
+              title={currentBlog.title}
+              image={selectImg(currentBlog.id)}
             >
               <div
                 className="blog-post"

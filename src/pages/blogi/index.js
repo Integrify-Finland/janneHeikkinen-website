@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
-
+import { WP } from "../../utilities/WPblogs.js"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
@@ -26,10 +26,10 @@ const Blogi = ({ data }) => {
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => setCurrentPage(pageNumber)
 
-  const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
+  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
 
-  const categories = wordPressBlogs.edges
+  const categories = WP.edges
     .map(({ node }) => {
       return node.categories.map(cat => switchToCat(cat))
     })
@@ -39,7 +39,7 @@ const Blogi = ({ data }) => {
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
 
-  const tags = wordPressBlogs.edges
+  const tags = WP.edges
     .filter(({ node }) => node.tags !== null)
     .reduce((acc, { node }) => {
       return [...acc, ...node.tags]
