@@ -1,11 +1,14 @@
 import React from "react"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
+import { Link } from "gatsby"
 
 import { FacebookShareButton, TwitterShareButton, FacebookIcon,
   TwitterIcon, } from "react-share"
 
 import "./styles.scss"
+
+
 const BlogPost = ({
   isFluid,
   image,
@@ -14,8 +17,34 @@ const BlogPost = ({
   children,
   categories,
   tags,
-  shareUrl,
+  allSlugs,
+  slug
 }) => {
+
+  const shareUrl = "http://www.janneheikkinen.fi/blogi/" + slug;
+
+  /* const findIndex = allSlugs.forEach((slugs, index) => {
+    console.log(index)
+    console.log(slugs)
+    console.log(slug)
+    if (slugs == slug) return ("HIERIEIIE")
+  } )
+
+  console.log(findIndex) */
+console.log(allSlugs[0])
+for (let i=0; i++; i < allSlugs.length) {
+
+  console.log(allSlugs[i])
+  console.log(slug)
+    if (slug === allSlugs[i]) {
+      return i;
+    }
+    console.log(i);
+  }
+
+
+
+
 
   return (
     <div className="blog-post">
@@ -63,6 +92,10 @@ const BlogPost = ({
           </TwitterShareButton>
           </div>
           </div>
+      </div>
+      <div className="blogPost-button-container">
+        <Link to={`blogi/${slug}`}><button>Previous</button></Link>
+        <Link to={`yhteys`}><button>Next</button></Link>
       </div>
     </div>
   )

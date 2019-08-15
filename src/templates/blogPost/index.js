@@ -17,7 +17,7 @@ import { switchToNums, switchToCat } from "../../utilities/switches"
 const BlogPostTemplate = ({ data }) => {
 
 
-  const { wordPressBlog, contentfulBlog } = data
+  const { wordPressBlog, contentfulBlog, allPosts } = data
 
   const renderBlogPost = () => {
     return documentToReactComponents(
@@ -36,8 +36,10 @@ const BlogPostTemplate = ({ data }) => {
   let tags = " none"
   if (wordPressBlog.tags) tags =  wordPressBlog.tags.map(tags => (" " + tags.name))
 
-
-
+  const allSlugs = allPosts.edges
+  .map(({ node }) => {
+    return node.slug
+  })
 
   const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
   const date = wordPressBlog
@@ -56,7 +58,7 @@ const BlogPostTemplate = ({ data }) => {
               image={contentfulBlog.entryImage}
               tags={contentfulBlog.tags}
               categories={contentfulBlog.categories}
-              shareUrl={"http://www.janneheikkinen.fi/blogi/" + contentfulBlog.slug}
+              slug={contentfulBlog.slug}
             >
               {renderBlogPost()}
             </BlogPost>
@@ -71,7 +73,8 @@ const BlogPostTemplate = ({ data }) => {
               image={selectImg(wordPressBlog.id)}
               categories={categories}
               tags={tags}
-              shareUrl={"http://www.janneheikkinen.fi/blogi/" + wordPressBlog.slug}
+              slug={wordPressBlog.slug}
+              allSlugs={allSlugs}
             >
               <div
                 className="blog-post"
@@ -121,6 +124,13 @@ export const query = graphql`
       categories
       tags {
         name
+      }
+    }
+    allPosts: allWordpressPost {
+      edges {
+        node {
+          slug
+        }
       }
     }
   }

@@ -77,7 +77,6 @@
   transition: 90ms ease;
   margin-left: $spacing-01;
 
-
 }
 
 &__share-button:hover {
@@ -128,3 +127,20 @@ margin-top: $spacing-04;
   }
 
 }
+
+.blogPost-button-container {
+  display: flex;
+  margin: $spacing-02 auto auto auto;
+  justify-content: center;
+
+  button {
+    width: 150px;
+    color: white;
+    background-color: $grey;
+    border: none;
+    @include font-size-l;
+    padding: $spacing-00-50;
+    margin: $spacing-01;
+  }
+}
+
