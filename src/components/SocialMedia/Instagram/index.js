@@ -9,7 +9,8 @@ class Instagram extends Component {
         <h3 className="instagram-column__title">Instagram</h3>
         <div style={{ height: "590px", overflow: "hidden" }}>
           <iframe
-            src="//lightwidget.com/widgets/b697a021935e50f8b4656ecedebb7698.html"
+            title="Janne's Instagram feed"
+            src="https://cdn.lightwidget.com/widgets/b697a021935e50f8b4656ecedebb7698.html"
             scrolling="no"
             allowtransparency="true"
             class="lightwidget-widget"
