@@ -3,7 +3,7 @@ require("dotenv").config()
 module.exports = {
   siteMetadata: {
     title: `Janne Heikkinen`,
-    description: `Janne Heikkinen website`,
+    description: `Kokoomuksen kansanedustaja, Oulun kaupunginvaltuutettu, yhteiskuntatieteiden maisteri ja intohimoinen perhokalastaja. Vapaus, ympäristö ja turvallisuus.`,
     author: `Integrify`,
   },
   plugins: [

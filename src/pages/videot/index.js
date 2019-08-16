@@ -84,7 +84,7 @@ const Video = ({ data }) => {
   }
   return (
     <Layout>
-      <SEO title="Videos" />
+      <SEO title="Videot" />
 
       <Section>
         <div className="youtube">

@@ -14,6 +14,23 @@ const Yhteys = ({ data }) => {
       <SEO title="Yhteys" />
       <Section>
         <ContactForm />
+        <p
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            color: "#023b56",
+          }}
+        >
+          <span style={{ marginRight: "1rem" }}>
+            <strong>Puhelin: </strong>
+            +358 (0) 40 5554263
+          </span>
+          <span>
+            <strong>Sähköposti: </strong>
+            janne@janneheikkinen.fi
+          </span>
+        </p>
       </Section>
     </Layout>
   )

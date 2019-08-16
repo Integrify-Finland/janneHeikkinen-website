@@ -18,7 +18,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const currentBlog = WPContent.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
-  console.log("currentBlog:", currentBlog)
+
   const renderBlogPost = () => {
     return documentToReactComponents(
       contentfulBlog.childContentfulBlogPostContentRichTextNode.json,

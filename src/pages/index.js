@@ -22,6 +22,7 @@ const IndexPage = ({ data }) => {
 
   return (
     <Layout>
+      <SEO title="Etusivu" />
       <Header
         isAbout={false}
         Subtext={
@@ -30,7 +31,6 @@ const IndexPage = ({ data }) => {
       />
       <div className="index-page-wrapper">
         <Section>
-          <SEO title="Home" />
           <h1 className="index-page-wrapper__title">Blogi</h1>
         </Section>
         <Section>
