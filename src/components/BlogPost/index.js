@@ -2,6 +2,7 @@ import React from "react"
 import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
+import classNames from "classnames"
 
 import { FacebookShareButton, TwitterShareButton, FacebookIcon,
   TwitterIcon, } from "react-share"
@@ -23,28 +24,27 @@ const BlogPost = ({
 
   const shareUrl = "http://www.janneheikkinen.fi/blogi/" + slug;
 
-  /* const findIndex = allSlugs.forEach((slugs, index) => {
-    console.log(index)
-    console.log(slugs)
-    console.log(slug)
-    if (slugs == slug) return ("HIERIEIIE")
-  } )
 
-  console.log(findIndex) */
-console.log(allSlugs[0])
-for (let i=0; i++; i < allSlugs.length) {
+const prevSlug = allSlugs[allSlugs.indexOf(slug) - 1]
+const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
+let isFirst = false;
+let isLast = false;
+ 
+if (!prevSlug) {
+  isFirst = true;
+} 
 
-  console.log(allSlugs[i])
-  console.log(slug)
-    if (slug === allSlugs[i]) {
-      return i;
-    }
-    console.log(i);
-  }
+if (!nextSlug) {
+  isLast = true;
+}
 
+const prevClasses = classNames({
+  prevDisplayNone: isFirst,
+})
 
-
-
+const nextClasses = classNames({
+  nextDisplayNone: isLast,
+})
 
   return (
     <div className="blog-post">
@@ -94,8 +94,8 @@ for (let i=0; i++; i < allSlugs.length) {
           </div>
       </div>
       <div className="blogPost-button-container">
-        <Link to={`blogi/${slug}`}><button>Previous</button></Link>
-        <Link to={`yhteys`}><button>Next</button></Link>
+        <Link to={`blogi/${prevSlug}`}><button className={prevClasses}>◀ Edeellinen</button></Link>
+        <Link to={`blogi/${nextSlug}`}><button className={nextClasses}>Seuraava ▶</button></Link>
       </div>
     </div>
   )
