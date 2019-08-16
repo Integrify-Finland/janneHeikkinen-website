@@ -20,6 +20,8 @@
 
   @include for-phone {
     grid-template-columns: 1fr 5fr 2fr;
+    width: 95%;
+    margin: 0 auto;
   }
 
   &__date {

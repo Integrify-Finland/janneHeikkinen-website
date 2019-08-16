@@ -34,8 +34,8 @@ const BlogPostTemplate = ({ data, location }) => {
     : formatDate(contentfulBlog.date)
   return (
     <Layout>
-      <SEO title="blogi" />
-      <div style={{ marginTop: "128px" }}>
+      <div style={{ paddingTop: "128px", backgroundColor: "#edf5f8" }}>
+        <SEO title="blogi" />
         <Section isBlog>
           {contentfulBlog && (
             <BlogPost
