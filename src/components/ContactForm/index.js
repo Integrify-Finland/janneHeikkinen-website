@@ -36,9 +36,7 @@ export default class ContactForm extends React.Component {
         "form-name": form.getAttribute("name"),
         ...this.state,
       }),
-    })
-      .then(() => navigateTo(form.getAttribute("action")))
-      .catch(error => alert(error))
+    }).catch(error => alert(error))
   }
 
   render() {
@@ -46,24 +44,21 @@ export default class ContactForm extends React.Component {
       <div className="contact-form__container">
         <form
           name="contact-recaptcha"
-          method="post"
-          action="/thanks/"
+          method="POST"
+          netlify-honeypot="bot-field"
           data-netlify="true"
-          data-netlify-recaptcha="true"
-          onSubmit={this.handleSubmit}
         >
           <div className="contact-form__top">Lähetä viesti</div>
-
+          <p style={{ visibility: "hidden" }}>
+            <label>
+              <input name="bot-field" />
+            </label>
+          </p>
           <p>
             <label>
               Nimesi (pakollinen)
               <br />
-              <input
-                type="text"
-                name="name"
-                onChange={this.handleChange}
-                className="contact-form__input"
-              />
+              <input type="text" name="name" className="contact-form__input" />
             </label>
           </p>
           <p>
@@ -90,11 +85,7 @@ export default class ContactForm extends React.Component {
               />
             </label>
           </p>
-          {/* <Recaptcha
-            ref="recaptcha"
-            sitekey={RECAPTCHA_KEY}
-            onChange={this.handleRecaptcha}
-          /> */}
+
           <div>
             <Button variant="orange" size="md" label="Lähetä" />
           </div>
