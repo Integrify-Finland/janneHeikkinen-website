@@ -1,10 +1,9 @@
 import React from "react"
-import "./styles.scss"
 import { navigateTo } from "gatsby-link"
-// import Recaptcha from "react-google-recaptcha"
-import Button from "../Button"
+import NetlifyForm from "react-netlify-form"
 
-// const RECAPTCHA_KEY = process.env.SITE_RECAPTCHA_KEY
+import Button from "../Button"
+import "./styles.scss"
 
 function encode(data) {
   return Object.keys(data)
@@ -42,54 +41,110 @@ export default class ContactForm extends React.Component {
   render() {
     return (
       <div className="contact-form__container">
-        <form
-          name="contact-recaptcha"
-          method="POST"
-          netlify-honeypot="bot-field"
-          data-netlify="true"
-        >
-          <div className="contact-form__top">Lähetä viesti</div>
-          <p style={{ visibility: "hidden" }}>
-            <label>
-              <input name="bot-field" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Nimesi (pakollinen)
-              <br />
-              <input type="text" name="name" className="contact-form__input" />
-            </label>
-          </p>
-          <p>
-            <label>
-              Sähköposti (pakollinen)
-              <br />
-              <input
-                type="email"
-                name="email"
-                onChange={this.handleChange}
-                className="contact-form__input"
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Viestisi
-              <br />
-              <textarea
-                name="message"
-                onChange={this.handleChange}
-                className="contact-form__textarea"
-                rows="9"
-              />
-            </label>
-          </p>
+        <NetlifyForm name="Contact Form">
+          {({ loading, error, success }) => (
+            <div>
+              {/* {error && (
+                <div>
+                  Your information was not sent. Please try again later.
+                </div>
+              )} */}
+              {success && (
+                <>
+                  <div className="contact-form__top">Lähetä viesti</div>
+                  <p>
+                    <label>
+                      Nimesi (pakollinen)
+                      <br />
+                      <input
+                        type="text"
+                        name="name"
+                        disabled
+                        className="contact-form__input"
+                      />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Sähköposti (pakollinen)
+                      <br />
+                      <input
+                        type="email"
+                        name="email"
+                        disabled
+                        className="contact-form__input"
+                      />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Viestisi
+                      <br />
+                      <textarea
+                        className="contact-form__textarea"
+                        rows="9"
+                        disabled
+                      />
+                    </label>
+                  </p>
 
-          <div>
-            <Button variant="orange" size="md" label="Lähetä" />
-          </div>
-        </form>
+                  <div>
+                    <Button
+                      variant="orange"
+                      size="md"
+                      label="Kiitos Paljon!"
+                      disabled
+                    />
+                  </div>
+                </>
+              )}
+              {!loading && !success && (
+                <>
+                  <div className="contact-form__top">Lähetä viesti</div>
+                  <p>
+                    <label>
+                      Nimesi (pakollinen)
+                      <br />
+                      <input
+                        type="text"
+                        name="name"
+                        className="contact-form__input"
+                      />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Sähköposti (pakollinen)
+                      <br />
+                      <input
+                        type="email"
+                        name="email"
+                        onChange={this.handleChange}
+                        className="contact-form__input"
+                      />
+                    </label>
+                  </p>
+                  <p>
+                    <label>
+                      Viestisi
+                      <br />
+                      <textarea
+                        name="message"
+                        onChange={this.handleChange}
+                        className="contact-form__textarea"
+                        rows="9"
+                      />
+                    </label>
+                  </p>
+
+                  <div>
+                    <Button variant="orange" size="md" label="Lähetä" />
+                  </div>
+                </>
+              )}
+            </div>
+          )}
+        </NetlifyForm>
       </div>
     )
   }
