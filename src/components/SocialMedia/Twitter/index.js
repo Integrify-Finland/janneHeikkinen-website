@@ -37,7 +37,7 @@ class Twitter extends Component {
         <a
           className="twitter-timeline"
           data-height="580"
-          data-width="400"
+          data-width="500"
           data-adapt-container-width="true"
           href={twitterURL}
           target="blank"
