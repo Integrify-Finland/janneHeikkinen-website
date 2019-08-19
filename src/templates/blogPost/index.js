@@ -11,7 +11,8 @@ import Section from "../../components/Section"
 import OPTIONS from "../../helpers/rich-text-options"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
-import { WPContent } from "../../utilities/WPblogs.js"
+import { WPContent, WP } from "../../utilities/WPblogs.js"
+import { switchToCat } from "../../utilities/switches";
 
 const BlogPostTemplate = ({ data, location }) => {
 
@@ -19,7 +20,7 @@ const BlogPostTemplate = ({ data, location }) => {
   
   const { allContentfulBlog, contentfulBlog, } = data
 
-  const allPosts = [...allContentfulBlog.edges, ...WPContent.edges]
+  const allPosts = [...allContentfulBlog.edges, ...WPContent.edges, ...WP.edges]
 
   const allSlugs = allPosts.map(({ node }) => {
     return node.slug
@@ -29,6 +30,16 @@ const BlogPostTemplate = ({ data, location }) => {
   const currentBlog = WPContent.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
+
+
+    const currentCat = " " + switchToCat((WP.edges
+    .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
+    .map(blog => blog.node.categories)[0])[0])
+
+
+    const currentTags = " " + WP.edges
+      .filter(({ node }) => `/blogi/${node.slug}` === location.pathname).filter(({ node }) => node.tags !== null)
+      .map(blog => blog.node.tags.map(tag => (" " + tag.name)))
 
   const renderBlogPost = () => {
     return documentToReactComponents(
@@ -40,7 +51,6 @@ const BlogPostTemplate = ({ data, location }) => {
     return { __html: currentBlog.content }
   }
 
- 
 
   const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
   const date = currentBlog
@@ -60,7 +70,7 @@ const BlogPostTemplate = ({ data, location }) => {
               tags={contentfulBlog.tags}
               categories={contentfulBlog.categories}
               slug={contentfulBlog.slug}
-             allSlugs={allSlugs}
+              allSlugs={allSlugs}
             >
               {renderBlogPost()}
             </BlogPost>
@@ -73,8 +83,8 @@ const BlogPostTemplate = ({ data, location }) => {
               date={date}
               title={currentBlog.title}
               image={selectImg(currentBlog.id)}
-              categories={currentBlog.categories}
-              tags={currentBlog.tags}
+              categories={currentCat}
+              tags={currentTags}
               slug={currentBlog.slug}
               allSlugs={allSlugs}
             >
