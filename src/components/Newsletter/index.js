@@ -1,9 +1,20 @@
-import React from "react"
+import React, { useState } from "react"
+import addToMailchimp from "gatsby-plugin-mailchimp"
 
 import Button from "../Button"
 import "./styles.scss"
 
 const Newsletter = ({ animationStage, setAnimationStage }) => {
+  const [email, setEmail] = useState("")
+  const _handleChange = e => {
+    const { value } = e.target
+    setEmail(value)
+  }
+
+  const _handleSubmit = async e => {
+    e.preventDefault()
+    const result = await addToMailchimp(email)
+  }
   if (animationStage === "initial") {
     return (
       <>
@@ -29,13 +40,18 @@ const Newsletter = ({ animationStage, setAnimationStage }) => {
           </p>
           <input
             className="newsletter-container--first-stage__input"
+            name="email"
+            onChange={_handleChange}
             type="email"
           ></input>
           <Button
             variant="primary"
             size="md"
             label="lähetä→"
-            onClick={() => setAnimationStage("second stage")}
+            onClick={e => {
+              _handleSubmit(e)
+              setAnimationStage("second stage")
+            }}
           />
         </div>
       </div>

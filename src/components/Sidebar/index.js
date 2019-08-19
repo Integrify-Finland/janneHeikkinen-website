@@ -23,7 +23,7 @@ const Sidebar = ({
               ? node.entryImage
               : selectImg(node.id, image)
             const date = formatDate(node.date)
-            console.log(node)
+
             return (
               <BlogItem
                 isSidebar

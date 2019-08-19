@@ -8,6 +8,7 @@ import SocialMedia from "../components/SocialMedia/index"
 import Section from "../components/Section"
 import image from "../images/JANNE_HEIKKINEN_260619_77.jpg"
 import Header from "../components/Header"
+import { WP } from "../utilities/WPblogs.js"
 import { selectImg } from "../utilities/WPImages"
 import { formatDate } from "../utilities/FormatDate"
 
@@ -16,59 +17,51 @@ const text =
 const shortText = text.substr(0, 416) + "..."
 
 const IndexPage = ({ data }) => {
-  const { contentfulBlog, wordPressBlogs } = data
-  const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
+  const { contentfulBlog } = data
+  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
 
   return (
     <Layout>
+      <SEO title="Etusivu" />
       <Header
         isAbout={false}
         Subtext={
           "Kansanedustaja, yhteiskuntatieteiden maisteri ja intohimoinen perhokalastaja."
         }
       />
-      <Section>
-        <SEO title="Home" />
-        <h1
-          style={{
-            textAlign: "center",
-            color: "#023b56",
-            fontSize: "64px",
-            fontWeight: "400",
-            textDecoration: "underline #6ccff6",
-          }}
-        >
-          Blogi
-        </h1>
-      </Section>
-      <Section>
-        {allBlogs.slice(0, 3).map(({ node }, index) => {
-          const img = node.entryImage
-            ? node.entryImage
-            : selectImg(node.id, image)
-          const date = formatDate(node.date)
-          return (
-            <BlogItem
-              isFluid={!!node.entryImage}
-              date={date}
-              title={node.title}
-              number={index + 1}
-              image={img}
-              text={shortText}
-              link={`blogi/${node.slug
-                .toLowerCase()
-                .replace(/[']/gi, "")
-                .replace(/ /gi, "-")
-                .replace(/[,]/gi, "")
-                .replace(/[ä]/gi, "a")
-                .replace(/[ö]/gi, "o")}`}
-            />
-          )
-        })}
-      </Section>
-      <Section>
-        <SocialMedia />
-      </Section>
+      <div className="index-page-wrapper">
+        <Section>
+          <h1 className="index-page-wrapper__title">Blogi</h1>
+        </Section>
+        <Section>
+          {allBlogs.slice(0, 3).map(({ node }, index) => {
+            const img = node.entryImage
+              ? node.entryImage
+              : selectImg(node.id, image)
+            const date = formatDate(node.date)
+            return (
+              <BlogItem
+                isFluid={!!node.entryImage}
+                date={date}
+                title={node.title}
+                number={index + 1}
+                image={img}
+                text={shortText}
+                link={`blogi/${node.slug
+                  .toLowerCase()
+                  .replace(/[']/gi, "")
+                  .replace(/ /gi, "-")
+                  .replace(/[,]/gi, "")
+                  .replace(/[ä]/gi, "a")
+                  .replace(/[ö]/gi, "o")}`}
+              />
+            )
+          })}
+        </Section>
+        <Section>
+          <SocialMedia />
+        </Section>
+      </div>
     </Layout>
   )
 }
@@ -96,20 +89,6 @@ export const query = graphql`
               srcSetWebp
               sizes
             }
-          }
-        }
-      }
-    }
-    wordPressBlogs: allWordpressPost {
-      edges {
-        node {
-          id
-          categories
-          title
-          slug
-          date
-          tags {
-            name
           }
         }
       }

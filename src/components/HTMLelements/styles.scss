@@ -1,127 +1,126 @@
 .blog-post {
-
-.bold {
+  .bold {
     font-weight: 700;
     color: $primary;
-}
+  }
 
-.italic {
+  .italic {
     font-style: italic;
     color: $primary;
-}
+  }
 
-.Underline {
+  .Underline {
     text-decoration: underline;
     color: $primary;
-}
+  }
 
-h1 {
+  h1 {
     color: $primary;
     font-size: 2.5rem;
     @include for-phone-only {
-        font-size: 2.3rem;
+      font-size: 2.3rem;
     }
-}
+  }
 
-h2 {
+  h2 {
     color: $primary;
     font-size: 2.3rem;
     @include for-phone-only {
-        font-size: 2.1rem;
+      font-size: 2.1rem;
     }
-}
+  }
 
-h3 {
+  h3 {
     color: $primary;
     font-size: 2.1rem;
     @include for-phone-only {
-        font-size: 1.9rem;
+      font-size: 1.9rem;
     }
-}
+  }
 
-h4 {
+  h4 {
     color: $primary;
     font-size: 1.9rem;
     @include for-phone-only {
-        font-size: 1.7rem;
+      font-size: 1.7rem;
     }
-}
+  }
 
-h5 {
+  h5 {
     color: $primary;
     font-size: 1.7rem;
     @include for-phone-only {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
-}
+  }
 
-h6 {
+  h6 {
     color: $primary;
     font-size: 1.5rem;
     @include for-phone-only {
-        font-size: 1.3rem;
+      font-size: 1.3rem;
     }
-}
+  }
 
-p {
+  p {
     font-family: $font-family;
+    line-height: 1.4;
     @include font-size-l;
     color: $primary;
     @include for-phone-only {
-        @include font-size-m;
+      @include font-size-m;
     }
-}
+  }
 
-ul {
+  ul {
     font-weight: 700;
     color: $primary;
     @include font-size-l;
     list-style-type: disc;
     @include for-phone-only {
-        @include font-size-m;
+      @include font-size-m;
     }
-}
+  }
 
-ol {
+  ol {
     font-weight: 700;
     color: $primary;
     @include font-size-l;
     @include for-phone-only {
-        @include font-size-m;
+      @include font-size-m;
     }
-}
+  }
 
-q {
+  q {
     quotes: "«" "»";
     color: $secondary;
     @include font-size-l-xx;
     font-style: italic;
     @include for-phone-only {
-        @include font-size-l-x;
+      @include font-size-l-x;
     }
-}
+  }
 
-q:before {
+  q:before {
     content: open-quote;
-}
+  }
 
-q:after {
+  q:after {
     content: close-quote;
-}
+  }
 
-hr {
+  hr {
     width: 90vw;
     border: 0.5px solid $secondary;
-}
+  }
 
-a {
+  a {
     color: $secondary;
     text-decoration: underline;
-}
+  }
 
-img {
+  img {
     width: 100%;
     color: grey;
-}
-
+  }
 }

@@ -10,15 +10,15 @@ const AboutTextBlock = ({ title, text, icon, isLeft }) => {
   })
 
   return (
-    <div className="about-text-block">
-      <img className={classes} src={icon} alt="icons" />
-      <div className="about-text-block__text-wrapper">
-        <h1 className="about-text-block__title">
-          <u>{title}</u>
-        </h1>
-        <p className="about-text-block__paragraph">{text}</p>
+      <div className="about-text-block">
+        <img className={classes} src={icon} alt="icons" />
+        <div className="about-text-block__text-wrapper">
+          <h1 className="about-text-block__title">
+            <u>{title}</u>
+          </h1>
+          <p className="about-text-block__paragraph">{text}</p>
+        </div>
       </div>
-    </div>
   )
 }
 

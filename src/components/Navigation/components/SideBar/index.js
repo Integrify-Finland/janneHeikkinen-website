@@ -16,29 +16,40 @@ const SideBar = ({ show, toggleMenu }) => {
           onClick={toggleMenu}
           aria-label="Close"
         />
-      
 
         <div className="mobile-menu__links">
-        <Link to="/" className="mobile-menu__nav-link">Etusivu</Link>
-          <Link to="/janne" className="mobile-menu__nav-link">Janne</Link>
+          <Link to="/" className="mobile-menu__nav-link">
+            Etusivu
+          </Link>
+          <Link to="/janne" className="mobile-menu__nav-link">
+            Janne
+          </Link>
           <Link
             to="/blogi"
             className="mobile-menu__nav-link"
             activeClassName="mobile-menu__nav-link--active"
-          >Blogi</Link>
+          >
+            Blogi
+          </Link>
           <Link
             to="/videot"
             className="mobile-menu__nav-link"
             activeClassName="mobile-menu__nav-link--active"
-          >Videot</Link>
+          >
+            Videot
+          </Link>
 
-          <Link to="/medialle" className="mobile-menu__nav-link">Medialle</Link>
+          <Link to="/medialle" className="mobile-menu__nav-link">
+            Medialle
+          </Link>
 
           <Link
-            to="/yhteystiedot"
+            to="/yhteys"
             className="mobile-menu__nav-link"
             activeClassName="mobile-menu__nav-link--active"
-          >Yhteystiedot</Link>
+          >
+            Yhteystiedot
+          </Link>
         </div>
       </div>
     </aside>

@@ -14,23 +14,24 @@ const Medialle = ({ data }) => {
     <Layout>
       <SEO title="Medialle" />
       <Section>
-      <Media />
-      <div
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-
-        }}
-      >
-           
-        {forMedia.pictures.map((data, i) => (
-          <Image fluid={data.fluid} key={i} />
-        ))}
-      </div>
-          <p style= {{textAlign:"center", fontWeight:"400", color:"#023b56"}}>Oheisia kuvia saa käyttää vapaasti median julkaisuissa.</p>
-          </Section>
-
+        <Media />
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+          }}
+        >
+          {forMedia.pictures.map((data, i) => (
+            <a target="_blank" href={`https://${data.fluid.src}`}>
+              <Image fluid={data.fluid} key={i} />
+            </a>
+          ))}
+        </div>
+        <p style={{ textAlign: "center", fontWeight: "400", color: "#023b56" }}>
+          Oheisia kuvia saa käyttää vapaasti median julkaisuissa.
+        </p>
+      </Section>
     </Layout>
   )
 }

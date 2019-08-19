@@ -1,4 +1,5 @@
 .newsletter-container--first-stage {
+  margin-bottom: $spacing-01;
   .header__textbox {
     background-color: red !important;
   }
@@ -142,7 +143,8 @@
   background-color: $orange;
   border-radius: 40px;
   width: 330px;
-  height: 55px;
+  height: 48px;
+  margin-bottom: $spacing-01;
   text-align: center;
   animation: newsletter-animation2;
   animation-duration: 500ms;
@@ -161,7 +163,7 @@
     font-weight: bold;
     position: relative;
     text-transform: uppercase;
-    line-height: 53px;
+    line-height: 48px;
     animation: appearing-animation2;
     animation-delay: 300ms;
     animation-duration: 210ms;
@@ -169,7 +171,7 @@
 
     @include for-phone-only {
       font-size: 18px;
-      line-height: 51px;
+      line-height: 45px;
     }
   }
 
