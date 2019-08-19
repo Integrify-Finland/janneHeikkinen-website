@@ -13,7 +13,7 @@ class Instagram extends Component {
             src="https://cdn.lightwidget.com/widgets/b697a021935e50f8b4656ecedebb7698.html"
             scrolling="no"
             allowtransparency="true"
-            class="lightwidget-widget"
+            className="lightwidget-widget"
             style={{ width: "100%", border: "0", overflow: "hidden" }}
           ></iframe>
         </div>
