@@ -7,23 +7,14 @@ class Instagram extends Component {
     return (
       <div className="instagram-column">
         <h3 className="instagram-column__title">Instagram</h3>
-        <div style={{ height: "590px", overflow: "hidden" }}>
+        <div style={{ width: "100vw", margin: "auto", display: "block", overflow: "hidden" }}>
           <iframe
-<<<<<<< HEAD
-            title="Janne's Instagram"
-            src="https://www.juicer.io/api/feeds/charliefeatherlight/iframe"
-            scrolling="yes"
-            allowtransparency="true"
-            class="lightwidget-widget"
-            style={{ width: "100%", border: "0", overflow: "hidden", height: "580px" }}
-=======
             title="Janne's Instagram feed"
             src="https://cdn.lightwidget.com/widgets/b697a021935e50f8b4656ecedebb7698.html"
             scrolling="no"
             allowtransparency="true"
             className="lightwidget-widget"
-            style={{ width: "100%", border: "0", overflow: "hidden" }}
->>>>>>> 7855c19aed81e764f0cc0deed4013a030dbb8929
+            style={{ width: "100%", border: "0", height: "580px", }}
           ></iframe>
         </div>
       </div>

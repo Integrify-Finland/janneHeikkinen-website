@@ -32,12 +32,12 @@ class Twitter extends Component {
   render() {
     const { twitterURL } = this.props
     return (
-      <div className="twitter-column">
+      <div className="twitter-column" >
         <h3 className="twitter-column__title">Twitter</h3>
         <a
           className="twitter-timeline"
           data-height="580"
-          data-width="500"
+          data-width="400"
           data-adapt-container-width="true"
           href={twitterURL}
           target="blank"
