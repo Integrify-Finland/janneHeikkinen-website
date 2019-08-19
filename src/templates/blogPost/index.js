@@ -11,13 +11,13 @@ import Section from "../../components/Section"
 import OPTIONS from "../../helpers/rich-text-options"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
-import { switchToNums, switchToCat } from "../../utilities/switches"
+import { WPContent } from "../../utilities/WPblogs.js"
 
-
-const BlogPostTemplate = ({ data }) => {
-
-
-  const { wordPressBlog, contentfulBlog, allPosts } = data
+const BlogPostTemplate = ({ data, location }) => {
+  const { contentfulBlog } = data
+  const currentBlog = WPContent.edges
+    .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
+    .map(blog => blog.node)[0]
 
   const renderBlogPost = () => {
     return documentToReactComponents(
@@ -26,29 +26,16 @@ const BlogPostTemplate = ({ data }) => {
     )
   }
   const createMarkup = () => {
-    return { __html: wordPressBlog.content }
+    return { __html: currentBlog.content }
   }
-
-  
-  let categories = " none"
-  if (wordPressBlog.categories) categories = wordPressBlog.categories.map(cat => (" " + switchToCat(cat)))
-
-  let tags = " none"
-  if (wordPressBlog.tags) tags =  wordPressBlog.tags.map(tags => (" " + tags.name))
-
-  const allSlugs = allPosts.edges
-  .map(({ node }) => {
-    return node.slug
-  })
-
-  const whichBlog = contentfulBlog ? contentfulBlog : wordPressBlog
-  const date = wordPressBlog
-    ? formatDate(wordPressBlog.date)
+  const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
+  const date = currentBlog
+    ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
   return (
     <Layout>
-      <SEO title="blogi" />
-      <div style={{ marginTop: "128px" }}>
+      <div style={{ paddingTop: "128px", backgroundColor: "#edf5f8" }}>
+        <SEO title="blogi" />
         <Section isBlog>
           {contentfulBlog && (
             <BlogPost
@@ -65,16 +52,12 @@ const BlogPostTemplate = ({ data }) => {
           )}
         </Section>
         <Section>
-          {wordPressBlog && (
+          {currentBlog && (
             <BlogPost
               isFluid={false}
               date={date}
-              title={wordPressBlog.title}
-              image={selectImg(wordPressBlog.id)}
-              categories={categories}
-              tags={tags}
-              slug={wordPressBlog.slug}
-              allSlugs={allSlugs}
+              title={currentBlog.title}
+              image={selectImg(currentBlog.id)}
             >
               <div
                 className="blog-post"
@@ -113,24 +96,6 @@ export const query = graphql`
       }
       childContentfulBlogPostContentRichTextNode {
         json
-      }
-    }
-    wordPressBlog: wordpressPost(slug: { eq: $slug }) {
-      id
-      title
-      content
-      slug
-      date
-      categories
-      tags {
-        name
-      }
-    }
-    allPosts: allWordpressPost {
-      edges {
-        node {
-          slug
-        }
       }
     }
   }

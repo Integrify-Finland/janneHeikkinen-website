@@ -1,6 +1,7 @@
 .blog-post {
   @include for-phone {
-    width: 100%;
+    width: 95%;
+    margin: 0 auto;
   }
 
   &__date {

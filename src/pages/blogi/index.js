@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
-
+import { WP } from "../../utilities/WPblogs.js"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
@@ -18,18 +18,21 @@ const text =
 const shortText = text.substr(0, 416) + "..."
 
 const Blogi = ({ data }) => {
-  const { contentfulBlog, wordPressBlogs } = data
+  const { contentfulBlog } = data
 
   const [currentPage, setCurrentPage] = useState(1)
   const [postsPerPage] = useState(8)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
-  const paginate = pageNumber => setCurrentPage(pageNumber)
+  const paginate = pageNumber => {
+    setCurrentPage(pageNumber)
+    window.scrollTo(0, 0)
+  }
 
-  const allBlogs = [...contentfulBlog.edges, ...wordPressBlogs.edges]
+  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
 
-  const categories = wordPressBlogs.edges
+  const categories = WP.edges
     .map(({ node }) => {
       return node.categories.map(cat => switchToCat(cat))
     })
@@ -39,7 +42,7 @@ const Blogi = ({ data }) => {
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
 
-  const tags = wordPressBlogs.edges
+  const tags = WP.edges
     .filter(({ node }) => node.tags !== null)
     .reduce((acc, { node }) => {
       return [...acc, ...node.tags]
@@ -155,25 +158,6 @@ export const query = graphql`
               srcSetWebp
               sizes
             }
-          }
-        }
-      }
-    }
-    wordPressBlogs: allWordpressPost {
-      edges {
-        node {
-          id
-          categories
-          title
-          slug
-          date
-          _links {
-            wp_featuredmedia {
-              href
-            }
-          }
-          tags {
-            name
           }
         }
       }

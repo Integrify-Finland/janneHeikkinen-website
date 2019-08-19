@@ -94,7 +94,7 @@ const nextClasses = classNames({
           </div>
       </div>
       <div className="blogPost-button-container">
-        <Link to={`blogi/${prevSlug}`}><button className={prevClasses}>◀ Edeellinen</button></Link>
+        <Link to={`blogi/${prevSlug}`}><button className={prevClasses}>◀ Edellinen</button></Link>
         <Link to={`blogi/${nextSlug}`}><button className={nextClasses}>Seuraava ▶</button></Link>
       </div>
     </div>

@@ -1,5 +1,6 @@
 .blogi-wrapper {
   display: flex;
+  background-color: #edf5f8;
   .blog-item {
     margin-top: $spacing-08;
   }
@@ -18,5 +19,15 @@
         display: none;
       }
     }
+  }
+}
+.index-page-wrapper {
+  background-color: #edf5f8;
+  &__title {
+    text-align: center;
+    color: #023b56;
+    font-size: 64px;
+    font-weight: 400;
+    text-decoration: underline #6ccff6;
   }
 }
