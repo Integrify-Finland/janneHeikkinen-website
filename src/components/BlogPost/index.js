@@ -25,6 +25,7 @@ const BlogPost = ({
   const shareUrl = "http://www.janneheikkinen.fi/blogi/" + slug;
 
 
+
 const prevSlug = allSlugs[allSlugs.indexOf(slug) - 1]
 const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
 let isFirst = false;

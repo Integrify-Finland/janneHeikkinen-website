@@ -14,7 +14,18 @@ import { formatDate } from "../../utilities/FormatDate"
 import { WPContent } from "../../utilities/WPblogs.js"
 
 const BlogPostTemplate = ({ data, location }) => {
-  const { contentfulBlog } = data
+
+
+  
+  const { allContentfulBlog, contentfulBlog, } = data
+
+  const allPosts = [...allContentfulBlog.edges, ...WPContent.edges]
+
+  const allSlugs = allPosts.map(({ node }) => {
+    return node.slug
+  })
+
+
   const currentBlog = WPContent.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
@@ -28,6 +39,9 @@ const BlogPostTemplate = ({ data, location }) => {
   const createMarkup = () => {
     return { __html: currentBlog.content }
   }
+
+ 
+
   const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
   const date = currentBlog
     ? formatDate(currentBlog.date)
@@ -46,6 +60,7 @@ const BlogPostTemplate = ({ data, location }) => {
               tags={contentfulBlog.tags}
               categories={contentfulBlog.categories}
               slug={contentfulBlog.slug}
+             allSlugs={allSlugs}
             >
               {renderBlogPost()}
             </BlogPost>
@@ -58,6 +73,10 @@ const BlogPostTemplate = ({ data, location }) => {
               date={date}
               title={currentBlog.title}
               image={selectImg(currentBlog.id)}
+              categories={currentBlog.categories}
+              tags={currentBlog.tags}
+              slug={currentBlog.slug}
+              allSlugs={allSlugs}
             >
               <div
                 className="blog-post"
@@ -82,6 +101,7 @@ export const query = graphql`
       tags
       date
       categories
+      slug
       entryImage {
         fluid {
           base64
@@ -96,6 +116,14 @@ export const query = graphql`
       }
       childContentfulBlogPostContentRichTextNode {
         json
+      }
+    }
+
+    allContentfulBlog: allContentfulBlogPost {
+      edges {
+        node {
+          slug
+        }
       }
     }
   }
