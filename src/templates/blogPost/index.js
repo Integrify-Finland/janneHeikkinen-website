@@ -33,11 +33,11 @@ const BlogPostTemplate = ({ data, location }) => {
 
 
     const currentCat = " " + switchToCat((WP.edges
-    .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-    .map(blog => blog.node.categories)[0])[0])
+    .filter(({ node }) => `/blogi/${node.slug}` === location.pathname).filter(({ node }) => node.categories !== null)
+    .map(blog => blog.node.categories)[0])[0]) 
 
 
-    const currentTags = " " + WP.edges
+    const currentTags =  " " + WP.edges
       .filter(({ node }) => `/blogi/${node.slug}` === location.pathname).filter(({ node }) => node.tags !== null)
       .map(blog => blog.node.tags.map(tag => (" " + tag.name)))
 
