@@ -7,7 +7,7 @@ class Instagram extends Component {
     return (
       <div className="instagram-column">
         <h3 className="instagram-column__title">Instagram</h3>
-        <div style={{ width: "100vw", margin: "auto", display: "block", overflow: "hidden" }}>
+        <div style={{ margin: "auto", display: "block", overflow: "hidden" }}>
           <iframe
             title="Janne's Instagram feed"
             src="https://cdn.lightwidget.com/widgets/b697a021935e50f8b4656ecedebb7698.html"
