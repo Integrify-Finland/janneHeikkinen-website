@@ -29,7 +29,7 @@ export default class HTML extends React.Component {
             dangerouslySetInnerHTML={{ __html: this.props.body }}
           />
           {this.props.postBodyComponents}
-          <script src="https://cdn.lightwidget.com/widgets/lightwidget.js"></script>
+          <script src="//instafeed.assets.pixlee.com/assets/pixlee_widget_1_0_0.js"></script>
         </body>
       </html>
     )
