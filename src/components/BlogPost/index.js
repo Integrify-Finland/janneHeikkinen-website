@@ -3,6 +3,7 @@ import Img from "gatsby-image"
 import PropTypes from "prop-types"
 import { Link } from "gatsby"
 import classNames from "classnames"
+import defImage from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
 
 import { FacebookShareButton, TwitterShareButton, FacebookIcon,
   TwitterIcon, } from "react-share"
@@ -30,6 +31,8 @@ const prevSlug = allSlugs[allSlugs.indexOf(slug) - 1]
 const nextSlug = allSlugs[allSlugs.indexOf(slug) + 1]
 let isFirst = false;
 let isLast = false;
+
+if (!image) image = defImage;
  
 if (!prevSlug) {
   isFirst = true;
