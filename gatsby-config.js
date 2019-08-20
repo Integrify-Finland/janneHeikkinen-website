@@ -17,10 +17,11 @@ module.exports = {
       },
     },
     {
-        resolve: 'gatsby-plugin-mailchimp',
-        options: {
-            endpoint: 'https://janneheikkinen.us20.list-manage.com/subscribe/post?u=a88b374216f116ad1692ca496&amp;id=b317801c18',
-        },
+      resolve: "gatsby-plugin-mailchimp",
+      options: {
+        endpoint:
+          "https://janneheikkinen.us20.list-manage.com/subscribe/post?u=a88b374216f116ad1692ca496&amp;id=b317801c18",
+      },
     },
     {
       resolve: `gatsby-source-youtube-v2`,
