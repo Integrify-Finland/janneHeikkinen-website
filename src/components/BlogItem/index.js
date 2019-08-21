@@ -5,6 +5,9 @@ import PropTypes from "prop-types"
 // import formatDate from '../../utilities/FormatDate'
 import Button from "../Button"
 import Img from "gatsby-image"
+import { OPTIONSblogi } from "../../helpers/rich-text-options"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+
 
 const BlogItem = ({
   isSidebar,
@@ -19,6 +22,26 @@ const BlogItem = ({
   const styles = {
     textAlign: "center",
   }
+
+  const renderText = () => {
+
+    if (text)
+    return documentToReactComponents(
+      text,
+      OPTIONSblogi
+    )
+    else return "No text"
+  }
+
+  const paragraphOfText = renderText();
+
+
+console.log (paragraphOfText)
+
+// console.log (paragraphOfText.filter(obj => obj.hasOwnProperty('type') && obj['type']=='p')[0].props.children[0])
+
+// console.log (paragraphOfText.filter(obj => obj.hasOwnProperty('type') && obj['type']=='p').forEach(function (obj,i){return obj[i].props.children[0]}))
+
 
   const content = (
     <div className="blog-item">
@@ -36,7 +59,7 @@ const BlogItem = ({
         </div>
       )}
       <div className="blog-item__text">
-        <p>{text}</p>
+        <p>{renderText()}</p>
         <div style={styles}>
           <Link to={link}>
             <Button variant="secondary" size="sm" label="Lue lisää" />

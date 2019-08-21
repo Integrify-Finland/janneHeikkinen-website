@@ -19,6 +19,18 @@ import {
   Image,
 } from "../components/HTMLelements"
 
+export const OPTIONSblogi = {
+  
+  renderNode: {
+
+    [BLOCKS.PARAGRAPH]: (node, children) => <Paragraph>{children}</Paragraph>,
+
+  },
+}
+
+
+
+
 const OPTIONS = {
   renderMark: {
     [MARKS.BOLD]: text => <Bold>{text}</Bold>,

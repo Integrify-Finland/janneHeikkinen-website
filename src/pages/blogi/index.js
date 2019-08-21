@@ -13,15 +13,12 @@ import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
 
-const text =
-  "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
-const shortText = text.substr(0, 416) + "..."
 
 const Blogi = ({ data }) => {
   const { contentfulBlog } = data
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(8)
+  const [postsPerPage] = useState(2)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => {
@@ -87,7 +84,6 @@ const Blogi = ({ data }) => {
         <Sidebar
           blogs={allBlogs}
           image={image}
-          shortText={shortText}
           categories={categories}
           tags={tags}
           renderBlogs={renderBlogs}
@@ -100,10 +96,13 @@ const Blogi = ({ data }) => {
             }))
             .slice(indexOfFirstPost, indexOfLastPost)
             .map(({ blog, number }, index) => {
+              console.log(blog.node)
               const img = blog.node.entryImage
                 ? blog.node.entryImage
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
+             
+              
               return (
                 <BlogItem
                   isFluid={!!blog.node.entryImage}
@@ -111,7 +110,7 @@ const Blogi = ({ data }) => {
                   title={blog.node.title}
                   number={number}
                   image={img}
-                  text={shortText}
+                  text={blog.node.childContentfulBlogPostContentRichTextNode.json}
                   link={`blogi/${blog.node.slug
                     .toLowerCase()
                     .replace(/[']/gi, "")
@@ -142,9 +141,13 @@ export const query = graphql`
     contentfulBlog: allContentfulBlogPost {
       edges {
         node {
+          childContentfulBlogPostContentRichTextNode {
+            json
+          }
           title
           tags
           categories
+         
           id
           slug
           date
