@@ -72,11 +72,27 @@
 
   }
 
+&__share-button-container {
+
+  @include for-phone {
+margin: 20px auto;
+padding:0;
+
+text-align: center;
+  }
+
+}
+
+
 &__share-button {
 
   display: inline-block;
   transition: 90ms ease;
   margin-left: $spacing-01;
+  @include for-phone {
+    margin: $spacing-01 auto;
+    padding: $spacing-01;
+  }
 
 }
 
@@ -95,6 +111,13 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 margin-top: $spacing-04;
+
+@include for-phone {
+
+
+  display: block;
+  margin: auto;
+}
 
 }
 

@@ -76,7 +76,7 @@ const nextClasses = classNames({
           Tags:<span>{tags}</span>
         </div>
         </div>
-        <div>
+        <div className="blog-post__share-button-container">
         <FacebookShareButton
             url={shareUrl}
             quote={title}
