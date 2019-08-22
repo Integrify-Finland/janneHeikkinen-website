@@ -21,7 +21,7 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-
+  const URL = "https://distracted-swirles-8c2b20.netlify.com"
   return (
     <Helmet
       htmlAttributes={{
@@ -49,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
         {
           name: "og:image",
           property: "og:image",
-          content: `https://distracted-swirles-8c2b20.netlify.com${thumbnail}`,
+          content: `${URL}${thumbnail}`,
         },
         {
           property: "og:image:width",
@@ -69,7 +69,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:image:src`,
-          content: `${site.siteMetadata.image}`,
+          content: `${URL}${thumbnail}`,
         },
         {
           name: `twitter:title`,

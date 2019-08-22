@@ -103,7 +103,7 @@ const BlogPostTemplate = ({ data, location }) => {
           <meta name="twitter:image" content={selectImg(currentBlog.id)} />
         </Helmet>
       )}
-      }
+
       <div style={{ paddingTop: "128px", backgroundColor: "#edf5f8" }}>
         <SEO title="blogi" />
         <Section isBlog>
