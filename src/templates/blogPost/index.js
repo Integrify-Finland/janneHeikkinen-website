@@ -32,14 +32,14 @@ const BlogPostTemplate = ({ data, location }) => {
     .map(blog => blog.node)[0]
 
 
-    const currentCat = " " + switchToCat((WP.edges
+    const currentCat = currentBlog && WP.edges ? " " + switchToCat((WP.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname).filter(({ node }) => node.categories !== null)
-    .map(blog => blog.node.categories)[0])[0]) 
+    .map(blog => blog.node.categories)[0])[0]) : "No categories"
 
 
-    const currentTags =  " " + WP.edges
+    const currentTags =  currentBlog && WP.edges ? " " + WP.edges
       .filter(({ node }) => `/blogi/${node.slug}` === location.pathname).filter(({ node }) => node.tags !== null)
-      .map(blog => blog.node.tags.map(tag => (" " + tag.name)))
+      .map(blog => blog.node.tags.map(tag => (" " + tag.name))) : "No tags"
 
   const renderBlogPost = () => {
     return documentToReactComponents(

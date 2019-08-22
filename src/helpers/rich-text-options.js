@@ -19,19 +19,8 @@ import {
   Image,
 } from "../components/HTMLelements"
 
-export const OPTIONSblogi = {
-  
-  renderNode: {
-
-    [BLOCKS.PARAGRAPH]: (node, children) => <Paragraph>{children}</Paragraph>,
-
-  },
-}
-
-
-
-
 const OPTIONS = {
+  
   renderMark: {
     [MARKS.BOLD]: text => <Bold>{text}</Bold>,
     [MARKS.ITALIC]: text => <Italic>{text}</Italic>,
@@ -56,5 +45,30 @@ const OPTIONS = {
     [INLINES.HYPERLINK]: (node, children) => <HYPERLINK>{children}</HYPERLINK>,
   },
 }
+
+
+
+
+export const OPTIONSblogi = {
+
+  
+
+  renderNode: {
+    [BLOCKS.HEADING_1]: (node, children) => null,
+    [BLOCKS.HEADING_2]: (node, children) => null,
+    [BLOCKS.HEADING_3]: (node, children) => null,
+    [BLOCKS.HEADING_4]: (node, children) => null,
+    [BLOCKS.HEADING_5]: (node, children) => null,
+    [BLOCKS.HEADING_6]: (node, children) => null,
+    [BLOCKS.PARAGRAPH]: (node, children) => <Paragraph>{children}</Paragraph>,
+    [BLOCKS.UL_LIST]: (node, children) => null,
+    [BLOCKS.OL_LIST]: (node, children) => null,
+    [BLOCKS.QUOTE]: (node, children) => null,
+    [BLOCKS.HR]: (node, children) => null,
+    [BLOCKS.EMBEDDED_ASSET]: (node, children) => null,
+    [INLINES.HYPERLINK]: (node, children) => null,
+  },
+}
+
 
 export default OPTIONS

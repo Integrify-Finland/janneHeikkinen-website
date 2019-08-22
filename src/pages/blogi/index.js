@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
-import { WP } from "../../utilities/WPblogs.js"
+import { WP, WPContent } from "../../utilities/WPblogs.js"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
@@ -18,7 +18,7 @@ const Blogi = ({ data }) => {
   const { contentfulBlog } = data
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(2)
+  const [postsPerPage] = useState(8)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => {
@@ -26,8 +26,9 @@ const Blogi = ({ data }) => {
     window.scrollTo(0, 0)
   }
 
-  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
+  const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
+
 
   const categories = WP.edges
     .map(({ node }) => {
@@ -59,6 +60,8 @@ const Blogi = ({ data }) => {
         },
       }))
       .filter(blog => blog.node.categories.length > 0)
+
+      
 
     const filteredTag = allBlogs
       .map(({ node }) => {
@@ -96,12 +99,13 @@ const Blogi = ({ data }) => {
             }))
             .slice(indexOfFirstPost, indexOfLastPost)
             .map(({ blog, number }, index) => {
-              console.log(blog.node)
               const img = blog.node.entryImage
                 ? blog.node.entryImage
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
-             
+   
+              const text = blog.node.hasOwnProperty('childContentfulBlogPostContentRichTextNode') ? blog.node.childContentfulBlogPostContentRichTextNode.json : blog.node.content
+
               
               return (
                 <BlogItem
@@ -110,7 +114,8 @@ const Blogi = ({ data }) => {
                   title={blog.node.title}
                   number={number}
                   image={img}
-                  text={blog.node.childContentfulBlogPostContentRichTextNode.json}
+                  text={text}
+                  isContentful={!!blog.node.entryImage}
                   link={`blogi/${blog.node.slug
                     .toLowerCase()
                     .replace(/[']/gi, "")

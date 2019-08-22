@@ -18,29 +18,24 @@ const BlogItem = ({
   image,
   text,
   link,
+  isContentful
 }) => {
   const styles = {
     textAlign: "center",
   }
 
+
+
   const renderText = () => {
 
-    if (text)
+    if (text && isContentful)
     return documentToReactComponents(
       text,
       OPTIONSblogi
-    )
-    else return "No text"
+    ).filter(el => (el != null)).filter(el =>(el.props.children[0] != ""))[0].props.children[0].substring(0,450) + '...'
+    else if (text) return <div dangerouslySetInnerHTML={{__html: text.substring(0,450) + '...'}} />
+    else return 'Sorry, no text'
   }
-
-  const paragraphOfText = renderText();
-
-
-console.log (paragraphOfText)
-
-// console.log (paragraphOfText.filter(obj => obj.hasOwnProperty('type') && obj['type']=='p')[0].props.children[0])
-
-// console.log (paragraphOfText.filter(obj => obj.hasOwnProperty('type') && obj['type']=='p').forEach(function (obj,i){return obj[i].props.children[0]}))
 
 
   const content = (
