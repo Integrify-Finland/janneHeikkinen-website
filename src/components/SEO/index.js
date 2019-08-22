@@ -36,11 +36,11 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           property: `title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           property: `og:description`,
@@ -49,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
         {
           name: "og:image",
           property: "og:image",
-          content: `https://https://distracted-swirles-8c2b20.netlify.com${thumbnail}`,
+          content: `https://distracted-swirles-8c2b20.netlify.com${thumbnail}`,
         },
         {
           property: "og:image:width",
@@ -73,7 +73,7 @@ function SEO({ description, lang, meta, title }) {
         },
         {
           name: `twitter:title`,
-          content: title,
+          content: site.siteMetadata.title,
         },
         {
           name: `twitter:description`,
