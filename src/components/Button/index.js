@@ -12,6 +12,7 @@ const Button = ({ variant, label, size, disabled, onClick }) => {
         'button--sm': size === 'sm',
         'button--md': size === 'md',
         'button--lg': size === 'lg',
+        'button--disabled': disabled
     })
 
     return (

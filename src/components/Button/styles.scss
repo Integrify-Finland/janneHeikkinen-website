@@ -3,7 +3,7 @@
     border: none;
     margin: $spacing-01;
     font-family: $font-family;
-    transition: 90ms ease;
+    transition: 200ms ease;
 
     &--primary {
     background-color: $primary;
@@ -56,6 +56,11 @@
             @include font-size-m;
             padding: $spacing-00-75 $spacing-01-50;
         }
+    }
+
+    &--disabled {
+        background-color: rgb(187, 185, 185);
+        color: grey;
     }
 }
 
