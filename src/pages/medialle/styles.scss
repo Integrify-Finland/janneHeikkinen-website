@@ -1,0 +1,11 @@
+.medialle-images {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  a > * {
+    margin-right: 1rem;
+  }
+  @include for-phone {
+    justify-content: space-around;
+  }
+}

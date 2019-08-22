@@ -1,12 +1,13 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/Layout"
-import Image from "../components/Image"
-import SEO from "../components/SEO"
-import Media from "../components/Media"
-import Section from "../components/Section"
+import Layout from "../../components/Layout"
+import Image from "../../components/Image"
+import SEO from "../../components/SEO"
+import Media from "../../components/Media"
+import Section from "../../components/Section"
 
+import "./styles.scss"
 const Medialle = ({ data }) => {
   const { forMedia } = data
 
@@ -15,13 +16,7 @@ const Medialle = ({ data }) => {
       <SEO title="Medialle" />
       <Section>
         <Media />
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-between",
-          }}
-        >
+        <div className="medialle-images">
           {forMedia.pictures.map((data, i) => (
             <a
               target="_blank"

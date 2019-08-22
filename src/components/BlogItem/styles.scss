@@ -252,6 +252,9 @@
       @include font-size-s-x;
     }
   }
+  &__button {
+    text-align: center;
+  }
 }
 
 .blog-item-mini {
