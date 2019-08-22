@@ -3,6 +3,8 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import thumbnail from "../../assets/images/thumbnail.jpg"
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -47,7 +49,7 @@ function SEO({ description, lang, meta, title }) {
         {
           name: "og:image",
           property: "og:image",
-          content: `${site.siteMetadata.image}`,
+          content: `https://https://distracted-swirles-8c2b20.netlify.com${thumbnail}`,
         },
         {
           property: "og:image:width",

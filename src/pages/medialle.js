@@ -23,7 +23,11 @@ const Medialle = ({ data }) => {
           }}
         >
           {forMedia.pictures.map((data, i) => (
-            <a target="_blank" href={`https://${data.fluid.src}`}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              href={`https://${data.fluid.src}`}
+            >
               <Image fluid={data.fluid} key={i} />
             </a>
           ))}
