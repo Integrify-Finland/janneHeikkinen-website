@@ -97,10 +97,10 @@ const BlogPost = ({
       </div>
       <div className="blogPost-button-container">
         <Link to={`blogi/${prevSlug}`}>
-          <button className={prevClasses}>◀ Edellinen</button>
+          <button className={prevClasses}>{"<-"} Edellinen</button>
         </Link>
         <Link to={`blogi/${nextSlug}`}>
-          <button className={nextClasses}>Seuraava ▶</button>
+          <button className={nextClasses}>Seuraava {"->"}</button>
         </Link>
       </div>
     </div>
