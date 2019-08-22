@@ -5,6 +5,7 @@ module.exports = {
     title: `Janne Heikkinen`,
     description: `Kokoomuksen kansanedustaja, Oulun kaupunginvaltuutettu, yhteiskuntatieteiden maisteri ja intohimoinen perhokalastaja. Vapaus, ympäristö ja turvallisuus.`,
     author: `Integrify`,
+    image: ``,
   },
   plugins: [
     `gatsby-transformer-remark`,
@@ -40,42 +41,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        plugins: [
-          {
-            resolve: `@raae/gatsby-remark-oembed`,
-            options: {
-              // usePrefix defaults to false
-              // usePrefix: true is the same as ["oembed"]
-              usePrefix: false,
-              providers: {
-                include: ["Twitter", "Instagram", "Facebook"],
-                settings: {
-                  // Ex. Show all Twitter embeds with the dark theme
-                  Twitter: { theme: "dark" },
-                  // Ex. Hide all Instagram comments by default
-                  Instagram: { hidecaption: true },
-                },
-                // Important to exclude providers
-                // that adds js to the page.
-                // If you do not need them.
-                exclude: ["Reddit", "Flickr,"],
-              },
-            },
-          },
-
-          {
-            resolve: `gatsby-remark-responsive-iframe`,
-            options: {
-              wrapperStyle: `margin-bottom: 1.0725rem`,
-            },
-          },
-        ],
-      },
-    },
-
-    {
       resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
@@ -96,12 +61,9 @@ module.exports = {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Janne Heikkinen`,
-        short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/fav.png`, // This path is relative to the root of the site.
       },
     },
     // {

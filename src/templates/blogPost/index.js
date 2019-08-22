@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-
+import Helmet from "react-helmet"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
 import Layout from "../../components/Layout"
@@ -28,12 +28,61 @@ const BlogPostTemplate = ({ data, location }) => {
   const createMarkup = () => {
     return { __html: currentBlog.content }
   }
-  const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
+
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
   return (
     <Layout>
+      {
+        <>
+          contentfulBlog ? (
+          <Helmet>
+            <meta property="og:title" content={contentfulBlog.title} />
+
+            <meta
+              name="og:description"
+              property="og:description"
+              content={contentfulBlog.description}
+            />
+            <meta name="twitter:title" content={contentfulBlog.title} />
+            {/* <meta name="twitter:description" content={contentfulBlog.description} /> */}
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta
+              name="twitter:image:src"
+              content={`https:${contentfulBlog.entryImage.fluid.src}`}
+            />
+            <meta
+              name="twitter:image"
+              content={`https:${contentfulBlog.entryImage.fluid.src}`}
+            />
+          </Helmet>
+          ):
+          {
+            <Helmet>
+              <meta property="og:title" content={currentBlog.title} />
+              <meta
+                name="og:image"
+                property="og:image"
+                content={selectImg(currentBlog.id)}
+              />
+              {/* <meta
+                name="og:description"
+                property="og:description"
+                content={description}
+              /> */}
+              <meta name="twitter:title" content={currentBlog.title} />
+              {/* <meta name="twitter:description" content={description} /> */}
+              <meta name="twitter:card" content="summary_large_image" />
+              <meta
+                name="twitter:image:src"
+                content={selectImg(currentBlog.id)}
+              />
+              <meta name="twitter:image" content={selectImg(currentBlog.id)} />
+            </Helmet>
+          }
+        </>
+      }
       <div style={{ paddingTop: "128px", backgroundColor: "#edf5f8" }}>
         <SEO title="blogi" />
         <Section isBlog>
