@@ -5,6 +5,9 @@ import PropTypes from "prop-types"
 // import formatDate from '../../utilities/FormatDate'
 import Button from "../Button"
 import Img from "gatsby-image"
+import { OPTIONSblogi } from "../../helpers/rich-text-options"
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
+
 
 const BlogItem = ({
   isSidebar,
@@ -15,10 +18,25 @@ const BlogItem = ({
   image,
   text,
   link,
+  isContentful
 }) => {
   const styles = {
     textAlign: "center",
   }
+
+
+
+  const renderText = () => {
+
+    if (text && isContentful)
+    return documentToReactComponents(
+      text,
+      OPTIONSblogi
+    ).filter(el => (el != null)).filter(el =>(el.props.children[0] != ""))[0].props.children[0].substring(0,450) + '...'
+    else if (text) return <div dangerouslySetInnerHTML={{__html: text.substring(0,450) + '...'}} />
+    else return 'Sorry, no text'
+  }
+
 
   const content = (
     <div className="blog-item">
@@ -36,7 +54,7 @@ const BlogItem = ({
         </div>
       )}
       <div className="blog-item__text">
-        <p>{text}</p>
+        <p>{renderText()}</p>
         <div style={styles}>
           <Link to={link}>
             <Button variant="secondary" size="sm" label="Lue lisää" />

@@ -59,7 +59,7 @@
     @include underline($font-color: $secondary, $underline-color: $orange);
 
     &--active {
-      color: lighten($primary, 5%);
+      color: lighten($secondary, 40%);
     }
   }
 

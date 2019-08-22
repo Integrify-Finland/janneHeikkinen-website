@@ -8,14 +8,11 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
-import { WP } from "../../utilities/WPblogs.js"
+import { WP, WPContent } from "../../utilities/WPblogs.js"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
 
-const text =
-  "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
-const shortText = text.substr(0, 416) + "..."
 
 const Blogi = ({ data }) => {
   const { contentfulBlog } = data
@@ -29,8 +26,9 @@ const Blogi = ({ data }) => {
     window.scrollTo(0, 0)
   }
 
-  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
+  const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
+
 
   const categories = WP.edges
     .map(({ node }) => {
@@ -63,6 +61,8 @@ const Blogi = ({ data }) => {
       }))
       .filter(blog => blog.node.categories.length > 0)
 
+      
+
     const filteredTag = allBlogs
       .map(({ node }) => {
         return {
@@ -87,7 +87,6 @@ const Blogi = ({ data }) => {
         <Sidebar
           blogs={allBlogs}
           image={image}
-          shortText={shortText}
           categories={categories}
           tags={tags}
           renderBlogs={renderBlogs}
@@ -104,6 +103,10 @@ const Blogi = ({ data }) => {
                 ? blog.node.entryImage
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
+   
+              const text = blog.node.hasOwnProperty('childContentfulBlogPostContentRichTextNode') ? blog.node.childContentfulBlogPostContentRichTextNode.json : blog.node.content
+
+              
               return (
                 <BlogItem
                   isFluid={!!blog.node.entryImage}
@@ -111,7 +114,8 @@ const Blogi = ({ data }) => {
                   title={blog.node.title}
                   number={number}
                   image={img}
-                  text={shortText}
+                  text={text}
+                  isContentful={!!blog.node.entryImage}
                   link={`blogi/${blog.node.slug
                     .toLowerCase()
                     .replace(/[']/gi, "")
@@ -142,9 +146,13 @@ export const query = graphql`
     contentfulBlog: allContentfulBlogPost {
       edges {
         node {
+          childContentfulBlogPostContentRichTextNode {
+            json
+          }
           title
           tags
           categories
+         
           id
           slug
           date

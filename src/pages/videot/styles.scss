@@ -17,6 +17,9 @@
       margin: $spacing-02 auto;
       margin-bottom: $spacing-04;
     }
+    @include for-phone {
+      justify-content: center;
+    }
   }
 
   &__player {
@@ -25,6 +28,9 @@
     iframe {
       width: 225px;
       height: 125px;
+
+     
+
     
     }
     .wrapper--overlay {
