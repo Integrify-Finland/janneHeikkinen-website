@@ -4,31 +4,36 @@
   width: 40vw;
 
   @include for-tablet-portrait-down {
-
     width: 60vw;
   }
 
   @include for-phone-only {
-
-    width: 100%;
+    margin: auto;
+    width: 90%;
   }
 
     h1 {
-      @include font-size-l;
+      @include font-size-l-xx;
       display: inline-block;
       color: $secondary;
       margin-right: $spacing-00-25;
+      margin-bottom: $spacing-00-25;
     
       @include for-tablet-portrait-down {
-        @include font-size-m;
+        @include font-size-l-xx;
       }
+
+      @include for-phone-only {
+        @include font-size-l-xxx;
+      }
+
     }
 
     span {
 
       color: $primary;
-      @include font-size-s;
-
+      @include font-size-m;
+      white-space: nowrap;
     }
 
     p {
@@ -36,7 +41,7 @@
       line-height: 1.6rem;
       color: $primary;
       margin: 0;
-   
+      margin-top: $spacing-00-50;
     }
   }
 

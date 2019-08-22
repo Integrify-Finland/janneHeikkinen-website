@@ -13,6 +13,15 @@
   top: 0;
   width: 80%;
   margin: 0 auto;
+
+  @include for-tablet-portrait-down {
+    width: 93%
+  }
+  
+  @include for-phone-only {
+    width: 93%
+  }
+
   &__logo {
     display: flex;
     align-items: center;
@@ -50,7 +59,7 @@
     @include underline($font-color: $secondary, $underline-color: $orange);
 
     &--active {
-      color: lighten($primary, 5%);
+      color: lighten($secondary, 40%);
     }
   }
 
