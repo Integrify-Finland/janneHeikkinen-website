@@ -7,12 +7,11 @@ import SEO from "../../components/SEO"
 import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
-import image from "../../images/JANNE_HEIKKINEN_260619_77.jpg"
+import image from "../../assets/images/thumbnail.jpg"
 import { WP, WPContent } from "../../utilities/WPblogs.js"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
-
 
 const Blogi = ({ data }) => {
   const { contentfulBlog } = data
@@ -28,7 +27,6 @@ const Blogi = ({ data }) => {
 
   const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
-
 
   const categories = WP.edges
     .map(({ node }) => {
@@ -60,8 +58,6 @@ const Blogi = ({ data }) => {
         },
       }))
       .filter(blog => blog.node.categories.length > 0)
-
-      
 
     const filteredTag = allBlogs
       .map(({ node }) => {
@@ -103,10 +99,13 @@ const Blogi = ({ data }) => {
                 ? blog.node.entryImage
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
-   
-              const text = blog.node.hasOwnProperty('childContentfulBlogPostContentRichTextNode') ? blog.node.childContentfulBlogPostContentRichTextNode.json : blog.node.content
 
-              
+              const text = blog.node.hasOwnProperty(
+                "childContentfulBlogPostContentRichTextNode"
+              )
+                ? blog.node.childContentfulBlogPostContentRichTextNode.json
+                : blog.node.content
+
               return (
                 <BlogItem
                   isFluid={!!blog.node.entryImage}
@@ -152,7 +151,7 @@ export const query = graphql`
           title
           tags
           categories
-         
+
           id
           slug
           date
