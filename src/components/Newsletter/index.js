@@ -6,9 +6,34 @@ import "./styles.scss"
 
 const Newsletter = ({ animationStage, setAnimationStage }) => {
   const [email, setEmail] = useState("")
+  const [disable, setDisable] = useState(true)
+  const [emailError, setEmailError] = useState()
+
+  const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+
+  const isPassed = () => {
+    if (
+      emailPattern.test(email)
+    ) {
+      setDisable(false)
+    } else {
+      setDisable(true)
+    }
+  }
+
   const _handleChange = e => {
     const { value } = e.target
     setEmail(value)
+    isPassed()
+  }
+
+  const validateEmail = () => {
+    if (emailPattern.test(email) !== true) {
+      setEmailError("Väärä sähköposti")
+    } else {
+      setEmailError(null)
+    }
+    isPassed()
   }
 
   const _handleSubmit = async e => {
@@ -43,7 +68,9 @@ const Newsletter = ({ animationStage, setAnimationStage }) => {
             name="email"
             onChange={_handleChange}
             type="email"
+            onBlur={validateEmail}
           ></input>
+          <div className="invalid-email-feedback">{emailError}</div>
           <Button
             variant="primary"
             size="md"
@@ -52,6 +79,7 @@ const Newsletter = ({ animationStage, setAnimationStage }) => {
               _handleSubmit(e)
               setAnimationStage("second stage")
             }}
+            disabled={disable}
           />
         </div>
       </div>

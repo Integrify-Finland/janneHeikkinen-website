@@ -75,3 +75,8 @@
     -webkit-font-smoothing: subpixel-antialiased;
 }
 
+.button--disabled:hover {
+    cursor: not-allowed;
+    transform: scale(0.96);
+}
+
