@@ -8,7 +8,7 @@ import Pagination from "../../components/Pagination"
 import Section from "../../components/Section"
 import Sidebar from "../../components/Sidebar"
 import image from "../../assets/images/thumbnail.jpg"
-import { WP, WPContent } from "../../utilities/WPblogs.js"
+import { WP } from "../../utilities/WPblogs.js"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import "./styles.scss"
@@ -25,7 +25,7 @@ const Blogi = ({ data }) => {
     window.scrollTo(0, 0)
   }
 
-  const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
+  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
 
   const categories = WP.edges
