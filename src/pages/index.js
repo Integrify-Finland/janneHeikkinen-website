@@ -8,17 +8,15 @@ import SocialMedia from "../components/SocialMedia/index"
 import Section from "../components/Section"
 import image from "../images/JANNE_HEIKKINEN_260619_77.jpg"
 import Header from "../components/Header"
-import { WP } from "../utilities/WPblogs.js"
+import { WPContent } from "../utilities/WPblogs.js"
 import { selectImg } from "../utilities/WPImages"
 import { formatDate } from "../utilities/FormatDate"
 
-const text =
-  "Julkaistu alun perin Kalevassa 5.6.2019 Minun ei käy kateeksi näinä päivinä suomalaista pienyrittäjää. Heidän äänensä ei ole liiemmin kuulunut viime viikkoina säätytalolla. Sen sijaan tulevan hallituksen ohjelmaa ovat olleet kunniavieraina kirjoittamassa kansainvälisten suuryritysten ja etujärjestöjen palkkaamat lobbaustoimistot. Ikävä kyllä pienyrittäjillä ei ole vastaavaa taloudellista mahdollisuutta kalliisiin"
-const shortText = text.substr(0, 416) + "..."
+
 
 const IndexPage = ({ data }) => {
   const { contentfulBlog } = data
-  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
+  const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
 
   return (
     <Layout>
@@ -34,20 +32,31 @@ const IndexPage = ({ data }) => {
           <h1 className="index-page-wrapper__title">Blogi</h1>
         </Section>
         <Section>
-          {allBlogs.slice(0, 3).map(({ node }, index) => {
-            const img = node.entryImage
-              ? node.entryImage
-              : selectImg(node.id, image)
-            const date = formatDate(node.date)
+          {allBlogs.slice(0, 3).map((blog, i) => ({
+              blog,
+              number: i + 1,
+            })).map(({ blog, number }, index) => {
+              const img = blog.node.entryImage
+                ? blog.node.entryImage
+                : selectImg(blog.node.id, image)
+              const date = formatDate(blog.node.date)
+
+              const text = blog.node.hasOwnProperty(
+                "childContentfulBlogPostContentRichTextNode"
+              )
+                ? blog.node.childContentfulBlogPostContentRichTextNode.json
+                : blog.node.content
+
             return (
               <BlogItem
-                isFluid={!!node.entryImage}
+                isFluid={!!blog.node.entryImage}
                 date={date}
-                title={node.title}
+                title={blog.node.title}
                 number={index + 1}
                 image={img}
-                text={shortText}
-                link={`blogi/${node.slug
+                isContentful={!!blog.node.entryImage}
+                text={text}
+                link={`blogi/${blog.node.slug
                   .toLowerCase()
                   .replace(/[']/gi, "")
                   .replace(/ /gi, "-")
@@ -75,6 +84,9 @@ export const query = graphql`
         node {
           title
           tags
+          childContentfulBlogPostContentRichTextNode {
+            json
+          }
           categories
           id
           slug
