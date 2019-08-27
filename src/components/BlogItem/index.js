@@ -8,6 +8,9 @@ import Img from "gatsby-image"
 import { OPTIONSblogi } from "../../helpers/rich-text-options"
 import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
 
+
+
+
 const BlogItem = ({
   isSidebar,
   isFluid,
@@ -19,6 +22,8 @@ const BlogItem = ({
   link,
   isContentful,
 }) => {
+
+  console.log(text)
   const renderText = () => {
     if (text && isContentful)
       return (
@@ -27,7 +32,7 @@ const BlogItem = ({
           .filter(el => el.props.children[0] != "")[0]
           .props.children[0].substring(0, 450) + "..."
       )
-    else if (text)
+    else if (text && typeof(text) == "string")
       return (
         <div
           dangerouslySetInnerHTML={{ __html: text.substring(0, 450) + "..." }}

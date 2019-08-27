@@ -69,7 +69,7 @@ const Header = ({
             <h3>Perhe:</h3>
             <p>{Perhe}</p>
 
-            <h3>Sotilasarvo ja aselinja:</h3>
+            <h3>Sotilasarvo ja aselaji:</h3>
             <p>{Sotilasarvo_aselinja}</p>
 
             <h3>Ammatti:</h3>
