@@ -31,10 +31,10 @@ const IndexPage = ({ data }) => {
         </Section>
         <Section>
           {allBlogs
-            .slice(0, 3)
+            .slice(0, 4)
             .map((blog, i) => ({
               blog,
-              number: i + 1,
+              number: i,
             }))
             .map(({ blog, number }, index) => {
               const img = blog.node.entryImage
@@ -45,24 +45,29 @@ const IndexPage = ({ data }) => {
               const text = blog.node.entryImage
                 ? blog.node.entryDescription.entryDescription
                 : blog.node.content
-
+              const isDraft =
+                blog.node.entryImage &&
+                blog.node.title ===
+                  "VOIKO POLITIIKASSA LUVATA MITÄ TAHANSA PÄÄSTÄKSEEN VALTAAN?"
               return (
-                <BlogItem
-                  isFluid={!!blog.node.entryImage}
-                  date={date}
-                  title={blog.node.title}
-                  number={index + 1}
-                  image={img}
-                  isContentful={!!blog.node.entryImage}
-                  text={text}
-                  link={`blogi/${blog.node.slug
-                    .toLowerCase()
-                    .replace(/[']/gi, "")
-                    .replace(/ /gi, "-")
-                    .replace(/[,]/gi, "")
-                    .replace(/[ä]/gi, "a")
-                    .replace(/[ö]/gi, "o")}`}
-                />
+                !isDraft && (
+                  <BlogItem
+                    isFluid={!!blog.node.entryImage}
+                    date={date}
+                    title={blog.node.title}
+                    number={index}
+                    image={img}
+                    isContentful={!!blog.node.entryImage}
+                    text={text}
+                    link={`blogi/${blog.node.slug
+                      .toLowerCase()
+                      .replace(/[']/gi, "")
+                      .replace(/ /gi, "-")
+                      .replace(/[,]/gi, "")
+                      .replace(/[ä]/gi, "a")
+                      .replace(/[ö]/gi, "o")}`}
+                  />
+                )
               )
             })}
         </Section>

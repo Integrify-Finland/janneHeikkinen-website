@@ -14,33 +14,31 @@ import { switchToCat } from "../../utilities/switches"
 const BlogPostTemplate = ({ data, location }) => {
   const { allContentfulBlog, contentfulBlog } = data
 
-  const allPosts = [...allContentfulBlog.edges, ...WPContent.edges, ...WP.edges]
+  const allPosts = [...allContentfulBlog.edges, ...WP.edges]
 
   const allSlugs = allPosts.map(({ node }) => {
     return node.slug
   })
 
-  const currentBlog = WPContent.edges
+  const currentBlog = WP.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
 
-  const currentCat =
-    currentBlog && WP.edges
-      ? switchToCat(
-          WP.edges
-            .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-            .filter(({ node }) => node.categories !== null)
-            .map(blog => blog.node.categories)[0][0]
-        )
-      : "No categories"
-
-  const currentTags =
-    currentBlog && WP.edges
-      ? WP.edges
+  const currentCat = !allContentfulBlog
+    ? switchToCat(
+        WP.edges
           .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-          .filter(({ node }) => node.tags !== null)
-          .map(blog => blog.node.tags.map(tag => " " + tag.name))
-      : "No tags"
+          .filter(({ node }) => node.categories !== null)
+          .map(blog => blog.node.categories)[0][0]
+      )
+    : "No categories"
+
+  const currentTags = WP.edges
+    ? WP.edges
+        .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
+        .filter(({ node }) => node.tags !== null)
+        .map(blog => blog.node.tags.map(tag => " " + tag.name))
+    : "No tags"
 
   const renderBlogPost = () => {
     return { __html: contentfulBlog.body.childMarkdownRemark.html }
