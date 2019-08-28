@@ -38,7 +38,7 @@ const Newsletter = ({ animationStage, setAnimationStage }) => {
 
   const _handleSubmit = async e => {
     e.preventDefault()
-    const result = await addToMailchimp(email)
+    await addToMailchimp(email)
   }
   if (animationStage === "initial") {
     return (

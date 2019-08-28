@@ -25,9 +25,9 @@ const Blogi = ({ data }) => {
     window.scrollTo(0, 0)
   }
 
-  const allBlogs = [...contentfulBlog.edges, ...WP.edges]
+  const allBlogs = [...WP.edges]
+  // const allBlogs = [...contentfulBlog.edges, ...WP.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
-
   const categories = WP.edges
     .map(({ node }) => {
       return node.categories.map(cat => switchToCat(cat))
@@ -35,6 +35,12 @@ const Blogi = ({ data }) => {
     .reduce((accumulator, currentValue) => {
       return accumulator.concat(currentValue)
     }, [])
+
+  const contentfulCats = contentfulBlog.edges.map(({ node }) =>
+    node.categories.map(value => categories.push(value))
+  )
+
+  const allCategories = [...categories]
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
 
@@ -83,7 +89,7 @@ const Blogi = ({ data }) => {
         <Sidebar
           blogs={allBlogs}
           image={image}
-          categories={categories}
+          categories={allCategories}
           tags={tags}
           renderBlogs={renderBlogs}
         />
@@ -100,30 +106,36 @@ const Blogi = ({ data }) => {
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
 
-              const text = blog.node.hasOwnProperty(
-                "childContentfulBlogPostContentRichTextNode"
-              )
-                ? blog.node.childContentfulBlogPostContentRichTextNode.json
+              const text = blog.node.entryImage
+                ? blog.node.entryDescription.entryDescription
                 : blog.node.content
+              const isDraft =
+                blog.node.entryImage &&
+                blog.node.title ===
+                  "VOIKO POLITIIKASSA LUVATA MITÄ TAHANSA PÄÄSTÄKSEEN VALTAAN?"
 
-              return (
-                <BlogItem
-                  isFluid={!!blog.node.entryImage}
-                  date={date}
-                  title={blog.node.title}
-                  number={number}
-                  image={img}
-                  text={text}
-                  isContentful={!!blog.node.entryImage}
-                  link={`blogi/${blog.node.slug
-                    .toLowerCase()
-                    .replace(/[']/gi, "")
-                    .replace(/ /gi, "-")
-                    .replace(/[,]/gi, "")
-                    .replace(/[ä]/gi, "a")
-                    .replace(/[ö]/gi, "o")}`}
-                />
-              )
+              {
+                return (
+                  !isDraft && (
+                    <BlogItem
+                      isFluid={!!blog.node.entryImage}
+                      date={date}
+                      title={blog.node.title}
+                      number={number}
+                      image={img}
+                      text={text}
+                      isContentful={!!blog.node.entryImage}
+                      link={`blogi/${blog.node.slug
+                        .toLowerCase()
+                        .replace(/[']/gi, "")
+                        .replace(/ /gi, "-")
+                        .replace(/[,]/gi, "")
+                        .replace(/[ä]/gi, "a")
+                        .replace(/[ö]/gi, "o")}`}
+                    />
+                  )
+                )
+              }
             })}
 
           <Pagination
@@ -142,16 +154,22 @@ export default Blogi
 
 export const query = graphql`
   query {
-    contentfulBlog: allContentfulBlogPost {
+    contentfulBlog: allContentfulBlogPost(
+      sort: { fields: [createdAt], order: DESC }
+    ) {
       edges {
         node {
-          childContentfulBlogPostContentRichTextNode {
-            json
-          }
           title
           tags
           categories
-
+          entryDescription {
+            entryDescription
+          }
+          body {
+            childMarkdownRemark {
+              html
+            }
+          }
           id
           slug
           date

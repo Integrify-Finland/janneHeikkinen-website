@@ -70,10 +70,18 @@ const BlogPost = ({
         <div className="blog-post__footer">
           <div>
             <div className="blog-post__categories">
-              Categories:<span>{categories}</span>
+              {categories && (
+                <>
+                  <strong>Categories:</strong> <span> {categories}</span>
+                </>
+              )}
             </div>
             <div className="blog-post__tags">
-              Tags:<span>{tags}</span>
+              {tags.length > 0 && (
+                <>
+                  <strong>Tags: </strong> <span>{tags}</span>
+                </>
+              )}
             </div>
           </div>
           <div className="blog-post__share-button-container">

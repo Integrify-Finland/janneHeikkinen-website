@@ -21,7 +21,8 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const URL = "https://distracted-swirles-8c2b20.netlify.com"
+  const URL = "https://janneheikkinen.fi"
+
   return (
     <Helmet
       htmlAttributes={{

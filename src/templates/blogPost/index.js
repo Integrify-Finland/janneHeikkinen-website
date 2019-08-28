@@ -1,14 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import BlogPost from "../../components/BlogPost"
 import Section from "../../components/Section"
 
-import OPTIONS from "../../helpers/rich-text-options"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import { WPContent, WP } from "../../utilities/WPblogs.js"
@@ -17,45 +14,39 @@ import { switchToCat } from "../../utilities/switches"
 const BlogPostTemplate = ({ data, location }) => {
   const { allContentfulBlog, contentfulBlog } = data
 
-  const allPosts = [...allContentfulBlog.edges, ...WPContent.edges, ...WP.edges]
+  const allPosts = [...allContentfulBlog.edges, ...WP.edges]
 
   const allSlugs = allPosts.map(({ node }) => {
     return node.slug
   })
 
-  const currentBlog = WPContent.edges
+  const currentBlog = WP.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
 
-  const currentCat =
-    currentBlog && WP.edges
-      ? switchToCat(
-          WP.edges
-            .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-            .filter(({ node }) => node.categories !== null)
-            .map(blog => blog.node.categories)[0][0]
-        )
-      : "No categories"
-
-  const currentTags =
-    currentBlog && WP.edges
-      ? WP.edges
+  const currentCat = !allContentfulBlog
+    ? switchToCat(
+        WP.edges
           .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-          .filter(({ node }) => node.tags !== null)
-          .map(blog => blog.node.tags.map(tag => " " + tag.name))
-      : "No tags"
+          .filter(({ node }) => node.categories !== null)
+          .map(blog => blog.node.categories)[0][0]
+      )
+    : "No categories"
+
+  const currentTags = WP.edges
+    ? WP.edges
+        .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
+        .filter(({ node }) => node.tags !== null)
+        .map(blog => blog.node.tags.map(tag => " " + tag.name))
+    : "No tags"
 
   const renderBlogPost = () => {
-    return documentToReactComponents(
-      contentfulBlog.childContentfulBlogPostContentRichTextNode.json,
-      OPTIONS
-    )
+    return { __html: contentfulBlog.body.childMarkdownRemark.html }
   }
   const createMarkup = () => {
     return { __html: currentBlog.content }
   }
 
-  const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
@@ -118,7 +109,10 @@ const BlogPostTemplate = ({ data, location }) => {
               slug={contentfulBlog.slug}
               allSlugs={allSlugs}
             >
-              {renderBlogPost()}
+              <div
+                className="blog-post"
+                dangerouslySetInnerHTML={renderBlogPost()}
+              ></div>
             </BlogPost>
           )}
         </Section>
@@ -167,8 +161,12 @@ export const query = graphql`
           sizes
         }
       }
-      childContentfulBlogPostContentRichTextNode {
-        json
+      body {
+        id
+        body
+        childMarkdownRemark {
+          html
+        }
       }
     }
 

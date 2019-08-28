@@ -1,5 +1,4 @@
 import React, { useState } from "react"
-import { navigateTo } from "gatsby-link"
 import NetlifyForm from "react-netlify-form"
 
 import Button from "../Button"
