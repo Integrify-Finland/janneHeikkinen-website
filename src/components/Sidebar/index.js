@@ -48,14 +48,19 @@ const Sidebar = ({
           <h3>Categories:</h3>
           <ul>
             {categories.map(cat => (
-              <li onClick={() => renderBlogs(cat, true)}>{cat}</li>
+              <li onClick={() => renderBlogs(cat, true)} key={cat}>
+                {cat}
+              </li>
             ))}
           </ul>
         </div>
         <div className="blogs-sidebar__tags">
           <h3>Tags:</h3>
           {tags.map(tag => (
-            <span onClick={() => renderBlogs(tag, false)}>{`${tag}, `}</span>
+            <span
+              onClick={() => renderBlogs(tag, false)}
+              key={tag}
+            >{`${tag}, `}</span>
           ))}
         </div>
       </div>

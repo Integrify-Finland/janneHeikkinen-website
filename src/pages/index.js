@@ -12,8 +12,6 @@ import { WPContent } from "../utilities/WPblogs.js"
 import { selectImg } from "../utilities/WPImages"
 import { formatDate } from "../utilities/FormatDate"
 
-
-
 const IndexPage = ({ data }) => {
   const { contentfulBlog } = data
   const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
@@ -32,40 +30,41 @@ const IndexPage = ({ data }) => {
           <h1 className="index-page-wrapper__title">Blogi</h1>
         </Section>
         <Section>
-          {allBlogs.slice(0, 3).map((blog, i) => ({
+          {allBlogs
+            .slice(0, 3)
+            .map((blog, i) => ({
               blog,
               number: i + 1,
-            })).map(({ blog, number }, index) => {
+            }))
+            .map(({ blog, number }, index) => {
               const img = blog.node.entryImage
                 ? blog.node.entryImage
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
 
-              const text = blog.node.hasOwnProperty(
-                "childContentfulBlogPostContentRichTextNode"
-              )
-                ? blog.node.childContentfulBlogPostContentRichTextNode.json
+              const text = blog.node.entryImage
+                ? blog.node.entryDescription.entryDescription
                 : blog.node.content
 
-            return (
-              <BlogItem
-                isFluid={!!blog.node.entryImage}
-                date={date}
-                title={blog.node.title}
-                number={index + 1}
-                image={img}
-                isContentful={!!blog.node.entryImage}
-                text={text}
-                link={`blogi/${blog.node.slug
-                  .toLowerCase()
-                  .replace(/[']/gi, "")
-                  .replace(/ /gi, "-")
-                  .replace(/[,]/gi, "")
-                  .replace(/[ä]/gi, "a")
-                  .replace(/[ö]/gi, "o")}`}
-              />
-            )
-          })}
+              return (
+                <BlogItem
+                  isFluid={!!blog.node.entryImage}
+                  date={date}
+                  title={blog.node.title}
+                  number={index + 1}
+                  image={img}
+                  isContentful={!!blog.node.entryImage}
+                  text={text}
+                  link={`blogi/${blog.node.slug
+                    .toLowerCase()
+                    .replace(/[']/gi, "")
+                    .replace(/ /gi, "-")
+                    .replace(/[,]/gi, "")
+                    .replace(/[ä]/gi, "a")
+                    .replace(/[ö]/gi, "o")}`}
+                />
+              )
+            })}
         </Section>
         <Section>
           <SocialMedia />
@@ -79,13 +78,20 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    contentfulBlog: allContentfulBlogPost {
+    contentfulBlog: allContentfulBlogPost(
+      sort: { fields: [createdAt], order: DESC }
+    ) {
       edges {
         node {
           title
           tags
-          childContentfulBlogPostContentRichTextNode {
-            json
+          entryDescription {
+            entryDescription
+          }
+          body {
+            childMarkdownRemark {
+              html
+            }
           }
           categories
           id

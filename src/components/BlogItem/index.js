@@ -2,14 +2,9 @@ import React from "react"
 import "./styles.scss"
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
-// import formatDate from '../../utilities/FormatDate'
+
 import Button from "../Button"
 import Img from "gatsby-image"
-import { OPTIONSblogi } from "../../helpers/rich-text-options"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-
-
-
 
 const BlogItem = ({
   isSidebar,
@@ -22,23 +17,16 @@ const BlogItem = ({
   link,
   isContentful,
 }) => {
-
-  console.log(text)
   const renderText = () => {
-    if (text && isContentful)
-      return (
-        documentToReactComponents(text, OPTIONSblogi)
-          .filter(el => el != null)
-          .filter(el => el.props.children[0] != "")[0]
-          .props.children[0].substring(0, 450) + "..."
-      )
-    else if (text && typeof(text) == "string")
+    if (text && isContentful) {
+      return <p>{text.substring(0, 450) + "..."}</p>
+    } else if (text && !isContentful) {
       return (
         <div
           dangerouslySetInnerHTML={{ __html: text.substring(0, 450) + "..." }}
         />
       )
-    else return "Sorry, no text"
+    } else return "Sorry, no text"
   }
 
   const content = (
@@ -94,5 +82,5 @@ BlogItem.propTypes = {
   title: PropTypes.string.isRequired,
   date: PropTypes.func.isRequired,
   link: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+  image: PropTypes.object.isRequired,
 }

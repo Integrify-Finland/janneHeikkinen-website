@@ -1,14 +1,11 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Helmet from "react-helmet"
-import { documentToReactComponents } from "@contentful/rich-text-react-renderer"
-
 import Layout from "../../components/Layout"
 import SEO from "../../components/SEO"
 import BlogPost from "../../components/BlogPost"
 import Section from "../../components/Section"
 
-import OPTIONS from "../../helpers/rich-text-options"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import { WPContent, WP } from "../../utilities/WPblogs.js"
@@ -46,16 +43,12 @@ const BlogPostTemplate = ({ data, location }) => {
       : "No tags"
 
   const renderBlogPost = () => {
-    return documentToReactComponents(
-      contentfulBlog.childContentfulBlogPostContentRichTextNode.json,
-      OPTIONS
-    )
+    return { __html: contentfulBlog.body.childMarkdownRemark.html }
   }
   const createMarkup = () => {
     return { __html: currentBlog.content }
   }
 
-  const whichBlog = contentfulBlog ? contentfulBlog : currentBlog
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
@@ -118,7 +111,10 @@ const BlogPostTemplate = ({ data, location }) => {
               slug={contentfulBlog.slug}
               allSlugs={allSlugs}
             >
-              {renderBlogPost()}
+              <div
+                className="blog-post"
+                dangerouslySetInnerHTML={renderBlogPost()}
+              ></div>
             </BlogPost>
           )}
         </Section>
@@ -167,8 +163,12 @@ export const query = graphql`
           sizes
         }
       }
-      childContentfulBlogPostContentRichTextNode {
-        json
+      body {
+        id
+        body
+        childMarkdownRemark {
+          html
+        }
       }
     }
 

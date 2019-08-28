@@ -27,7 +27,6 @@ const Blogi = ({ data }) => {
 
   const allBlogs = [...contentfulBlog.edges, ...WP.edges]
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
-
   const categories = WP.edges
     .map(({ node }) => {
       return node.categories.map(cat => switchToCat(cat))
@@ -37,6 +36,12 @@ const Blogi = ({ data }) => {
     }, [])
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
+  const contentfulCats = contentfulBlog.edges.reduce((acc, { node }) => [
+    ...acc.node.categories,
+    ...node.categories,
+  ])
+
+  const allCategories = [...categories, ...contentfulCats]
 
   const tags = WP.edges
     .filter(({ node }) => node.tags !== null)
@@ -83,7 +88,7 @@ const Blogi = ({ data }) => {
         <Sidebar
           blogs={allBlogs}
           image={image}
-          categories={categories}
+          categories={allCategories}
           tags={tags}
           renderBlogs={renderBlogs}
         />
@@ -100,10 +105,8 @@ const Blogi = ({ data }) => {
                 : selectImg(blog.node.id, image)
               const date = formatDate(blog.node.date)
 
-              const text = blog.node.hasOwnProperty(
-                "childContentfulBlogPostContentRichTextNode"
-              )
-                ? blog.node.childContentfulBlogPostContentRichTextNode.json
+              const text = blog.node.entryImage
+                ? blog.node.entryDescription.entryDescription
                 : blog.node.content
 
               return (
@@ -142,16 +145,22 @@ export default Blogi
 
 export const query = graphql`
   query {
-    contentfulBlog: allContentfulBlogPost {
+    contentfulBlog: allContentfulBlogPost(
+      sort: { fields: [createdAt], order: DESC }
+    ) {
       edges {
         node {
-          childContentfulBlogPostContentRichTextNode {
-            json
-          }
           title
           tags
           categories
-
+          entryDescription {
+            entryDescription
+          }
+          body {
+            childMarkdownRemark {
+              html
+            }
+          }
           id
           slug
           date
