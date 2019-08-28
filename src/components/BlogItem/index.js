@@ -46,11 +46,10 @@ const BlogItem = ({
       )}
       <div className="blog-item__text">
         <p>{renderText()}</p>
-        <div className="blog-item__button">
-          <Link to={link}>
-            <Button variant="secondary" size="sm" label="Lue lisää" />
-          </Link>
-        </div>
+
+        <Link to={link} className="blog-item__button">
+          <Button variant="secondary" size="sm" label="Lue lisää" />
+        </Link>
       </div>
     </div>
   )
