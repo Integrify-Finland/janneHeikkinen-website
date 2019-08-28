@@ -54,20 +54,24 @@
 
   @include for-phone-giant-landscape {
       height: 630px;
+      background-attachment: scroll;
   }
 
   @include for-phone-big-landscape {
     height: 457px;
+    background-attachment: scroll;
   } 
 
   @include for-phone-only {
     height: 457px;
     max-height: 510px;
+    background-attachment: scroll;
   }
 
   @include for-phone-landscape {
     height: 431px;
     max-height: 510px;
+    background-attachment: scroll;
   }
 
   &__textbox {
