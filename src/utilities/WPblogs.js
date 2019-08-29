@@ -2,25 +2,6 @@ export const WP = {
   edges: [
     {
       node: {
-        id: "0b00a102-c3a6-527a-ae6b-8790646b7f6a",
-        categories: [1],
-        title: "Voiko politiikassa luvata mitä tahansa päästäkseen valtaan?",
-        slug: "voiko-politiikassa-luvata-mita-tahansa-paastakseen-valtaan",
-        date: "2019-07-25T17:44:29.000Z",
-        _links: {
-          wp_featuredmedia: [
-            {
-              href: "http://www.janneheikkinen.fi/wp-json/wp/v2/media/1316",
-            },
-          ],
-        },
-        tags: null,
-        content:
-          "<p><em>Kolumni on julkaistu alunperin Kaleva Median paikallislehdissä.</em></p>\n<p>Osallistuin viime viikolla SuomiAreenassa uusien kansanedustajien paneelikeskusteluun, jossa keskustelimme tuoreista kokemuksistamme valtiopäiväedustajina. Paneelissa pinnalle nousi Rinteen uusi hallitusohjelma. Sain huomata melko nopeasti olevani yksin lavalla puolustamassa nettoveronmaksajaa ja muistuttamassa hallituspuolueiden vaalilupauksista suhteessa sen nykytoimiin.</p>\n<p>On hämmästyttävää, kuinka vähällä tulosvastuulla poliitikot saavat toimia. Porin paneelikeskustelussa hallituspuolueiden edustajat alkoivat kiemurrella, kun keskusteluun tuli esimerkiksi opintotukeen luvattu merkittävä tasokorotus. Ennen vaaleja hallituksen eri puolueet lupasivat tuntuvaa 83 &#8211; 101 euron tasokorotusta opintotukeen. On ollut kiinnostavaa &#8211; joskaan ei yllättävää &#8211; huomata, ettei tukea lopulta tasokorotettu eurollakaan, sidottiin ainoastaan indeksiin.</p>\n<p>Aivan oma lukunsa on demareille vaalivoiton tuonut lupaus “vappusatasesta”. Epäilemättä moni pienituloinen eläkeläinen saattoi antaa äänensä tämän perusteella. Lupauksen rahoitussuunnitelma romahti kuitenkin jo hallitusneuvotteluissa.</p>\n<p>Kovat odotukset ladattiin myös raidehankkeisiin, kun vihervasemmisto oli vielä vaalipuheissaan laittamassa näitä hankkeita käyntiin. Ihmisten liikkuminen raiteilla autoilun ja lentämisen sijaan nähtiin tehokkaana keinona ilmastonmuutoksen torjunnassa.</p>\n<p>Heti kesäkuun alussa ministeri Marin (sd.) kuitenkin ilmoitti, ettei yksikään hanke etene toteutukseen tällä hallituskaudella. Sama kohtalo uhkaa Oulun neljän tunnin junaa. Herää kysymys, miksei hallitus varannut 3 miljardin pörssiomistusten laajan yksityistämisohjelman rahoistaan raiteisiin, vaan erilaisiin maailmanparannushankkeisiin?</p>\n<p>Hallituksen erikoisista tempauksista on mainittava myös Sierilän padon rakentaminen. Hallitusohjelmassa on asiallinen kirjaus tavoitteesta elvyttää vaelluskalakantoja ja uudistaa vesilakia. Tästä huolimatta hallitus ei näe ristiriitaa valtion omistaman Kemijoki Oy:n päätöksestä rakentaa uusi pato Sierilään. Miten näin voi tapahtua vastoin Vihreiden vaalilupauksia?</p>\n<p>Aktiivimallin purkaminen oli koko vasemmisto-opposition pääteemoja vaaleissa. Hallitusohjelmassa on kuitenkin kirjaus, että negatiivisen työllisyysvaikutuksen uudistuksia tehtäessä on löydettävä vastaavat positiiviset uudistukset muualta. Hallitus ei siis voi purkaa lupaamansa mukaisesti aktiivimallia ilman, että vastaavan kokoluokan korvaava uudistus toteutetaan. En pidättäisi hengitystä tämän suhteen.</p>\n<p>Kansaa petkutettiin myös hoitajamitoituksen osalta. Kokoomuksen suosio tippui ennen vaaleja jyrkästi, kun emme kannattaneet hoitajamitoituksen nostamista 0,5:stä 0,7:ään. Tuolloinen vasemmisto-oppositio rummutti aiheesta kiivasti ja lupasi pikaista suunnanmuutosta.</p>\n<p>Räikeimpään lupaukseen sortui ministeri Krista Kiuru (sd.) väittäessään, että ratkaisuksi riittää laista yhden desimaaliluvun muuttaminen, jonka käsittely eduskunnassa olisi nopeaa ja helppoa. Sittemmin kaikki puheet on pyörretty ja myönnetty, ettei tämä nyt ollutkaan näin herttaisen yksinkertaista.</p>\n<p>Sopii kysyä, miksi poliitikoilla on kannustimet moraaliposeerata ennen vaaleja ja luvata äänestäjille kuuta taivaalta, vaikka monesti tietävät jo lupausta tehdessään asian olevan mahdotonta? Miten voimme koskaan palauttaa tulosvastuun politiikkaan, kun sosiaalipopulistit ja vihervasemmistolaiset lupaavat mitä tahansa ennen vaaleja saadakseen valtaa?</p>\n<p><strong>Janne Heikkinen</strong><br />\nKansanedustaja<br />\nOulun vaalipiiri</p>\n",
-      },
-    },
-    {
-      node: {
         id: "b2bf7430-6b19-5cac-abd5-d509073f5d84",
         categories: [1],
         title: "Saimaannorpat ja Rinteen selvittelyhallitus",
@@ -1956,17 +1937,6 @@ export const WP = {
 }
 export const WPContent = {
   edges: [
-    {
-      node: {
-        id: "0b00a102-c3a6-527a-ae6b-8790646b7f6a",
-        slug: "voiko-politiikassa-luvata-mita-tahansa-paastakseen-valtaan",
-        title: "Voiko politiikassa luvata mitä tahansa päästäkseen valtaan?",
-        content:
-          "<p><em>Kolumni on julkaistu alunperin Kaleva Median paikallislehdissä.</em></p>\n<p>Osallistuin viime viikolla SuomiAreenassa uusien kansanedustajien paneelikeskusteluun, jossa keskustelimme tuoreista kokemuksistamme valtiopäiväedustajina. Paneelissa pinnalle nousi Rinteen uusi hallitusohjelma. Sain huomata melko nopeasti olevani yksin lavalla puolustamassa nettoveronmaksajaa ja muistuttamassa hallituspuolueiden vaalilupauksista suhteessa sen nykytoimiin.</p>\n<p>On hämmästyttävää, kuinka vähällä tulosvastuulla poliitikot saavat toimia. Porin paneelikeskustelussa hallituspuolueiden edustajat alkoivat kiemurrella, kun keskusteluun tuli esimerkiksi opintotukeen luvattu merkittävä tasokorotus. Ennen vaaleja hallituksen eri puolueet lupasivat tuntuvaa 83 &#8211; 101 euron tasokorotusta opintotukeen. On ollut kiinnostavaa &#8211; joskaan ei yllättävää &#8211; huomata, ettei tukea lopulta tasokorotettu eurollakaan, sidottiin ainoastaan indeksiin.</p>\n<p>Aivan oma lukunsa on demareille vaalivoiton tuonut lupaus “vappusatasesta”. Epäilemättä moni pienituloinen eläkeläinen saattoi antaa äänensä tämän perusteella. Lupauksen rahoitussuunnitelma romahti kuitenkin jo hallitusneuvotteluissa.</p>\n<p>Kovat odotukset ladattiin myös raidehankkeisiin, kun vihervasemmisto oli vielä vaalipuheissaan laittamassa näitä hankkeita käyntiin. Ihmisten liikkuminen raiteilla autoilun ja lentämisen sijaan nähtiin tehokkaana keinona ilmastonmuutoksen torjunnassa.</p>\n<p>Heti kesäkuun alussa ministeri Marin (sd.) kuitenkin ilmoitti, ettei yksikään hanke etene toteutukseen tällä hallituskaudella. Sama kohtalo uhkaa Oulun neljän tunnin junaa. Herää kysymys, miksei hallitus varannut 3 miljardin pörssiomistusten laajan yksityistämisohjelman rahoistaan raiteisiin, vaan erilaisiin maailmanparannushankkeisiin?</p>\n<p>Hallituksen erikoisista tempauksista on mainittava myös Sierilän padon rakentaminen. Hallitusohjelmassa on asiallinen kirjaus tavoitteesta elvyttää vaelluskalakantoja ja uudistaa vesilakia. Tästä huolimatta hallitus ei näe ristiriitaa valtion omistaman Kemijoki Oy:n päätöksestä rakentaa uusi pato Sierilään. Miten näin voi tapahtua vastoin Vihreiden vaalilupauksia?</p>\n<p>Aktiivimallin purkaminen oli koko vasemmisto-opposition pääteemoja vaaleissa. Hallitusohjelmassa on kuitenkin kirjaus, että negatiivisen työllisyysvaikutuksen uudistuksia tehtäessä on löydettävä vastaavat positiiviset uudistukset muualta. Hallitus ei siis voi purkaa lupaamansa mukaisesti aktiivimallia ilman, että vastaavan kokoluokan korvaava uudistus toteutetaan. En pidättäisi hengitystä tämän suhteen.</p>\n<p>Kansaa petkutettiin myös hoitajamitoituksen osalta. Kokoomuksen suosio tippui ennen vaaleja jyrkästi, kun emme kannattaneet hoitajamitoituksen nostamista 0,5:stä 0,7:ään. Tuolloinen vasemmisto-oppositio rummutti aiheesta kiivasti ja lupasi pikaista suunnanmuutosta.</p>\n<p>Räikeimpään lupaukseen sortui ministeri Krista Kiuru (sd.) väittäessään, että ratkaisuksi riittää laista yhden desimaaliluvun muuttaminen, jonka käsittely eduskunnassa olisi nopeaa ja helppoa. Sittemmin kaikki puheet on pyörretty ja myönnetty, ettei tämä nyt ollutkaan näin herttaisen yksinkertaista.</p>\n<p>Sopii kysyä, miksi poliitikoilla on kannustimet moraaliposeerata ennen vaaleja ja luvata äänestäjille kuuta taivaalta, vaikka monesti tietävät jo lupausta tehdessään asian olevan mahdotonta? Miten voimme koskaan palauttaa tulosvastuun politiikkaan, kun sosiaalipopulistit ja vihervasemmistolaiset lupaavat mitä tahansa ennen vaaleja saadakseen valtaa?</p>\n<p><strong>Janne Heikkinen</strong><br />\nKansanedustaja<br />\nOulun vaalipiiri</p>\n",
-        date: "2019-07-25T17:44:29.000Z",
-        tags: null,
-      },
-    },
     {
       node: {
         id: "b2bf7430-6b19-5cac-abd5-d509073f5d84",

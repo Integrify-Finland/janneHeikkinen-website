@@ -2,23 +2,6 @@ const WP_NODE = (module.exports = {
   edges: [
     {
       node: {
-        id: "0b00a102-c3a6-527a-ae6b-8790646b7f6a",
-        categories: [1],
-        title: "Voiko politiikassa luvata mitä tahansa päästäkseen valtaan?",
-        slug: "voiko-politiikassa-luvata-mita-tahansa-paastakseen-valtaan",
-        date: "2019-07-25T17:44:29.000Z",
-        _links: {
-          wp_featuredmedia: [
-            {
-              href: "http://www.janneheikkinen.fi/wp-json/wp/v2/media/1316",
-            },
-          ],
-        },
-        tags: null,
-      },
-    },
-    {
-      node: {
         id: "b2bf7430-6b19-5cac-abd5-d509073f5d84",
         categories: [1],
         title: "Saimaannorpat ja Rinteen selvittelyhallitus",

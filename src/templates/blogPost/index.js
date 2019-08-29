@@ -14,8 +14,8 @@ import { switchToCat } from "../../utilities/switches"
 const BlogPostTemplate = ({ data, location }) => {
   const { allContentfulBlog, contentfulBlog } = data
 
-  const allPosts = [...allContentfulBlog.edges, ...WP.edges]
-
+  // const allPosts = [...allContentfulBlog.edges, ...WP.edges]
+  const allPosts = [...WP.edges]
   const allSlugs = allPosts.map(({ node }) => {
     return node.slug
   })
@@ -46,7 +46,8 @@ const BlogPostTemplate = ({ data, location }) => {
   const createMarkup = () => {
     return { __html: currentBlog.content }
   }
-
+  console.log(currentBlog)
+  console.log(contentfulBlog)
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
