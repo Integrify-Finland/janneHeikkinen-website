@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
-  console.log(contentfulBlog.entryDescription.entryDescription)
+
   return (
     <Layout>
       {contentfulBlog && (
