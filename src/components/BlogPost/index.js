@@ -77,7 +77,7 @@ const BlogPost = ({
               )}
             </div>
             <div className="blog-post__tags">
-              {tags.length > 0 && (
+              {tags && (
                 <>
                   <strong>Tags: </strong> <span>{tags}</span>
                 </>

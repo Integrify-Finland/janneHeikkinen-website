@@ -29,19 +29,20 @@ const Blogi = ({ data }) => {
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
   const categories = WP.edges
     .map(({ node }) => {
-      return node.categories.map(cat => switchToCat(cat))
+      return node.categories.map(cat => cat)
     })
     .reduce((accumulator, currentValue) => {
       return accumulator.concat(currentValue)
     }, [])
 
   const contentfulCats = contentfulBlog.edges.map(({ node }) =>
-    node.categories.map(value => categories.push(value))
+    node.categories.map(value => value)
   )
 
-  const allCategories = [...categories]
+  const allCategories = [...categories, ...contentfulCats.join()]
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
+  console.log("allCategories:", allCategories)
 
   const tags = WP.edges
     .filter(({ node }) => node.tags !== null)
@@ -58,7 +59,8 @@ const Blogi = ({ data }) => {
         node: {
           ...node,
           categories: node.categories.filter(
-            cat => cat === switchToNums(value)
+            // cat => cat === switchToNums(value)
+            cat => cat === value
           ),
         },
       }))

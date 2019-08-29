@@ -14,8 +14,8 @@ import { switchToCat } from "../../utilities/switches"
 const BlogPostTemplate = ({ data, location }) => {
   const { allContentfulBlog, contentfulBlog } = data
 
-  // const allPosts = [...allContentfulBlog.edges, ...WP.edges]
-  const allPosts = [...WP.edges]
+  const allPosts = [...allContentfulBlog.edges, ...WP.edges]
+
   const allSlugs = allPosts.map(({ node }) => {
     return node.slug
   })
@@ -23,22 +23,12 @@ const BlogPostTemplate = ({ data, location }) => {
   const currentBlog = WP.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
+  const currentCat = currentBlog && currentBlog.categories.join(", ")
 
-  const currentCat = !allContentfulBlog
-    ? switchToCat(
-        WP.edges
-          .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-          .filter(({ node }) => node.categories !== null)
-          .map(blog => blog.node.categories)[0][0]
-      )
-    : "No categories"
-
-  const currentTags = WP.edges
-    ? WP.edges
-        .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
-        .filter(({ node }) => node.tags !== null)
-        .map(blog => blog.node.tags.map(tag => " " + tag.name))
-    : "No tags"
+  const currentTags =
+    currentBlog &&
+    currentBlog.tags &&
+    currentBlog.tags.map(tag => tag.name).join(", ")
 
   const renderBlogPost = () => {
     return { __html: contentfulBlog.body.childMarkdownRemark.html }
@@ -46,11 +36,11 @@ const BlogPostTemplate = ({ data, location }) => {
   const createMarkup = () => {
     return { __html: currentBlog.content }
   }
-  console.log(currentBlog)
-  console.log(contentfulBlog)
+
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
+
   return (
     <Layout>
       {contentfulBlog && (
@@ -105,8 +95,8 @@ const BlogPostTemplate = ({ data, location }) => {
               date={date}
               title={contentfulBlog.title}
               image={contentfulBlog.entryImage}
-              tags={contentfulBlog.tags}
-              categories={contentfulBlog.categories}
+              tags={contentfulBlog.tags.join(", ")}
+              categories={contentfulBlog.categories.join(", ")}
               slug={contentfulBlog.slug}
               allSlugs={allSlugs}
             >
