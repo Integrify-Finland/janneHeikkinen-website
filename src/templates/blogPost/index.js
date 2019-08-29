@@ -19,6 +19,9 @@ const BlogPostTemplate = ({ data, location }) => {
   const allSlugs = allPosts.map(({ node }) => {
     return node.slug
   })
+  const currentWPContent = WPContent.edges
+    .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
+    .map(blog => blog.node)[0]
 
   const currentBlog = WP.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
@@ -30,11 +33,11 @@ const BlogPostTemplate = ({ data, location }) => {
     currentBlog.tags &&
     currentBlog.tags.map(tag => tag.name).join(", ")
 
-  const renderBlogPost = () => {
+  const createContentfulMarkup = () => {
     return { __html: contentfulBlog.body.childMarkdownRemark.html }
   }
-  const createMarkup = () => {
-    return { __html: currentBlog.content }
+  const createWPMarkup = () => {
+    return { __html: currentWPContent.content }
   }
 
   const date = currentBlog
@@ -102,7 +105,7 @@ const BlogPostTemplate = ({ data, location }) => {
             >
               <div
                 className="blog-post"
-                dangerouslySetInnerHTML={renderBlogPost()}
+                dangerouslySetInnerHTML={createContentfulMarkup()}
               ></div>
             </BlogPost>
           )}
@@ -121,7 +124,7 @@ const BlogPostTemplate = ({ data, location }) => {
             >
               <div
                 className="blog-post"
-                dangerouslySetInnerHTML={createMarkup()}
+                dangerouslySetInnerHTML={createWPMarkup()}
               ></div>
             </BlogPost>
           )}

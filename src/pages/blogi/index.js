@@ -42,7 +42,6 @@ const Blogi = ({ data }) => {
   const allCategories = [...categories, ...contentfulCats.join()]
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
-  console.log("allCategories:", allCategories)
 
   const tags = WP.edges
     .filter(({ node }) => node.tags !== null)
@@ -58,10 +57,7 @@ const Blogi = ({ data }) => {
       .map(({ node }) => ({
         node: {
           ...node,
-          categories: node.categories.filter(
-            // cat => cat === switchToNums(value)
-            cat => cat === value
-          ),
+          categories: node.categories.filter(cat => cat === value),
         },
       }))
       .filter(blog => blog.node.categories.length > 0)
