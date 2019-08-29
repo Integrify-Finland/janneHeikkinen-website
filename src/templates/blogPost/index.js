@@ -42,7 +42,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
-
+  console.log(contentfulBlog.entryDescription.entryDescription)
   return (
     <Layout>
       {contentfulBlog && (
@@ -52,10 +52,13 @@ const BlogPostTemplate = ({ data, location }) => {
           <meta
             name="og:description"
             property="og:description"
-            content={contentfulBlog.description}
+            content={contentfulBlog.entryDescription.entryDescription}
           />
           <meta name="twitter:title" content={contentfulBlog.title} />
-          {/* <meta name="twitter:description" content={contentfulBlog.description} /> */}
+          <meta
+            name="twitter:description"
+            content={contentfulBlog.entryDescription.entryDescription}
+          />
           <meta name="twitter:card" content="summary_large_image" />
           <meta
             name="twitter:image:src"
@@ -143,6 +146,9 @@ export const query = graphql`
       date
       categories
       slug
+      entryDescription {
+        entryDescription
+      }
       entryImage {
         fluid {
           base64
