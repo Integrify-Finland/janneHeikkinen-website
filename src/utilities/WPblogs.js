@@ -166,14 +166,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Perintövero",
-          },
-          {
-            name: "Verotus",
-          },
-        ],
+        tags: ["Perintövero", "Verotus"],
         content:
           '<p dir="ltr">Suomessa törmää usein kummalliseen harhaluuloon, että perintö- ja lahjavero olisi välttämätön osa veropohjaa ja sen poistaminen olisi siten mahdotonta. Kansainvälisen vertailun perusteella näin ei kuitenkaan ole. Yksinään Euroopassa on parikymmentä maata, joissa perintö- ja lahjaveroa ei ole käytössä lainkaan.</p>\n<p dir="ltr">Suomi näyttäytyy poikkeuksellisen kireänä perintö- ja lahjaverottajana paitsi laajassa eurooppalaisessa vertailussa, myös lähinaapurimaihin nähden. Ruotsi ja Norja ovat luopuneet kyseisistä veroista. Viro ei ole koskaan niitä ottanut edes käyttöön. Silti kyseisten maiden julkisen talouden rahoituspohja ei ole romahtanut epäterveeksi, vaikka perintö- ja lahjaverojen kannattajat näin kovasti pelottelevat</p>\n<h3 dir="ltr">Perintövero vaikeuttaa merkittävästi yritysten sukupolvenvaihdoksia.</h3>\n<p dir="ltr">Perintö- ja lahjaveron poistoa puoltaa useampi seikka. Ensinnäkin perintövero vaikeuttaa merkittävästi yritysten sukupolvenvaihdoksia. Se on kiihdyttänyt epätoivottavaa kehityskulkua, jossa kotimainen kasvollinen omistajuus siirtyy kansainvälisille sijoittajille ja rahastoille.</p>\n<p dir="ltr">Toisekseen perintö voi olla jokin vaikeasti likvidoitavissa oleva kohde, kuten maatila koneineen, jolloin verojen maksu on haasteellista. On täysin kohtuutonta, että jopa parikymppiset nuoret joutuvat ottamaan kymmeniä tuhansia euroja velkaa läheisen kuoleman vuoksi. Räikeimmissä tapauksissa omaisuutta ei saa edes käyttöön useaan vuoteen, vaikka verot lankeavat maksettavaksi miltein heti.</p>\n<p dir="ltr">Perintövero on jo ajatuksen tasolla täysin epäoikeudenmukainen. Perinnöstä maksettavaa veroa on jo verotettu aikaisemmin useaan kertaan esimerkiksi ansiotuloverotuksen, pääomatuloverotuksen tai kiinteistöveron muodossa. Silti vielä kuolemankin korjatessa valtio haluaa vetää välistä perinnön antajan kovalla työllä saavuttamista hedelmistä.</p>\n<h3 dir="ltr">Perustuslaissa turvatun omaisuudensuojan tulisi suojata omaisuutta myös valtiota vastaan.</h3>\n<p dir="ltr">Kansan järjestelmällinen köyhdyttäminen poikkeuksellisen tiukalla perintöverolla on loputtava. Suomen on seurattava asiassa naapurimaita ja yleiseurooppalaista käytäntöä, jossa kansalaisten vaurastumiselle luodaan aidot mahdollisuudet. Perustuslaissa turvatun omaisuudensuojan tulisi suojata omaisuutta myös valtiota vastaan.</p>\n<p dir="ltr">Janne Heikkinen</p>\n<p dir="ltr">Kansanedustajaehdokas (Kok.)<br />\nKaupunginhallituksen jäsen<br />\nOulu</p>\n',
       },
@@ -192,20 +185,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "koulutus",
-          },
-          {
-            name: "sivistys",
-          },
-          {
-            name: "Tulevaisuus",
-          },
-          {
-            name: "vapaus",
-          },
-        ],
+        tags: ["koulutus", "sivistys", "Tulevaisuus", "vapaus"],
         content:
           '<p dir="ltr">Hyvinvointiyhteiskuntamme yksi tärkeimmistä kulmakivistä on suomalainen sivistys, jota kannattelevat maamme parhaat ammattilaiset, eli opettajat. Peruskoulumme on ollut pitkään kiistaton menestystarina, joka on herättänyt laajaa kansainvälistä kiinnostusta. Se on mahdollistanut pitkälle kehittyneen mahdollisuuksien tasa-arvon ja vankistanut kilpailukykyämme.</p>\n<h4 dir="ltr">Suomalaista sivistystä kannattelevat maamme parhaat ammattilaiset, eli opettajat.</h4>\n<p dir="ltr">Meidän velvollisuutemme on huolehtia, että suomalaisen koulun menestystarina saa onnistuneen jatko-osan. Siksi meidän tulisi olla kiinnostuneita mitä valmiuksia, tietoja ja osaamista toivomme lastemme oppivan tulevaisuuden koulumaailmassa. Jos tyydymme nykytilanteeseen, on todellisena vaarana, että maailma ajaa meistä ohi pikavauhtia.</p>\n<p dir="ltr">Minä väitän, että tulevaisuuden kouluissa pitäisi opettaa enemmän logiikkaa, joka käsittää mm. matematiikan ja matematiikan soveltamisen ohjelmointina. Jos Suomi haluaa menestyä esimerkiksi pelien tekemisen mallimaana, niin matematiikan osaaminen ja soveltamisen on oltava huipputasoa.</p>\n<p dir="ltr">Tarvitsemme lisää ilmaisutaidon opettamista, joka parantaisi niin kirjoitus-, vuorovaikutus-, esiintymis- ja kielitaitoja. Yksinään hyvien vuorovaikutustaitojen oppiminen on edellytys sille, että meistä jokainen pärjää työelämässä. Niin ikään luovuuteen kannustaminen on tärkeää, jotta kykenemme ratkaisemaan ongelmia ja sopeutumaan alituiseen muutokseen.</p>\n<p dir="ltr">Tulevaisuuden koulussa pitäisi panostaa nykyistä merkittävästi enemmän yhteiskuntaopin sekä historian opetukseen. Oppilaiden taitoja tulisi lisätä opettamalla henkilökohtaista taloudenpitoa, taloustieteen perusteita ja demokratiakasvatusta. Lisäksi oppimisen pitäisi aina tähdätä kriittiseen ajatteluun sekä luotettavan ja epäluotettavan tiedon erottamiseen toisistaan.</p>\n<h4 dir="ltr">Liikuntaa pitäisi olla kouluissa joka päivä.</h4>\n<p dir="ltr">Liikuntaa pitäisi olla myös joka päivä. Sillä on paitsi suuri merkitys oppimistuloksien paranemiseen, niin myös lasten fyysisen ja psyykkisen hyvinvoinnin kasvulle. On irvokasta, että lapselta saatetaan vaatia jatkuvaa, passiivista tiedon vastaanottamista paikallaan istuen, vaikka oppiminen on aktiivinen tapahtuma. Jopa aikuisten työpaikalla on tiedostettu pitkän istumisen haittapuolet työkykyyn.</p>\n<p dir="ltr">Kaiken kaikkiaan peruskoulun läpäisyvaatimuksena tulisi pitää sitä, että nuori suorittaa onnistuneesti luku- ja kirjoitustaitotestin. Sitä tärkeämpää sivistyksen mittaria tuskin voimme tulevaisuuden peruskouluun asettaa.</p>\n<p dir="ltr"><strong>Janne Heikkinen</strong></p>\n<p dir="ltr">Yhteiskuntatieteiden maisteri<br />\nKansanedustajaehdokas (kok.)<br />\nOulu</p>\n',
       },
@@ -300,11 +280,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Valtuustoaloite",
-          },
-        ],
+        tags: ["Valtuustoaloite"],
         content:
           "<p>Suomessa järjestetään 5.-11.2018 jälleen kerran valtakunnalliset Porraspäivät. Porrashikoilu on tehokkaasti sykettä nostava liikuntamuoto, joka tarjoaa keholle monipuolista rasitusta. Porrasharjoittelun positiivisena puolena on se, että se sopii myös alaraajavaivoista kärsiville, sillä se rasittaa asfalttia vähemmän niveliä. Valitettavasti Oulun kaupungin alueella tämän kaltaisia lähiliikuntaan kannustavia paikkoja on hyvin rajallisesti, eikä maastomme muodot suosi kyseisenlaista liikunnan muotoa luontaisesti.</p>\n<p>Me allekirjoittaneet valtuutetut esitämme, että Oulun kaupunki selvittää mahdollisuuden lisätä kuntoilu-/harjoitteluportaiden määrää eri puolilla kaupunkia. Samassa yhteydessä tulee selvittää mahdollisuus rakentaa kuntoilu-/harjoitteluportaita yhteistyössä asukkaiden ja yritysten kanssa esimerkiksi osallistumalla kustannuksiin nimikkoporras-mallilla</p>\n<p>Oulussa 8.10.2018</p>\n<p>Janne Heikkinen</p>\n",
       },
@@ -325,14 +301,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kuntapolitiikka",
-          },
-          {
-            name: "Valtuustoaloite",
-          },
-        ],
+        tags: ["Kuntapolitiikka", "Valtuustoaloite"],
         content:
           "<p>Oulun kaupunginvaltuusto</p>\n<p>Aloite 10.9.2018</p>\n<p><strong>Selvitys Oulun kaupungin jäsenyyksistä eri yhdistyksissä</strong></p>\n<p>Me allekirjoittaneet valtuutetut esitämme, että Oulun kaupunki selvittää osana talouden tasapainottamista jokaisen järjestön jäsenyyden. Selvityksessä tulisi käydä ilmi kaupungin kaikki jäsenyydet järjestöissä, niiden aiheuttamat vuosittaiset kustannukset, lakisääteisyys tai vapaaehtoisuus ja realistiset kuvaukset toiminnan sisällöstä.</p>\n<p>Kokonaiskuvan saamisen jälkeen kaupungin jäsenyyksiä on mahdollista arvioida kokonaisvaltaisesti. Tarvittaessa osasta jäsenyyksiä voitaisiin luopua, mikäli tarvetta jäsenyyden jatkamiselle ei nähdä enää olevan olemassa. Myös jäsenmaksultaan pienempien järjestöjen jäsenyyden mielekkyyttä on syytä arvioida, sillä vuosittaiset jäsenmaksut ovat aina pois jostain muusta toiminnasta.</p>\n<p>Oulussa 10.9.2018</p>\n<p>Janne Heikkinen</p>\n",
       },
@@ -351,11 +320,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Eduskuntavaalit",
-          },
-        ],
+        tags: ["Eduskuntavaalit"],
         content:
           '<p>Tänään Pohjois-Pohjanmaan Kokoomus valitsi minut ehdolle ensi kevään eduskuntavaaleihin. Tässä työssä ei kuitenkaan kukaan pärjää yksin. Uskallan väittää, että en olisi päässyt tähän asti ilman teidän tukea.</p>\n<p>Viime kerralla meitä oli kampanjassa mukana 2295 yksilöä, jotka jakoivat yhteisen linjan isänmaan tulevaisuudesta. Pohjoinen työ ja pienyrittäjät on asetettava etusijalle, valta on siirrettävä yksilölle Helsingin byrokraateilta ja puhtaan luonnon ainutlaatuiset mahdollisuudet täytyy turvata. Tulen myös jatkossa nojaamaan samoihin arvoihin ja periaatteisiin. Suomalaiset ansaitsevat luotettavan päättäjän, jonka kädenpuristukseen voi luottaa yli vaalikausien.</p>\n<div class="perfect-pullquote vcard pullquote-align-full pullquote-border-placement-left"><blockquote><p>Pohjoinen työ ja pienyrittäjät on asetettava etusijalle, valta on siirrettävä yksilölle Helsingin byrokraateilta ja puhtaan luonnon ainutlaatuiset mahdollisuudet täytyy turvata.</p></blockquote></div>\n<p>Tulevissa vaaleissa ratkaistaan todennäköisesti myös se, että onko seuraava pääministeri Petteri Orpo vai Antti Rinne. Yksi asia on kuitenkin varma. En tule koskaan saamaan isoja shekkejä ay-liikkeeltä kampanjan tueksi. Meidän on yhdessä huolehdittava, että näitä vaaleja ei voiteta ammattiliittojen miljardiomaisuudella. Tämän kampanjan onnistumisen ratkaisevat käsiparit, jotka saamme mukaan vaalityöhön. Siksi tarvitsen sinun apuasi.</p>\n<p><strong>Liity mukaan tiimiin ja levitä sanomaa kampanjastamme:</strong></p>\n<p><a href="http://www.janneheikkinen.fi/tulemukaan">www.janneheikkinen.fi/tulemukaan</a></p>\n',
       },
@@ -470,14 +435,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kuntapolitiikka",
-          },
-          {
-            name: "Valtuustoaloite",
-          },
-        ],
+        tags: ["Kuntapolitiikka", "Valtuustoaloite"],
         content:
           '<p><em>Oulun kaupunginvaltuusto 25.9.2017</em></p>\n<p>Sipilän hallituksen strategisessa hallitusohjelmassa on asetettu tavoitteeksi mahdollistaa palvelualoitteen käyttö määräaikaisena kokeiluna. Hallitusohjelmassa todetaan: ”Hallitus toteuttaa valtakunnallisesti kuntien ja muun julkisen sektorin tuotantokustannusten mittariston, joka tekee kustannuksista ja laadusta läpinäkyvän ja vertailukelpoisen. Hallitus edistää uusien palveluinnovaatioiden syntymistä ja hyödyntämistä toteuttamalla laajasti kokeilutoimintaa mahdollistavalla säädöspohjalla. Mahdollistetaan palvelualoitteen käyttö määräaikaisena kokeiluna.”</p>\n<p>Oulussa, kuten monessa muussa suomalaisessa kunnassa, on kohdattu suuria taloudellisia haasteita. Väestön ikääntymisen lisäksi viime vuosien aikana Suomenkin taloutta kurittaneen taantuman lasku on maksettava. Samaan aikaan huoltosuhde heikkenee koko maassa. Oulun kaupunki on siis tilanteessa, jossa on etsittävä parhaita mahdollisia tapoja turvata hyvät ja laadukkaat peruspalvelut kaikilla kaupunkiorganisaation sektoreilla pienemmällä rahamäärällä.</p>\n<p>Eri palvelutuotantotapojen ja – vaihtoehtojen vertailu ei kuitenkaan ole aina helppoa. Vertailua helpottavia toimintatapoja on kuitenkin olemassa.</p>\n<h4 style="text-align: center;">&#8221;Jyväskylässä ensimmäinen palvelualoite kosketti kaupunginteatterin toiminnan järjestämistä uudella tavalla, joka puolittaisi kaupungin maksuosuuden.&#8221;</h4>\n<p>Ruotsissa kunnat ovat voineet ottaa käyttöönsä ns. palvelualoite-käytännön. Käytäntöä hyödyntävissä kunnissa (mm. Uppsala ja Tukholman maakäräjät) kolmannen ja yksityisen sektorin toimijat voivat edistää palvelutuotannon eri vaihtoehtojen välistä laadun ja kustannusten arviointia. Isossa-Britanniassa vastaavaa käytäntöä kutsutaan nimellä ”Right to Challenge” ja se käytäntö on toteutettu lainsäädännön tasolla pakolliseksi kaikille kunnille. Suomessa palvelualoitteen käyttöönotossa edelläkävijänä on toiminut Jyväskylän kaupunki. Jyväskylässä ensimmäinen palvelualoite kosketti kaupunginteatterin toiminnan järjestämistä uudella tavalla, joka puolittaisi kaupungin maksuosuuden. Palvelualoite soveltuu myös pienemmän kokoluokan innovaatioihin, kuten mattolaitureiden, ulkoluisteluratojen tai uimarantojen palveluiden järjestämiseen.</p>\n<p>Palvelualoitteen ideana on, että kunnalle voidaan esittää vaihtoehtoinen laadultaan parempi tai kustannuksiltaan edullisempi tapa tuottaa palvelu toisen tahon toimesta. Haasteen jättäjä esittää haasteessaan tarkoin yksilöidysti, miten kyseessä oleva palvelu tai osa siitä voidaan tuottaa nykymallia laadukkaammin ja/tai edullisemmin.</p>\n<p>Kunnan tulee:</p>\n<p>1. Ottaa haaste vastaan<br />\n2. Arvioida oman palvelun laatu ja kustannukset,<br />\n3. Vertailla omaa ja ehdotettua tuotantotapaa ja<br />\n4. Päättää niistä toimenpiteistä, joihin palvelualoite ja tehty vertailu antavat aihetta</p>\n<p>Kunnalla ei siis ole suoraa velvoitetta muuttaa omaa toimintaansa tai palveluiden toimintatapaa. Mikäli vertailu osoittaa tarjotun tuotantomallin paremmaksi, kunta voi käynnistää prosessin palvelujen kilpailuttamiseksi tai hankittavaksi esim. palvelusetelillä.</p>\n<h4 style="text-align: center;">&#8221;Ruotsissa palvelualoite on johtanut useilta osin palvelutuotannon hallittuun avautumiseen kilpailulle niin, että tehokkuus ja laatu ovat parantuneet.&#8221;</h4>\n<p>Käytännössä Ruotsissa palvelualoite on johtanut useilta osin palvelutuotannon hallittuun avautumiseen kilpailulle niin, että tehokkuus ja laatu ovat parantuneet. Tämä on tukenut myös yrittäjyyttä ja markkinoiden sekä palveluinnovaatioiden syntymistä.</p>\n<p>Palvelualoite-käytännön ottaminen käyttöön Oulussa edistäisi kunnan palvelurakenteiden uudistumista, julkisen palveluntuotannon tehokkuuden paranemista tai vähintäänkin se voisi johtaa kustannustietoisuuden kasvuun kunnan organisaation sisällä.</p>\n<p>Esitämme, että Oulun kaupunki ottaa käyttöön palvelualoitteen kuntaorganisaatiossa ja aloittaa parilla hyväksi katsotulla toimialalla palvelualoitteen mukaisen pilottimaisen kokeilun.</p>\n<p><strong>Janne Heikkinen (Kok.) &amp; muut valtuutetut</strong></p>\n',
       },
@@ -496,17 +454,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kolumni",
-          },
-          {
-            name: "Talous",
-          },
-          {
-            name: "Verotus",
-          },
-        ],
+        tags: ["Kolumni", "Talous", "Verotus"],
         content:
           '<p><span lang="FI"><em>Kirjoitus on julkaistu Forum24-lehdessä torstaina 29. kesäkuuta 2017.</em></span></p>\n<p>Oma sukupolveni, eli vuosina 1980–1995 syntyneiden Y-sukupolvi, on rikkomassa kyseenalaisia taloudellisia ennätyksiä. Y-sukupolvesta näyttää tulevan ensimmäinen sukupolvi, joka ei yllä edeltävien sukupolvien kaltaiseen taloudelliseen hyvinvointiin.</p>\n<h4><span lang="FI">Hallituksen tavoitteena on nostaa työllisyysaste 72 prosenttiin. Hämmästyttävää on se, että edellisen kerran samalla tasolla on oltu lähes 30 vuotta sitten. </span></h4>\n<p><span lang="FI">Nuorten aikuisten taloutta kurittavat ja heidän tulevaisuuttaan varjostavat arjen kasvavien menojen lisäksi maailmantalouden kehno tilanne, julkisen talouden ennätyksellisen suuri velkaantuminen, työttömyys, asumisen kalleus, suurten ikäluokkien eläkkeet sekä maailman korkeimpiin lukeutuva veroaste. </span></p>\n<p><span lang="FI">Tilanne on muuttunut ratkaisevasti viimeisen 30 vuoden aikana. Kun nuoret aikuiset silloin tienasivat kansallista keskipalkkaa enemmän, nuorten aikuisten tienestit ovat nyt romahtaneet monissa maissa 20 prosenttia keskitulojen alle. Suomen Pankin analyysin mukaan alle 35-vuotiaiden kotitalouksien elintaso ei juurikaan ole noussut vuosien 1990 ja 2013 välillä. </span></p>\n<p><span lang="FI">Nuorten kotitalouksien käytettävissä olevien tulojen kasvun heikentymisen vaikutukset ovat laajat. Esimerkiksi asunnon hankkiminen vaikeutuu, autokanta vanhenee, varallisuuden kertyminen tyrehtyy, perheiden perustaminen myöhästyy ja yhteiskunnallinen yhteenkuuluvuuden tunne rapistuu. </span></p>\n<p><span lang="FI">Y-sukupolven taloudellisen ahdingon seurauksena myös tavalliset keskiluokkaiset unelmat ovat pirstaloituneet. Nykyisin monelle nuorelle aikuiselle on kaukainen ajatus, että elämästä löytyisi lähitulevaisuudessa omakotitaloa, mökkiä, siedettävää perheautoa tai myöhemmin elämässä mukavasti elettävää eläkettä. </span></p>\n<h4><span lang="FI">Nykyistä matalampi ansiotuloverotus mahdollistaisi yksilöiden onnistumisen: vähävaraisen, mutta ahkeran tulee voida omilla ponnisteluillaan vaurastua. </span></h4>\n<p><span lang="FI">Hallituksen tavoitteena on nostaa työllisyysaste 72 prosenttiin. Hämmästyttävää on se, että edellisen kerran samalla tasolla on oltu lähes 30 vuotta sitten. Y-sukupolven aikana työttömyydestä on tullut uusi normaali, joka näkyy erityisesti työuransa alkuvaiheessa olevien nuorten vaikeutena saada ensimmäistä kokopäiväistä ja vakituista työpaikkaa. </span></p>\n<p><span lang="FI">Sukupolvien eriarvoisuutta lisäävän kehityksen kääntäminen täytyy aloittaa välittömästi. Nuorten työllistymistä tulisi edistää kaikilla mahdollisilla keinoilla. Työmarkkinapolitiikkaa tulee joustavoittaa ja tehdä työnteosta sekä lisäansioiden hankkimisesta kaikissa tilanteissa yksilölle kannattavaa. Samalla verorasitusta pitäisi keventää, joka parantaisi yritysten työllistämiskykyä ja ihmisten motivaatiota työskennellä. Nykyistä matalampi ansiotuloverotus mahdollistaisi yksilöiden onnistumisen: vähävaraisen, mutta ahkeran tulee voida omilla ponnisteluillaan vaurastua. </span></p>\n<p dir="ltr"><strong>Janne Heikkinen</strong><br />\nOulun kaupunginhallituksen jäsen (kok.)</p>\n',
       },
@@ -525,17 +473,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kuntapolitiikka",
-          },
-          {
-            name: "Oulu",
-          },
-        ],
+        tags: ["Kokoomus", "Kuntapolitiikka", "Oulu"],
         content:
           '<p>Politiikka on vaativa kestävyyslaji, jossa kestävyyttä kysytään niin vaikuttajalta kuin tukijoilta. Tänä keväänä äänestäjieni kestävyydestä tämä laji ei ainakaan jäänyt kiinni.</p>\n<p>Jopa 726 oululaista antoi tukensa kampanjallemme. Kampanjalle, jossa nettoveronmaksajia puolustetaan. Kampanjalle, joka vaati yhtä lailla vastuullisuutta talouden kuin ympäristön hoitoon. Kampanjalle, joka näkee Oulun tulevaisuudessa korkeana, työpaikkarikkaana ja kaupungistumisen hyödyistä nauttivana modernina kaupunkina. Nyt voin sanoa, ettei yksikään näistä äänistä mennyt hukkaan. Jokainen ääni merkitsi.</p>\n<p>Tänään yhteinen tavoitteemme otti askeleen eteenpäin. Puolueiden välisten neuvotteluiden perusteella Oulun Kokoomus esittää minua Oulun kaupunginhallituksen jäseneksi, BusinessOulun varapuheenjohtajaksi ja maakuntavaltuutetuksi. Kaupunginhallituksen jäsenenä tulen myös osallistumaan sekä Oulun Jätehuollon että Oulu-Koillismaan pelastuslaitoksen hallitusten päätöksentekoon.</p>\n<p>Neljässä hallituksessa ja kahdessa valtuustossa vaikuttaminen takaa sen, että pääsen paitsi Oulun kaupunkipolitiikan myös koko seudun kehittämisen ytimeen. Tämä ei olisi mahdollista ilman näin valtavaa tukijoukkoa. Toivottavasti pysytte myös jatkossa mukana.  Sillä välin pyrin tekemään kaikkeni yhteisten teemojemme puolesta.</p>\n<p>Lisätietoja <a href="http://www.kaleva.fi/uutiset/kotimaa/kokoomus-nimesi-ehdokkaat-luottamustoimiin-juha-hannista-esitetaan-valtuuston-johtoon/761161/">täältä</a>.</p>\n',
       },
@@ -554,14 +492,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kaupungistuminen",
-          },
-          {
-            name: "Oulu",
-          },
-        ],
+        tags: ["Kaupungistuminen", "Oulu"],
         content:
           '<p dir="ltr">Alkuvuodesta PM <strong>Juha Sipilä</strong> (kesk.) kertoi uskovansa, että kaupungistumisen suunta on muuttumassa pois kasvukeskuksista. Jos tarkastelemme globaalia kehitystä, niin pääministerin kouluarvosanaksi muodostuu kymmenen uskonnosta ja nelonen matematiikasta.</p>\n<p dir="ltr">Halusimme tai emme, niin iso osa talouskasvusta tehdään kaupungeissa ja metropolialueilla. Tutkimusten mukaan vuonna 2014 maailman 300 suurinta metropolialuetta tuotti lähes puolet maailmantalouden arvonlisäyksestä.</p>\n<p dir="ltr">Kotimaassa suurimpien kaupunkialueiden yhteenlaskettu arvonlisäys on noin 60 prosenttia koko maan luvusta. Maakunnistamme esimerkiksi Pohjois-Pohjanmaa, Pirkanmaa ja Varsinais-Suomi eivät saavuttaisi tuotantolukujaan ilman vahvoja kaupunkikeskuksia. Tämän vuoksi Suomella ei ole yksinkertaisesti varaa olla todellisuuskriittinen kaupungistumisen suhteen.</p>\n<p dir="ltr"><div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Suomella ei ole yksinkertaisesti varaa olla todellisuuskriittinen kaupungistumisen suhteen.</p></blockquote></div>\n<p dir="ltr">Kokonaistaloudeltaan merkittävimmät kaupungit löytyvät perinteisistä länsimaista. Euroopan näkökulmasta taloudellisesti nopeimmin kasvavien kaupunkien lista on kuitenkin synkkä. Maailman 20 nopeimmin kasvavasta kaupungista listalle yltää 12 kiinalaiskaupunkia. Euroopasta ainoastaan Budapest voidaan laskea mukaan. Budapestin talous perustuu liike-elämän palveluihin, kauppaan, turismiin sekä metropolin houkuttelevuuteen esimerkiksi start-up-yritysten osalta. Lisäksi se hyötyy Unkarin liikennejärjestelmässä, jossa Budapest muodostaa rautatieyhteyksien solmukohdan.</p>\n<p dir="ltr">Kaupunkien taloudellisen menestyksen kannalta ratkaisevia tekijöitä on useita: tuotantoresurssien, kuten pääoman, työvoiman ja luonnonvarojen saatavuus, markkinaläheisyys sekä kuljetus- ja varastointilogistiikan hinta- ja kustannustekijät. Samat lainalaisuudet pätevät Oulun kaupungin ja koko seudun taloudelliseen kehitykseen.</p>\n<p dir="ltr">Oulun omilla päätöksillä, esimerkiksi kaavoituksella ja liikennejärjestelmillä, on merkittävä vaikutus kaupungin logistiseen houkuttelevuuteen. Tämän vuoksi oli äärimmäisen tärkeää, että pitkän poikkipuolueellisen vaikuttamistyön tuloksena Oulun sataman väylän syventämiseen löydettiin tarvittavat resurssit. Tähän ei saa kuitenkaan tyytyä. Nyt tarvitaan pikaisesti puolueilta yhteistä näkemystä siitä, mitä megaluokan hankkeita voimme seuraavaksi edistää yhdessä pohjoisen työn puolesta.</p>\n<p dir="ltr">Liikenne ei tietystikään ratkaise kaikkea. Maailmalla kaikki nopeasti kasvavat kaupungit ovat väestöltään miljoonakaupunkeja. Tämä johtuu siitä, että yleensä suurissa kaupungeissa tuotantotekijöiden, kuten koulutetun työvoiman saatavuus on hyvää. Jos haluamme saada Oulun seudun talouden kasvuun, vaatii se yliopiston ja korkeakoulujen merkityksen tunnistamista taloudellisen kehityksen moottorina. Tarvitsemme korkeakoulut tuottamaan runsaasti tietoperusteiseen työhön pystyviä työntekijöitä. Huomiota pitää kiinnittää erityisesti uusien liiketoimintamallien, tuotteiden ja palveluiden kehittämiseen ja lanseeraamiseen, eli innovaatiotoimintaan ja tietoperustaiseen kasvuun.</p>\n<p dir="ltr"><div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Jokaisen hitaasta työllisyyskasvusta huolestuneen olisi syytä olla kiinnostunut kaupungistumisen mukanaan tuomista mahdollisuuksista.</p></blockquote></div>\n<p dir="ltr">Jokaisen hitaasta työllisyyskasvusta huolestuneen olisi syytä olla kiinnostunut kaupungistumisen mukanaan tuomista mahdollisuuksista. Suomea on vaivannut vientikilpailukyvyn ongelmat ja Euroopan hidas talouskasvu jo pitkään, eikä meillä ole varaa toiseen menetettyyn vuosikymmeneen. Sen vuoksi tulevaisuuden taloudellisessa kilpailussa laitan omat panokseni kaupunkien varaan.</p>\n<p dir="ltr"><strong>Janne Heikkinen</strong><br />\nOulun kaupunginvaltuutettu (kok.)</p>\n',
       },
@@ -581,27 +512,19 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kaupunginvaltuusto",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kaupunginvaltuusto",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Vaalit",
         ],
         content:
           '<p>Nyt se on varmaa! Sain 718 äänestäjältä valtakirjan aloittaa vaikuttamistyön Oulun kaupunginvaltuutettuna. Lupaan tehdä kaikkeni korkeamman, liikkuvamman ja taloudellisesti vakavaraisemman Oulun puolesta. Haluan kiittää sydämeni pohjasta jokaista teistä, jotka elitte tämän todeksi kanssani ja olitte mukana mahdollistamassa näin valtavan hienoa tulosta. Kiitos!</p>\n<p>&nbsp;</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Lupaan tehdä kaikkeni korkeamman, liikkuvamman ja taloudellisesti vakavaraisemman Oulun puolesta.</p></blockquote></div>\n',
@@ -622,30 +545,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Äänestyspäivä",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Äänestyspäivä",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
         ],
         content:
           '<p>Video: Tänään on viimeinen mahdollisuus vaikuttaa siihen, kuka Oulussa käyttää valtaa seuraavat neljä vuotta. Äänestää voit klo: 09.00-20.00. Tarkasta oma äänestyspaikkasi kotiin tulleesta kirjeestä tai täältä: <a href="https://vrk.navici.com/" target="_blank" rel="nofollow">https://vrk.navici.com/</a></p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Tänään on viimeinen mahdollisuus vaikuttaa siihen, kuka Oulussa käyttää valtaa seuraavat neljä vuotta.</p></blockquote></div>\n<p>www.janneheikkinen.fi</p>\n<p>Olen ehdolla numerolla 7. Muista käyttää ääntäsi!</p>\n',
@@ -666,30 +580,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Vaalit",
-          },
-          {
-            name: "Velkaantuminen",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Vaalit",
+
+          "Velkaantuminen",
         ],
         content:
           '<p>Video: Oulun kaupungin velkaantuminen on saatava kuriin. Siksi lähdin ehdolle kaupunginvaltuustoon. Nyt tarvitsen teidän tukeanne. Olen ehdolla numerolla 7. Muista käyttää ääntäsi!</p>\n<p>Tarkasta kotiin tulleesta äänestysoikeuskirjeestä oma äänestyspaikkasi ja käytä ääntäsi varsinaisena vaalipäivänä sunnuntaina 9.4.2017!</p>\n<p><a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.janneheikkinen.fi%2F&amp;h=ATM-z06v49fh3BMZdwGCzWYp1z_69fgLOJPc6XizItOWnl6t8oL8O6Kjh3LvzCxqHrfrbZpNM3JnU0FcFu1wLs4FFDwscFWHs1n-JP1hHzXf_5WVltygMFdbTjARm63UjmUa9g&amp;enc=AZOvYulBk6l7bj94MMdExCOJVwiOE_lcwebR3SDBEpAbd02k45DQ7pK6BXvrTu-DGbqYP5uFW57wg2CBo0WdJYObUKPzWg8hpUgCLUNy7BawTZcAYDXXYxBM5HcN7MLPrQmjnmANoUwTGdeAJaAfLH92yvBKxQRyD6baoQRfNx3eOgtuIZvgSvBWXCwdwlC33or3ubOjZhsvUlidNli5zIRE&amp;s=1" target="_blank" rel="nofollow">www.janneheikkinen.fi</a></p>\n',
@@ -710,30 +615,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
-          {
-            name: "Vetovoimaisuus",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
+
+          "Vetovoimaisuus",
         ],
         content:
           '<p>Video: Oulu käy yhä kovempaa kilpailua muiden yliopistokaupunkien kanssa. Vetovoimaisuutta ei lisätä kaupunginvaltuuston kartanoseminaareilla, vaan konkreettisilla teoilla. Siksi tarvitsen teidän tukeanne. Muista käyttää ääntäsi ja kerro kampanjasta myös ystävillesi!</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Oulun vetovoimaisuutta ei lisätä kaupunginvaltuuston kartanoseminaareilla, vaan konkreettisilla teoilla. </p></blockquote></div>\n<p>Varsinainen vaalipäivä on sunnuntaina 9.4.2017. Olen ehdolla numerolla 7. Muista käyttää ääntäsi.</p>\n<p><a href="http://www.janneheikkinen.fi/" target="_blank" rel="nofollow">www.janneheikkinen.fi</a></p>\n',
@@ -754,30 +650,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Ennakkoäänestys",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Ennakkoäänestys",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
         ],
         content:
           '<p>Video: Ennakkoäänestys on alkanut!</p>\n<p>Nyt jos koskaan tarvitsen teidän apuanne, sillä ennakkoäänestys on alkanut. Ennakkoäänestäminen on helppoa, sillä se onnistuu missä tahansa äänestyspisteessä &#8211; myös Oulun ulkopuolella! Itse käyn äänestämässä ruokakauppareissun ohessa. Mukaan tarvitsee ainoastaan henkilötodistuksen. Muistakaa käydä äänestämässä.</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Ennakkoäänestäminen on helppoa, sillä se onnistuu missä tahansa äänestyspisteessä &#8211; myös Oulun ulkopuolella! </p></blockquote></div>\n<p>Tarkista ennakkoäänestyspaikat täältä: <a href="http://www.kaleva.fi/uutiset/kuntavaalit-2017/kuntavaalien-ennakkoaanestyspaikat-julkistettiin-katso-lista/749140/" target="_blank" rel="nofollow">http://www.kaleva.fi/…/kuntavaalien-ennakkoaanestys…/749140/</a> <a class="_58cn" href="https://www.facebook.com/hashtag/oulu?source=feed_text&amp;story_id=1272586106150849" data-ft="{&quot;tn&quot;:&quot;*N&quot;,&quot;type&quot;:104}"><span class="_5afx"><span class="_58cl _5afz">#</span><span class="_58cm">oulu</span></span></a> <a class="_58cn" href="https://www.facebook.com/hashtag/kuntavaalit?source=feed_text&amp;story_id=1272586106150849" data-ft="{&quot;tn&quot;:&quot;*N&quot;,&quot;type&quot;:104}"><span class="_5afx"><span class="_58cl _5afz">#</span><span class="_58cm">kuntavaalit</span></span></a></p>\n<div class="text_exposed_show">\n<p>Olen ehdolla numerolla 7. Ennakkoäänestys on kotimaassa 29.3-4.4.2017 ja ulkomailla 29.3-1.4.2017. Varsinainen vaalipäivä on sunnuntaina 9.4.2017. Muista käyttää ääntäsi!</p>\n</div>\n',
@@ -798,30 +685,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Kuntaverotus",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
-          {
-            name: "Verotus",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Kuntaverotus",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
+
+          "Verotus",
         ],
         content:
           "<p>Video: Vaalipuheet hopeaa, teot kultaa. Oululaisessa päätöksenteossa on ainoastaan yksi puolue, joka puolustaa nettoveronmaksajia tuhlaajia vastaan myös vaalien välillä. Siksi valitsin kokoomuksen ja lähdin ehdolle kaupunginvaltuustoon. Nyt tarvitsen teidän tukeanne. Muista käyttää ääntäsi!</p><p>Oululaisessa päätöksenteossa on ainoastaan yksi puolue, joka puolustaa nettoveronmaksajia tuhlaajia vastaan myös vaalien välillä. </p></div>\n<p>Ennakkoäänestys alkaa keskiviikkona 29.3.2017. Äänestää voit kaikissa paikoissa &#8211; myös Oulun ulkopuolella! Mukaan tarvitset ainoastaan henkilötodistuksen.</p>\n<p>&nbsp;</p>\n",
@@ -842,30 +720,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Hupisaaren purot",
-          },
-          {
-            name: "Janne Heikkine",
-          },
-          {
-            name: "Jasper Pääkkönen",
-          },
-          {
-            name: "Kalastus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Uhanalaiset kalakannat",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Hupisaaren purot",
+
+          "Janne Heikkine",
+
+          "Jasper Pääkkönen",
+
+          "Kalastus",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Uhanalaiset kalakannat",
+
+          "Vaalit",
         ],
         content:
           "<p>Luonnon ja vapaiden virtavesien puolustaminen on ollut intohimoni kohteena jo vuosien ajan. Aikaisemmin toimin aktiivisesti mm. Kollajan altaan estämiseksi. Lisäksi olen pyrkinyt muistuttamaan tippavesivoimaloiden haitallisuudesta maakunnassamme.</p><p>Nyt haluan vaikuttaa siihen, että Oulun päätöksenteossa laitetaan vauhtia Hupisaarten purojen elvyttämiseen. </p>\n<p>Nyt haluan vaikuttaa siihen, että Oulun päätöksenteossa laitetaan vauhtia Hupisaarten purojen elvyttämiseen. Kyseiset purot sijaitsevat oululaisille tutun Ainolan puiston alueella, jossa olisi erinomaiset edellytykset esim. taimenten kutupuuhien tarkkailemiseen syksyisin. Hupisaarten purojen kunnostaminen on erityisen tärkeässä asemassa, kun puhutaan esimerkiksi meritaimenen uusista kutualueista Oulun seudulla.</p>\n",
@@ -886,27 +755,19 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Rakentaminen",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Rakentaminen",
+
+          "Vaalit",
         ],
         content:
           "<p>Video: Oulu tarvitsee korkeaa rakentamista. Siksi lähdin ehdolle kaupunginvaltuustoon.</p> <p>Ehdokasnumeroni on 7.Muista käyttää ääntäsi!</p>",
@@ -927,21 +788,15 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Vaalinumero",
-          },
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Vaalinumero",
         ],
         content:
           '<p>&nbsp;</p>\n<p>Tavoittelen paikkaa Oulun kaupunginvaltuustosta kevään kuntavaaleissa numerolla 7! Tässä lyhyesti seitsemän pointtia, joita aion äänelläsi ajaa valtuustossa:</p>\n<div id="js_56f" class="_5pbx userContent" data-ft="{&quot;tn&quot;:&quot;K&quot;}">\n<div id="id_58c292a34f13d9388842016" class="text_exposed_root text_exposed">\n<p><strong>1.</strong> Puolustaa nettoveronmaksajia tuhlaajia vastaan</p>\n<p><strong>2.</strong> Kannattaa korkeaa rakentamista</p>\n<div class="text_exposed_show">\n<p><strong>3.</strong> Nopeuttaa kaavoitusta</p>\n<p><strong>4.</strong> Vastustaa kaikkien kiinteistöverojen korotusta</p>\n<p><strong>5.</strong> Puolustaa valinnanvapautta</p>\n<p><strong>6.</strong> Tukea monipuolisesti liikuntapaikkarakentamista</p>\n<p><strong>7.</strong> Vaatia tulosvastuuta ja seurantaa hankkeissa</p>\n<p>Lisätietoja:</p>\n<p>Janne Heikkinen<br />\n+358405554263<br />\njanne@janneheikkinen.fi<br />\n<a href="http://www.janneheikkinen.fi">www.janneheikkinen.fi</a></p>\n<p>Korkealaatuiset kuvat mediakäyttöön: <a href="http://www.janneheikkinen.fi/medialle/">http://www.janneheikkinen.fi/medialle/</a></p>\n</div>\n</div>\n</div>\n',
@@ -961,20 +816,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kaupunginvaltuusto",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-        ],
+        tags: ["Kaupunginvaltuusto", "Kokoomus", "kuntavaalit", "Oulu"],
         content:
           '<p>Yhteiskuntatieteen kandidaatti Janne Heikkinen (26) lähtee mukaan ensi kevään kuntavaaleihin Oulussa. Heikkinen on asetettu ehdokkaaksi Oulun kunnallisjärjestön kokouksessa lauantaina 10.12.2016.</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Heikkisen vaaliteemana ovat liikunta, korkea rakentaminen, tiukka talouskuri ja yrittäjäystävällinen kaupunki.</p></blockquote></div>\n<p>Heikkinen toimii tällä hetkellä Kempeleen kunnanvaltuuston puheenjohtajana ja on toisen kauden kunnanvaltuutettu. Paikkakunnalta muuton vuoksi hän joutuu luopumaan nykyisestä tehtävästään alkuvuoden 2017 aikana.</p>\n<p>Heikkisen vaaliteemana ovat liikunta, korkea rakentaminen, tiukka talouskuri ja yrittäjäystävällinen kaupunki.</p>\n<p>Vuoden 2015 eduskuntavaaleissa Heikkinen oli ehdolla Oulun vaalipiiristä. Hän saavutti ensikertalaisena 2295 ääntä.</p>\n<p>Lisätietoja:</p>\n<p>Janne Heikkinen<br />\n+358405554263<br />\njanne@janneheikkinen.fi<br />\n<a href="http://www.janneheikkinen.fi">www.janneheikkinen.fi</a></p>\n<p>Korkealaatuiset kuvat mediakäyttöön: <a href="http://www.janneheikkinen.fi/medialle/">http://www.janneheikkinen.fi/medialle/</a></p>\n',
       },
@@ -993,20 +835,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Maahanmuutto",
-          },
-          {
-            name: "Sosiaalivaltio",
-          },
-          {
-            name: "Työ",
-          },
-          {
-            name: "Verotus",
-          },
-        ],
+        tags: ["Maahanmuutto", "Sosiaalivaltio", "Työ", "Verotus"],
         content:
           '<p>Kirjoitus on julkaistu <a href="https://forum24.fi/sivut/artikkelit/vieraskolumnit?feed_id=7#">Forum24-lehden</a> vieraskolumnina 24.11.2016.</p>\n<p>Suomi on maa, jolla on pitkät perinteet maastamuutosta. Viimeisten vuosikymmenten aikana tilanne on kuitenkin kääntynyt päälaelleen. Maahanmuutto on kasvanut merkittävästi ja samalla ulkomaalaisten määrä väestöstä. Samaan aikaan on käynyt ilmeiseksi, että sosiaalivaltiomme taloudellinen toimivuus on mitä enemmissä määrin ehdollinen ja rajallinen.</p>\n<p>Nykyistä järjestelmää on koeteltu ennen näkemättömällä tavalla, kun isot pakolaisvirrat ovat vaeltaneet konflikteja ja sotia pakoon. Yksinään viime vuonna maahan pyrki 32 500 pakolaista, joista arviolta kolmannes tulee samaan turvapaikan. On sanomatta selvää, että Suomen kantokyky ei kestä tällaista pysyvästi.</p>\n<p>Kotimaista keskustelua maahanmuuttopolitiikasta leimaa ääripäät, joissa keskustelu rajoittuu yksisilmäisiin vaatimuksiin rajojen aukaisemiseksi tai kiinni laittamiseksi. Todellisuudessa meillä ei ole kumpaankaan varaa. Suomi on kiistattomasti hyötynyt vapaasta liikkuvuudesta ja globalisaatiosta.</p>\n<p>Äärimmilleen vietynä rajoittamaton liikkuvuus ja vastikkeettomat sosiaalietuudet ovat kuitenkin auttamattomasti ristiriidassa. Jos haluamme säilyttää mahdollisuuden vapaaseen liikkuvuuteen, on meidän rajoitettava ja asetettava tietyt reunaehdot sosiaalivaltion tarjoamille palveluille. Ilman omaa vaivannäköä ei pitäisi olla oikeutettu suomalaisiin sosiaalietuihin.</p>\n<p>Suomalaiset ovat jo liian pitkään tarjonneet avokätiset sosiaalietuudet, eikä maahanmuuttajien ole tarvinnut ottaa taloudellista vastuuta itsestään. Tämä siitä huolimatta, että se olisi usein myös heille itselleen parasta. Anteliaat sosiaalietuudet ja jäykät työmarkkinoiden rakenteet ovat pitäneet huolen, että maahanmuuttajille edes vuosikymmen ei riitä välttämättä ajanjaksona työllistymiselle.</p>\n<p>[pullquote align=&#8221;right&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Suomessa pitäisi siirtyä malliin, jossa ulkomaalaisten tulisi maksaa lainapainotteisesti muuttoliikkeestä ja integraatiosta syntyvät kustannukset.[/pullquote]</p>\n<p>Tästä epätoivottavasta kehityksestä syntyneet taloudelliset ristiriidat olisi kuitenkin helposti ratkaistavissa. Ensinnäkin paikallista sopimista on työmarkkinoilla lisättävä, irtisanomissuojaa kevennettävä ja työllistämisen kustannuksia madallettava. Helpottamalla työn saamista mahdollistetaan ihmisten itsensä elättäminen.</p>\n<p>Toisekseen Suomessa pitäisi siirtyä malliin, jossa ulkomaalaisten tulisi maksaa lainapainotteisesti muuttoliikkeestä ja integraatiosta syntyvät kustannukset. Tämä sen vuoksi, että sosiaalivaltio tulisi nähdä pikemminkin eräänlaisena vakuutusjärjestelmänä, josta ulkomailta tulevan terveen työikäisen täytyy olla valmis maksamaan ennen tukien nauttimista.</p>\n<p>Ilman muutoksia maahanmuuton välittömät kustannusvaikutukset pitävät huolen siitä, että edessä on kilpailukykyä heikentäviä veronkorotuksia. Suomalaisen veronmaksajan tehtävänä ei ole maksaa kaikkea kaikille.</p>\n<p><strong>Janne Heikkinen</strong><br />\nKempeleen kunnanvaltuuston puheenjohtaja (kok.)</p>\n',
       },
@@ -1025,17 +854,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-        ],
+        tags: ["Kempele", "Kokoomus", "kuntavaalit"],
         content:
           "<p>Ensi keväänä Suomessa käydään kuntavaalit. Kuntien tulevaisuuden kannalta on oleellisen tärkeää, että ehdolle asettuu runsaslukuinen joukko päättäjiksi pyrkiviä henkilöitä, jotka ovat valmiita tekemään oikeat ja kaukokatseiset ratkaisut &#8211; puoluekannasta riippumatta.</p>\n<p>Itse asetuin ehdolle ensimmäistä kertaa kunnallisvaaleissa vasta 18-vuotiaana. Pääsin valtuustoon läpi oman ryhmäni viimeisenä. Toisella kerralla olin ryhmäni äänikuningas. Tällä kuntalaisten myöntämällä valtakirjalla olen vuosien aikana päässyt toteuttamaan lähes kaikki tavoitteeni yrittäjämyönteisen, liikunnallisen ja lapsiperheystävällisen kunnan kehittämiseksi.</p>\n<p>Viimeiseen 8 vuoteen on mahtunut paljon käänteitä niin rivivaltuutettuna, kunnanhallituksen varapuheenjohtajana kuin valtuuston puheenjohtajana. Missään vaiheessa tie ideoista todeksi ei ole ollut nopea moottoritie, vaan uskoa ja sinnikkyyttä vaativa mutkitteleva polku täynnä odottamattomia yllätyksiä.</p>\n<p>Valtuutettuna tavoitteeni on ollut jättää kunta paremmassa kunnossa tuleville sukupolville, mitä se oli minun sen saadessani. Tämä tavoite oli toki haastava alunpitäen, sillä niin laadukasta ja määrätietoista kehittämistyötä päättäjät olivat tehneet myös ennen omaa aikakauttani. Se, miten tässä tavoitteessa olemme vuosien jälkeen onnistuneet, jää kuntalaisten ja tulevien vastuunkantajien arvioitavaksi.</p>\n<p>[pullquote align=&#8221;right&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Kiitollisuuteni on syvää tietoisuutta siitä, että olen saanut olla osana suurempaa kokonaisuutta, joka on ollut olemassa ennen ja jälkeen minun vaikuttamistyön.[/pullquote]</p>\n<p>Tämä ainutlaatuinen matka ei olisi ollut koskaan mahdollinen ilman lukemattomia ystäviä ja heidän kanssa käytyjä innostavia kunnan tulevaisuutta visioivia keskusteluja. Erityismaininnan omasta ryhmästäni ansaitsee <b>Hannu Vesala</b>, joka on ollut nämä vuodet kiistattomasti läheisin valtuustokollegani ja ystävä paikallaan kaikissa käänteissä. Lisäksi yhteistyö kunnanjohtaja <b>Tuomas Lohen</b> ja kunnanhallituksen puheenjohtaja <b>Antti Ollikaisen</b> kanssa on ollut saumattoman sujuvaa ja syvään keskinäiseen luottamukseen pohjautuvaa.</p>\n<p>Kaiken kaikkiaan olen kiitollinen ajastani Kempeleen kunnanvaltuustossa. Se on kehittänyt minua ihmisenä ja vaikuttajana paljon siitä, kun ensimmäistä kertaa ääni väristen &#8211; mutta visiostani vakuuttuneena &#8211; pidin puheenvuoroa valtuustosalin nuorimpana.</p>\n<p>Näiden vuosien aikana en ole koskaan eksynyt kuvittelemaan, että kunnanvaltuusto ja sen tuoma valta olisi ollut minun omaani, vaan ainoastaan lainassa kempeleläisiltä äänestäjiltä. Sen vuoksi koen velvollisuudekseni ilmoittaa avoimesti ja hyvissä ajoin, että tämä kausi jää osaltani toistaiseksi viimeiseksi rakkaassa kotikunnassa. En pyri jatkokaudelle Kempeleen kunnanvaltuustoon ensi kevään vaaleissa. Omasta jatkosta politiikan parissa kirjoitan lähiviikkoina lisää.</p>\n",
       },
@@ -1055,21 +874,15 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Korkeakoulu",
-          },
-          {
-            name: "Opetus- ja kulttuuriministeriö",
-          },
-          {
-            name: "Työryhmä",
-          },
-          {
-            name: "Uudistus",
-          },
-          {
-            name: "Valintakoe",
-          },
+          "Korkeakoulu",
+
+          "Opetus- ja kulttuuriministeriö",
+
+          "Työryhmä",
+
+          "Uudistus",
+
+          "Valintakoe",
         ],
         content:
           '<div class="content clear-block">\n<p>Tänään ministeri <strong>Sanni Grahn-Laasonen</strong> vastaanotti opetus- ja kulttuuriministeriön työryhmän <a href="http://www.minedu.fi/OPM/Tiedotteet/2016/11/korkeakoulujen_opiskelijavalinnat.html" target="_blank">esityksen</a> uudistuksesta, joka on ajamassa suomalaiset nuoret painajaismaiseen tilanteeseen.</p>\n<p>Sipilän hallituksen yhtenä kärkihankkeena on työelämään siirtymisen nopeuttaminen. <strong>Nyt hankkeessa tulee tapahtumaan juuri päinvastoin,</strong> koska korkeakoulujen valintamenettelyä pyritään uudistamaan niin, että ylioppilastodistuksen painoarvoa lisätään valintakokeiden kustannuksella.</p>\n<p>Selvityksen tehnyt työryhmä ei ole ymmärtänyt uudistuksen aiheuttamia syy-seuraussuhteita, joita listaan alla:</p>\n<ol>\n<li><u>Työryhmä toimii vastoin nuorten mielipidettä. </u>Innolink Research tutki Suomen Lukiolaisten Liiton jäsenistön mielipiteitä.  <a href="http://www.valmennuskeskus.fi/ajankohtaista/kaikki-tiedotteet/1404-lukiolaiset-vastustavat-hallituksen-kaavailemaa-valintakoeuudistusta" target="_blank">Tulokset</a> olivat selvät: ”nuoret haluavat säilyttää nykyisen kahden jonon mallin, jota he pitävät oikeudenmukaisena. Valintakoe on heidän mukaansa oikeudenmukaisempi ja motivoimampi tapa valita opiskelijat korkeakouluihin kuin ylioppilaskirjoitukset. Ylioppilaskirjoitusten korostaminen valinnoissa aiheuttaisi lukion muuttumisen nelivuotiseksi”.</li>\n<li><u>Siirtyminen opintoihin hidastuu. </u>Lukioista tulee käytännössä nelivuotisia, koska iso joukko nuoria jää neljänneksi vuodeksi parantelemaan arvosanojaan päästäkseen opiskelemaan.</li>\n<li><u>Opiskeluajat pitenevät. </u>Tutkimusten mukaan keskeisin tekijä opintojen nopealle edistymiselle on  motivaatio alalle. Professori Kirsti Lonka on tutkinut, että alan identiteetti omaksutaan jo pyrkimisvaiheessa. Sellaisilla aloilla, jotka mittaavat alalla tarvittavia valmiuksia alakohtaisella pääsykokeella, on keskeyttämisprosentit todella alhaiset (esim. lääketieteellisissä tiedekunnissa vain 1 %). Vastaavasti niille aloille joilla on ns. paperivalinta, keskeyttämisprosentit ovat moninkertaiset. Uudistuksen myötä näin tulee nyt käymään todennäköisesti kaikille aloille.</li>\n<li><u>Yliopistojen opiskeluajat venyvät</u>. Tähän asti monien alojen uudet opiskelijat ovat opiskelleet itsenäisesti tai valmennuskursseilla kyseisen alan keskeisiä asioita ennen yliopisto-opintoja 2-4 kuukauden ajan. Monissa tiedekunnissa sisäänpääsykokeessa vaadittava tietomäärä vastaa puolen vuoden oppimäärää yliopistossa. Nyt tämä opetusaika- ja kulu tulee yhteiskunnan ja yliopistojen maksettavaksi. Samalla pyrkijät ovat valintakokeeseen valmistautuessaan nähneet, onko kyseinen ala juuri heille sopiva.</li>\n<li><u>Aivovuoto ulkomaille</u>. Suomalaisia nuoria opiskelee <a href="http://www.hs.fi/kotimaa/a1473827968411" target="_blank">8.000</a> jo nyt ulkomailla. Tämä määrä tulee väistämättä moninkertaistumaan, jos suomalaiseen korkeakouluun pääsee jatkossa käytännössä vain parhailla ylioppilasarvosanoilla.</li>\n<li><u>Nuorten jaksaminen</u>. Lyhytkestoisten pääsykokeiden sijaan tulee mm. Japanissa, Etelä-Koreassa ja monissa länsimaissa lisääntynyt painajaismainen nuorten valmentaminen, jossa jo 4-7 vuoden iässä alkaa yksityinen teho-opetus koulun ohella koulumenestyksen parantamiseksi. Tämä on valtavan kallista perheille sekä aiheuttaa psyykkisiä vammoja nuorille, jotka pänttäävät tietoa 8-12 tuntia vuorokaudessa jo varhaisesta nuoruudesta alkaen.</li>\n<li><u>Epätasa-arvo</u>. Säännönmukaisesti ylioppilaskirjoitusten tulosten kärkipaikoilla ovat pääkaupunkiseudun ”eliittilukiot”. Pienemmissä lukioissa ei edes voi opiskella kaikkia niitä aineita, joita tarvitaan jatko-opintoihin pyrittäessä (esim. fysiikan kurssit lääketieteelliseen tai DI-puolelle pyrittäessä), mikä on erittäin iso ongelma. Nykyinen kahden jonon malli tasoittaa kuitenkin tämän tilanteen ja mahdollistaa yliopistoon pääsyn valintakokeen kautta. Mikäli valintakokeet ajetaan entistä ahtaammalle, yliopistoihin pääsee käytännössä jatkossa vain pääkaupunkiseudun eliittilukioista.</li>\n<li><u>Maaseutu tyhjenee</u>. Maaseutumaisilla paikkakunnilla sijaitsevat lukiot kurjistuvat tai lakkautetaan kokonaan, koska niistä ei enää tule tosiasiallisesti olemaan reittiä jatko-opiskeluun ilman valintakokeita. Sellaisista perheistä tulevat nuoret, joilla on taloudellinen mahdollisuus, muuttavat todennäköisesti pois kotoaan maaseudulta opiskelemaan kaupunkien lukioihin saadakseen riittävän hyvät arvosanat ylioppilaskirjoituksissa. Ainoastaan nykyinen kahden jono malli antaa tasapuolisen ja reilun mahdollisuuden eri nopeudella kehittyville nuorille.</li>\n</ol>\n</div>\n',
@@ -1089,17 +902,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Politiikka",
-          },
-          {
-            name: "Puolueet",
-          },
-          {
-            name: "Tulevaisuus",
-          },
-        ],
+        tags: ["Politiikka", "Puolueet", "Tulevaisuus"],
         content:
           '<p dir="ltr"><em>Kirjoitus on julkaistu vieraskolumnina Forum24-lehdessä 28.7.2016.</em></p>\n<p dir="ltr">[pullquote align=&#8221;full&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Milloin olet viimeksi kokenut kiitollisuuden tunnetta jotain puoluetta kohtaan? Siis aitoa, vilpitöntä ja syvää kiitollisuutta?[/pullquote]</p>\n<p>Olen esittänyt kysymyksen lukemattomille ihmisille lähiaikoina. Vastaukset ovat olleet vähemmän yllättäviä. Enemmistö ei ole muistanut ensimmäistäkään aihetta kiitollisuuteen. Ja ne harvat, jotka ovat kiitollisuuden aihetta löytäneet, kertoivat senkin johtuneen jostain pienestä parannuksesta kuin varsinaisesta onnistumisesta.</p>\n<p dir="ltr">Tyytymättömyyden takana on useita syitä. Yksi syy esiintyy keskusteluissa poikkeuksellisen usein. Ihmiset kokevat &#8211; perustellusti &#8211; että politiikka toimii lähinnä niiden hyväksi, jotka ovat sen sisällä. Esimerkiksi työttömien, maahanmuuttajien tai syrjäytyneiden on vaikea kokea puolueita omakseen. Ei ihme, että samaan aikaan vaalien äänestysprosentit ovat hitaasti laskeneet.</p>\n<p dir="ltr">Vaikka puolueiden kiinnostavuus on laskenut, niin ihmisten halukkuus osallistua ja vaikuttaa ei ole kadonnut. Yhä useampi vain kokee, että asiansa ajaminen puolueen kautta on “likaista” ja “hidasta”.  Tätä on seurannut se, että viime vuonna merkittävimmät poliittiset teemat nousivat kansalaiskeskusteluun muiden kuin puolueiden toimesta.</p>\n<p dir="ltr">[pullquote align=&#8221;right&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Viimeistään sosiaalisen median myötä puolueet menettivät asemansa yhteiskunnallisen keskustelun johtajina.[/pullquote]</p>\n<p>Viimeistään sosiaalisen median myötä puolueet menettivät asemansa yhteiskunnallisen keskustelun johtajina. Nykyisin yksilöt verkostoituvat ja löytävät samanhenkisiä ihmisiä yhä helpommin &#8211; ilman jäykkiä järjestörakenteita tai jäsenyyksiä. Yhä useammin tällaisista verkostoista syntyy aikamme merkittävimmät poliittiset ilmiöt. Erilaiset määräaikaiset ja ilmiöpohjaiset kampanjat ovat onnistuneet puolueita paremmin siinä, mikä on joskus ollut puolueiden tärkein tehtävä.</p>\n<p dir="ltr">Ihmiset loivat aikanaan puolueet kanavoimaan omia vaikuttamisen tarpeitaan. Nykyisin yhä harvempi luottaa ja haluaa kuulua puolueisiin. Aikanaan kun sääty-yhteiskunta lakkasi, niin säätypäivät kävivät tarpeettomiksi. On perusteltua kysyä, että mihin tulevaisuudessa puolueita tarvitaan?</p>\n<p dir="ltr">Olisi naiivia uskotella, ettei puolueita tarvitsisi enää ollenkaan. Jonkun tehtävänä on kuitenkin hankkia jäseniä, vaalirahaa, talkoovoimaa, kouluttaa, muodostaa isompia linjoja aikamme haasteisiin, asettaa ehdokkaita ja lopulta vastata vallassa tehdyistä päätöksistä.</p>\n<p dir="ltr">Väitän kuitenkin, että tulevaisuudessa sellaiset puolueet voivat menestyä, jotka ymmärtävät, että niiden tehtävänä ei ole enää puhua ja tehdä omapäisiä valintoja, vaan kuunnella ja luoda mahdollisuuksia. Sillä muuten ihmiset etsivät parempia ja nopeampi tapoja vaikuttaa.</p>\n<p dir="ltr"><strong>Janne Heikkinen</strong><br />\nKirjoittaja on Kempeleen kunnanvaltuuston puheenjohtaja ja yhteiskuntatieteiden kandidaatti</p>\n<p dir="ltr">\n',
       },
@@ -1119,18 +922,13 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Helsingin kartelli",
-          },
-          {
-            name: "Työmarkkinajärjestöt",
-          },
-          {
-            name: "Työttömyys",
-          },
-          {
-            name: "Yhteiskuntasopimus",
-          },
+          "Helsingin kartelli",
+
+          "Työmarkkinajärjestöt",
+
+          "Työttömyys",
+
+          "Yhteiskuntasopimus",
         ],
         content:
           '<p>Talousguru-kilpailun voittajaksi viime perjantaina julistettu <strong>Maija Löyskä</strong> totesi erittäin osuvasti haastattelussaan, että “euroaikana Suomen on pakko hyväksyä joustavat työmarkkinat”.</p>\n<p>Nuoren naisen sanoihin kätkeytyy suuri viisaus: Suomen keskusjohdetut työmarkkinat ovat rikki &#8211; ne ovat aivan liian joustamattomat olosuhteisiin, joissa maallamme ei ole omaa valuuttaa jota devalvoida tai jonka arvo sopeutuisi maamme vaihtotaseeseen. Rahapoliittiset keinot eivät ole eduskunnan käsissä.</p>\n<p><em>World Economic Forumin </em>kilpailukykyraportin mukaan Suomen</p>\n<div id="attachment_1216" style="width: 310px" class="wp-caption alignright"><a href="#"><img class="size-medium wp-image-1216" src="#" alt="Kausipuhdistettu työttömyysaste kertoo kaiken oleellisen. " width="300" height="138" srcset="# 300w, # 1006w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">Kausipuhdistettu työttömyysaste kertoo kaiken oleellisen.</p></div>\n<p>palkanmuodostuksen joustavuus on koko vertailun surkein kaikista 140 valtiosta &#8211; mukaan lukien kaikki kehitysmaat. Neuvottelujärjestelmä on kylmän sodan ajan korporatismin tuote: keskusjohtoinen, vanhakantainen ja puhkiruostunut.</p>\n<p>Suomen talous on puolestaan jumittanut paikallaan vuoden 2008 taantuman ja finanssikriisin jälkeen. Maamme bruttokansantuotteen reaaliarvo ei tule ylittämään edes vuonna 2018 kymmenen vuoden takaista arvoaan.</p>\n<p>Käytännössä 2010-luvusta on tulossa talouskasvun osalta menetetty vuosikymmen &#8211; mikään ei kasva, vaan kehitys nyhjää paikallaan.</p>\n<p>Yhtäjaksoisen nihkeän kasvun ja taantuman pituus on ollut ennätyksellisen pitkä historiallisessa tarkastelussa. Edes kauheudella muistettu 1990-luvun lama ei johtanut menetettyyn vuosikymmeneen &#8211; kestävä kasvu alkoi jo 3,5 vuoden päästä sen jälkeen kun BKT:n vuosimuutos laski ensi kertaa negatiiviseksi vuonna 1990. Sen sijaan kukoistavaa kasvukautta ei ole nykyisin maassamme näköpiirissä. On ilmeistä, että taloutemme on jumissa suhdanteiden sijaan rakenteellisista syistä.</p>\n<div id="attachment_1215" style="width: 271px" class="wp-caption alignright"><a href="#"><img class="size-medium wp-image-1215" src="#" alt="Hallituksen tulee katkaista napanuoransa Eteläranta-Hakaniemi -kartelliin." width="261" height="300" srcset="#" sizes="(max-width: 261px) 100vw, 261px" /></a><p class="wp-caption-text">Hallituksen tulee katkaista napanuoransa Eteläranta-Hakaniemi -kartelliin.</p></div>\n<p>Makrotaloudellisesta perspektiivistä tarkasteltuna niin nousu- kuin laskusuhdanteissa joustaa aina jokin seuraavista: <strong>valuutan ulkoinen arvo, palkat ja työehdot</strong> tai <strong>työttömyys</strong>. Suomen käyttämä eurovaluutta ei jousta nimeksikään taloussyklien mukaan, koska maamme talouden koko on vain murto-osa koko euroalueesta. Palkat ja työehdot ovat puolestaan Eteläranta-Hakaniemi -kartellin käsissä. Näin ollen talouden tasapainottamiseksi markkinavoimilla on vain yksi venttiili taantumassa: työttömyyden kasvu. Suomi käy tämän johdosta läpi mittavaa työttömyysdevalvaatiota. Tämä on Hakaniemen ja Etelärannan sekä maamme hallituksen toimettomuuden syytä.</p>\n<p><strong>Mitä tulisi tehdä?</strong></p>\n<p>Kysymys kuuluu, miten maamme ongelmat voidaan ratkaista? Vastaus on yksinkertainen: noudatetaan Maija Löyskän ratkaisua. Mikään muu keino ei toimi, mikäli haluamme olla osa euroaluetta. Eri puolueiden “panostukset osaamiseen”, “tutkimuksen ja kehittämisen verovähennykset” tai “fiskaalinen elvytys julkisella sektorilla” eivät todellisuudessa ratkaise mitään, kun kyse on rakenteista.</p>\n<p>Palkanmuodostuksen tulee joustaa suhdanteissa ja mahdollistaa myös vähäisemmän työmarkkina-arvon omaavien yksilöiden, kuten esimerkiksi kielitaidottomien maahanmuuttajien, työllistyminen tarvittaessa alemmilla palkkatasoilla. Nykyinen järjestelmä ylläpitää rakenteita, jotka estävät monien eri ryhmien työllistymisen tahdonvastaisesti lähes kokonaan. Työmarkkinoilla on yleissitovuuden ja paikallisen sopimisen puutteen vuoksi rakenteellinen kohtaanto-ongelma.</p>\n<p><strong>Korporatismista parlamentarismiin</strong></p>\n<p>Suurin este Suomen kilpailukyvyn kohottamiselle on Eteläranta-Hakaniemi -kartelli, joka on järjestelmällisesti vesittänyt ja viivyttänyt kaikkia työelämän uudistamiseen tähdänneitä hankkeita omien saavutettujen etujen säilyttämiseksi. Kartelli on pöhöttynyt kylmän sodan aikaisen hyvinvointivaltioideologian kyljessä: vastuu on viety pois yksilöiltä korporaatioille &#8211; hallintoalamaisilta Helsingin eliitille.</p>\n<p>Joku viisastelija jaksaa aina muistuttaa, että: “saivathan osapuolet aikaan eläkesovun yhdessä”. Todellisuudessa tämäkin sopu tuli auttamatta liian myöhään ja oli tasoltaan aivan liian kunnianhimoton.</p>\n<p>Yksinkertaisesti tällä hetkellä työmarkkinajärjestöjä ei vaikuta kiinnostavan Suomen edun mukainen toiminta. Toimintaa näyttävät ohjaavan etujärjestöluonteen luomat kieroutuneet kannustimet: toimijat pelaavat omaan pussiin kansan kokonaisedun kustannuksella. Tämä on myös suurin syy ”yhteiskuntasopimus”-prosessin kankeudelle.</p>\n<p>Erään määritelmän mukaan hulluutta on se, että tekee samat asiat uudelleen ja uudelleen ja odottaa eri tuloksia. Tältä ajatukselta ei voinut välttyä, kun seurasi yhteiskuntasopimuksen puoli kymmentä kierrosta vaatineita neuvotteluja. Lohduttominta lopputuloksessa on se, että yhteiskuntasopimuksen syntyminen ei tule parantamaan suomalaisten sopimusvapautta.</p>\n<p>Vastuu Suomen kilpailukyvyn palauttamisesta on maamme eduskunnalla. Suomessa olisi jo korkea aika tunnustaa tosiasiat ja siirtyä korporatismista parlamentarismiin.</p>\n<p>On käynyt selväksi, ettei uusi kasvu synny vanhoilla rakenteilla. Sen vuoksi hallituksen tulee ensitöikseen katkaista napanuoransa Eteläranta-Hakaniemi -kartelliin ja reformoida työmarkkinat mahdollistamaan täysimittainen paikallinen sopiminen.</p>\n<p>Toisekseen työehtojen yleissitovuus ja kaikkien yhdistyksien jäsenmaksujen verovähennysoikeudet tulee poistaa laista.</p>\n<p>Kolmanneksi laittomien lakkojen vahingonkorvauksia tulee nostaa tuntuvasti ja tuoda laittomaan lakkoon osallistuva työntekijä henkilökohtaisen korvausvelvollisuuden piiriin. Lisäksi laittomaan lakkoon osallistumisen tulee olla peruste välittömälle irtisanomiselle ilman kompensaatiota.</p>\n<p>Näillä ratkaisuilla olisi aidosti positiivista vaikuttavuutta työllisyysasteeseen nykyisen pikkunäppärän hiomisen sijaan.</p>\n',
@@ -1151,36 +949,25 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Donald Trump",
-          },
-          {
-            name: "Esivaali",
-          },
-          {
-            name: "GOP",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Marco Rubio",
-          },
-          {
-            name: "Mikko Laakso",
-          },
-          {
-            name: "Republikaanit",
-          },
-          {
-            name: "Ted Cruz",
-          },
-          {
-            name: "Ulkopolitiikka",
-          },
-          {
-            name: "Yhdysvallat",
-          },
+          "Donald Trump",
+
+          "Esivaali",
+
+          "GOP",
+
+          "Janne Heikkinen",
+
+          "Marco Rubio",
+
+          "Mikko Laakso",
+
+          "Republikaanit",
+
+          "Ted Cruz",
+
+          "Ulkopolitiikka",
+
+          "Yhdysvallat",
         ],
         content:
           '<p>Huomenna tiistaina koittaa Yhdysvaltain demokraattisen ja republikaanisen puolueen kannalta ratkaisevin esivaalipäivä tähän mennessä. Republikaanit jakavat “Supertiistaina” puoluekokousdelegaatit kaikkiaan 14 osavaltiossa: Alabamassa, Alaskassa, Arkansasissa, Coloradossa, Georgiassa, Massachusettsissa, Minnesotassa, Pohjois-Dakotassa, Oklahomassa, Tenneseessä, Texasissa, Vermontissa, Virginiassa sekä Wyomingissa.</p>\n<p>Supertiistain esivaalit ovat viimeisiä koitoksia, jolloin vaalikokouksissa (caucuses) ja esivaaleissa (primaries) valitaan puoluekokousedustajat ehdokkaille vielä suhteellisella vaalilla. Maaliskuun 15. päivän jälkeen suurin osa esivaaleista ovat “winner-takes-it-all” osavaltioita, eli näissä osavaltioissa kaikki puoluekokousdelegaatit ovat sidottuja äänestämään osavaltion esivaalien voittajaa. Play-off kierros alkaa siis viimeistään silloin; supertiistai muodostaa asetelmat tätä varten.</p>\n<p>Republikaanien puolue-eliitti ja tätä lähellä olevat tahot, eli niin sanottu “establishment” on käynyt kovilla kierroksilla: näyttää yhä selkeämmältä, että sen inhokkiehdokas Donald Trump on voittamassa republikaanien presidenttiehdokkuuden: vedonlyöntisivustojen mukaan Trumpin todennäköisyys voittaa ehdokkuus itselleen on noin 75-79% tuntumassa. Vedonlyöntimarkkinat uskovat tämän lisäksi ainoastaan Rubiolla olevan jonkinlaiset mahdollisuudet (15-20%) voittaa Trump. (<a href="https://electionbettingodds.com/">lähde 1</a>, <a href="http://predictwise.com/politics/">lähde 2</a>)</p>\n<p>Tällä hetkellä kilpailussa ovat mukana edellä mainittujen lisäksi texasilainen senaattori Ted Cruz, joka on tullut tunnetuksi demokraattien arvostelun ohella oman puolueensa politiikan arvostelusta. Mukana on myös loanheiton yläpuolella pysynyt Matti Apusen suosikki, John Kasich, jonka mukaan Yhdysvaltojen tulisi suojella myös Suomea Venäjän mahdolliselta aggressiosta. Mukana on myös uskonnollinen afrikkalais-amerikkalainen entinen aivokirurgi Ben Carson, jonka mahdollisuudet menestyä ovat käytännössä olemattomat.</p>\n<p>Esitämme seuraavassa erilaisia skenaarioita Supertiistain kulusta ja eri ehdokkaiden vahvuuksista ja heikkouksista.</p>\n<p><strong>Donald Trump</strong></p>\n<p>Miljardööri Trumpin vihainen ja populistinen retoriikka on saanut vastakaikua etenkin ahdingossa olevalta keskiluokalta, jonka työt ovat siirtyneet halvemman työvoimakustannuksien Meksikoon ja Kiinaan. Trump on arvostellut poliitikkoja konkreettisten tekojen puutteesta ja on lähtenyt ehdolle, koska “idioottipoliitikot Washingtonissa eivät saa mitään aikaan!.  Muurin rakentaminen Meksikon rajalle ja muslimien esittäminen kansallista turvallisuutta vaarantavana uhkana on purrut moneen. </p>\n<p>Trumpin ehdotukset ovat äärimmäisen konkreettisia ja helposti sisäistettäviä. Useat Trumpin tukijat myöntävät, että vaikka retoriikka on voimakasta ja värikästä eivätkä nämä ehkä allekirjoita jokaista teesiä, pitävät he silti miehen uskalluksesta sanoa juuri sen, mitä mieltä hän oikeasti asioista on.</p>\n<p>Trumpin ehdottomia vahvuuksia ovat hänen laaja kannatuksensa eri väestönryhmissä. Näitä kaikkia yhdistää amerikkalaisen unelman karkaaminen saavuttamattomiin. Trump voitti niin uskonnollisen Etelä-Carolinan kuin myös sekulaarin New Hampshiren osavaltion. Trumpista innostuvat niin eri vähemmistöjen edustajat kuin myös eri uskonnollisen ja sosioekonomisen taustan omaavat henkilöt. Ehdokkaan ehdottomiin vahvuuksiin kuuluu myös mittavan omaisuuden tuoma riippumattomuus vaalirahoittajista.</p>\n<p>Trump saattaa voittaa suurimman osan tai jopa jokaisen osavaltion Supertiistaina. Hän on muutamaa osavaltiota lukuunottamatta kärjessä kaikissa gallupeissa. Trumpin mahdolliset heikkoudet liittyvät tällä hetkellä siihen, että ehdokkaan kohdalle asettuu jokin ylitsepääsemätön mediakohu: Trump panttaa tällä hetkellä tietoja veronpalautuksistaan julkisuudelta. Trumpin kilpakumppanit Cruz ja Rubio ovat useaan otteeseen vaatineet selvyyttä verotiedoista ja Cruz jopa julkaisi omat tietonsa oma-aloitteisesti. Kilpailijat epäilevät, että tiedoissa on jotain Trumpin bisneksiin liittyvää, mikä ei kestä päivänvaloa.</p>\n<p>Toinen potentiaalinen kohu on se, että Trump ei ole irtisanoutunut selväsanaisesti valkoista ylivaltaa ajavan Ku Klux Klanin entisen johtajan David Duken suosituksesta. Muita heikkouksia, jotka voivat realisoitua ovat Trumpin aiemmat kytkökset demokraattien vasemmistosiiven vaalirahoittajana, aiempi pro-choice kanta aborttiin sekä selkeän konservatiivisen/oikeistolaisen ideologian puuttuminen, joka on yleensä ollut tärkeä äänestyspäätökseen vaikuttanut tekijä esivaaleissa.</p>\n<p>Toisaalta Trumpin kannatus ei ole aiemmin reagoinut juuri ollenkaan vastaantulleisiin kohuihin. Vaikuttaisi siltä, että politiikan normaalit lainalaisuudet ovat kääntyneet päälaelleen Trumpin kohdalla. On aika realistista olettaa, että Trump voittaa ehdokkuuden. Arvioimme tämän todennäköisyydeksi noin ⅔ eli 65%. Skenaario, jossa Trump ei voita, sisältää oletuksen että hänen kannatuksessaan tule vastaan jonkinlainen lasikatto, ja kaikki muut ehdokkaat vetäytyvät yhden taakse. Tällöin puoluekoneiston tuen avulla sekä rikkaiden vaalirahoittajien, mm. “Koch brothersien” yhteisoperaatio saattaisi onnistua torppaamaan Trumpin.</p>\n<p>Esivaalien voitto ei välttämättä kanna pitkälle: Trump häviää lähes jokaisessa kahdenvälisessä gallupissa niin demokraattien Clintonille kuin myös Sandersille.</p>\n<p><strong>Ted Cruz</strong></p>\n<p>Ted Cruz voitti ensimmäisen Iowan esivaalin Trumpin nenän edestä, vaikka miljardööri johtikin galluppeja ennen vaalipäivää. Tämä siitä huolimatta, että Cruz vastusti osavaltiolle tärkeitä etanolin tuotantotukia. Cruz sai mobilisoitua uskonnollisen oikeiston taakseen perhearvoja korostavassa osavaltiossa. Tähän päivään mennessä Cruz on ainoa, joka on voittanut Trumpin edes yhdessä osavaltiossa. </p>\n<p>Cruzista on maalattu eri medioissa äärikonservatiivista ja jyrkän uskonnollista, jopa “hörhöilyyn” taipuvaa kuvaa.  Tämä on hieman harhaanjohtavaa, sillä todellisuudessa Cruz on puhunut erityisen paljon juuri uskonnonvapaudesta. Cruz on mm. todennut, että <a href="http://www.dailymail.co.uk/news/article-3445836/I-m-not-running-Pastor-chief-Ted-Cruz-says-s-not-ashamed-religious-s-not-job-political-leader-deliver-message-salvation.html">myös ateistien tulisi äänestää häntä</a>, sillä tämä kannattaa politiikan ja uskonnon erottamista suoranaisesti toisistaan. Tämä on yhdysvaltain poliittisessa kontekstissa rohkeaa retoriikkaa konservatiivilta.</p>\n<p>Cruz on myös libertaarien ja vapaan markkinatalouden kannattajien suosiossa. Hän on Harvardista valmistunut lakimies jota toisinaan tituleerataan “teekutsuliikkeen älyköksi”. Cruz on konservatiivisia ja libertaarisia arvoja kannattavan Tea Party Patriotsin suosikkipoika. Häntä tukee useat konservatiiviset kommentaattorit, kuten suosittu Glenn Beck ja Rush Limbaugh.</p>\n<p>Cruz kannattaa velkaantumisen pysäyttämistä, Yhdysvaltain ulkopoliittisen roolin väkevöittämistä sekä yrittäjyyden esteiden purkamista. Hän kannattaa tasaveroa ja vastustaa yritystukia kaikissa muodoissaan. Cruz vastusti kiivaasti ns. Obamacare-terveydenhuolto uudistusta. Vastustus henkilöityi vahvasti Cruziin kun liittovaltio jouduttiin sulkemaan 2013, sillä budjettia ei saatu määräajassa läpi edustajainhuoneessa, jolloin liittovaltion toimintoja suljettiin ja alettiin ajaa alas. Tämä suututti republikaanien puoluejohdon.</p>\n<p>Ted Cruzin kampanja nojaa oletukselle siitä, ettei maltillinen keskitien republikaani tule voittamaan demokraatteja, sillä viimeksi sekä McCain ja Romney hävisivät Obamalle. Cruz näkee, että Republikaanien tulisi kerätä uudelleen taakseen ns. “Reagan coalition”, eli uskonnollinen oikeisto, konservatiivit, libertaarit sekä reagan-demokraatit. Cruz on käyttänyt kenties eniten Ronald Reaganiin, republikaanien lähihistorian suosituimpaan oikeistolaispresidenttiin nojaavaa retoriikkaa.</p>\n<p>Cruzin mahdollisuudet ovat vedonlyöntitoimistojen mukaan vähäiset, alle 5%. Hän on suututtanut establishmentin, eli puolue-eliitin. Joidenkin arvioiden mukaan eliitti tukisi jopa mieluummin Trumpia kuin Cruzia. Hänen kannattajakunnastaan löytyy kuitenkin paljon suuria rahoittajia, jotka ovat republikaanien ytimessä. Senaatissa Cruz on vihattu, sillä hän vastustaa ns. “washington cartellia” eli lobbareista ja eturyhmistä koostuvaa rälssiä, “joka jakaa veronmaksajien rahoja yritystukina ja erivapauksina vaalirahoittajilleen ja suuryrityksille”. Trumpin ja Cruzin kannattajakunta on näin ollen osittain yhteneviä: molemmat vastustavat tavanomaisia urapoliitikkoja, “jotka myyvät sielunsa tullakseen uudelleenvalituiksi”.</p>\n<p>Cruzin vahvuus piilee kuitenkin siinä, että hänellä on suuri tukijajoukko ja hän on jo kerran voittanut Donald Trumpin, johon kukaan muu ehdokkaista ei ole kyennyt. Lisäksi Cruz johtaa kotiosavaltionsa Texasin esivaaligallupia, jossa jaetaan 155 Supertiistain reilusta 500 puoluekokousdelegaatista. Sen sijaan Rubio on monessa osavaltiossa kyllä toisena, mutta on silti Trumpia perässä jopa hänen kotiosavaltiossaan, Floridassa. Tämä on erityisen kiusallista ehdokkaalle, sillä uskottavan kampanjan tekemiseksi tulisi lähtökohtaisesti voittaa oma kotiosavaltio.</p>\n<p>Cruzin vahvuuksiin kuuluu myös vahva ruohojuuriorganisaatio, targetoidut yhteydenotot tukijoille ja big datan edistynyt hyödyntäminen. Cruz sai mobilisoitua Iowassa galluplukujaan suuremman väen vaalikokouksiin, joten hänen tukijoidensa äänestysaste on hyvä. Arvioimme, että todellisuudessa Cruzin todennäköisyys voittaa ehdokkuus on 10-15%. Tämä edellyttäisi sitä, että Ben Carson lopettaisi kampanjansa Cruzin kannalta hyvissä ajoin ja vapauttaisi uskonnollisia äänestäjiä Cruzin kelkkaan. Samaan aikaan skenaario vaatisi Rubion täydellisen epäonnistumisen, jolloin esivaaleista tulisi kahden kauppa Trumpin ja Cruzin välillä.</p>\n<p>Aatteellisesti toisiaan lähellä olevien Cruzin ja Rubion liittoutuminen jopa presidentti-varapresidentti -komboksi saattaisi olla järkevä ratkaisu Trumpin pysäyttämiseksi. Tätä skenaariota vaivaa kuitenkin se, että Cruz on käyttänyt koko kampanjansa ajan vahvaa Rubion maahanmuuttopolitiikkaa kritisoivaa retoriikkaa. Toisaalta puolue-eliitin vihamielisyys Cruzia kohtaan saattaa myös estää ratkaisun.</p>\n<p><strong>Marco Rubio</strong></p>\n<p>Marco Rubiosta on tullut vastoin ennakko-odotuksia puoluejohdon kultapoika ja suosikki presidentiksi realistisista vaihtoehdoista. Rubio on onnistunut saamaan laajan peruskannatuksen lähes kaikkiin osavaltioihin ja edustaa vihatun Cruzin sekä öykkäröivän Trumpin ohella rakentavammaksi koettua linjaa. Rubion edustama maltillisuus on tosin suhteellista, sillä myös Rubio kannattaa konservatiivista arvomaailmaa ja on ns. teekutsuliikkeen jäsen. Hänen äänestyskäyttäytyminen senaatissa on Cruzin ohella koko senaatin oikeistolaisinta ja konservatiivisinta.</p>\n<p>Rubio on puhunut paljon Yhdysvaltain ulkopoliittisen roolin korostamisesta ja on kritisoinut Cruzia siitä, ettei tämän ohjelma Lähi-idän vakauttamiseksi ole realistinen. Rubio kannattaa sotilaallista interventiota mm. Assadin syrjäyttämiseksi. Rubio on myös kritisoinut voimakkaasti Putinin hallintoa, ollen ulkopolitiikassa John McCainin linjoilla.</p>\n<p>Rubion arvioidaan olevan Trumpin pahin vastus asiantuntijaanalyyseissä sekä gallupeissa. Rubio pärjää myös kahdenvälisissä gallupeissa parhaiten Hillary Clintonia sekä Bernie Sandersia vastaan.</p>\n<p>Rubion osakkeita kuitenkin heikentää hänen kompurointinsa vaalidebateissa. Sittemin väistynyt presidenttiehdokas Chris Christie syytti Rubiota ulkoa opeteltujen fraasien robottimaisesta toistamisesta. Kun Christie esitti syytöksen, vastasi Rubio syytökseen samalla ulkoa opetellulla fraasilla. Myöhemmin Rubio itse myönsi väittelyn mennen mönkään. Myös nuorekas olemus ja äänensävy saattavat antaa joillekin äänestäjille kuvan poliittisesta broilerista. Tämän lisäksi henkilökohtaisen talouden ongelmat haittaavat Rubion imagoa ja uskottavuutta: “Voiko hän pelastaa maamme talouden, mikäli hän ei kykene hallitsemaan edes omaa talouttaan.”</p>\n<p>Kaikkiaan Rubio on kuitenkin uskottavin haastaja yleisön ja vedonlyöjien mielestä Trumpille. Arvioimme kuitenkin hänen mahdollisuutensa hieman markkinoiden arvioita heikommiksi, ehkä noin 15% hujakoille.</p>\n<p><strong>Yhteenveto</strong></p>\n<p>Trump voittaa &#8211; joidenkin mielestä valitettavasti &#8211; jokaisessa perusskenaariossa republikaanien ehdokkuuden. Nähdäksemme todistustaakka kaikkiin muihin skenaarioihin on päinvastaisten väitteiden esittäjillä. Trumpin voi tiputtaa vain erityisen raskauttava kohu tai kaikkien muiden äärimmilleen menevä liittoutuminen Trumpia vastaan. Tässäkin skenaariossa republikaanieliitin tulee olla varovainen &#8211; Trump saattaa lähteä sitoutumattomana ehdolle, mikäli hän kokee tulleensa kohdelluksi epäoikeudenmukaisesti. Mikään ei takaa, etteikö tähän tarvittaessa löytyisi vaikka tekosyy.</p>\n<p>Rubio on ennakkosuosikki Cruzin nähden, Trumpin haastajaksi, mutta kirjoittajien mielestä hänen mahdollisuutensa on arvioitu hieman todellisia mahdollisuuksia korkeammaksi. Cruzin tilanne on päinvastainen.</p>\n<p>Mikä on varmaa, on se että tiistaina käydään äärimmäisen mielenkiintoinen ja ratkaiseva esivaalien Supertiistai. Muiden muassa CNN international ja useat muutkin Suomessa näkyvät kanavat lähettävät lähes 24/7 seurannalla uutisia Supertiistailta.</p>\n<p><em>Kirjoittajat: Janne Heikkinen &#038; Mikko Laakso</em></p>\n',
@@ -1201,30 +988,21 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Hybridisota",
-          },
-          {
-            name: "Informaatiosodankäynti",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Pestola",
-          },
-          {
-            name: "Stubb",
-          },
-          {
-            name: "Tähtinen",
-          },
-          {
-            name: "Uusi Suomi",
-          },
-          {
-            name: "Verkkouutiset",
-          },
+          "Hybridisota",
+
+          "Informaatiosodankäynti",
+
+          "Janne Heikkinen",
+
+          "Pestola",
+
+          "Stubb",
+
+          "Tähtinen",
+
+          "Uusi Suomi",
+
+          "Verkkouutiset",
         ],
         content:
           '<p><strong>Riitta Pestolaksi</strong> itseään kuvannut henkilö julkaisi viime torstaina Uuden Suomen blogipalvelussa kirjoituksen otsikolla &#8221;Kokoomuksen on aika vaihtaa puheenjohtajaa&#8221;. Henkilö kuvasi itseään &#8221;pitkäaikaiseksi kokoomusaktiiviksi&#8221; ja &#8221;eläkkeellä olevaksi äidinkielenopettajaksi&#8221;.</p>\n<p>Henkilön nimellä tehdystä sähköpostiosoitteesta ja Facebookin kautta ryhmäviesteinä blogia lähetettiin ainakin kokoomuksen puoluevaltuuston jäsenille, kansanedustajille, piirihallitusten jäsenille ja kunnallisjärjestöjen hallitusten jäsenille.</p>\n<p>Nyt on selvinnyt, että Riitta Pestola -nimistä henkilöä ei Suomesta löydy. Yhtäkään Pestolaa ei löydy väestörekisterikeskuksen tiedoista. Kirjoittajan profiilikuva Uuden Suomen blogipalvelussa on kaapattu tamperelaiselta, vihreältä kuntapoliitikolta, <strong>Marja Tähtiseltä</strong>.</p>\n<p>Blogin tekstissä arvosteltiin kokoomuksen puheenjohtaja, valtiovarainministeri <strong>Alexander Stubbia</strong> ja todettiin hänen epäonnistuneen puheenjohtajana.</p>\n<p>&#8221;Toivottavasti tämän jälkeen muutkin rohkaistuisi sanomaan ääneen ilmeisen: meidän kokoomuslaisten on vaihdettava puheenjohtaja kesällä&#8221;, blogissa vaadittiin.</p>\n<p>Pestolan blogi on sittemmin poistettu Uuden Suomen blogeista, mutta kirjoittajan profiili on edelleen olemassa, tosin ilman kuvaa. Pestolalle perustettiin myös Facebook-profiili samalla Tähtiseltä varastetulla kuvalla. Kuvakaappaus Pestolan blogista löytyy Janne Heikkisen blogista.</p>\n<p>– On vaikea nähdä, että näin organisoitu hyökkäys länsimielistä puheenjohtajaa vastaan tapahtuisi sattumalta tai harmittomana pilana, <strong>Janne Heikkinen</strong> toteaa Verkkouutisille.</p>\n<p>Koko kirjoituksen pääset lukemaan Uuden Suomen <a href="http://janneheikkinen.puheenvuoro.uusisuomi.fi/212365-identiteettivarkauksin-stubbia-vastaan">blogistani</a>.</p>\n<p>Verkkouutiset <a href="http://www.verkkouutiset.fi/kotimaa/identiteettivarkaus%20blogi%20stubb-47061">uutisoi</a> blogin pohjalta.</p>\n',
@@ -1244,20 +1022,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kansalaisaloite",
-          },
-          {
-            name: "Verotus",
-          },
-          {
-            name: "YLE",
-          },
-        ],
+        tags: ["Janne Heikkinen", "Kansalaisaloite", "Verotus", "YLE"],
         content:
           '<p></p>\n<h3>Miksi Janne kannattaa YLE-veron lakkauttamista?</h3>\n<p><strong>1. YLE ei voi olla immuuni valtakunnallisille säästötalkoille.</strong> Kohtuuttoman suureksi kasvaneen mediayhtiön ylläpitäminen ei sovi nykyiseen taloustilanteeseen.</p>\n<p><strong>2. Perusperiaate tulee olla, että käyttäjät maksavat.</strong> Osa suomalaisista joutuu maksamaan YLE-veroa, vaikka eivät sen palveluita koskaan käyttäisikään. Logiikka on kieroutunut, sillä ei mikään muukaan mediayhtiö voi laskuttaa asiakkaita, jos asiakkaat eivät tilaa sen palveluita</p>\n<p><strong>3. Yrityksille YLE-vero voi aiheuttaa useiden tuhansien eurojen kustannukset vuosittain.</strong> Säästyneet rahat mahdollistavat paremmat edellytykset työllistää esimerkiksi kesätyöntekijöitä ja harjoittelijoita.</p>\n<p>Kannatatko sinä YLE-veron lakkauttamista? <a href="https://www.kansalaisaloite.fi/fi/aloite/1818">Allekirjoita sinäkin kansalaisaloite</a>:</p>\n<p><iframe id="kansalaisaloite-leijuke" src="https://www.kansalaisaloite.fi/iframe/fi/1818?showTitle=true" width="600" height="210" frameborder="0" scrolling="no" align="center"> </iframe></p>\n',
       },
@@ -1314,23 +1079,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Jouluruokailu",
-          },
-          {
-            name: "Juhlapuhe",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Puhe",
-          },
-          {
-            name: "Valtuusto",
-          },
-        ],
+        tags: ["Jouluruokailu", "Juhlapuhe", "Kempele", "Puhe", "Valtuusto"],
         content:
           "<p><em>Puhe on pidetty valtuuston vuoden 2015 viimeisessä tapaamisessa 11. joulukuuta. </em></p>\n<p>Hyvät valtuutetut, viranhaltijat ja ystävät!</p>\n<p>Haluan kiittää kaikkia, jotka ovat antaneet minulle luottamuksensa valtuuston puheenjohtajaksi. Tämä on ollut suuri haaste – minulle henkilökohtaisesti – minun perheelleni – ja minulle myös opiskelijana. Mutta se on ollut vastaanottamisen arvoinen haaste. Olen pyrkinyt tekemään parhaani – yhtä aikaa nöyränä ja teitä kaikkia suuresti kunnioittaen.</p>\n<p>Kempele on minulle enemmän kuin tavanomainen kunta. Kempele on ihmisten yhteisö, joka katsoo tulevaisuuteen avoimin ja uteliain mielin. Toiveenani on ollut, että Kempele jatkaa siitä, mistä se on tullut tunnetuksi tähänkin saakka: rohkeana kokeilijana, jossa uskalletaan innostua ja yrittää.</p>\n<p>Erityisen ylpeä olen siitä, että olemme halunneet pitää yhdessä kiinni perusarvoistamme. Kuntaa on kehitetty vuosia päämäärätietoisesti siten, että meillä on kaikki edellytykset toimia uskottavasti itsenäisenä kuntana myös jatkossa. Tähän ei ole kuitenkaan syytä tyytyä, vaan meidän on jatkettava ponnisteluja yhtenäisenä Kempele-puolueena. Työ paremman kotikunnan puolesta alkaa joka maanantai uudestaan.</p>\n<p>Meidän on myös uskallettava olla tämänhetkisen yhteiskunnan ajan hermolla. Meillä on oltava kykyä tunnistaa tämän päivän yhteiskunnan ongelmat. Meidän on myös uskallettava puhua näistä ongelmista – muutoin tämänhetkiset ongelmat johtavat tulevaisuuden katastrofiin. Nähdäkseni kuntamme ajankohtaisimmat ongelmat ovat työttömyys, lisääntynyt päihteiden käyttö, perheiden hajoaminen ja kasvavat palvelutarpeet yhdistettynä niukkeneviin resursseihin.</p>\n<p>On sanomattakin selvää, että meillä on edessä suuria haasteita. Kuntana, yksilöinä ja poliitikkoina. Yhdessä me kempeleläiset olemme kuitenkin vahvoja. Tämän vuoksi toivon, että otatte minuun jatkossakin rohkeasti yhteyttä rakentavan vuoropuhelun merkeissä. Erityisesti ryhmäpuheenjohtajilta toivon jatkuvaa aktiivisuutta. Olen valmis vierailemaan jokaisessa valiokunnassa, henkilöstöinfossa ja valtuustoryhmässä, jos vuorovaikutukselle – keskustelulle ja kuuntelulle – nähdään tarvetta.</p>\n<p>Lopuksi haluan kiittää <strong>Jarmoa</strong> (Haapaniemi, valtuuston edeltävä puheenjohtaja) siitä työstä, jota olet tehnyt yhteisen kotikuntamme eteen. Olen vakuuttunut, että puheenjohtajan jätit kunnan paremmassa kunnossa meille, mitä se oli, kun itse sen sait johdettavaksi. Asianmukainen ja jämäkkä otteesi johtajana herätti luottamusta, jota olen erityisen paljon arvostanut. En ole edes pyrkinyt täyttämään saappaitasi, vaan luomaan omat saappaani. Tulevaisuus näyttäköön, miten tässä vaativassa tehtävässä onnistun.</p>\n<p>Näillä sanoilla haluan toivottaa teille kaikille hyvää joulua ja kokemusrikasta uutta vuotta!</p>\n",
       },
@@ -1350,24 +1099,17 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Itsenäisyyspäivä",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Nato",
-          },
-          {
-            name: "Puhe",
-          },
-          {
-            name: "Terrorismi",
-          },
-          {
-            name: "Venäjä",
-          },
+          "Itsenäisyyspäivä",
+
+          "Kempele",
+
+          "Nato",
+
+          "Puhe",
+
+          "Terrorismi",
+
+          "Venäjä",
         ],
         content:
           '<p><span style="color: #000000;"><em>Puhe on pidetty Kempeleen kunnan itsenäisyyspäivän juhlassa 6. joulukuuta 2015 Kokkokankaan seurakuntakeskuksessa. </em></span></p>\n<p><span style="color: #000000;"><span style="font-weight: 400;">Kunnioitetut sotiemme veteraanit,</span><span style="font-weight: 400;"><br />\n</span><span style="font-weight: 400;"><br />\n</span><span style="font-weight: 400;">Hyvät naiset ja herrat,</span></span></p>\n<p><span style="font-weight: 400; color: #000000;">Hiljalleen taakse jäävä vuosi on jättänyt meille suomalaisille paljon hyviä muistoja. Mutta paljon myös sellaisia, jotka haluaisimme unohtaa ja jatkaa eteenpäin. Mielessämme on useita kysymyksiä, joista päällimmäisenä turvallisuus. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Viimeistään Pariisin tapahtumien myötä saatoimme huomata, ettei Eurooppa ole enää turvassa jihadistiselta ääri-islamilta. Suojelupoliisin mukaan jihadistit pyrkivät  värväämään myös Suomessa taistelijoita sota-alueille Irakiin ja Syyriaan. Samaan aikaan saamme lukea uutisista, että Turkin hävittäjä ampui alas ilmatilaansa loukanneen venäläisen rynnäkkökoneen &#8211; varoittaen sitä ennen kymmenen kertaa tuloksetta. Myös Suomessa tilanne vaikuttaa muuttuneen, sillä ilmatilaloukkauksia tehtiin viime vuonna ennätysmäärä. Puolustusministeriön mukaan kyse on tyypillisesti sotilaskuljetuskoneista. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Nämä ovat äärimmäisiä esimerkkejä siitä, miksi olemme pakotettuja palaamaan takaisin peruskysymysten äärelle. On sanomattakin selvää, että me suomalaiset olemme pieni ja rauhaa rakastava kansakunta. Toisaalta historia on opettanut meille karuimmalla mahdollisella tavalla, ettei toiveajatteluun ole varaa nopeasti muuttuvassa maailmassa. Suomi ajautui toiseen maailmansotaan heikosti varustettuna, koska päättäjämme eivät uskoneet sodan koskaan syttyvän.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Vaikuttaa siltä, että kansainvälisissä suhteissa kunnioitusta on lähdetty jälleen tavoittelemaan voimalla ja pelolla. Tästä syystä on suomalaisten turvallisuuden kannalta välttämätöntä, että varaudumme pahimpaan ilman toiveajattelua. Käytännössä tämä tarkoittaa sitä, että esimerkiksi terrorismin torjumiseksi meidän tulee antaa poliisi- ja tiedusteluviranomaisille laajemmat mahdollisuudet toimia. Se edellyttää tiedustelun resurssien vahvistamista ja tiedustelulain hyväksymistä. </span></p>\n<p><span style="color: #000000;">***</span></p>\n<p><span style="font-weight: 400; color: #000000;">Arvostetut sotiemme veteraanit!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Sisu, yrittäminen ja usko hyvään kantavat pitkälle, on kyse sitten hyvinvoinnin ylläpitämisestä, taloudellisista haasteista tai vapauden puolustamisesta. Meille on kunniatehtävä pitää huolta ja kantaa vastuumme sotiemme veteraanien hyvinvoinnista ja hyvästä elämänlaadusta aina viimeiseen iltahuutoon asti. Kiitos siitä, että olette kanssamme jakamassa tämän arvokkaan päivän. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Vuosi sitten itsenäisyyspäivänä saimme tutustua sotaveteraani Hannes Hynöseen, joka sulatti monien sydämet. Ensi kuussa Hynönen olisi täyttänyt kunniakkaat 103-vuotta. Kaikkien suruksi saimme kuitenkin lukea, että hän menehtyi viime maanantaina &#8211; talvisodan alkamispäivänä 30. marraskuuta. Viimeisessä haastattelussaan ennen sairaalaan joutumista Hynönen jätti meille selkeäsanaisen viestin toteamalla, että: “viime kädessä Suomen turvana on puolustusliitto NATO ja Jumala”. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Sodan pelot nähneen ja tuskat kokeneen miehen sanoma on syytä ottaa vakavasti. Etenkin aikana, jolloin eurooppalaista vakautta ja rauhaa on loukattu toistuvasti. Kysymys on nyt siitä, että löytyykö meiltä päättäjiä, jotka ovat valmiita tekemään oikeat ja kaukokatseiset ratkaisut uskottavan puolustuskyvyn turvaamiseksi.</span></p>\n<p><span style="color: #000000; line-height: 1.5;">***</span></p>\n<p><span style="color: #000000; line-height: 1.5;">Hyvät ystävät!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Olen edellä pyrkinyt muistuttamaan, ettei kansallista turvallisuutta tule koskaan ottaa annettuna tai perustaa toiveajatteluun. Sen eteen on tehtävä yhdessä töitä ja uhrauksia niin arkielämässä kuin valtakunnan päätöksenteossa. Aivan kuten menneet sukupolvet ovat tehneet uhrauksia, jotta me saisimme syntyä itsenäiseen Suomeen eläen turvassa keskittyen yhteiskuntamme, perheemme ja itsemme kehittämiseen. Tämän tiedostaminen herättää meissä sotien jälkeisissä sukupolvissa syvää kiitollisuuden tunnetta. Kiitollisuus pitää näkyä myös teoissamme, joihin meillä on velvollisuutemme ja se täyttää mielemme sekä sydämemme erityisesti tänään.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Näillä sanoilla haluan toivottaa kaikille arvokasta ja hyvää itsenäisyyspäivää!</span></p>\n',
@@ -1388,21 +1130,15 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Charter Night",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Lions Club",
-          },
-          {
-            name: "Perustamisjuhla",
-          },
-          {
-            name: "Puhe",
-          },
+          "Charter Night",
+
+          "Kempele",
+
+          "Lions Club",
+
+          "Perustamisjuhla",
+
+          "Puhe",
         ],
         content:
           '<p><i><span style="font-weight: 400;">Puhe on pidetty Lions Club Kempele Auroran perustamisjuhlassa 4. joulukuuta 2015 Hotelli Pohjankievarissa. </span></i></p>\n<p><span style="font-weight: 400;">Arvoisat Lions-liiton jäsenet, hyvät naiset ja herrat!</span></p>\n<p><span style="font-weight: 400;">Minulla on ilo tuoda tähän tilaisuuteen valtuuston puheenjohtajana tervehdys koko kunnan puolesta. On suuri kunnia olla osana tätä hienoa hetkeä, kun tuore leijonayhdistys näkee päivänvalon. </span></p>\n<p><span style="font-weight: 400;">Kempeleessä Lions-toiminnalla on pitkät ja kunniakkaat perinteet. Erityisesti palvelu kotiseudun hyväksi on ollut lähellä leijonien sydäntä. Tätä arvokasta työtä on leimannut pyyteetön palvelun asenne ja halu tehdä hyvää. </span></p>\n<p><span style="font-weight: 400;">Jos pysähdymme hetkeksi miettimään, niin sanana pyyteettömyys aukeaa meille kauniina elämänasenteena.</span></p>\n<p><span style="font-weight: 400;">Henkilö, joka vapaasta tahdosta antaa pyyteettömästi jotain toiselle, saa takuulla itsekin jotain. Aivan, kuten kynttilä sytyttäessään toisen kynttilän, niin myös te pyyteettömällä työllänne annatte jotain toisille viemättä silti itseltä mitään. Toisin sanoen onnellinen on se, joka tekee toisen onnelliseksi. Tätä asennetta toivoisi näkevän yhteiskunnassa laajemminkin.</span></p>\n<p><span style="font-weight: 400;">Toivon, että leijonat pyrkivät myös jatkossa tarkastelemaan aikamme haasteita yksilön näkökulmasta. Vaikka säätäisimme kuinka monta lakia tai palkkaisimme lukemattoman määrän virkamiehiä, niin aina jää jäljelle ihmisiä, jotka eivät julkiselta vallalta saa tarvitsemaansa apua. </span></p>\n<p><span style="font-weight: 400;">Hyvät ystävät!</span></p>\n<p><span style="font-weight: 400;">Aikamme tarvitsee yksilöitä, jotka omilla ratkaisuilla ja toimilla näyttävät suuntaa. Tämä koskee niin kotiseutua kuin isänmaan johtopaikoilla toimivia henkilöitä. Olen vakuuttunut, että uuden Aurora-klubin toiminnassa “Me palvelemme”-periaate näkyy kirkkaasti johtotähtenä ja avun tarpeessa olevat pääsevät nauttimaan palveluistanne monipuolisesti. </span></p>\n<p><span style="font-weight: 400;">Lopuksi haluan lausua koko kunnan puolesta kiitoksen teille kaikille, joiden ansiosta tämäkin tilaisuus on! Ja onnittelut heille kaikille, jotka omana aikanaan valitsevat “Me palvelemme”-periaatteen elämäntavakseen.</span></p>\n',
@@ -1423,21 +1159,15 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Itsenäisyyspäivä",
-          },
-          {
-            name: "Juhlapuhe",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Lakkiaiset",
-          },
-          {
-            name: "Lukio",
-          },
+          "Itsenäisyyspäivä",
+
+          "Juhlapuhe",
+
+          "Kempele",
+
+          "Lakkiaiset",
+
+          "Lukio",
         ],
         content:
           '<p><span style="color: #000000;"><i><span style="font-weight: 400;">Puhe on pidetty Kempeleen lukion itsenäisyys- ja lakkiaisjuhlassa perjantaina 4. joulukuuta 2015.</span></i></span></p>\n<p>***</p>\n<p><span style="font-weight: 400; color: #000000;">Arvoisat juhlavieraat, hyvä lukion väki, tulevat ylioppilaat!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Olen iloinen, että olette aikanaan valinneet saman opinpolun kuljettavaksi, kuin minä ja monet muut kempeleläiset omassa nuoruudessamme. Tiedän kokemuksesta, että matka on takuulla tuntunut ajoittain yksinäiseltä ja polku edessä näyttänyt kiviseltä ja raskaalta nousta. Toisaalta tiedän, että vastapainoa tähän ainutlaatuiseen matkaan ovat tuoneet lukemattomat ystävät ja heidän kanssaan myöhäänkin venyneet muistorikkaat hetket. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Olen itse asiassa viime aikoina pohtinut, että millainen maailma olisi, jos emme olisi tehneet tätä valintaa? Omaisimmeko riittävän vahvoja valmiuksia jatko-opintoihin? Entä olisiko meistä työelämän huippuosaajiksi? Löytyisikö meistä riittävää viisautta tiedon kriittiseen käsittelyyn ja ajattelun taitoihin? </span></p>\n<p><span style="font-weight: 400; color: #000000;">Muistan elävästi, kuinka omissa ylioppilaskirjoituksissani minua jännitti aivan vietävästi. Eräs arvostamani opettaja kuitenkin rohkaisi meitä jännityksen hetkellä mieleenpainuvasti. Hän kertoi, että kirjoitusten aikana olemme viisaampia, kuin koskaan aikaisemmin tai myöhemmin elämässä. Ihmettelin tuolloin, mitä opettaja näillä sanoilla tarkoitti. Kysyin itseltäni, että miten juuri nyt voisin olla viisaampi kuin tulevaisuudessa &#8211; minullahan on vasta elämä edessä?</span></p>\n<p><span style="font-weight: 400; color: #000000;">Aivan kuten monta kertaa aikaisemminkin, niin oppiminen alkoi vasta siinä hetkessä, kun opettaja poistui luokasta. Ymmärsin pian, että hän oli itse asiassa aivan oikeassa. Olin lukioaikana saanut imeä itseeni valtavan määrän luotettavaa tutkimuspohjaista tietoa elämän eri osa-alueilta. En saanut oppia ainoastaan omista mielenkiinnon kohteistani, vaan hallitsin isoja asiakokonaisuuksia myös monesta muusta yleissivistävästä aiheesta, joiden arvon saatoin huomata vasta vuosien päästä. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Hyvä juhlaväki!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Nähdäkseni lukiolla on yksi tehtävä ylitse muiden. Se on kriittiseen ajatteluun, lukemiseen ja tiedon käsittelyyn tähtääminen. On entistä tärkeämpää, että ihmiset osaavat kyseenalaistaa lukemansa ja erottaa disinformaation &#8211; eli tahallisen väärän tai harhaanjohtavan tiedon &#8211; oikeasta tutkimuspohjaisesta tiedosta. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Valitettavasti ajallemme ovat tyypillisiä MV-lehden tai Magneettimedian kaltaiset huuhaa-julkaisut, jotka pyrkivät tahallaan virheelliseen ja näennäistieteellisen tiedon levittämiseen. Isommassa mittakaavassa sama ilmiö on nähtävissä myös ulkopoliittisessa viestinnässä. Tutkijoiden mukaan Venäjä pyrkii aktiivisesti propagandakoneistollaan määrittelemään sen, miten ja mistä keskustellaan. Tämä ns. trolliarmeija-toiminta on systemaattista, koordinoitua ja johdettua toimintaa, jonka palveluksessa työskentelevät ihmiset keskittyvät niin venäjämieliseen some- ja lehtikommentointiin, blogien kirjoittamiseen, kuin hakukoneiden optimointiin.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Vaikka äskeinen oli äärimmäinen esimerkki, niin kriittistä ajattelua tarvitaan toki muissakin yhteyksissä. Tarvitsemme esimerkiksi kykyä nähdä asiantuntijoiden ajattelun sokeat pisteet, taitoa tulkita tilastoja oikein sekä tarkkaavaisuutta otsikoista elävän klikkijournalismin kanssa.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Hyvät tulevat ylioppilaat! </span></p>\n<p><span style="font-weight: 400; color: #000000;">Näin itsenäisyyspäivän alla, on syytä palauttaa mieleen sotaveteraanien perintönä jättämä lausahdus: “kaveria ei jätetä”. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Uskallan väittää, että ison osan myös tästä matkasta ovat tehneet ystävät. Toivottavasti ne ystävyyssuhteet, joita tässä rakennuksessa on solmittu ja vahvistettu vuosien aikana, kantavat vielä pitkälle. Vaikka tiet tältä osin erkanevat armeijan, jatko-opintojen tai töiden vuoksi, niin älkää unohtako ketään porukasta. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Olette yhdessä saaneet näiden vuosien aikana lukea tuhansia sivuja kurssikirjoja. Mitä ilmeisemmin olette suoriutuneet tästä työläästä tehtävästä erinomaisesti, kun saamme olla tänään yhdessä juhlistamassa merkkipäiväänne. Toivon lämpimästi, että jatkatte itsenne kehittämistä ja kriittisen ajattelun taitoa myös lukioaikojen jälkeen jatko-opintojen ja työn parissa. Vaikka ylioppilastutkinto on suoritettu, niin älkää koskaan lopettako oppimista.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Lopuksi haluan kiittää koko kunnan puolesta kaikkia opettajia sekä koko lukion henkilökuntaa siitä, että olette osaltanne olleet mahdollistamassa uusien ylioppilaiden valmistumisen. Jokainen uusi valkolakki on saavutettu teidän ammattitaitonne seurauksena, josta on syytä olla ylpeä. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Uusille ylioppilaille toivotan onnea ja menestystä sekä koko juhlaväelle hyvää lakkiais- ja itsenäisyyspäivää!</span></p>\n<p>&nbsp;</p>\n',
@@ -1458,21 +1188,15 @@ export const WP = {
           ],
         },
         tags: [
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomusnaiset",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Pohjois-Pohjanmaa",
-          },
+          "Kempele",
+
+          "Kokoomus",
+
+          "Kokoomusnaiset",
+
+          "Oulu",
+
+          "Pohjois-Pohjanmaa",
         ],
         content:
           '<p>TIEDOTE 21.11.2015<br />\nJULKAISUVAPAA: heti</p>\n<p><strong>KOKOOMUS VALITSI PIIRIEN LUOTTAMUSHENKILÖJOHDOT VUODELLE 2016</strong></p>\n<p>Pohjois-Pohjanmaan Kokoomus ja Kokoomusnaiset valitsivat Kempeleen kunnantalolla lauantaina 21.11. pidetyissä piirikokouksissaan luottamushenkilöjohdon vuodelle 2016. Kokoomuksen piirin puheenjohtajana jatkaa yrittäjä <strong>Tomi Kaismo</strong> Oulusta. Alkava kausi on Kaismon kahdeksas. Varapuheenjohtajiksi valittiin <strong>Hanna Saari</strong> Kalajoelta sekä <strong>Janne Heikkinen</strong> Kempeleestä. Naisten piirin puheenjohtajana jatkaa luokanopettaja <strong>Pia-Riitta Korvenheimo</strong> Oulusta. Naisten piirin varapuheenjohtajaksi valittiin <strong>Anna-Liisa Lämsä</strong> Oulusta. Omassa puheenvuorossaan Tomi Kaismo painotti tulevien kuntavaalien merkitystä ja antoi kentälle kiitoksen erinomaisella voimalla alkaneesta ehdokashankinnasta koko vaalipiirin alueella. ”Kiinnostus kuntavaalien ehdokkuutta kohtaan on ollut ajankohtaan nähden poikkeuksellisen suurta. Tämä enteilee hyvää kuntavaaleja ajatellen” Kaismo toteaa.</p>\n<p>Henkilövalintojen ja sääntömääräisten asioiden käsittelyn lisäksi kokouksissa kuultiin Kokoomuksen puoluesihteeri <strong>Minna Arven</strong> sekä kansanedustaja <strong>Mari-Leena Talvitien</strong> poliittiset tilannekatsaukset. Ajankohtaisista aiheista hallituksen sosiaali- ja terveyspalveluiden uudistus puhutti kokouksessa runsaasti. Alustajien mukaan hallituksen sote-ratkaisu oli linjakas ja merkittävä ja se antaa aidot mahdollisuudet ratkaista käytännön tason ongelmat palveluiden saatavuuteen ja integraatioon liittyen niin perusterveydenhuollon ja erikoissairaanhoidon kuin sosiaali- ja terveyspalveluiden välilläkin. Myös haasteet tunnustettiin. Kaikkia prosessiin liittyviä ratkaisuja ei vielä ole tehty, ja etenkin rahoitukseen liittyvät kokonaisuudet ovat vielä auki.</p>\n<p>Piirikokous korosti omassa keskustelussaan myös liikkuvuuden ja logistiikan merkitystä elinvoimaisuuden alueellisessa turvaamisessa. Nelostien ja Oulun sataman lisäksi mm. 8-tien perusparannukset ja raskaan liikenteen edellytykset ovat merkittävä kohde koko maakunnan kannalta. Hanhikiven voimalahanke yhdistää koko rannikkoseutua ja Oulua yhä tiiviimmäksi ja yhtenäisemmäksi työssäkäyntialueeksi. Myös tästä näkökulmasta sujuvat liikenneyhteydet 8-tien osalta täytyy huomioida ratkaistaessa tulevia hankkeita.</p>\n<p><strong>Pohjois-Pohjanmaan Kokoomuksen piirihallitus 2016</strong></p>\n<p>Puheenjohtaja Tomi Kaismo, Oulu</p>\n<p>Varapuheenjohtaja Janne Heikkinen, Kempele</p>\n<p>Varapuheenjohtaja Hanna Saari, Kalajoki</p>\n<p>Taloudenhoitaja Jorma Kivelä, Oulu</p>\n<p>Hallituksen jäsenet:</p>\n<p>Pirjo Bastman, Oulu</p>\n<p>Jarmo Husso, Oulu</p>\n<p>Jorma Kortesoja, Oulainen</p>\n<p>Pauli Korpi-Tassi, Ylivieska</p>\n<p>Mika Kukkonen, Oulu</p>\n<p>Teija Larikka, Raahe</p>\n<p>Pekka Simonen, Oulu</p>\n<p>Martti Turunen, Kuusamo</p>\n<p><strong>LISÄTIEDOT:</strong></p>\n<p>Tomi Kaismo<br />\nPuheenjohtaja, Pohjois-Pohjanmaan Kokoomus<br />\nGsm: 045 670 7600<br />\n<a href="mailto:tomi.kaismo@otc.fi">tomi.kaismo@otc.fi</a></p>\n<p>Pia-Riitta Korvenheimo<br />\nPuheenjohtaja, Pohjois-Pohjanmaan Kokoomusnaiset<br />\nGsm: 040 719 1171<br />\n<a href="mailto:pia-riitta.korvenheimo@ouka.fi">pia-riitta.korvenheimo@ouka.fi</a></p>\n<p>Jaakko Salovaara<br />\nToiminnanjohtaja, Pohjois-Pohjanmaan Kokoomus<br />\nGsm: 040 744 0689<br />\n<a href="mailto:jaakko.salovaara@kokoomus.fi">jaakko.salovaara@kokoomus.fi</a></p>\n',
@@ -1492,17 +1216,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "ISIS",
-          },
-          {
-            name: "Pariisi",
-          },
-          {
-            name: "Terrorismi",
-          },
-        ],
+        tags: ["ISIS", "Pariisi", "Terrorismi"],
         content:
           '<p><em>Tämä kirjoitus on laadittu yhdessä ystäväni ja valtio-opin opiskelijan Manolis Huukin kanssa. </em></p>\n<p><strong>Terrorismiin liittyviä lakipykäliä tiukennettava</strong></p>\n<p>Terrorismin vaikutus maailmalla ja erityisesti Euroopassa on lisääntynyt viimeisen kymmenen vuoden aikana. Eilen jouduimme todistamaan tätä kehitystä raadollisimmillaan Pariisin hyökkäysten ja kidnappausten muodossa.</p>\n<p>Isossa kuvassa on oleellista ymmärtää, että terroristien värväys-, rahoitus- ja toimintatavat ovat muuttuneet. Internetin leviäminen lähes jokaiseen kotitalouteen on tehnyt siitä tärkeän työvälineen myös terroristijärjestöille. Esimerkiksi eilisistä Pariisin brutaaleista tapahtumista ISIS-taistelijat riemuitsivat Twitterissä yhteisellä <a href="http://Terrorismiin liittyviä lakipykäliä tiukennettava">hashtagilla</a>.</p>\n<p>Terroristit pyrkivät rekrytoimaan sosiaalisen median ja erilaisten internet-sivujen kautta toimintaansa lisää taistelijoita. Esimerkiksi Syyrian ja Irakin tapauksessa ISIS käyttää huomattavat määrät resursseja internetissä tapahtuvaan värväystoimintaan, joista todisteina ovat sosiaalisessa mediassa (Facebook, Youtube) jaetut ammattimaisesti tehdyt ja jaetut videot sekä kuvat, joilla pyritään vetoamaan katsojaan.</p>\n<p>Terroristijärjestöjen viestintä on ollut ilmeisen onnistunutta myös Suomessa. Suojelupoliisin päällikön <strong>Antti Pelttarin</strong> <a href="http://yle.fi/uutiset/supon_pelttari_syyriaan_on_lahtenyt_yli_50_taistelijaa_suomesta/7659711">mukaan</a> Suomesta on lähtenyt yli 50 henkilöä  Syyrian konfliktialueelle. SUPO:n mukaan osa värväystoiminnasta tapahtui kotimaassa.</p>\n<p>Mediassa on käyty – syystäkin &#8211; pitkään keskustelua siitä, miten taisteluihin lähteminen voitaisiin estää. Ongelmaksi on osoittautunut muun muassa se, etteivät viranomaiset pysty takavarikoimaan passia tai estämään ulkomaille matkustamista sellaiselta henkilöltä, jota epäillään taisteluihin lähteväksi henkilöksi. Tähän epäkohtaan tulee lainsäätäjien eduskunnassa puuttua. <a href="http://www.uusisuomi.fi/kotimaa/79177-suomesta-lahtenyt-60-isis-taistelijaa-passit-voitava-takavarikoida">Esimerkiksi</a> Kanadassa passit voidaan takavarikoida henkilöiltä, joiden epäillään liittyneen tai pyrkivän liittymään Isisin riveihin konfliktialueilla.</p>\n<p>YK:n turvallisuusneuvosto <a href="http://yle.fi/uutiset/yk_maarasi_ulkomaisiin_sotiin_lahtevat_taistelijat_laittomiksi/7490667">määräsi</a> syyskuussa 2014 yksimielisesti kaikkia järjestön jäsenmaita kieltämään kansalaisiaan lähtemästä ulkomaalaisiin sotiin rangaistuksen uhalla. Tämän päätöslauselman taustana on tällä hetkellä käynnissä oleva Syyrian sisällissota, joka on eri tilastojen perusteella houkutellut n. 12 000 ulkomaalaista (ei-syyrialaista) taistelijaa taistelemaan konfliktissa. Päätöslauselma (S/RES/2178 (2014) siis määrittelee jokaista jäsenmaata, kuten myös Suomea toimiin, jotta turvallisuusneuvoston päätöslauselma toteutuisi.</p>\n<p>Tämänhetkiset terrorismiin viittaavat lainkohdat on <strong>Lipposen</strong> II hallituksen <a href="http://www.finlex.fi/fi/laki/ajantasa/1889/18890039001?search[type]=pika&amp;search[pika]=rikoslaki%2034#L34a">esityksestä</a> hyväksytty lähes kaksitoista vuotta sitten (Rikoslain luku 34a 24.1.2003/17 Terrorismirikoksista). Nykyisin voimassa oleva laki siis käsittelee kokonaisvaltaisesti terrorismin määritelmää, terroristijärjestön johtamista, terrori-iskun suunnittelua ja rahoitusta. Kuten esitysajankohdasta voidaan päätellä, aiempi esitys on pohjautunut syyskuun 11. terrori-iskujen jälkeisiin uhkakuviin. Tästä on yli kymmenen vuotta ja tällaisessa ajassa on Euroopan ja Suomen turvallisuuskenttä kokenut ison muutoksen puhuttaessa terrorismista.</p>\n<p>Lain pikaista uudistamista puoltaa muun muassa se tosiasia, että viestinnän muuttuminen on nopeuttanut propagandaviestintää ja kynnystä lähteä ulkomaille taisteluihin. Nykyisissä lainkohdissa puhutaan terrorismin tapauksessa kaikkein oleellisimmista nimikkeistä ja siitä, miten näiden toteuttamisesta rangaistaan. Laissa ei kuitenkaan ole muotoiltu pykälää, joka myös kieltäisi tai estäisi konfliktialueelle matkustamisen, jos voidaan suurella todennäköisyydellä epäillä ao. henkilön suunnittelevan taisteluihin osallistumista tai jos viranomaisilla on tieto henkilön värväytymisestä.</p>\n<p>Lakiin (rikoslain luvun 34a 24.1.2003/17 Terrorismirikoksista) tulisi lisätä kohta, joka käsittelee konfliktialueille tai terroristijärjestön taisteluihin osallistumisen rangaistavaksi. Lisäksi viranomaisille tulee antaa valtuudet estää maasta poistuminen, jos tavoitteena on jokin aiemmin mainituista syistä.</p>\n<p><strong>Janne Heikkinen</strong><br />\nKempeleen kunnanvaltuuston puheenjohtaja (kok.)</p>\n',
       },
@@ -1540,17 +1254,7 @@ export const WP = {
             },
           ],
         },
-        tags: [
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Kuntaverotus",
-          },
-          {
-            name: "Talousarvio",
-          },
-        ],
+        tags: ["Kempele", "Kuntaverotus", "Talousarvio"],
         content:
           "<p>Tänään valtuusto käsittelee ensi vuoden verotusta. Resurssivaliokunnan ohjauksen mukaisesti kunnanhallitus esittää, että tuloveroprosentti säilyy ennallaan ja tiukkaa menokuria jatketaan.</p>\n<p>Samaan aikaan Kempeleen kunnanvaltuusto valmistelee talousarviota vuodelle 2016. Talousarvion lähtökohtana on säilyttää talouden tasapaino ja vahvistaa laadukkaita palveluita.</p>\n<p>Vuoden 2016 talousarviossa on asetettu etusijalle kuntalaisten hyvinvointi ja turvallisuus sekä yritysten toimintaedellytyksien parantaminen.</p>\n<p>Investoinnit ovat elinvoimaa vahvistavia ja uusia työpaikkoja mahdollistavia. Esimerkkinä VR:n asema-alueen kehittäminen ja käyttöönotto. Helsinki-Pasila ja Turku-Kupittaa mallinen junaliikenne avataan Oulu-Kempele välille ensi vuonna. Tähän liittyvät muutostyöt avaavat myös uuden itä-länsi suuntaisen kunnan sisäisen liikenteen Eteläsuomentielle.</p>\n<p><b>Alle olen listannut muutamia keskeisiä tavoitteita talousarvioon 2016:</b></p>\n<p><b>&#8211; Tuloveroprosenttia ei nosteta<br />\n&#8211; Prosessien menokasvut ovat maltillisia<br />\n&#8211; Yhteistyötä kolmannen sektorin toimijoiden kanssa vahvistetaan<br />\n&#8211; Uusia virkoja perustetaan ainoastaan vahvaan harkintaan perustuen<br />\n&#8211; Digitalisaatiota edistetään panostuksilla laitteistoon ja ohjelmistoihin</b></p>\n",
       },
@@ -1565,17 +1269,7 @@ export const WP = {
         _links: {
           wp_featuredmedia: null,
         },
-        tags: [
-          {
-            name: "AY-liike",
-          },
-          {
-            name: "Lakot",
-          },
-          {
-            name: "maan tapa",
-          },
-        ],
+        tags: ["AY-liike", "Lakot", "maan tapa"],
         content:
           "<p>Suomessa on jo pitkään vallinnut kummallinen ilmapiiri laittomien lakkojen ympärillä. Toisin kuin muissa pohjoismaissa, meillä laittomia lakkoja järjestetään vähät välittäen niiden seurauksista. Tässä ovat kunnostautuneet erityisesti liittojohtajat, jotka kuittaavat laittomat lakot ja miljoonatappiot verovähennetyillä jäsenmaksutuloilla ja olankohautuksella. Laittomien lakkojen läpi sormien katsomisesta on tullut maan tapa &#8211; se on laillistettua rikollisuutta.</p>\n<p>Määritelmällisesti laiton lakko on lakko, joka loukkaa voimassa olevaa työehtosopimusta. Rikoksen määritelmä puolestaan sisältää laittomaan tekoon syyllistymisen. Mikäli jokin taho järjestää laittomuuksia järjestelmällisesti puhutaan järjestäytyneestä rikollisuudesta.</p>\n<p>Kotimaan laittomia lakkoja mittaavat tilastot eivät kestä vertailua suhteessa muihin Pohjoismaihin. Siinä missä Suomessa on vuosittain runsaat sata laitonta lakkoa, niin Ruotsissa niitä on keskimäärin kaksi. Myös kansainvälisesti vertailtuna Suomi lukeutuu varsin lakkoherkkiin maihin.</p>\n<p>Nykyinen seuraamusjärjestelmämme on puutteellinen, eikä se pysty ehkäisemään kuin nimellisesti laittomia lakkoja. Suomessa hyvityssakon maksimimäärä on huomattavasti pienempi verrattuna pohjoismaiseen käytäntöön, vain noin 30 000 euroa. Sanktioiden alhainen taso on tehnyt laittomista lakoista houkuttelevan kiristyskeinon ammattiliitoille. On käsittämätöntä, että laittomista lakoista määrätään liitoille vain muutamien tuhansien eurojen sakkoja. Sakko ei ole missään suhteessa oikeudenmukainen työnantajalle ja yhteiskunnalle aiheutuneisiin tappioihin nähden, jotka voivat kohota jo päivässä miljooniin euroihin.</p>\n<p>Selittävä tekijä Suomen ja muiden Pohjoismaiden laittomien lakkojen määrälliselle erolle löytyy lainsäädännöstä ja sopimisen kulttuurista. Suomessa palkansaaja ei ole velvollinen korvaamaan laittomasta lakosta aiheutuneita vahinkoja työnantajalle. Laittomaan lakkoon osallistuminen ei ole myöskään irtisanomisperuste. Sen sijaan kaikissa muissa Pohjoismaissa liitoilla on täysi vahingonkorvausvelvollisuus laittomista lakoista sekä työntekijöillä henkilökohtainen vastuu. Ruotsissa työehtoneuvottelut valmistellaan jo hyvissä ajoin ennen seuraavaa neuvottelukierrosta. Siellä tahtotila on yhteinen, kun sekä työntekijät että työnantajat haluavat puolustaa ruotsalaista työtä!</p>\n<p>Maamme tapa ei voi olla se, että järjestelmällisiin laittomuuksiin syyllistyvät työmarkkinajärjestöt eivät joudu asianmukaiseen korvausvelvollisuuteen aiheuttamastaan vahingosta. Tähän johtopäätökseen tuli myös pääministeri ja SDP:n puheenjohtaja <strong>Kalevi Sorsa</strong>, joka ryhdikkäästi 1980-luvulla nosti silloisia korvauksia laittomista lakoista ja sitoi lakkosakot indeksiin. Samaa rohkeutta kaivattaisiin nyt <strong>Sipilän</strong>hallitukselta, jonka tulisi lopettaa tämä epäterve maan tapa ja siitä hyssyttely.</p>\n<p>Lainsäädäntöä korvausvelvollisuuden suhteen tulee päivittää ennen kuin seuraavan palkkaratkaisun sorvaaminen syksyllä 2016 alkaa. Olisi vähintään kohtuullista, että työtaistelusta tulisi ilmoittaa reilusti etukäteen ja sitä edeltäisi työtuomioistuimen käsittely ja uhkasakon määrittely, mikäli lakko on laiton. Näin ollen laittoman lakon seuraukset olisivat kaikkien osapuolten tiedossa jo ennen lakkoa.</p>\n",
       },
@@ -1590,20 +1284,7 @@ export const WP = {
         _links: {
           wp_featuredmedia: null,
         },
-        tags: [
-          {
-            name: "EU",
-          },
-          {
-            name: "Euroopan unioni",
-          },
-          {
-            name: "Kalastus",
-          },
-          {
-            name: "Kalastuspolitiikka",
-          },
-        ],
+        tags: ["EU", "Euroopan unioni", "Kalastus", "Kalastuspolitiikka"],
         content:
           '<p>Euroopan unionissa kulutetaan nykyisin enemmän kalaa ja kalatuotteita kuin koskaan aikaisemmin sen historiassa. Moderni tekniikka ja kaupalliset rakenteet ovat mahdollistaneet sen, että kysynnän kasvuun on pystytty vastata. Ne ovat kuitenkin samanaikaisesti aiheuttaneet pyyntipaineen merkittävän kasvun Euroopan vesillä.</p>\n<p><span style="font-weight: 400;">Nykyisin huomattavan useita kalakantoja ylikalastetaan ja ekosysteemit, joiden elimellinen osa ne ovat, ovat päätyneet äärimmäisen uhanalaisiksi. Tämä siitä huolimatta, että käsillämme on saatavilla enemmän tieteellistä faktaa kalakantojen tilasta, kuin koskaan aikaisemmin. Suomi ei tee tässä poikkeusta, sillä esimerkiksi kotimaan 18:sta Itämeren luonnonlohikannasta on jäljellä enää kaksi. </span></p>\n<p><span style="font-weight: 400;">Ironiseksi nykytilanteen tekee se, että liikakalastuksen taustalla on elinkeinoa vahvistava massiivinen verorahoitteinen tukijärjestelmä. Erityisesti EU:n rooli on tältä osin ristiriitainen. Siinä missä EU:lta odotetaan samanaikaisesti kestävän kalastuksen periaatteiden toteuttamisen valvomista, niin se itse kannustaa kalastusalaa yhä tehokkaampaan liikakalastukseen. </span></p>\n<p><span style="font-weight: 400;">Nykyisin EU käyttää tappiollisen kalastussektorin tukemiseen vuosittain noin 3,3 miljardia euroa. Yksinään Suomi sai jäsenmaana vuonna 2009 yli 60 miljoonaa euroa tukia. Määrä oli moninkertainen suhteessa pyydetyn saaliin markkina-arvoon. Valtiontalouden tarkastusviraston mukaan suomalaisen elinkeinokalatalouden saamien tukien määrä on kaksinkertaistunut EU-jäsenyyden myötä. Tukimuodoista merkittävin on kalastusalusten polttoaineen verohelpotus, jonka avulla laivat pystyvät toimimaan aikaisempaa kauempana ja ajallisesti pidempiä pyyntimatkoja. </span></p>\n<p><span style="font-weight: 400;">Euroalue ja muu läntinen Eurooppa elää keskellä velkakriisiä, jossa etsitään alati uusia säästö- ja leikkauskohteita. Olisi vähintäänkin kohtuullista, että säästöt aloitettaisiin edellä mainitun kaltaisista ympäristölle ja kalakannoille haitallisista tuista. </span></p>\n<p><strong>Janne Heikkinen</strong></p>\n<p><span style="font-weight: 400;">Kempeleen kunnanvaltuuston puheenjohtaja (kok.)</span></p>\n<p><em>Kirjoitus on julkaistu Forum24-lehdessä.</em></p>\n',
       },
@@ -1618,17 +1299,7 @@ export const WP = {
         _links: {
           wp_featuredmedia: null,
         },
-        tags: [
-          {
-            name: "Julkinen sektori",
-          },
-          {
-            name: "leikkaukset",
-          },
-          {
-            name: "lomaoikeus",
-          },
-        ],
+        tags: ["Julkinen sektori", "leikkaukset", "lomaoikeus"],
         content:
           '<p>Suomi on hyvää kyytiä matkalla kohti omaa velkakriisiä. Julkisesta sektorista on muodostunut taloutemme kantokykyyn nähden aivan liian suuri menoerä. Vapaapudotusta vauhdittaa työmarkkinoiden osapuolet, jotka eivät suostu luopumaan saavutetuista etuuksista yhteiskunnan kokonaisedun hyväksi.</p>\n<p>Eräs räikeä esimerkki saavutetuista eduista, joista tulisi luopua, on julkisen sektorin laajentuneet lomaoikeudet. Sekä kuntien että valtion virkamiehet nauttivat tavallisiin työtätekeviin kansalaisiin nähden pidemmistä lomista. Joitain vuosia sitten lomapäivien laskentaa muutettiin julkisella sektorilla siten, että viikon kestävään lomaan vapaapäiviä lasketaan vain viisi aikaisemman kuuden sijaan. Toisin sanoen 30 päivän loma on julkisella sektorilla 6 viikkoa ja yksityisellä 5 viikkoa.</p>\n<p>Vielä epäoikeudenmukaisemmaksi lomien pituudet muuttuvat, kun henkilö on työskennellyt pitkään julkisella sektorilla. Valtion virka- ja työehtosopimusten mukaan yli 15 vuotta palvelleet ansaitsevat 38 lomapäivää lomanmääräytymisvuoden aikana. Eli 15 vuoden työuran jälkeen kunnissa ja valtiolla saa lähes 8 viikon loman, kun yksityissektorilla lomia on 5 viikkoa. Näin hullunkurinen tilanne on mahdollista ainoastaan, kun lomaoikeuksista päätetään työehtosopimuksissa, joiden neuvotteluissa työnantajan edustajina on kuntien työ- tai virkasuhteessa olevia henkilöitä.</p>\n<p>Kestävyysvajeessa kamppailevan kansantalouden näkökulmasta kysymys ei ole mistään marginaalisesta etuisuudesta. Yksinään kuntatyöntekijöitä on Suomessa jo arviolta yli 430 000. Lisäksi valtion viroissa on yli 80 000 henkilöä. Eräiden <a href="http://www.yrittajat.fi/fi-FI/uutisarkisto/a/etusivun-uutiset/virkamiesten-lomat-muiden-pituisiksi-saasto-perati-kaksi-miljardia" target="_blank">arvioiden</a> mukaan laajennetun lomaoikeuden poistamisella voitaisiin saavuttaa jopa kahden miljardin euron säästöt julkiseen talouteen.</p>\n<p>Eriarvoistavalle lomajärjestelylle on täysin mahdotonta nähdä moraalisesti kestävää perustetta. Etenkään tilanteessa, jossa palveluista joudutaan tinkimään ja kansalaiset maksamaan korotettuja kunnallisveroja. Tämän vuoksi seuraavan kerran neuvoteltaessa kunta-alan ja valtion virka- ja työehtosopimuksista tulisi työntekijöiden lomaoikeudet vähentää yksityissektorin lomien tasolle.</p>\n<p><strong>Janne Heikkinen</strong></p>\n<p>Kempeleen kunnanvaltuuston puheenjohtaja (kok.)</p>\n<p>&nbsp;</p>\n',
       },
@@ -1785,11 +1456,7 @@ export const WP = {
         _links: {
           wp_featuredmedia: null,
         },
-        tags: [
-          {
-            name: "Nato",
-          },
-        ],
+        tags: ["Nato"],
         content:
           "<p>Presidentti Niinistö totesi pari viikkoa takaperin Euroopan kolkuttelevan kylmän sodan portteja. Todistamme näytöstä, jossa suurvalta-asemaa haikaileva Venäjä on miehittänyt osan Ukrainasta ja käyttää jatkuvasti suoria ja epäsuoria voimakeinoja naapurivaltioidensa horjuttamiseksi. </p>\n<p>Kansainvälinen yhteisö Euroopan Unionia ja Natoa myöten ovat osoittaneet solidaarisuuttaan Ukrainan kansaa kohtaan määräämällä Venäjälle erilaisia pakotteita kriisin lietsomisen takia. Ukrainan alueellista koskemattomuutta se ei ole kuitenkaan onnistunut takaamaan &#8211; Ukraina ei ole Nato-maa.</p>\n<p>Asemoituminen puolustusliittoon on mielekästä vielä näin hyvän sään aikana. Nato-keskustelua on leimannut se merkillinen piirre, että rauhallisina aikoina jäsenyys ei ole ajankohtaista ja kansainvälisien kriisien aikana hoetaan vastaavasti, että “ratkaisut tulee tehdä poutasäällä”. Tämä on ristiriitaista. Niin sanottu Nato-optio on keskustelua räikeästi harhaanjohtava konsepti, sillä jäsenyyden saaminen ei tapahdu kädenkäänteessä, vaan edellyttää mm. hyväksymismenettelyn kaikkien Nato-maiden parlamentissa.</p>\n<p>Edesmennyt jalkaväenkenraali Adolf Ehrnrooth totesi useaan kertaan elämänsä aikana, ettei Suomen enää koskaan tulisi jäädä yksin. Tähän huoleen on helppo yhtyä, sillä on epäselvää saisiko Suomi todellisessa kriisitilanteessa Ukrainan tavoin lainkaan sotilaallista apua. Tämän takia Suomen tulisi päättää viimeiset rippeet rähmällään olemisesta Moskovan edessä ja olla mukana “kaikissa niissä organisaatioissa, joihin demokraattiset länsimaat kuuluvat”, kuten presidentti Ahtisaari on moneen otteeseen todennut. Nato on turvallisuuden kannalta näistä keskeisin.</p>\n<p>Tilannetta kuvaavana ajatusleikkinä voidaan kysyä, että myöntäisitkö sinä palovakuutuksen sille, joka anoo tätä talon jo palaessa? </p>\n<p><strong>Janne Heikkinen<br />\nKempeleen kunnanhallituksen varapuheenjohtaja (Kok.)</strong></p>\n",
       },
@@ -2033,14 +1700,7 @@ export const WPContent = {
         content:
           '<p dir="ltr">Suomessa törmää usein kummalliseen harhaluuloon, että perintö- ja lahjavero olisi välttämätön osa veropohjaa ja sen poistaminen olisi siten mahdotonta. Kansainvälisen vertailun perusteella näin ei kuitenkaan ole. Yksinään Euroopassa on parikymmentä maata, joissa perintö- ja lahjaveroa ei ole käytössä lainkaan.</p>\n<p dir="ltr">Suomi näyttäytyy poikkeuksellisen kireänä perintö- ja lahjaverottajana paitsi laajassa eurooppalaisessa vertailussa, myös lähinaapurimaihin nähden. Ruotsi ja Norja ovat luopuneet kyseisistä veroista. Viro ei ole koskaan niitä ottanut edes käyttöön. Silti kyseisten maiden julkisen talouden rahoituspohja ei ole romahtanut epäterveeksi, vaikka perintö- ja lahjaverojen kannattajat näin kovasti pelottelevat</p>\n<h3 dir="ltr">Perintövero vaikeuttaa merkittävästi yritysten sukupolvenvaihdoksia.</h3>\n<p dir="ltr">Perintö- ja lahjaveron poistoa puoltaa useampi seikka. Ensinnäkin perintövero vaikeuttaa merkittävästi yritysten sukupolvenvaihdoksia. Se on kiihdyttänyt epätoivottavaa kehityskulkua, jossa kotimainen kasvollinen omistajuus siirtyy kansainvälisille sijoittajille ja rahastoille.</p>\n<p dir="ltr">Toisekseen perintö voi olla jokin vaikeasti likvidoitavissa oleva kohde, kuten maatila koneineen, jolloin verojen maksu on haasteellista. On täysin kohtuutonta, että jopa parikymppiset nuoret joutuvat ottamaan kymmeniä tuhansia euroja velkaa läheisen kuoleman vuoksi. Räikeimmissä tapauksissa omaisuutta ei saa edes käyttöön useaan vuoteen, vaikka verot lankeavat maksettavaksi miltein heti.</p>\n<p dir="ltr">Perintövero on jo ajatuksen tasolla täysin epäoikeudenmukainen. Perinnöstä maksettavaa veroa on jo verotettu aikaisemmin useaan kertaan esimerkiksi ansiotuloverotuksen, pääomatuloverotuksen tai kiinteistöveron muodossa. Silti vielä kuolemankin korjatessa valtio haluaa vetää välistä perinnön antajan kovalla työllä saavuttamista hedelmistä.</p>\n<h3 dir="ltr">Perustuslaissa turvatun omaisuudensuojan tulisi suojata omaisuutta myös valtiota vastaan.</h3>\n<p dir="ltr">Kansan järjestelmällinen köyhdyttäminen poikkeuksellisen tiukalla perintöverolla on loputtava. Suomen on seurattava asiassa naapurimaita ja yleiseurooppalaista käytäntöä, jossa kansalaisten vaurastumiselle luodaan aidot mahdollisuudet. Perustuslaissa turvatun omaisuudensuojan tulisi suojata omaisuutta myös valtiota vastaan.</p>\n<p dir="ltr">Janne Heikkinen</p>\n<p dir="ltr">Kansanedustajaehdokas (Kok.)<br />\nKaupunginhallituksen jäsen<br />\nOulu</p>\n',
         date: "2019-02-11T14:26:49.000Z",
-        tags: [
-          {
-            name: "Perintövero",
-          },
-          {
-            name: "Verotus",
-          },
-        ],
+        tags: ["Perintövero", "Verotus"],
       },
     },
     {
@@ -2051,20 +1711,7 @@ export const WPContent = {
         content:
           '<p dir="ltr">Hyvinvointiyhteiskuntamme yksi tärkeimmistä kulmakivistä on suomalainen sivistys, jota kannattelevat maamme parhaat ammattilaiset, eli opettajat. Peruskoulumme on ollut pitkään kiistaton menestystarina, joka on herättänyt laajaa kansainvälistä kiinnostusta. Se on mahdollistanut pitkälle kehittyneen mahdollisuuksien tasa-arvon ja vankistanut kilpailukykyämme.</p>\n<h4 dir="ltr">Suomalaista sivistystä kannattelevat maamme parhaat ammattilaiset, eli opettajat.</h4>\n<p dir="ltr">Meidän velvollisuutemme on huolehtia, että suomalaisen koulun menestystarina saa onnistuneen jatko-osan. Siksi meidän tulisi olla kiinnostuneita mitä valmiuksia, tietoja ja osaamista toivomme lastemme oppivan tulevaisuuden koulumaailmassa. Jos tyydymme nykytilanteeseen, on todellisena vaarana, että maailma ajaa meistä ohi pikavauhtia.</p>\n<p dir="ltr">Minä väitän, että tulevaisuuden kouluissa pitäisi opettaa enemmän logiikkaa, joka käsittää mm. matematiikan ja matematiikan soveltamisen ohjelmointina. Jos Suomi haluaa menestyä esimerkiksi pelien tekemisen mallimaana, niin matematiikan osaaminen ja soveltamisen on oltava huipputasoa.</p>\n<p dir="ltr">Tarvitsemme lisää ilmaisutaidon opettamista, joka parantaisi niin kirjoitus-, vuorovaikutus-, esiintymis- ja kielitaitoja. Yksinään hyvien vuorovaikutustaitojen oppiminen on edellytys sille, että meistä jokainen pärjää työelämässä. Niin ikään luovuuteen kannustaminen on tärkeää, jotta kykenemme ratkaisemaan ongelmia ja sopeutumaan alituiseen muutokseen.</p>\n<p dir="ltr">Tulevaisuuden koulussa pitäisi panostaa nykyistä merkittävästi enemmän yhteiskuntaopin sekä historian opetukseen. Oppilaiden taitoja tulisi lisätä opettamalla henkilökohtaista taloudenpitoa, taloustieteen perusteita ja demokratiakasvatusta. Lisäksi oppimisen pitäisi aina tähdätä kriittiseen ajatteluun sekä luotettavan ja epäluotettavan tiedon erottamiseen toisistaan.</p>\n<h4 dir="ltr">Liikuntaa pitäisi olla kouluissa joka päivä.</h4>\n<p dir="ltr">Liikuntaa pitäisi olla myös joka päivä. Sillä on paitsi suuri merkitys oppimistuloksien paranemiseen, niin myös lasten fyysisen ja psyykkisen hyvinvoinnin kasvulle. On irvokasta, että lapselta saatetaan vaatia jatkuvaa, passiivista tiedon vastaanottamista paikallaan istuen, vaikka oppiminen on aktiivinen tapahtuma. Jopa aikuisten työpaikalla on tiedostettu pitkän istumisen haittapuolet työkykyyn.</p>\n<p dir="ltr">Kaiken kaikkiaan peruskoulun läpäisyvaatimuksena tulisi pitää sitä, että nuori suorittaa onnistuneesti luku- ja kirjoitustaitotestin. Sitä tärkeämpää sivistyksen mittaria tuskin voimme tulevaisuuden peruskouluun asettaa.</p>\n<p dir="ltr"><strong>Janne Heikkinen</strong></p>\n<p dir="ltr">Yhteiskuntatieteiden maisteri<br />\nKansanedustajaehdokas (kok.)<br />\nOulu</p>\n',
         date: "2019-01-20T12:47:15.000Z",
-        tags: [
-          {
-            name: "koulutus",
-          },
-          {
-            name: "sivistys",
-          },
-          {
-            name: "Tulevaisuus",
-          },
-          {
-            name: "vapaus",
-          },
-        ],
+        tags: ["koulutus", "sivistys", "Tulevaisuus", "vapaus"],
       },
     },
     {
@@ -2119,11 +1766,7 @@ export const WPContent = {
         content:
           "<p>Suomessa järjestetään 5.-11.2018 jälleen kerran valtakunnalliset Porraspäivät. Porrashikoilu on tehokkaasti sykettä nostava liikuntamuoto, joka tarjoaa keholle monipuolista rasitusta. Porrasharjoittelun positiivisena puolena on se, että se sopii myös alaraajavaivoista kärsiville, sillä se rasittaa asfalttia vähemmän niveliä. Valitettavasti Oulun kaupungin alueella tämän kaltaisia lähiliikuntaan kannustavia paikkoja on hyvin rajallisesti, eikä maastomme muodot suosi kyseisenlaista liikunnan muotoa luontaisesti.</p>\n<p>Me allekirjoittaneet valtuutetut esitämme, että Oulun kaupunki selvittää mahdollisuuden lisätä kuntoilu-/harjoitteluportaiden määrää eri puolilla kaupunkia. Samassa yhteydessä tulee selvittää mahdollisuus rakentaa kuntoilu-/harjoitteluportaita yhteistyössä asukkaiden ja yritysten kanssa esimerkiksi osallistumalla kustannuksiin nimikkoporras-mallilla</p>\n<p>Oulussa 8.10.2018</p>\n<p>Janne Heikkinen</p>\n",
         date: "2018-10-10T13:12:13.000Z",
-        tags: [
-          {
-            name: "Valtuustoaloite",
-          },
-        ],
+        tags: ["Valtuustoaloite"],
       },
     },
     {
@@ -2136,14 +1779,7 @@ export const WPContent = {
         content:
           "<p>Oulun kaupunginvaltuusto</p>\n<p>Aloite 10.9.2018</p>\n<p><strong>Selvitys Oulun kaupungin jäsenyyksistä eri yhdistyksissä</strong></p>\n<p>Me allekirjoittaneet valtuutetut esitämme, että Oulun kaupunki selvittää osana talouden tasapainottamista jokaisen järjestön jäsenyyden. Selvityksessä tulisi käydä ilmi kaupungin kaikki jäsenyydet järjestöissä, niiden aiheuttamat vuosittaiset kustannukset, lakisääteisyys tai vapaaehtoisuus ja realistiset kuvaukset toiminnan sisällöstä.</p>\n<p>Kokonaiskuvan saamisen jälkeen kaupungin jäsenyyksiä on mahdollista arvioida kokonaisvaltaisesti. Tarvittaessa osasta jäsenyyksiä voitaisiin luopua, mikäli tarvetta jäsenyyden jatkamiselle ei nähdä enää olevan olemassa. Myös jäsenmaksultaan pienempien järjestöjen jäsenyyden mielekkyyttä on syytä arvioida, sillä vuosittaiset jäsenmaksut ovat aina pois jostain muusta toiminnasta.</p>\n<p>Oulussa 10.9.2018</p>\n<p>Janne Heikkinen</p>\n",
         date: "2018-09-10T10:58:42.000Z",
-        tags: [
-          {
-            name: "Kuntapolitiikka",
-          },
-          {
-            name: "Valtuustoaloite",
-          },
-        ],
+        tags: ["Kuntapolitiikka", "Valtuustoaloite"],
       },
     },
     {
@@ -2154,11 +1790,7 @@ export const WPContent = {
         content:
           '<p>Tänään Pohjois-Pohjanmaan Kokoomus valitsi minut ehdolle ensi kevään eduskuntavaaleihin. Tässä työssä ei kuitenkaan kukaan pärjää yksin. Uskallan väittää, että en olisi päässyt tähän asti ilman teidän tukea.</p>\n<p>Viime kerralla meitä oli kampanjassa mukana 2295 yksilöä, jotka jakoivat yhteisen linjan isänmaan tulevaisuudesta. Pohjoinen työ ja pienyrittäjät on asetettava etusijalle, valta on siirrettävä yksilölle Helsingin byrokraateilta ja puhtaan luonnon ainutlaatuiset mahdollisuudet täytyy turvata. Tulen myös jatkossa nojaamaan samoihin arvoihin ja periaatteisiin. Suomalaiset ansaitsevat luotettavan päättäjän, jonka kädenpuristukseen voi luottaa yli vaalikausien.</p>\n<div class="perfect-pullquote vcard pullquote-align-full pullquote-border-placement-left"><blockquote><p>Pohjoinen työ ja pienyrittäjät on asetettava etusijalle, valta on siirrettävä yksilölle Helsingin byrokraateilta ja puhtaan luonnon ainutlaatuiset mahdollisuudet täytyy turvata.</p></blockquote></div>\n<p>Tulevissa vaaleissa ratkaistaan todennäköisesti myös se, että onko seuraava pääministeri Petteri Orpo vai Antti Rinne. Yksi asia on kuitenkin varma. En tule koskaan saamaan isoja shekkejä ay-liikkeeltä kampanjan tueksi. Meidän on yhdessä huolehdittava, että näitä vaaleja ei voiteta ammattiliittojen miljardiomaisuudella. Tämän kampanjan onnistumisen ratkaisevat käsiparit, jotka saamme mukaan vaalityöhön. Siksi tarvitsen sinun apuasi.</p>\n<p><strong>Liity mukaan tiimiin ja levitä sanomaa kampanjastamme:</strong></p>\n<p><a href="http://www.janneheikkinen.fi/tulemukaan">www.janneheikkinen.fi/tulemukaan</a></p>\n',
         date: "2018-04-08T12:22:47.000Z",
-        tags: [
-          {
-            name: "Eduskuntavaalit",
-          },
-        ],
+        tags: ["Eduskuntavaalit"],
       },
     },
     {
@@ -2225,14 +1857,7 @@ export const WPContent = {
         content:
           '<p><em>Oulun kaupunginvaltuusto 25.9.2017</em></p>\n<p>Sipilän hallituksen strategisessa hallitusohjelmassa on asetettu tavoitteeksi mahdollistaa palvelualoitteen käyttö määräaikaisena kokeiluna. Hallitusohjelmassa todetaan: ”Hallitus toteuttaa valtakunnallisesti kuntien ja muun julkisen sektorin tuotantokustannusten mittariston, joka tekee kustannuksista ja laadusta läpinäkyvän ja vertailukelpoisen. Hallitus edistää uusien palveluinnovaatioiden syntymistä ja hyödyntämistä toteuttamalla laajasti kokeilutoimintaa mahdollistavalla säädöspohjalla. Mahdollistetaan palvelualoitteen käyttö määräaikaisena kokeiluna.”</p>\n<p>Oulussa, kuten monessa muussa suomalaisessa kunnassa, on kohdattu suuria taloudellisia haasteita. Väestön ikääntymisen lisäksi viime vuosien aikana Suomenkin taloutta kurittaneen taantuman lasku on maksettava. Samaan aikaan huoltosuhde heikkenee koko maassa. Oulun kaupunki on siis tilanteessa, jossa on etsittävä parhaita mahdollisia tapoja turvata hyvät ja laadukkaat peruspalvelut kaikilla kaupunkiorganisaation sektoreilla pienemmällä rahamäärällä.</p>\n<p>Eri palvelutuotantotapojen ja – vaihtoehtojen vertailu ei kuitenkaan ole aina helppoa. Vertailua helpottavia toimintatapoja on kuitenkin olemassa.</p>\n<h4 style="text-align: center;">&#8221;Jyväskylässä ensimmäinen palvelualoite kosketti kaupunginteatterin toiminnan järjestämistä uudella tavalla, joka puolittaisi kaupungin maksuosuuden.&#8221;</h4>\n<p>Ruotsissa kunnat ovat voineet ottaa käyttöönsä ns. palvelualoite-käytännön. Käytäntöä hyödyntävissä kunnissa (mm. Uppsala ja Tukholman maakäräjät) kolmannen ja yksityisen sektorin toimijat voivat edistää palvelutuotannon eri vaihtoehtojen välistä laadun ja kustannusten arviointia. Isossa-Britanniassa vastaavaa käytäntöä kutsutaan nimellä ”Right to Challenge” ja se käytäntö on toteutettu lainsäädännön tasolla pakolliseksi kaikille kunnille. Suomessa palvelualoitteen käyttöönotossa edelläkävijänä on toiminut Jyväskylän kaupunki. Jyväskylässä ensimmäinen palvelualoite kosketti kaupunginteatterin toiminnan järjestämistä uudella tavalla, joka puolittaisi kaupungin maksuosuuden. Palvelualoite soveltuu myös pienemmän kokoluokan innovaatioihin, kuten mattolaitureiden, ulkoluisteluratojen tai uimarantojen palveluiden järjestämiseen.</p>\n<p>Palvelualoitteen ideana on, että kunnalle voidaan esittää vaihtoehtoinen laadultaan parempi tai kustannuksiltaan edullisempi tapa tuottaa palvelu toisen tahon toimesta. Haasteen jättäjä esittää haasteessaan tarkoin yksilöidysti, miten kyseessä oleva palvelu tai osa siitä voidaan tuottaa nykymallia laadukkaammin ja/tai edullisemmin.</p>\n<p>Kunnan tulee:</p>\n<p>1. Ottaa haaste vastaan<br />\n2. Arvioida oman palvelun laatu ja kustannukset,<br />\n3. Vertailla omaa ja ehdotettua tuotantotapaa ja<br />\n4. Päättää niistä toimenpiteistä, joihin palvelualoite ja tehty vertailu antavat aihetta</p>\n<p>Kunnalla ei siis ole suoraa velvoitetta muuttaa omaa toimintaansa tai palveluiden toimintatapaa. Mikäli vertailu osoittaa tarjotun tuotantomallin paremmaksi, kunta voi käynnistää prosessin palvelujen kilpailuttamiseksi tai hankittavaksi esim. palvelusetelillä.</p>\n<h4 style="text-align: center;">&#8221;Ruotsissa palvelualoite on johtanut useilta osin palvelutuotannon hallittuun avautumiseen kilpailulle niin, että tehokkuus ja laatu ovat parantuneet.&#8221;</h4>\n<p>Käytännössä Ruotsissa palvelualoite on johtanut useilta osin palvelutuotannon hallittuun avautumiseen kilpailulle niin, että tehokkuus ja laatu ovat parantuneet. Tämä on tukenut myös yrittäjyyttä ja markkinoiden sekä palveluinnovaatioiden syntymistä.</p>\n<p>Palvelualoite-käytännön ottaminen käyttöön Oulussa edistäisi kunnan palvelurakenteiden uudistumista, julkisen palveluntuotannon tehokkuuden paranemista tai vähintäänkin se voisi johtaa kustannustietoisuuden kasvuun kunnan organisaation sisällä.</p>\n<p>Esitämme, että Oulun kaupunki ottaa käyttöön palvelualoitteen kuntaorganisaatiossa ja aloittaa parilla hyväksi katsotulla toimialalla palvelualoitteen mukaisen pilottimaisen kokeilun.</p>\n<p><strong>Janne Heikkinen (Kok.) &amp; muut valtuutetut</strong></p>\n',
         date: "2017-09-25T09:58:43.000Z",
-        tags: [
-          {
-            name: "Kuntapolitiikka",
-          },
-          {
-            name: "Valtuustoaloite",
-          },
-        ],
+        tags: ["Kuntapolitiikka", "Valtuustoaloite"],
       },
     },
     {
@@ -2243,17 +1868,7 @@ export const WPContent = {
         content:
           '<p><span lang="FI"><em>Kirjoitus on julkaistu Forum24-lehdessä torstaina 29. kesäkuuta 2017.</em></span></p>\n<p>Oma sukupolveni, eli vuosina 1980–1995 syntyneiden Y-sukupolvi, on rikkomassa kyseenalaisia taloudellisia ennätyksiä. Y-sukupolvesta näyttää tulevan ensimmäinen sukupolvi, joka ei yllä edeltävien sukupolvien kaltaiseen taloudelliseen hyvinvointiin.</p>\n<h4><span lang="FI">Hallituksen tavoitteena on nostaa työllisyysaste 72 prosenttiin. Hämmästyttävää on se, että edellisen kerran samalla tasolla on oltu lähes 30 vuotta sitten. </span></h4>\n<p><span lang="FI">Nuorten aikuisten taloutta kurittavat ja heidän tulevaisuuttaan varjostavat arjen kasvavien menojen lisäksi maailmantalouden kehno tilanne, julkisen talouden ennätyksellisen suuri velkaantuminen, työttömyys, asumisen kalleus, suurten ikäluokkien eläkkeet sekä maailman korkeimpiin lukeutuva veroaste. </span></p>\n<p><span lang="FI">Tilanne on muuttunut ratkaisevasti viimeisen 30 vuoden aikana. Kun nuoret aikuiset silloin tienasivat kansallista keskipalkkaa enemmän, nuorten aikuisten tienestit ovat nyt romahtaneet monissa maissa 20 prosenttia keskitulojen alle. Suomen Pankin analyysin mukaan alle 35-vuotiaiden kotitalouksien elintaso ei juurikaan ole noussut vuosien 1990 ja 2013 välillä. </span></p>\n<p><span lang="FI">Nuorten kotitalouksien käytettävissä olevien tulojen kasvun heikentymisen vaikutukset ovat laajat. Esimerkiksi asunnon hankkiminen vaikeutuu, autokanta vanhenee, varallisuuden kertyminen tyrehtyy, perheiden perustaminen myöhästyy ja yhteiskunnallinen yhteenkuuluvuuden tunne rapistuu. </span></p>\n<p><span lang="FI">Y-sukupolven taloudellisen ahdingon seurauksena myös tavalliset keskiluokkaiset unelmat ovat pirstaloituneet. Nykyisin monelle nuorelle aikuiselle on kaukainen ajatus, että elämästä löytyisi lähitulevaisuudessa omakotitaloa, mökkiä, siedettävää perheautoa tai myöhemmin elämässä mukavasti elettävää eläkettä. </span></p>\n<h4><span lang="FI">Nykyistä matalampi ansiotuloverotus mahdollistaisi yksilöiden onnistumisen: vähävaraisen, mutta ahkeran tulee voida omilla ponnisteluillaan vaurastua. </span></h4>\n<p><span lang="FI">Hallituksen tavoitteena on nostaa työllisyysaste 72 prosenttiin. Hämmästyttävää on se, että edellisen kerran samalla tasolla on oltu lähes 30 vuotta sitten. Y-sukupolven aikana työttömyydestä on tullut uusi normaali, joka näkyy erityisesti työuransa alkuvaiheessa olevien nuorten vaikeutena saada ensimmäistä kokopäiväistä ja vakituista työpaikkaa. </span></p>\n<p><span lang="FI">Sukupolvien eriarvoisuutta lisäävän kehityksen kääntäminen täytyy aloittaa välittömästi. Nuorten työllistymistä tulisi edistää kaikilla mahdollisilla keinoilla. Työmarkkinapolitiikkaa tulee joustavoittaa ja tehdä työnteosta sekä lisäansioiden hankkimisesta kaikissa tilanteissa yksilölle kannattavaa. Samalla verorasitusta pitäisi keventää, joka parantaisi yritysten työllistämiskykyä ja ihmisten motivaatiota työskennellä. Nykyistä matalampi ansiotuloverotus mahdollistaisi yksilöiden onnistumisen: vähävaraisen, mutta ahkeran tulee voida omilla ponnisteluillaan vaurastua. </span></p>\n<p dir="ltr"><strong>Janne Heikkinen</strong><br />\nOulun kaupunginhallituksen jäsen (kok.)</p>\n',
         date: "2017-06-29T07:24:35.000Z",
-        tags: [
-          {
-            name: "Kolumni",
-          },
-          {
-            name: "Talous",
-          },
-          {
-            name: "Verotus",
-          },
-        ],
+        tags: ["Kolumni", "Talous", "Verotus"],
       },
     },
     {
@@ -2264,17 +1879,7 @@ export const WPContent = {
         content:
           '<p>Politiikka on vaativa kestävyyslaji, jossa kestävyyttä kysytään niin vaikuttajalta kuin tukijoilta. Tänä keväänä äänestäjieni kestävyydestä tämä laji ei ainakaan jäänyt kiinni.</p>\n<p>Jopa 726 oululaista antoi tukensa kampanjallemme. Kampanjalle, jossa nettoveronmaksajia puolustetaan. Kampanjalle, joka vaati yhtä lailla vastuullisuutta talouden kuin ympäristön hoitoon. Kampanjalle, joka näkee Oulun tulevaisuudessa korkeana, työpaikkarikkaana ja kaupungistumisen hyödyistä nauttivana modernina kaupunkina. Nyt voin sanoa, ettei yksikään näistä äänistä mennyt hukkaan. Jokainen ääni merkitsi.</p>\n<p>Tänään yhteinen tavoitteemme otti askeleen eteenpäin. Puolueiden välisten neuvotteluiden perusteella Oulun Kokoomus esittää minua Oulun kaupunginhallituksen jäseneksi, BusinessOulun varapuheenjohtajaksi ja maakuntavaltuutetuksi. Kaupunginhallituksen jäsenenä tulen myös osallistumaan sekä Oulun Jätehuollon että Oulu-Koillismaan pelastuslaitoksen hallitusten päätöksentekoon.</p>\n<p>Neljässä hallituksessa ja kahdessa valtuustossa vaikuttaminen takaa sen, että pääsen paitsi Oulun kaupunkipolitiikan myös koko seudun kehittämisen ytimeen. Tämä ei olisi mahdollista ilman näin valtavaa tukijoukkoa. Toivottavasti pysytte myös jatkossa mukana.  Sillä välin pyrin tekemään kaikkeni yhteisten teemojemme puolesta.</p>\n<p>Lisätietoja <a href="http://www.kaleva.fi/uutiset/kotimaa/kokoomus-nimesi-ehdokkaat-luottamustoimiin-juha-hannista-esitetaan-valtuuston-johtoon/761161/">täältä</a>.</p>\n',
         date: "2017-05-29T07:43:51.000Z",
-        tags: [
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kuntapolitiikka",
-          },
-          {
-            name: "Oulu",
-          },
-        ],
+        tags: ["Kokoomus", "Kuntapolitiikka", "Oulu"],
       },
     },
     {
@@ -2285,14 +1890,7 @@ export const WPContent = {
         content:
           '<p dir="ltr">Alkuvuodesta PM <strong>Juha Sipilä</strong> (kesk.) kertoi uskovansa, että kaupungistumisen suunta on muuttumassa pois kasvukeskuksista. Jos tarkastelemme globaalia kehitystä, niin pääministerin kouluarvosanaksi muodostuu kymmenen uskonnosta ja nelonen matematiikasta.</p>\n<p dir="ltr">Halusimme tai emme, niin iso osa talouskasvusta tehdään kaupungeissa ja metropolialueilla. Tutkimusten mukaan vuonna 2014 maailman 300 suurinta metropolialuetta tuotti lähes puolet maailmantalouden arvonlisäyksestä.</p>\n<p dir="ltr">Kotimaassa suurimpien kaupunkialueiden yhteenlaskettu arvonlisäys on noin 60 prosenttia koko maan luvusta. Maakunnistamme esimerkiksi Pohjois-Pohjanmaa, Pirkanmaa ja Varsinais-Suomi eivät saavuttaisi tuotantolukujaan ilman vahvoja kaupunkikeskuksia. Tämän vuoksi Suomella ei ole yksinkertaisesti varaa olla todellisuuskriittinen kaupungistumisen suhteen.</p>\n<p dir="ltr"><div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Suomella ei ole yksinkertaisesti varaa olla todellisuuskriittinen kaupungistumisen suhteen.</p></blockquote></div>\n<p dir="ltr">Kokonaistaloudeltaan merkittävimmät kaupungit löytyvät perinteisistä länsimaista. Euroopan näkökulmasta taloudellisesti nopeimmin kasvavien kaupunkien lista on kuitenkin synkkä. Maailman 20 nopeimmin kasvavasta kaupungista listalle yltää 12 kiinalaiskaupunkia. Euroopasta ainoastaan Budapest voidaan laskea mukaan. Budapestin talous perustuu liike-elämän palveluihin, kauppaan, turismiin sekä metropolin houkuttelevuuteen esimerkiksi start-up-yritysten osalta. Lisäksi se hyötyy Unkarin liikennejärjestelmässä, jossa Budapest muodostaa rautatieyhteyksien solmukohdan.</p>\n<p dir="ltr">Kaupunkien taloudellisen menestyksen kannalta ratkaisevia tekijöitä on useita: tuotantoresurssien, kuten pääoman, työvoiman ja luonnonvarojen saatavuus, markkinaläheisyys sekä kuljetus- ja varastointilogistiikan hinta- ja kustannustekijät. Samat lainalaisuudet pätevät Oulun kaupungin ja koko seudun taloudelliseen kehitykseen.</p>\n<p dir="ltr">Oulun omilla päätöksillä, esimerkiksi kaavoituksella ja liikennejärjestelmillä, on merkittävä vaikutus kaupungin logistiseen houkuttelevuuteen. Tämän vuoksi oli äärimmäisen tärkeää, että pitkän poikkipuolueellisen vaikuttamistyön tuloksena Oulun sataman väylän syventämiseen löydettiin tarvittavat resurssit. Tähän ei saa kuitenkaan tyytyä. Nyt tarvitaan pikaisesti puolueilta yhteistä näkemystä siitä, mitä megaluokan hankkeita voimme seuraavaksi edistää yhdessä pohjoisen työn puolesta.</p>\n<p dir="ltr">Liikenne ei tietystikään ratkaise kaikkea. Maailmalla kaikki nopeasti kasvavat kaupungit ovat väestöltään miljoonakaupunkeja. Tämä johtuu siitä, että yleensä suurissa kaupungeissa tuotantotekijöiden, kuten koulutetun työvoiman saatavuus on hyvää. Jos haluamme saada Oulun seudun talouden kasvuun, vaatii se yliopiston ja korkeakoulujen merkityksen tunnistamista taloudellisen kehityksen moottorina. Tarvitsemme korkeakoulut tuottamaan runsaasti tietoperusteiseen työhön pystyviä työntekijöitä. Huomiota pitää kiinnittää erityisesti uusien liiketoimintamallien, tuotteiden ja palveluiden kehittämiseen ja lanseeraamiseen, eli innovaatiotoimintaan ja tietoperustaiseen kasvuun.</p>\n<p dir="ltr"><div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Jokaisen hitaasta työllisyyskasvusta huolestuneen olisi syytä olla kiinnostunut kaupungistumisen mukanaan tuomista mahdollisuuksista.</p></blockquote></div>\n<p dir="ltr">Jokaisen hitaasta työllisyyskasvusta huolestuneen olisi syytä olla kiinnostunut kaupungistumisen mukanaan tuomista mahdollisuuksista. Suomea on vaivannut vientikilpailukyvyn ongelmat ja Euroopan hidas talouskasvu jo pitkään, eikä meillä ole varaa toiseen menetettyyn vuosikymmeneen. Sen vuoksi tulevaisuuden taloudellisessa kilpailussa laitan omat panokseni kaupunkien varaan.</p>\n<p dir="ltr"><strong>Janne Heikkinen</strong><br />\nOulun kaupunginvaltuutettu (kok.)</p>\n',
         date: "2017-05-11T09:49:31.000Z",
-        tags: [
-          {
-            name: "Kaupungistuminen",
-          },
-          {
-            name: "Oulu",
-          },
-        ],
+        tags: ["Kaupungistuminen", "Oulu"],
       },
     },
     {
@@ -2304,27 +1902,19 @@ export const WPContent = {
           '<p>Nyt se on varmaa! Sain 718 äänestäjältä valtakirjan aloittaa vaikuttamistyön Oulun kaupunginvaltuutettuna. Lupaan tehdä kaikkeni korkeamman, liikkuvamman ja taloudellisesti vakavaraisemman Oulun puolesta. Haluan kiittää sydämeni pohjasta jokaista teistä, jotka elitte tämän todeksi kanssani ja olitte mukana mahdollistamassa näin valtavan hienoa tulosta. Kiitos!</p>\n<p>&nbsp;</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Lupaan tehdä kaikkeni korkeamman, liikkuvamman ja taloudellisesti vakavaraisemman Oulun puolesta.</p></blockquote></div>\n',
         date: "2017-04-09T22:31:29.000Z",
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kaupunginvaltuusto",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kaupunginvaltuusto",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Vaalit",
         ],
       },
     },
@@ -2337,30 +1927,21 @@ export const WPContent = {
           '<p><iframe width="500" height="281" src="https://www.youtube.com/embed/mUJbtE5Z18o?feature=oembed" frameborder="0" allowfullscreen></iframe></p>\n<p>Video: Tänään on viimeinen mahdollisuus vaikuttaa siihen, kuka Oulussa käyttää valtaa seuraavat neljä vuotta. Äänestää voit klo: 09.00-20.00. Tarkasta oma äänestyspaikkasi kotiin tulleesta kirjeestä tai täältä: <a href="https://vrk.navici.com/" target="_blank" rel="nofollow">https://vrk.navici.com/</a></p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Tänään on viimeinen mahdollisuus vaikuttaa siihen, kuka Oulussa käyttää valtaa seuraavat neljä vuotta.</p></blockquote></div>\n<p>www.janneheikkinen.fi</p>\n<p>Olen ehdolla numerolla 7. Muista käyttää ääntäsi!</p>\n',
         date: "2017-04-09T12:44:29.000Z",
         tags: [
-          {
-            name: "Äänestyspäivä",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Äänestyspäivä",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
         ],
       },
     },
@@ -2373,30 +1954,21 @@ export const WPContent = {
           '<p><iframe width="500" height="281" src="https://www.youtube.com/embed/keO4ZcQzPUo?feature=oembed" frameborder="0" allowfullscreen></iframe></p>\n<p>Video: Oulun kaupungin velkaantuminen on saatava kuriin. Siksi lähdin ehdolle kaupunginvaltuustoon. Nyt tarvitsen teidän tukeanne. Olen ehdolla numerolla 7. Muista käyttää ääntäsi!</p>\n<p>Tarkasta kotiin tulleesta äänestysoikeuskirjeestä oma äänestyspaikkasi ja käytä ääntäsi varsinaisena vaalipäivänä sunnuntaina 9.4.2017!</p>\n<p><a href="https://l.facebook.com/l.php?u=http%3A%2F%2Fwww.janneheikkinen.fi%2F&amp;h=ATM-z06v49fh3BMZdwGCzWYp1z_69fgLOJPc6XizItOWnl6t8oL8O6Kjh3LvzCxqHrfrbZpNM3JnU0FcFu1wLs4FFDwscFWHs1n-JP1hHzXf_5WVltygMFdbTjARm63UjmUa9g&amp;enc=AZOvYulBk6l7bj94MMdExCOJVwiOE_lcwebR3SDBEpAbd02k45DQ7pK6BXvrTu-DGbqYP5uFW57wg2CBo0WdJYObUKPzWg8hpUgCLUNy7BawTZcAYDXXYxBM5HcN7MLPrQmjnmANoUwTGdeAJaAfLH92yvBKxQRyD6baoQRfNx3eOgtuIZvgSvBWXCwdwlC33or3ubOjZhsvUlidNli5zIRE&amp;s=1" target="_blank" rel="nofollow">www.janneheikkinen.fi</a></p>\n',
         date: "2017-04-05T08:16:23.000Z",
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Vaalit",
-          },
-          {
-            name: "Velkaantuminen",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Vaalit",
+
+          "Velkaantuminen",
         ],
       },
     },
@@ -2409,30 +1981,21 @@ export const WPContent = {
           '<p><iframe width="500" height="281" src="https://www.youtube.com/embed/ZG437QJEoU0?feature=oembed" frameborder="0" allowfullscreen></iframe></p>\n<p>Video: Oulu käy yhä kovempaa kilpailua muiden yliopistokaupunkien kanssa. Vetovoimaisuutta ei lisätä kaupunginvaltuuston kartanoseminaareilla, vaan konkreettisilla teoilla. Siksi tarvitsen teidän tukeanne. Muista käyttää ääntäsi ja kerro kampanjasta myös ystävillesi!</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Oulun vetovoimaisuutta ei lisätä kaupunginvaltuuston kartanoseminaareilla, vaan konkreettisilla teoilla. </p></blockquote></div>\n<p>Varsinainen vaalipäivä on sunnuntaina 9.4.2017. Olen ehdolla numerolla 7. Muista käyttää ääntäsi.</p>\n<p><a href="http://www.janneheikkinen.fi/" target="_blank" rel="nofollow">www.janneheikkinen.fi</a></p>\n',
         date: "2017-04-05T08:11:16.000Z",
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
-          {
-            name: "Vetovoimaisuus",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
+
+          "Vetovoimaisuus",
         ],
       },
     },
@@ -2445,30 +2008,21 @@ export const WPContent = {
           '<p><iframe width="500" height="281" src="https://www.youtube.com/embed/MYSf7NqIDV8?feature=oembed" frameborder="0" allowfullscreen></iframe></p>\n<p>Video: Ennakkoäänestys on alkanut!</p>\n<p>Nyt jos koskaan tarvitsen teidän apuanne, sillä ennakkoäänestys on alkanut. Ennakkoäänestäminen on helppoa, sillä se onnistuu missä tahansa äänestyspisteessä &#8211; myös Oulun ulkopuolella! Itse käyn äänestämässä ruokakauppareissun ohessa. Mukaan tarvitsee ainoastaan henkilötodistuksen. Muistakaa käydä äänestämässä.</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Ennakkoäänestäminen on helppoa, sillä se onnistuu missä tahansa äänestyspisteessä &#8211; myös Oulun ulkopuolella! </p></blockquote></div>\n<p>Tarkista ennakkoäänestyspaikat täältä: <a href="http://www.kaleva.fi/uutiset/kuntavaalit-2017/kuntavaalien-ennakkoaanestyspaikat-julkistettiin-katso-lista/749140/" target="_blank" rel="nofollow">http://www.kaleva.fi/…/kuntavaalien-ennakkoaanestys…/749140/</a> <a class="_58cn" href="https://www.facebook.com/hashtag/oulu?source=feed_text&amp;story_id=1272586106150849" data-ft="{&quot;tn&quot;:&quot;*N&quot;,&quot;type&quot;:104}"><span class="_5afx"><span class="_58cl _5afz">#</span><span class="_58cm">oulu</span></span></a> <a class="_58cn" href="https://www.facebook.com/hashtag/kuntavaalit?source=feed_text&amp;story_id=1272586106150849" data-ft="{&quot;tn&quot;:&quot;*N&quot;,&quot;type&quot;:104}"><span class="_5afx"><span class="_58cl _5afz">#</span><span class="_58cm">kuntavaalit</span></span></a></p>\n<div class="text_exposed_show">\n<p>Olen ehdolla numerolla 7. Ennakkoäänestys on kotimaassa 29.3-4.4.2017 ja ulkomailla 29.3-1.4.2017. Varsinainen vaalipäivä on sunnuntaina 9.4.2017. Muista käyttää ääntäsi!</p>\n</div>\n',
         date: "2017-03-30T08:22:14.000Z",
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Ennakkoäänestys",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Ennakkoäänestys",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
         ],
       },
     },
@@ -2481,30 +2035,21 @@ export const WPContent = {
           '<p><iframe width="500" height="281" src="https://www.youtube.com/embed/RN3qO397hjA?feature=oembed" frameborder="0" allowfullscreen></iframe></p>\n<p>Video: Vaalipuheet hopeaa, teot kultaa. Oululaisessa päätöksenteossa on ainoastaan yksi puolue, joka puolustaa nettoveronmaksajia tuhlaajia vastaan myös vaalien välillä. Siksi valitsin kokoomuksen ja lähdin ehdolle kaupunginvaltuustoon. Nyt tarvitsen teidän tukeanne. Muista käyttää ääntäsi!</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Oululaisessa päätöksenteossa on ainoastaan yksi puolue, joka puolustaa nettoveronmaksajia tuhlaajia vastaan myös vaalien välillä. </p></blockquote></div>\n<p>Ennakkoäänestys alkaa keskiviikkona 29.3.2017. Äänestää voit kaikissa paikoissa &#8211; myös Oulun ulkopuolella! Mukaan tarvitset ainoastaan henkilötodistuksen.</p>\n<p>&nbsp;</p>\n',
         date: "2017-03-27T11:09:22.000Z",
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Kuntaverotus",
-          },
-          {
-            name: "Oulun Kokoomus",
-          },
-          {
-            name: "Vaalit",
-          },
-          {
-            name: "Verotus",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Kuntaverotus",
+
+          "Oulun Kokoomus",
+
+          "Vaalit",
+
+          "Verotus",
         ],
       },
     },
@@ -2517,30 +2062,21 @@ export const WPContent = {
           '<p>Luonnon ja vapaiden virtavesien puolustaminen on ollut intohimoni kohteena jo vuosien ajan. Aikaisemmin toimin aktiivisesti mm. Kollajan altaan estämiseksi. Lisäksi olen pyrkinyt muistuttamaan tippavesivoimaloiden haitallisuudesta maakunnassamme.</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Nyt haluan vaikuttaa siihen, että Oulun päätöksenteossa laitetaan vauhtia Hupisaarten purojen elvyttämiseen. </p></blockquote></div>\n<p>Nyt haluan vaikuttaa siihen, että Oulun päätöksenteossa laitetaan vauhtia Hupisaarten purojen elvyttämiseen. Kyseiset purot sijaitsevat oululaisille tutun Ainolan puiston alueella, jossa olisi erinomaiset edellytykset esim. taimenten kutupuuhien tarkkailemiseen syksyisin. Hupisaarten purojen kunnostaminen on erityisen tärkeässä asemassa, kun puhutaan esimerkiksi meritaimenen uusista kutualueista Oulun seudulla.</p>\n',
         date: "2017-03-23T09:13:04.000Z",
         tags: [
-          {
-            name: "Hupisaaren purot",
-          },
-          {
-            name: "Janne Heikkine",
-          },
-          {
-            name: "Jasper Pääkkönen",
-          },
-          {
-            name: "Kalastus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Uhanalaiset kalakannat",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Hupisaaren purot",
+
+          "Janne Heikkine",
+
+          "Jasper Pääkkönen",
+
+          "Kalastus",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Uhanalaiset kalakannat",
+
+          "Vaalit",
         ],
       },
     },
@@ -2553,27 +2089,19 @@ export const WPContent = {
           '<p><iframe width="500" height="281" src="https://www.youtube.com/embed/F4EFyTWpnoI?feature=oembed" frameborder="0" allowfullscreen></iframe></p>\n<p>Video: Oulu tarvitsee korkeaa rakentamista. Siksi lähdin ehdolle kaupunginvaltuustoon. Ehdokasnumeroni on 7. Muista käyttää ääntäsi!</p>\n',
         date: "2017-03-22T16:06:50.000Z",
         tags: [
-          {
-            name: "Ehdokkaat Oulussa",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomus Oulussa",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Rakentaminen",
-          },
-          {
-            name: "Vaalit",
-          },
+          "Ehdokkaat Oulussa",
+
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "Kokoomus Oulussa",
+
+          "kuntavaalit",
+
+          "Rakentaminen",
+
+          "Vaalit",
         ],
       },
     },
@@ -2586,21 +2114,15 @@ export const WPContent = {
           '<p>&nbsp;</p>\n<p>Tavoittelen paikkaa Oulun kaupunginvaltuustosta kevään kuntavaaleissa numerolla 7! Tässä lyhyesti seitsemän pointtia, joita aion äänelläsi ajaa valtuustossa:</p>\n<div id="js_56f" class="_5pbx userContent" data-ft="{&quot;tn&quot;:&quot;K&quot;}">\n<div id="id_58c292a34f13d9388842016" class="text_exposed_root text_exposed">\n<p><strong>1.</strong> Puolustaa nettoveronmaksajia tuhlaajia vastaan</p>\n<p><strong>2.</strong> Kannattaa korkeaa rakentamista</p>\n<div class="text_exposed_show">\n<p><strong>3.</strong> Nopeuttaa kaavoitusta</p>\n<p><strong>4.</strong> Vastustaa kaikkien kiinteistöverojen korotusta</p>\n<p><strong>5.</strong> Puolustaa valinnanvapautta</p>\n<p><strong>6.</strong> Tukea monipuolisesti liikuntapaikkarakentamista</p>\n<p><strong>7.</strong> Vaatia tulosvastuuta ja seurantaa hankkeissa</p>\n<p>Lisätietoja:</p>\n<p>Janne Heikkinen<br />\n+358405554263<br />\njanne@janneheikkinen.fi<br />\n<a href="http://www.janneheikkinen.fi">www.janneheikkinen.fi</a></p>\n<p>Korkealaatuiset kuvat mediakäyttöön: <a href="http://www.janneheikkinen.fi/medialle/">http://www.janneheikkinen.fi/medialle/</a></p>\n</div>\n</div>\n</div>\n',
         date: "2017-03-10T11:53:20.000Z",
         tags: [
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Vaalinumero",
-          },
+          "Janne Heikkinen",
+
+          "Kokoomus",
+
+          "kuntavaalit",
+
+          "Oulu",
+
+          "Vaalinumero",
         ],
       },
     },
@@ -2612,20 +2134,7 @@ export const WPContent = {
         content:
           '<p>Yhteiskuntatieteen kandidaatti Janne Heikkinen (26) lähtee mukaan ensi kevään kuntavaaleihin Oulussa. Heikkinen on asetettu ehdokkaaksi Oulun kunnallisjärjestön kokouksessa lauantaina 10.12.2016.</p>\n<div class="perfect-pullquote vcard pullquote-align-right pullquote-border-placement-left"><blockquote><p>Heikkisen vaaliteemana ovat liikunta, korkea rakentaminen, tiukka talouskuri ja yrittäjäystävällinen kaupunki.</p></blockquote></div>\n<p>Heikkinen toimii tällä hetkellä Kempeleen kunnanvaltuuston puheenjohtajana ja on toisen kauden kunnanvaltuutettu. Paikkakunnalta muuton vuoksi hän joutuu luopumaan nykyisestä tehtävästään alkuvuoden 2017 aikana.</p>\n<p>Heikkisen vaaliteemana ovat liikunta, korkea rakentaminen, tiukka talouskuri ja yrittäjäystävällinen kaupunki.</p>\n<p>Vuoden 2015 eduskuntavaaleissa Heikkinen oli ehdolla Oulun vaalipiiristä. Hän saavutti ensikertalaisena 2295 ääntä.</p>\n<p>Lisätietoja:</p>\n<p>Janne Heikkinen<br />\n+358405554263<br />\njanne@janneheikkinen.fi<br />\n<a href="http://www.janneheikkinen.fi">www.janneheikkinen.fi</a></p>\n<p>Korkealaatuiset kuvat mediakäyttöön: <a href="http://www.janneheikkinen.fi/medialle/">http://www.janneheikkinen.fi/medialle/</a></p>\n',
         date: "2016-12-10T12:50:24.000Z",
-        tags: [
-          {
-            name: "Kaupunginvaltuusto",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-          {
-            name: "Oulu",
-          },
-        ],
+        tags: ["Kaupunginvaltuusto", "Kokoomus", "kuntavaalit", "Oulu"],
       },
     },
     {
@@ -2636,20 +2145,7 @@ export const WPContent = {
         content:
           '<p>Kirjoitus on julkaistu <a href="https://forum24.fi/sivut/artikkelit/vieraskolumnit?feed_id=7#">Forum24-lehden</a> vieraskolumnina 24.11.2016.</p>\n<p>Suomi on maa, jolla on pitkät perinteet maastamuutosta. Viimeisten vuosikymmenten aikana tilanne on kuitenkin kääntynyt päälaelleen. Maahanmuutto on kasvanut merkittävästi ja samalla ulkomaalaisten määrä väestöstä. Samaan aikaan on käynyt ilmeiseksi, että sosiaalivaltiomme taloudellinen toimivuus on mitä enemmissä määrin ehdollinen ja rajallinen.</p>\n<p>Nykyistä järjestelmää on koeteltu ennen näkemättömällä tavalla, kun isot pakolaisvirrat ovat vaeltaneet konflikteja ja sotia pakoon. Yksinään viime vuonna maahan pyrki 32 500 pakolaista, joista arviolta kolmannes tulee samaan turvapaikan. On sanomatta selvää, että Suomen kantokyky ei kestä tällaista pysyvästi.</p>\n<p>Kotimaista keskustelua maahanmuuttopolitiikasta leimaa ääripäät, joissa keskustelu rajoittuu yksisilmäisiin vaatimuksiin rajojen aukaisemiseksi tai kiinni laittamiseksi. Todellisuudessa meillä ei ole kumpaankaan varaa. Suomi on kiistattomasti hyötynyt vapaasta liikkuvuudesta ja globalisaatiosta.</p>\n<p>Äärimmilleen vietynä rajoittamaton liikkuvuus ja vastikkeettomat sosiaalietuudet ovat kuitenkin auttamattomasti ristiriidassa. Jos haluamme säilyttää mahdollisuuden vapaaseen liikkuvuuteen, on meidän rajoitettava ja asetettava tietyt reunaehdot sosiaalivaltion tarjoamille palveluille. Ilman omaa vaivannäköä ei pitäisi olla oikeutettu suomalaisiin sosiaalietuihin.</p>\n<p>Suomalaiset ovat jo liian pitkään tarjonneet avokätiset sosiaalietuudet, eikä maahanmuuttajien ole tarvinnut ottaa taloudellista vastuuta itsestään. Tämä siitä huolimatta, että se olisi usein myös heille itselleen parasta. Anteliaat sosiaalietuudet ja jäykät työmarkkinoiden rakenteet ovat pitäneet huolen, että maahanmuuttajille edes vuosikymmen ei riitä välttämättä ajanjaksona työllistymiselle.</p>\n<p>[pullquote align=&#8221;right&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Suomessa pitäisi siirtyä malliin, jossa ulkomaalaisten tulisi maksaa lainapainotteisesti muuttoliikkeestä ja integraatiosta syntyvät kustannukset.[/pullquote]</p>\n<p>Tästä epätoivottavasta kehityksestä syntyneet taloudelliset ristiriidat olisi kuitenkin helposti ratkaistavissa. Ensinnäkin paikallista sopimista on työmarkkinoilla lisättävä, irtisanomissuojaa kevennettävä ja työllistämisen kustannuksia madallettava. Helpottamalla työn saamista mahdollistetaan ihmisten itsensä elättäminen.</p>\n<p>Toisekseen Suomessa pitäisi siirtyä malliin, jossa ulkomaalaisten tulisi maksaa lainapainotteisesti muuttoliikkeestä ja integraatiosta syntyvät kustannukset. Tämä sen vuoksi, että sosiaalivaltio tulisi nähdä pikemminkin eräänlaisena vakuutusjärjestelmänä, josta ulkomailta tulevan terveen työikäisen täytyy olla valmis maksamaan ennen tukien nauttimista.</p>\n<p>Ilman muutoksia maahanmuuton välittömät kustannusvaikutukset pitävät huolen siitä, että edessä on kilpailukykyä heikentäviä veronkorotuksia. Suomalaisen veronmaksajan tehtävänä ei ole maksaa kaikkea kaikille.</p>\n<p><strong>Janne Heikkinen</strong><br />\nKempeleen kunnanvaltuuston puheenjohtaja (kok.)</p>\n',
         date: "2016-11-24T09:01:57.000Z",
-        tags: [
-          {
-            name: "Maahanmuutto",
-          },
-          {
-            name: "Sosiaalivaltio",
-          },
-          {
-            name: "Työ",
-          },
-          {
-            name: "Verotus",
-          },
-        ],
+        tags: ["Maahanmuutto", "Sosiaalivaltio", "Työ", "Verotus"],
       },
     },
     {
@@ -2660,17 +2156,7 @@ export const WPContent = {
         content:
           "<p>Ensi keväänä Suomessa käydään kuntavaalit. Kuntien tulevaisuuden kannalta on oleellisen tärkeää, että ehdolle asettuu runsaslukuinen joukko päättäjiksi pyrkiviä henkilöitä, jotka ovat valmiita tekemään oikeat ja kaukokatseiset ratkaisut &#8211; puoluekannasta riippumatta.</p>\n<p>Itse asetuin ehdolle ensimmäistä kertaa kunnallisvaaleissa vasta 18-vuotiaana. Pääsin valtuustoon läpi oman ryhmäni viimeisenä. Toisella kerralla olin ryhmäni äänikuningas. Tällä kuntalaisten myöntämällä valtakirjalla olen vuosien aikana päässyt toteuttamaan lähes kaikki tavoitteeni yrittäjämyönteisen, liikunnallisen ja lapsiperheystävällisen kunnan kehittämiseksi.</p>\n<p>Viimeiseen 8 vuoteen on mahtunut paljon käänteitä niin rivivaltuutettuna, kunnanhallituksen varapuheenjohtajana kuin valtuuston puheenjohtajana. Missään vaiheessa tie ideoista todeksi ei ole ollut nopea moottoritie, vaan uskoa ja sinnikkyyttä vaativa mutkitteleva polku täynnä odottamattomia yllätyksiä.</p>\n<p>Valtuutettuna tavoitteeni on ollut jättää kunta paremmassa kunnossa tuleville sukupolville, mitä se oli minun sen saadessani. Tämä tavoite oli toki haastava alunpitäen, sillä niin laadukasta ja määrätietoista kehittämistyötä päättäjät olivat tehneet myös ennen omaa aikakauttani. Se, miten tässä tavoitteessa olemme vuosien jälkeen onnistuneet, jää kuntalaisten ja tulevien vastuunkantajien arvioitavaksi.</p>\n<p>[pullquote align=&#8221;right&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Kiitollisuuteni on syvää tietoisuutta siitä, että olen saanut olla osana suurempaa kokonaisuutta, joka on ollut olemassa ennen ja jälkeen minun vaikuttamistyön.[/pullquote]</p>\n<p>Tämä ainutlaatuinen matka ei olisi ollut koskaan mahdollinen ilman lukemattomia ystäviä ja heidän kanssa käytyjä innostavia kunnan tulevaisuutta visioivia keskusteluja. Erityismaininnan omasta ryhmästäni ansaitsee <b>Hannu Vesala</b>, joka on ollut nämä vuodet kiistattomasti läheisin valtuustokollegani ja ystävä paikallaan kaikissa käänteissä. Lisäksi yhteistyö kunnanjohtaja <b>Tuomas Lohen</b> ja kunnanhallituksen puheenjohtaja <b>Antti Ollikaisen</b> kanssa on ollut saumattoman sujuvaa ja syvään keskinäiseen luottamukseen pohjautuvaa.</p>\n<p>Kaiken kaikkiaan olen kiitollinen ajastani Kempeleen kunnanvaltuustossa. Se on kehittänyt minua ihmisenä ja vaikuttajana paljon siitä, kun ensimmäistä kertaa ääni väristen &#8211; mutta visiostani vakuuttuneena &#8211; pidin puheenvuoroa valtuustosalin nuorimpana.</p>\n<p>Näiden vuosien aikana en ole koskaan eksynyt kuvittelemaan, että kunnanvaltuusto ja sen tuoma valta olisi ollut minun omaani, vaan ainoastaan lainassa kempeleläisiltä äänestäjiltä. Sen vuoksi koen velvollisuudekseni ilmoittaa avoimesti ja hyvissä ajoin, että tämä kausi jää osaltani toistaiseksi viimeiseksi rakkaassa kotikunnassa. En pyri jatkokaudelle Kempeleen kunnanvaltuustoon ensi kevään vaaleissa. Omasta jatkosta politiikan parissa kirjoitan lähiviikkoina lisää.</p>\n",
         date: "2016-11-05T11:54:46.000Z",
-        tags: [
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "kuntavaalit",
-          },
-        ],
+        tags: ["Kempele", "Kokoomus", "kuntavaalit"],
       },
     },
     {
@@ -2682,21 +2168,15 @@ export const WPContent = {
           '<div class="content clear-block">\n<p>Tänään ministeri <strong>Sanni Grahn-Laasonen</strong> vastaanotti opetus- ja kulttuuriministeriön työryhmän <a href="http://www.minedu.fi/OPM/Tiedotteet/2016/11/korkeakoulujen_opiskelijavalinnat.html" target="_blank">esityksen</a> uudistuksesta, joka on ajamassa suomalaiset nuoret painajaismaiseen tilanteeseen.</p>\n<p>Sipilän hallituksen yhtenä kärkihankkeena on työelämään siirtymisen nopeuttaminen. <strong>Nyt hankkeessa tulee tapahtumaan juuri päinvastoin,</strong> koska korkeakoulujen valintamenettelyä pyritään uudistamaan niin, että ylioppilastodistuksen painoarvoa lisätään valintakokeiden kustannuksella.</p>\n<p>Selvityksen tehnyt työryhmä ei ole ymmärtänyt uudistuksen aiheuttamia syy-seuraussuhteita, joita listaan alla:</p>\n<ol>\n<li><u>Työryhmä toimii vastoin nuorten mielipidettä. </u>Innolink Research tutki Suomen Lukiolaisten Liiton jäsenistön mielipiteitä.  <a href="http://www.valmennuskeskus.fi/ajankohtaista/kaikki-tiedotteet/1404-lukiolaiset-vastustavat-hallituksen-kaavailemaa-valintakoeuudistusta" target="_blank">Tulokset</a> olivat selvät: ”nuoret haluavat säilyttää nykyisen kahden jonon mallin, jota he pitävät oikeudenmukaisena. Valintakoe on heidän mukaansa oikeudenmukaisempi ja motivoimampi tapa valita opiskelijat korkeakouluihin kuin ylioppilaskirjoitukset. Ylioppilaskirjoitusten korostaminen valinnoissa aiheuttaisi lukion muuttumisen nelivuotiseksi”.</li>\n<li><u>Siirtyminen opintoihin hidastuu. </u>Lukioista tulee käytännössä nelivuotisia, koska iso joukko nuoria jää neljänneksi vuodeksi parantelemaan arvosanojaan päästäkseen opiskelemaan.</li>\n<li><u>Opiskeluajat pitenevät. </u>Tutkimusten mukaan keskeisin tekijä opintojen nopealle edistymiselle on  motivaatio alalle. Professori Kirsti Lonka on tutkinut, että alan identiteetti omaksutaan jo pyrkimisvaiheessa. Sellaisilla aloilla, jotka mittaavat alalla tarvittavia valmiuksia alakohtaisella pääsykokeella, on keskeyttämisprosentit todella alhaiset (esim. lääketieteellisissä tiedekunnissa vain 1 %). Vastaavasti niille aloille joilla on ns. paperivalinta, keskeyttämisprosentit ovat moninkertaiset. Uudistuksen myötä näin tulee nyt käymään todennäköisesti kaikille aloille.</li>\n<li><u>Yliopistojen opiskeluajat venyvät</u>. Tähän asti monien alojen uudet opiskelijat ovat opiskelleet itsenäisesti tai valmennuskursseilla kyseisen alan keskeisiä asioita ennen yliopisto-opintoja 2-4 kuukauden ajan. Monissa tiedekunnissa sisäänpääsykokeessa vaadittava tietomäärä vastaa puolen vuoden oppimäärää yliopistossa. Nyt tämä opetusaika- ja kulu tulee yhteiskunnan ja yliopistojen maksettavaksi. Samalla pyrkijät ovat valintakokeeseen valmistautuessaan nähneet, onko kyseinen ala juuri heille sopiva.</li>\n<li><u>Aivovuoto ulkomaille</u>. Suomalaisia nuoria opiskelee <a href="http://www.hs.fi/kotimaa/a1473827968411" target="_blank">8.000</a> jo nyt ulkomailla. Tämä määrä tulee väistämättä moninkertaistumaan, jos suomalaiseen korkeakouluun pääsee jatkossa käytännössä vain parhailla ylioppilasarvosanoilla.</li>\n<li><u>Nuorten jaksaminen</u>. Lyhytkestoisten pääsykokeiden sijaan tulee mm. Japanissa, Etelä-Koreassa ja monissa länsimaissa lisääntynyt painajaismainen nuorten valmentaminen, jossa jo 4-7 vuoden iässä alkaa yksityinen teho-opetus koulun ohella koulumenestyksen parantamiseksi. Tämä on valtavan kallista perheille sekä aiheuttaa psyykkisiä vammoja nuorille, jotka pänttäävät tietoa 8-12 tuntia vuorokaudessa jo varhaisesta nuoruudesta alkaen.</li>\n<li><u>Epätasa-arvo</u>. Säännönmukaisesti ylioppilaskirjoitusten tulosten kärkipaikoilla ovat pääkaupunkiseudun ”eliittilukiot”. Pienemmissä lukioissa ei edes voi opiskella kaikkia niitä aineita, joita tarvitaan jatko-opintoihin pyrittäessä (esim. fysiikan kurssit lääketieteelliseen tai DI-puolelle pyrittäessä), mikä on erittäin iso ongelma. Nykyinen kahden jonon malli tasoittaa kuitenkin tämän tilanteen ja mahdollistaa yliopistoon pääsyn valintakokeen kautta. Mikäli valintakokeet ajetaan entistä ahtaammalle, yliopistoihin pääsee käytännössä jatkossa vain pääkaupunkiseudun eliittilukioista.</li>\n<li><u>Maaseutu tyhjenee</u>. Maaseutumaisilla paikkakunnilla sijaitsevat lukiot kurjistuvat tai lakkautetaan kokonaan, koska niistä ei enää tule tosiasiallisesti olemaan reittiä jatko-opiskeluun ilman valintakokeita. Sellaisista perheistä tulevat nuoret, joilla on taloudellinen mahdollisuus, muuttavat todennäköisesti pois kotoaan maaseudulta opiskelemaan kaupunkien lukioihin saadakseen riittävän hyvät arvosanat ylioppilaskirjoituksissa. Ainoastaan nykyinen kahden jono malli antaa tasapuolisen ja reilun mahdollisuuden eri nopeudella kehittyville nuorille.</li>\n</ol>\n</div>\n',
         date: "2016-11-04T15:38:44.000Z",
         tags: [
-          {
-            name: "Korkeakoulu",
-          },
-          {
-            name: "Opetus- ja kulttuuriministeriö",
-          },
-          {
-            name: "Työryhmä",
-          },
-          {
-            name: "Uudistus",
-          },
-          {
-            name: "Valintakoe",
-          },
+          "Korkeakoulu",
+
+          "Opetus- ja kulttuuriministeriö",
+
+          "Työryhmä",
+
+          "Uudistus",
+
+          "Valintakoe",
         ],
       },
     },
@@ -2708,17 +2188,7 @@ export const WPContent = {
         content:
           '<p dir="ltr"><em>Kirjoitus on julkaistu vieraskolumnina Forum24-lehdessä 28.7.2016.</em></p>\n<p dir="ltr">[pullquote align=&#8221;full&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Milloin olet viimeksi kokenut kiitollisuuden tunnetta jotain puoluetta kohtaan? Siis aitoa, vilpitöntä ja syvää kiitollisuutta?[/pullquote]</p>\n<p>Olen esittänyt kysymyksen lukemattomille ihmisille lähiaikoina. Vastaukset ovat olleet vähemmän yllättäviä. Enemmistö ei ole muistanut ensimmäistäkään aihetta kiitollisuuteen. Ja ne harvat, jotka ovat kiitollisuuden aihetta löytäneet, kertoivat senkin johtuneen jostain pienestä parannuksesta kuin varsinaisesta onnistumisesta.</p>\n<p dir="ltr">Tyytymättömyyden takana on useita syitä. Yksi syy esiintyy keskusteluissa poikkeuksellisen usein. Ihmiset kokevat &#8211; perustellusti &#8211; että politiikka toimii lähinnä niiden hyväksi, jotka ovat sen sisällä. Esimerkiksi työttömien, maahanmuuttajien tai syrjäytyneiden on vaikea kokea puolueita omakseen. Ei ihme, että samaan aikaan vaalien äänestysprosentit ovat hitaasti laskeneet.</p>\n<p dir="ltr">Vaikka puolueiden kiinnostavuus on laskenut, niin ihmisten halukkuus osallistua ja vaikuttaa ei ole kadonnut. Yhä useampi vain kokee, että asiansa ajaminen puolueen kautta on “likaista” ja “hidasta”.  Tätä on seurannut se, että viime vuonna merkittävimmät poliittiset teemat nousivat kansalaiskeskusteluun muiden kuin puolueiden toimesta.</p>\n<p dir="ltr">[pullquote align=&#8221;right&#8221; cite=&#8221;&#8221; link=&#8221;&#8221; color=&#8221;&#8221; class=&#8221;&#8221; size=&#8221;&#8221;]Viimeistään sosiaalisen median myötä puolueet menettivät asemansa yhteiskunnallisen keskustelun johtajina.[/pullquote]</p>\n<p>Viimeistään sosiaalisen median myötä puolueet menettivät asemansa yhteiskunnallisen keskustelun johtajina. Nykyisin yksilöt verkostoituvat ja löytävät samanhenkisiä ihmisiä yhä helpommin &#8211; ilman jäykkiä järjestörakenteita tai jäsenyyksiä. Yhä useammin tällaisista verkostoista syntyy aikamme merkittävimmät poliittiset ilmiöt. Erilaiset määräaikaiset ja ilmiöpohjaiset kampanjat ovat onnistuneet puolueita paremmin siinä, mikä on joskus ollut puolueiden tärkein tehtävä.</p>\n<p dir="ltr">Ihmiset loivat aikanaan puolueet kanavoimaan omia vaikuttamisen tarpeitaan. Nykyisin yhä harvempi luottaa ja haluaa kuulua puolueisiin. Aikanaan kun sääty-yhteiskunta lakkasi, niin säätypäivät kävivät tarpeettomiksi. On perusteltua kysyä, että mihin tulevaisuudessa puolueita tarvitaan?</p>\n<p dir="ltr">Olisi naiivia uskotella, ettei puolueita tarvitsisi enää ollenkaan. Jonkun tehtävänä on kuitenkin hankkia jäseniä, vaalirahaa, talkoovoimaa, kouluttaa, muodostaa isompia linjoja aikamme haasteisiin, asettaa ehdokkaita ja lopulta vastata vallassa tehdyistä päätöksistä.</p>\n<p dir="ltr">Väitän kuitenkin, että tulevaisuudessa sellaiset puolueet voivat menestyä, jotka ymmärtävät, että niiden tehtävänä ei ole enää puhua ja tehdä omapäisiä valintoja, vaan kuunnella ja luoda mahdollisuuksia. Sillä muuten ihmiset etsivät parempia ja nopeampi tapoja vaikuttaa.</p>\n<p dir="ltr"><strong>Janne Heikkinen</strong><br />\nKirjoittaja on Kempeleen kunnanvaltuuston puheenjohtaja ja yhteiskuntatieteiden kandidaatti</p>\n<p dir="ltr">\n',
         date: "2016-07-28T07:56:21.000Z",
-        tags: [
-          {
-            name: "Politiikka",
-          },
-          {
-            name: "Puolueet",
-          },
-          {
-            name: "Tulevaisuus",
-          },
-        ],
+        tags: ["Politiikka", "Puolueet", "Tulevaisuus"],
       },
     },
     {
@@ -2731,18 +2201,13 @@ export const WPContent = {
           '<p>Talousguru-kilpailun voittajaksi viime perjantaina julistettu <strong>Maija Löyskä</strong> totesi erittäin osuvasti haastattelussaan, että “euroaikana Suomen on pakko hyväksyä joustavat työmarkkinat”.</p>\n<p>Nuoren naisen sanoihin kätkeytyy suuri viisaus: Suomen keskusjohdetut työmarkkinat ovat rikki &#8211; ne ovat aivan liian joustamattomat olosuhteisiin, joissa maallamme ei ole omaa valuuttaa jota devalvoida tai jonka arvo sopeutuisi maamme vaihtotaseeseen. Rahapoliittiset keinot eivät ole eduskunnan käsissä.</p>\n<p><em>World Economic Forumin </em>kilpailukykyraportin mukaan Suomen</p>\n<div id="attachment_1216" style="width: 310px" class="wp-caption alignright"><a href="#"><img class="size-medium wp-image-1216" src="#" alt="Kausipuhdistettu työttömyysaste kertoo kaiken oleellisen. " width="300" height="138" srcset="# 300w, # 1006w" sizes="(max-width: 300px) 100vw, 300px" /></a><p class="wp-caption-text">Kausipuhdistettu työttömyysaste kertoo kaiken oleellisen.</p></div>\n<p>palkanmuodostuksen joustavuus on koko vertailun surkein kaikista 140 valtiosta &#8211; mukaan lukien kaikki kehitysmaat. Neuvottelujärjestelmä on kylmän sodan ajan korporatismin tuote: keskusjohtoinen, vanhakantainen ja puhkiruostunut.</p>\n<p>Suomen talous on puolestaan jumittanut paikallaan vuoden 2008 taantuman ja finanssikriisin jälkeen. Maamme bruttokansantuotteen reaaliarvo ei tule ylittämään edes vuonna 2018 kymmenen vuoden takaista arvoaan.</p>\n<p>Käytännössä 2010-luvusta on tulossa talouskasvun osalta menetetty vuosikymmen &#8211; mikään ei kasva, vaan kehitys nyhjää paikallaan.</p>\n<p>Yhtäjaksoisen nihkeän kasvun ja taantuman pituus on ollut ennätyksellisen pitkä historiallisessa tarkastelussa. Edes kauheudella muistettu 1990-luvun lama ei johtanut menetettyyn vuosikymmeneen &#8211; kestävä kasvu alkoi jo 3,5 vuoden päästä sen jälkeen kun BKT:n vuosimuutos laski ensi kertaa negatiiviseksi vuonna 1990. Sen sijaan kukoistavaa kasvukautta ei ole nykyisin maassamme näköpiirissä. On ilmeistä, että taloutemme on jumissa suhdanteiden sijaan rakenteellisista syistä.</p>\n<div id="attachment_1215" style="width: 271px" class="wp-caption alignright"><a href="#"><img class="size-medium wp-image-1215" src="#" alt="Hallituksen tulee katkaista napanuoransa Eteläranta-Hakaniemi -kartelliin." width="261" height="300" srcset="#" sizes="(max-width: 261px) 100vw, 261px" /></a><p class="wp-caption-text">Hallituksen tulee katkaista napanuoransa Eteläranta-Hakaniemi -kartelliin.</p></div>\n<p>Makrotaloudellisesta perspektiivistä tarkasteltuna niin nousu- kuin laskusuhdanteissa joustaa aina jokin seuraavista: <strong>valuutan ulkoinen arvo, palkat ja työehdot</strong> tai <strong>työttömyys</strong>. Suomen käyttämä eurovaluutta ei jousta nimeksikään taloussyklien mukaan, koska maamme talouden koko on vain murto-osa koko euroalueesta. Palkat ja työehdot ovat puolestaan Eteläranta-Hakaniemi -kartellin käsissä. Näin ollen talouden tasapainottamiseksi markkinavoimilla on vain yksi venttiili taantumassa: työttömyyden kasvu. Suomi käy tämän johdosta läpi mittavaa työttömyysdevalvaatiota. Tämä on Hakaniemen ja Etelärannan sekä maamme hallituksen toimettomuuden syytä.</p>\n<p><strong>Mitä tulisi tehdä?</strong></p>\n<p>Kysymys kuuluu, miten maamme ongelmat voidaan ratkaista? Vastaus on yksinkertainen: noudatetaan Maija Löyskän ratkaisua. Mikään muu keino ei toimi, mikäli haluamme olla osa euroaluetta. Eri puolueiden “panostukset osaamiseen”, “tutkimuksen ja kehittämisen verovähennykset” tai “fiskaalinen elvytys julkisella sektorilla” eivät todellisuudessa ratkaise mitään, kun kyse on rakenteista.</p>\n<p>Palkanmuodostuksen tulee joustaa suhdanteissa ja mahdollistaa myös vähäisemmän työmarkkina-arvon omaavien yksilöiden, kuten esimerkiksi kielitaidottomien maahanmuuttajien, työllistyminen tarvittaessa alemmilla palkkatasoilla. Nykyinen järjestelmä ylläpitää rakenteita, jotka estävät monien eri ryhmien työllistymisen tahdonvastaisesti lähes kokonaan. Työmarkkinoilla on yleissitovuuden ja paikallisen sopimisen puutteen vuoksi rakenteellinen kohtaanto-ongelma.</p>\n<p><strong>Korporatismista parlamentarismiin</strong></p>\n<p>Suurin este Suomen kilpailukyvyn kohottamiselle on Eteläranta-Hakaniemi -kartelli, joka on järjestelmällisesti vesittänyt ja viivyttänyt kaikkia työelämän uudistamiseen tähdänneitä hankkeita omien saavutettujen etujen säilyttämiseksi. Kartelli on pöhöttynyt kylmän sodan aikaisen hyvinvointivaltioideologian kyljessä: vastuu on viety pois yksilöiltä korporaatioille &#8211; hallintoalamaisilta Helsingin eliitille.</p>\n<p>Joku viisastelija jaksaa aina muistuttaa, että: “saivathan osapuolet aikaan eläkesovun yhdessä”. Todellisuudessa tämäkin sopu tuli auttamatta liian myöhään ja oli tasoltaan aivan liian kunnianhimoton.</p>\n<p>Yksinkertaisesti tällä hetkellä työmarkkinajärjestöjä ei vaikuta kiinnostavan Suomen edun mukainen toiminta. Toimintaa näyttävät ohjaavan etujärjestöluonteen luomat kieroutuneet kannustimet: toimijat pelaavat omaan pussiin kansan kokonaisedun kustannuksella. Tämä on myös suurin syy ”yhteiskuntasopimus”-prosessin kankeudelle.</p>\n<p>Erään määritelmän mukaan hulluutta on se, että tekee samat asiat uudelleen ja uudelleen ja odottaa eri tuloksia. Tältä ajatukselta ei voinut välttyä, kun seurasi yhteiskuntasopimuksen puoli kymmentä kierrosta vaatineita neuvotteluja. Lohduttominta lopputuloksessa on se, että yhteiskuntasopimuksen syntyminen ei tule parantamaan suomalaisten sopimusvapautta.</p>\n<p>Vastuu Suomen kilpailukyvyn palauttamisesta on maamme eduskunnalla. Suomessa olisi jo korkea aika tunnustaa tosiasiat ja siirtyä korporatismista parlamentarismiin.</p>\n<p>On käynyt selväksi, ettei uusi kasvu synny vanhoilla rakenteilla. Sen vuoksi hallituksen tulee ensitöikseen katkaista napanuoransa Eteläranta-Hakaniemi -kartelliin ja reformoida työmarkkinat mahdollistamaan täysimittainen paikallinen sopiminen.</p>\n<p>Toisekseen työehtojen yleissitovuus ja kaikkien yhdistyksien jäsenmaksujen verovähennysoikeudet tulee poistaa laista.</p>\n<p>Kolmanneksi laittomien lakkojen vahingonkorvauksia tulee nostaa tuntuvasti ja tuoda laittomaan lakkoon osallistuva työntekijä henkilökohtaisen korvausvelvollisuuden piiriin. Lisäksi laittomaan lakkoon osallistumisen tulee olla peruste välittömälle irtisanomiselle ilman kompensaatiota.</p>\n<p>Näillä ratkaisuilla olisi aidosti positiivista vaikuttavuutta työllisyysasteeseen nykyisen pikkunäppärän hiomisen sijaan.</p>\n',
         date: "2016-03-08T16:03:05.000Z",
         tags: [
-          {
-            name: "Helsingin kartelli",
-          },
-          {
-            name: "Työmarkkinajärjestöt",
-          },
-          {
-            name: "Työttömyys",
-          },
-          {
-            name: "Yhteiskuntasopimus",
-          },
+          "Helsingin kartelli",
+
+          "Työmarkkinajärjestöt",
+
+          "Työttömyys",
+
+          "Yhteiskuntasopimus",
         ],
       },
     },
@@ -2755,36 +2220,25 @@ export const WPContent = {
           '<p>Huomenna tiistaina koittaa Yhdysvaltain demokraattisen ja republikaanisen puolueen kannalta ratkaisevin esivaalipäivä tähän mennessä. Republikaanit jakavat “Supertiistaina” puoluekokousdelegaatit kaikkiaan 14 osavaltiossa: Alabamassa, Alaskassa, Arkansasissa, Coloradossa, Georgiassa, Massachusettsissa, Minnesotassa, Pohjois-Dakotassa, Oklahomassa, Tenneseessä, Texasissa, Vermontissa, Virginiassa sekä Wyomingissa.</p>\n<p>Supertiistain esivaalit ovat viimeisiä koitoksia, jolloin vaalikokouksissa (caucuses) ja esivaaleissa (primaries) valitaan puoluekokousedustajat ehdokkaille vielä suhteellisella vaalilla. Maaliskuun 15. päivän jälkeen suurin osa esivaaleista ovat “winner-takes-it-all” osavaltioita, eli näissä osavaltioissa kaikki puoluekokousdelegaatit ovat sidottuja äänestämään osavaltion esivaalien voittajaa. Play-off kierros alkaa siis viimeistään silloin; supertiistai muodostaa asetelmat tätä varten.</p>\n<p>Republikaanien puolue-eliitti ja tätä lähellä olevat tahot, eli niin sanottu “establishment” on käynyt kovilla kierroksilla: näyttää yhä selkeämmältä, että sen inhokkiehdokas Donald Trump on voittamassa republikaanien presidenttiehdokkuuden: vedonlyöntisivustojen mukaan Trumpin todennäköisyys voittaa ehdokkuus itselleen on noin 75-79% tuntumassa. Vedonlyöntimarkkinat uskovat tämän lisäksi ainoastaan Rubiolla olevan jonkinlaiset mahdollisuudet (15-20%) voittaa Trump. (<a href="https://electionbettingodds.com/">lähde 1</a>, <a href="http://predictwise.com/politics/">lähde 2</a>)</p>\n<p>Tällä hetkellä kilpailussa ovat mukana edellä mainittujen lisäksi texasilainen senaattori Ted Cruz, joka on tullut tunnetuksi demokraattien arvostelun ohella oman puolueensa politiikan arvostelusta. Mukana on myös loanheiton yläpuolella pysynyt Matti Apusen suosikki, John Kasich, jonka mukaan Yhdysvaltojen tulisi suojella myös Suomea Venäjän mahdolliselta aggressiosta. Mukana on myös uskonnollinen afrikkalais-amerikkalainen entinen aivokirurgi Ben Carson, jonka mahdollisuudet menestyä ovat käytännössä olemattomat.</p>\n<p>Esitämme seuraavassa erilaisia skenaarioita Supertiistain kulusta ja eri ehdokkaiden vahvuuksista ja heikkouksista.</p>\n<p><strong>Donald Trump</strong></p>\n<p>Miljardööri Trumpin vihainen ja populistinen retoriikka on saanut vastakaikua etenkin ahdingossa olevalta keskiluokalta, jonka työt ovat siirtyneet halvemman työvoimakustannuksien Meksikoon ja Kiinaan. Trump on arvostellut poliitikkoja konkreettisten tekojen puutteesta ja on lähtenyt ehdolle, koska “idioottipoliitikot Washingtonissa eivät saa mitään aikaan!.  Muurin rakentaminen Meksikon rajalle ja muslimien esittäminen kansallista turvallisuutta vaarantavana uhkana on purrut moneen. </p>\n<p>Trumpin ehdotukset ovat äärimmäisen konkreettisia ja helposti sisäistettäviä. Useat Trumpin tukijat myöntävät, että vaikka retoriikka on voimakasta ja värikästä eivätkä nämä ehkä allekirjoita jokaista teesiä, pitävät he silti miehen uskalluksesta sanoa juuri sen, mitä mieltä hän oikeasti asioista on.</p>\n<p>Trumpin ehdottomia vahvuuksia ovat hänen laaja kannatuksensa eri väestönryhmissä. Näitä kaikkia yhdistää amerikkalaisen unelman karkaaminen saavuttamattomiin. Trump voitti niin uskonnollisen Etelä-Carolinan kuin myös sekulaarin New Hampshiren osavaltion. Trumpista innostuvat niin eri vähemmistöjen edustajat kuin myös eri uskonnollisen ja sosioekonomisen taustan omaavat henkilöt. Ehdokkaan ehdottomiin vahvuuksiin kuuluu myös mittavan omaisuuden tuoma riippumattomuus vaalirahoittajista.</p>\n<p>Trump saattaa voittaa suurimman osan tai jopa jokaisen osavaltion Supertiistaina. Hän on muutamaa osavaltiota lukuunottamatta kärjessä kaikissa gallupeissa. Trumpin mahdolliset heikkoudet liittyvät tällä hetkellä siihen, että ehdokkaan kohdalle asettuu jokin ylitsepääsemätön mediakohu: Trump panttaa tällä hetkellä tietoja veronpalautuksistaan julkisuudelta. Trumpin kilpakumppanit Cruz ja Rubio ovat useaan otteeseen vaatineet selvyyttä verotiedoista ja Cruz jopa julkaisi omat tietonsa oma-aloitteisesti. Kilpailijat epäilevät, että tiedoissa on jotain Trumpin bisneksiin liittyvää, mikä ei kestä päivänvaloa.</p>\n<p>Toinen potentiaalinen kohu on se, että Trump ei ole irtisanoutunut selväsanaisesti valkoista ylivaltaa ajavan Ku Klux Klanin entisen johtajan David Duken suosituksesta. Muita heikkouksia, jotka voivat realisoitua ovat Trumpin aiemmat kytkökset demokraattien vasemmistosiiven vaalirahoittajana, aiempi pro-choice kanta aborttiin sekä selkeän konservatiivisen/oikeistolaisen ideologian puuttuminen, joka on yleensä ollut tärkeä äänestyspäätökseen vaikuttanut tekijä esivaaleissa.</p>\n<p>Toisaalta Trumpin kannatus ei ole aiemmin reagoinut juuri ollenkaan vastaantulleisiin kohuihin. Vaikuttaisi siltä, että politiikan normaalit lainalaisuudet ovat kääntyneet päälaelleen Trumpin kohdalla. On aika realistista olettaa, että Trump voittaa ehdokkuuden. Arvioimme tämän todennäköisyydeksi noin ⅔ eli 65%. Skenaario, jossa Trump ei voita, sisältää oletuksen että hänen kannatuksessaan tule vastaan jonkinlainen lasikatto, ja kaikki muut ehdokkaat vetäytyvät yhden taakse. Tällöin puoluekoneiston tuen avulla sekä rikkaiden vaalirahoittajien, mm. “Koch brothersien” yhteisoperaatio saattaisi onnistua torppaamaan Trumpin.</p>\n<p>Esivaalien voitto ei välttämättä kanna pitkälle: Trump häviää lähes jokaisessa kahdenvälisessä gallupissa niin demokraattien Clintonille kuin myös Sandersille.</p>\n<p><strong>Ted Cruz</strong></p>\n<p>Ted Cruz voitti ensimmäisen Iowan esivaalin Trumpin nenän edestä, vaikka miljardööri johtikin galluppeja ennen vaalipäivää. Tämä siitä huolimatta, että Cruz vastusti osavaltiolle tärkeitä etanolin tuotantotukia. Cruz sai mobilisoitua uskonnollisen oikeiston taakseen perhearvoja korostavassa osavaltiossa. Tähän päivään mennessä Cruz on ainoa, joka on voittanut Trumpin edes yhdessä osavaltiossa. </p>\n<p>Cruzista on maalattu eri medioissa äärikonservatiivista ja jyrkän uskonnollista, jopa “hörhöilyyn” taipuvaa kuvaa.  Tämä on hieman harhaanjohtavaa, sillä todellisuudessa Cruz on puhunut erityisen paljon juuri uskonnonvapaudesta. Cruz on mm. todennut, että <a href="http://www.dailymail.co.uk/news/article-3445836/I-m-not-running-Pastor-chief-Ted-Cruz-says-s-not-ashamed-religious-s-not-job-political-leader-deliver-message-salvation.html">myös ateistien tulisi äänestää häntä</a>, sillä tämä kannattaa politiikan ja uskonnon erottamista suoranaisesti toisistaan. Tämä on yhdysvaltain poliittisessa kontekstissa rohkeaa retoriikkaa konservatiivilta.</p>\n<p>Cruz on myös libertaarien ja vapaan markkinatalouden kannattajien suosiossa. Hän on Harvardista valmistunut lakimies jota toisinaan tituleerataan “teekutsuliikkeen älyköksi”. Cruz on konservatiivisia ja libertaarisia arvoja kannattavan Tea Party Patriotsin suosikkipoika. Häntä tukee useat konservatiiviset kommentaattorit, kuten suosittu Glenn Beck ja Rush Limbaugh.</p>\n<p>Cruz kannattaa velkaantumisen pysäyttämistä, Yhdysvaltain ulkopoliittisen roolin väkevöittämistä sekä yrittäjyyden esteiden purkamista. Hän kannattaa tasaveroa ja vastustaa yritystukia kaikissa muodoissaan. Cruz vastusti kiivaasti ns. Obamacare-terveydenhuolto uudistusta. Vastustus henkilöityi vahvasti Cruziin kun liittovaltio jouduttiin sulkemaan 2013, sillä budjettia ei saatu määräajassa läpi edustajainhuoneessa, jolloin liittovaltion toimintoja suljettiin ja alettiin ajaa alas. Tämä suututti republikaanien puoluejohdon.</p>\n<p>Ted Cruzin kampanja nojaa oletukselle siitä, ettei maltillinen keskitien republikaani tule voittamaan demokraatteja, sillä viimeksi sekä McCain ja Romney hävisivät Obamalle. Cruz näkee, että Republikaanien tulisi kerätä uudelleen taakseen ns. “Reagan coalition”, eli uskonnollinen oikeisto, konservatiivit, libertaarit sekä reagan-demokraatit. Cruz on käyttänyt kenties eniten Ronald Reaganiin, republikaanien lähihistorian suosituimpaan oikeistolaispresidenttiin nojaavaa retoriikkaa.</p>\n<p>Cruzin mahdollisuudet ovat vedonlyöntitoimistojen mukaan vähäiset, alle 5%. Hän on suututtanut establishmentin, eli puolue-eliitin. Joidenkin arvioiden mukaan eliitti tukisi jopa mieluummin Trumpia kuin Cruzia. Hänen kannattajakunnastaan löytyy kuitenkin paljon suuria rahoittajia, jotka ovat republikaanien ytimessä. Senaatissa Cruz on vihattu, sillä hän vastustaa ns. “washington cartellia” eli lobbareista ja eturyhmistä koostuvaa rälssiä, “joka jakaa veronmaksajien rahoja yritystukina ja erivapauksina vaalirahoittajilleen ja suuryrityksille”. Trumpin ja Cruzin kannattajakunta on näin ollen osittain yhteneviä: molemmat vastustavat tavanomaisia urapoliitikkoja, “jotka myyvät sielunsa tullakseen uudelleenvalituiksi”.</p>\n<p>Cruzin vahvuus piilee kuitenkin siinä, että hänellä on suuri tukijajoukko ja hän on jo kerran voittanut Donald Trumpin, johon kukaan muu ehdokkaista ei ole kyennyt. Lisäksi Cruz johtaa kotiosavaltionsa Texasin esivaaligallupia, jossa jaetaan 155 Supertiistain reilusta 500 puoluekokousdelegaatista. Sen sijaan Rubio on monessa osavaltiossa kyllä toisena, mutta on silti Trumpia perässä jopa hänen kotiosavaltiossaan, Floridassa. Tämä on erityisen kiusallista ehdokkaalle, sillä uskottavan kampanjan tekemiseksi tulisi lähtökohtaisesti voittaa oma kotiosavaltio.</p>\n<p>Cruzin vahvuuksiin kuuluu myös vahva ruohojuuriorganisaatio, targetoidut yhteydenotot tukijoille ja big datan edistynyt hyödyntäminen. Cruz sai mobilisoitua Iowassa galluplukujaan suuremman väen vaalikokouksiin, joten hänen tukijoidensa äänestysaste on hyvä. Arvioimme, että todellisuudessa Cruzin todennäköisyys voittaa ehdokkuus on 10-15%. Tämä edellyttäisi sitä, että Ben Carson lopettaisi kampanjansa Cruzin kannalta hyvissä ajoin ja vapauttaisi uskonnollisia äänestäjiä Cruzin kelkkaan. Samaan aikaan skenaario vaatisi Rubion täydellisen epäonnistumisen, jolloin esivaaleista tulisi kahden kauppa Trumpin ja Cruzin välillä.</p>\n<p>Aatteellisesti toisiaan lähellä olevien Cruzin ja Rubion liittoutuminen jopa presidentti-varapresidentti -komboksi saattaisi olla järkevä ratkaisu Trumpin pysäyttämiseksi. Tätä skenaariota vaivaa kuitenkin se, että Cruz on käyttänyt koko kampanjansa ajan vahvaa Rubion maahanmuuttopolitiikkaa kritisoivaa retoriikkaa. Toisaalta puolue-eliitin vihamielisyys Cruzia kohtaan saattaa myös estää ratkaisun.</p>\n<p><strong>Marco Rubio</strong></p>\n<p>Marco Rubiosta on tullut vastoin ennakko-odotuksia puoluejohdon kultapoika ja suosikki presidentiksi realistisista vaihtoehdoista. Rubio on onnistunut saamaan laajan peruskannatuksen lähes kaikkiin osavaltioihin ja edustaa vihatun Cruzin sekä öykkäröivän Trumpin ohella rakentavammaksi koettua linjaa. Rubion edustama maltillisuus on tosin suhteellista, sillä myös Rubio kannattaa konservatiivista arvomaailmaa ja on ns. teekutsuliikkeen jäsen. Hänen äänestyskäyttäytyminen senaatissa on Cruzin ohella koko senaatin oikeistolaisinta ja konservatiivisinta.</p>\n<p>Rubio on puhunut paljon Yhdysvaltain ulkopoliittisen roolin korostamisesta ja on kritisoinut Cruzia siitä, ettei tämän ohjelma Lähi-idän vakauttamiseksi ole realistinen. Rubio kannattaa sotilaallista interventiota mm. Assadin syrjäyttämiseksi. Rubio on myös kritisoinut voimakkaasti Putinin hallintoa, ollen ulkopolitiikassa John McCainin linjoilla.</p>\n<p>Rubion arvioidaan olevan Trumpin pahin vastus asiantuntijaanalyyseissä sekä gallupeissa. Rubio pärjää myös kahdenvälisissä gallupeissa parhaiten Hillary Clintonia sekä Bernie Sandersia vastaan.</p>\n<p>Rubion osakkeita kuitenkin heikentää hänen kompurointinsa vaalidebateissa. Sittemin väistynyt presidenttiehdokas Chris Christie syytti Rubiota ulkoa opeteltujen fraasien robottimaisesta toistamisesta. Kun Christie esitti syytöksen, vastasi Rubio syytökseen samalla ulkoa opetellulla fraasilla. Myöhemmin Rubio itse myönsi väittelyn mennen mönkään. Myös nuorekas olemus ja äänensävy saattavat antaa joillekin äänestäjille kuvan poliittisesta broilerista. Tämän lisäksi henkilökohtaisen talouden ongelmat haittaavat Rubion imagoa ja uskottavuutta: “Voiko hän pelastaa maamme talouden, mikäli hän ei kykene hallitsemaan edes omaa talouttaan.”</p>\n<p>Kaikkiaan Rubio on kuitenkin uskottavin haastaja yleisön ja vedonlyöjien mielestä Trumpille. Arvioimme kuitenkin hänen mahdollisuutensa hieman markkinoiden arvioita heikommiksi, ehkä noin 15% hujakoille.</p>\n<p><strong>Yhteenveto</strong></p>\n<p>Trump voittaa &#8211; joidenkin mielestä valitettavasti &#8211; jokaisessa perusskenaariossa republikaanien ehdokkuuden. Nähdäksemme todistustaakka kaikkiin muihin skenaarioihin on päinvastaisten väitteiden esittäjillä. Trumpin voi tiputtaa vain erityisen raskauttava kohu tai kaikkien muiden äärimmilleen menevä liittoutuminen Trumpia vastaan. Tässäkin skenaariossa republikaanieliitin tulee olla varovainen &#8211; Trump saattaa lähteä sitoutumattomana ehdolle, mikäli hän kokee tulleensa kohdelluksi epäoikeudenmukaisesti. Mikään ei takaa, etteikö tähän tarvittaessa löytyisi vaikka tekosyy.</p>\n<p>Rubio on ennakkosuosikki Cruzin nähden, Trumpin haastajaksi, mutta kirjoittajien mielestä hänen mahdollisuutensa on arvioitu hieman todellisia mahdollisuuksia korkeammaksi. Cruzin tilanne on päinvastainen.</p>\n<p>Mikä on varmaa, on se että tiistaina käydään äärimmäisen mielenkiintoinen ja ratkaiseva esivaalien Supertiistai. Muiden muassa CNN international ja useat muutkin Suomessa näkyvät kanavat lähettävät lähes 24/7 seurannalla uutisia Supertiistailta.</p>\n<p><em>Kirjoittajat: Janne Heikkinen &#038; Mikko Laakso</em></p>\n',
         date: "2016-02-29T11:26:42.000Z",
         tags: [
-          {
-            name: "Donald Trump",
-          },
-          {
-            name: "Esivaali",
-          },
-          {
-            name: "GOP",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Marco Rubio",
-          },
-          {
-            name: "Mikko Laakso",
-          },
-          {
-            name: "Republikaanit",
-          },
-          {
-            name: "Ted Cruz",
-          },
-          {
-            name: "Ulkopolitiikka",
-          },
-          {
-            name: "Yhdysvallat",
-          },
+          "Donald Trump",
+
+          "Esivaali",
+
+          "GOP",
+
+          "Janne Heikkinen",
+
+          "Marco Rubio",
+
+          "Mikko Laakso",
+
+          "Republikaanit",
+
+          "Ted Cruz",
+
+          "Ulkopolitiikka",
+
+          "Yhdysvallat",
         ],
       },
     },
@@ -2797,30 +2251,21 @@ export const WPContent = {
           '<p><strong>Riitta Pestolaksi</strong> itseään kuvannut henkilö julkaisi viime torstaina Uuden Suomen blogipalvelussa kirjoituksen otsikolla &#8221;Kokoomuksen on aika vaihtaa puheenjohtajaa&#8221;. Henkilö kuvasi itseään &#8221;pitkäaikaiseksi kokoomusaktiiviksi&#8221; ja &#8221;eläkkeellä olevaksi äidinkielenopettajaksi&#8221;.</p>\n<p>Henkilön nimellä tehdystä sähköpostiosoitteesta ja Facebookin kautta ryhmäviesteinä blogia lähetettiin ainakin kokoomuksen puoluevaltuuston jäsenille, kansanedustajille, piirihallitusten jäsenille ja kunnallisjärjestöjen hallitusten jäsenille.</p>\n<p>Nyt on selvinnyt, että Riitta Pestola -nimistä henkilöä ei Suomesta löydy. Yhtäkään Pestolaa ei löydy väestörekisterikeskuksen tiedoista. Kirjoittajan profiilikuva Uuden Suomen blogipalvelussa on kaapattu tamperelaiselta, vihreältä kuntapoliitikolta, <strong>Marja Tähtiseltä</strong>.</p>\n<p>Blogin tekstissä arvosteltiin kokoomuksen puheenjohtaja, valtiovarainministeri <strong>Alexander Stubbia</strong> ja todettiin hänen epäonnistuneen puheenjohtajana.</p>\n<p>&#8221;Toivottavasti tämän jälkeen muutkin rohkaistuisi sanomaan ääneen ilmeisen: meidän kokoomuslaisten on vaihdettava puheenjohtaja kesällä&#8221;, blogissa vaadittiin.</p>\n<p>Pestolan blogi on sittemmin poistettu Uuden Suomen blogeista, mutta kirjoittajan profiili on edelleen olemassa, tosin ilman kuvaa. Pestolalle perustettiin myös Facebook-profiili samalla Tähtiseltä varastetulla kuvalla. Kuvakaappaus Pestolan blogista löytyy Janne Heikkisen blogista.</p>\n<p>– On vaikea nähdä, että näin organisoitu hyökkäys länsimielistä puheenjohtajaa vastaan tapahtuisi sattumalta tai harmittomana pilana, <strong>Janne Heikkinen</strong> toteaa Verkkouutisille.</p>\n<p>Koko kirjoituksen pääset lukemaan Uuden Suomen <a href="http://janneheikkinen.puheenvuoro.uusisuomi.fi/212365-identiteettivarkauksin-stubbia-vastaan">blogistani</a>.</p>\n<p>Verkkouutiset <a href="http://www.verkkouutiset.fi/kotimaa/identiteettivarkaus%20blogi%20stubb-47061">uutisoi</a> blogin pohjalta.</p>\n',
         date: "2016-02-22T20:00:07.000Z",
         tags: [
-          {
-            name: "Hybridisota",
-          },
-          {
-            name: "Informaatiosodankäynti",
-          },
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Pestola",
-          },
-          {
-            name: "Stubb",
-          },
-          {
-            name: "Tähtinen",
-          },
-          {
-            name: "Uusi Suomi",
-          },
-          {
-            name: "Verkkouutiset",
-          },
+          "Hybridisota",
+
+          "Informaatiosodankäynti",
+
+          "Janne Heikkinen",
+
+          "Pestola",
+
+          "Stubb",
+
+          "Tähtinen",
+
+          "Uusi Suomi",
+
+          "Verkkouutiset",
         ],
       },
     },
@@ -2832,20 +2277,7 @@ export const WPContent = {
         content:
           '<p></p>\n<h3>Miksi Janne kannattaa YLE-veron lakkauttamista?</h3>\n<p><strong>1. YLE ei voi olla immuuni valtakunnallisille säästötalkoille.</strong> Kohtuuttoman suureksi kasvaneen mediayhtiön ylläpitäminen ei sovi nykyiseen taloustilanteeseen.</p>\n<p><strong>2. Perusperiaate tulee olla, että käyttäjät maksavat.</strong> Osa suomalaisista joutuu maksamaan YLE-veroa, vaikka eivät sen palveluita koskaan käyttäisikään. Logiikka on kieroutunut, sillä ei mikään muukaan mediayhtiö voi laskuttaa asiakkaita, jos asiakkaat eivät tilaa sen palveluita</p>\n<p><strong>3. Yrityksille YLE-vero voi aiheuttaa useiden tuhansien eurojen kustannukset vuosittain.</strong> Säästyneet rahat mahdollistavat paremmat edellytykset työllistää esimerkiksi kesätyöntekijöitä ja harjoittelijoita.</p>\n<p>Kannatatko sinä YLE-veron lakkauttamista? <a href="https://www.kansalaisaloite.fi/fi/aloite/1818">Allekirjoita sinäkin kansalaisaloite</a>:</p>\n<p><iframe id="kansalaisaloite-leijuke" src="https://www.kansalaisaloite.fi/iframe/fi/1818?showTitle=true" width="600" height="210" frameborder="0" scrolling="no" align="center"> </iframe></p>\n',
         date: "2016-02-15T13:15:08.000Z",
-        tags: [
-          {
-            name: "Janne Heikkinen",
-          },
-          {
-            name: "Kansalaisaloite",
-          },
-          {
-            name: "Verotus",
-          },
-          {
-            name: "YLE",
-          },
-        ],
+        tags: ["Janne Heikkinen", "Kansalaisaloite", "Verotus", "YLE"],
       },
     },
     {
@@ -2878,23 +2310,7 @@ export const WPContent = {
         content:
           "<p><em>Puhe on pidetty valtuuston vuoden 2015 viimeisessä tapaamisessa 11. joulukuuta. </em></p>\n<p>Hyvät valtuutetut, viranhaltijat ja ystävät!</p>\n<p>Haluan kiittää kaikkia, jotka ovat antaneet minulle luottamuksensa valtuuston puheenjohtajaksi. Tämä on ollut suuri haaste – minulle henkilökohtaisesti – minun perheelleni – ja minulle myös opiskelijana. Mutta se on ollut vastaanottamisen arvoinen haaste. Olen pyrkinyt tekemään parhaani – yhtä aikaa nöyränä ja teitä kaikkia suuresti kunnioittaen.</p>\n<p>Kempele on minulle enemmän kuin tavanomainen kunta. Kempele on ihmisten yhteisö, joka katsoo tulevaisuuteen avoimin ja uteliain mielin. Toiveenani on ollut, että Kempele jatkaa siitä, mistä se on tullut tunnetuksi tähänkin saakka: rohkeana kokeilijana, jossa uskalletaan innostua ja yrittää.</p>\n<p>Erityisen ylpeä olen siitä, että olemme halunneet pitää yhdessä kiinni perusarvoistamme. Kuntaa on kehitetty vuosia päämäärätietoisesti siten, että meillä on kaikki edellytykset toimia uskottavasti itsenäisenä kuntana myös jatkossa. Tähän ei ole kuitenkaan syytä tyytyä, vaan meidän on jatkettava ponnisteluja yhtenäisenä Kempele-puolueena. Työ paremman kotikunnan puolesta alkaa joka maanantai uudestaan.</p>\n<p>Meidän on myös uskallettava olla tämänhetkisen yhteiskunnan ajan hermolla. Meillä on oltava kykyä tunnistaa tämän päivän yhteiskunnan ongelmat. Meidän on myös uskallettava puhua näistä ongelmista – muutoin tämänhetkiset ongelmat johtavat tulevaisuuden katastrofiin. Nähdäkseni kuntamme ajankohtaisimmat ongelmat ovat työttömyys, lisääntynyt päihteiden käyttö, perheiden hajoaminen ja kasvavat palvelutarpeet yhdistettynä niukkeneviin resursseihin.</p>\n<p>On sanomattakin selvää, että meillä on edessä suuria haasteita. Kuntana, yksilöinä ja poliitikkoina. Yhdessä me kempeleläiset olemme kuitenkin vahvoja. Tämän vuoksi toivon, että otatte minuun jatkossakin rohkeasti yhteyttä rakentavan vuoropuhelun merkeissä. Erityisesti ryhmäpuheenjohtajilta toivon jatkuvaa aktiivisuutta. Olen valmis vierailemaan jokaisessa valiokunnassa, henkilöstöinfossa ja valtuustoryhmässä, jos vuorovaikutukselle – keskustelulle ja kuuntelulle – nähdään tarvetta.</p>\n<p>Lopuksi haluan kiittää <strong>Jarmoa</strong> (Haapaniemi, valtuuston edeltävä puheenjohtaja) siitä työstä, jota olet tehnyt yhteisen kotikuntamme eteen. Olen vakuuttunut, että puheenjohtajan jätit kunnan paremmassa kunnossa meille, mitä se oli, kun itse sen sait johdettavaksi. Asianmukainen ja jämäkkä otteesi johtajana herätti luottamusta, jota olen erityisen paljon arvostanut. En ole edes pyrkinyt täyttämään saappaitasi, vaan luomaan omat saappaani. Tulevaisuus näyttäköön, miten tässä vaativassa tehtävässä onnistun.</p>\n<p>Näillä sanoilla haluan toivottaa teille kaikille hyvää joulua ja kokemusrikasta uutta vuotta!</p>\n",
         date: "2015-12-11T14:09:39.000Z",
-        tags: [
-          {
-            name: "Jouluruokailu",
-          },
-          {
-            name: "Juhlapuhe",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Puhe",
-          },
-          {
-            name: "Valtuusto",
-          },
-        ],
+        tags: ["Jouluruokailu", "Juhlapuhe", "Kempele", "Puhe", "Valtuusto"],
       },
     },
     {
@@ -2906,24 +2322,17 @@ export const WPContent = {
           '<p><span style="color: #000000;"><em>Puhe on pidetty Kempeleen kunnan itsenäisyyspäivän juhlassa 6. joulukuuta 2015 Kokkokankaan seurakuntakeskuksessa. </em></span></p>\n<p><span style="color: #000000;"><span style="font-weight: 400;">Kunnioitetut sotiemme veteraanit,</span><span style="font-weight: 400;"><br />\n</span><span style="font-weight: 400;"><br />\n</span><span style="font-weight: 400;">Hyvät naiset ja herrat,</span></span></p>\n<p><span style="font-weight: 400; color: #000000;">Hiljalleen taakse jäävä vuosi on jättänyt meille suomalaisille paljon hyviä muistoja. Mutta paljon myös sellaisia, jotka haluaisimme unohtaa ja jatkaa eteenpäin. Mielessämme on useita kysymyksiä, joista päällimmäisenä turvallisuus. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Viimeistään Pariisin tapahtumien myötä saatoimme huomata, ettei Eurooppa ole enää turvassa jihadistiselta ääri-islamilta. Suojelupoliisin mukaan jihadistit pyrkivät  värväämään myös Suomessa taistelijoita sota-alueille Irakiin ja Syyriaan. Samaan aikaan saamme lukea uutisista, että Turkin hävittäjä ampui alas ilmatilaansa loukanneen venäläisen rynnäkkökoneen &#8211; varoittaen sitä ennen kymmenen kertaa tuloksetta. Myös Suomessa tilanne vaikuttaa muuttuneen, sillä ilmatilaloukkauksia tehtiin viime vuonna ennätysmäärä. Puolustusministeriön mukaan kyse on tyypillisesti sotilaskuljetuskoneista. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Nämä ovat äärimmäisiä esimerkkejä siitä, miksi olemme pakotettuja palaamaan takaisin peruskysymysten äärelle. On sanomattakin selvää, että me suomalaiset olemme pieni ja rauhaa rakastava kansakunta. Toisaalta historia on opettanut meille karuimmalla mahdollisella tavalla, ettei toiveajatteluun ole varaa nopeasti muuttuvassa maailmassa. Suomi ajautui toiseen maailmansotaan heikosti varustettuna, koska päättäjämme eivät uskoneet sodan koskaan syttyvän.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Vaikuttaa siltä, että kansainvälisissä suhteissa kunnioitusta on lähdetty jälleen tavoittelemaan voimalla ja pelolla. Tästä syystä on suomalaisten turvallisuuden kannalta välttämätöntä, että varaudumme pahimpaan ilman toiveajattelua. Käytännössä tämä tarkoittaa sitä, että esimerkiksi terrorismin torjumiseksi meidän tulee antaa poliisi- ja tiedusteluviranomaisille laajemmat mahdollisuudet toimia. Se edellyttää tiedustelun resurssien vahvistamista ja tiedustelulain hyväksymistä. </span></p>\n<p><span style="color: #000000;">***</span></p>\n<p><span style="font-weight: 400; color: #000000;">Arvostetut sotiemme veteraanit!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Sisu, yrittäminen ja usko hyvään kantavat pitkälle, on kyse sitten hyvinvoinnin ylläpitämisestä, taloudellisista haasteista tai vapauden puolustamisesta. Meille on kunniatehtävä pitää huolta ja kantaa vastuumme sotiemme veteraanien hyvinvoinnista ja hyvästä elämänlaadusta aina viimeiseen iltahuutoon asti. Kiitos siitä, että olette kanssamme jakamassa tämän arvokkaan päivän. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Vuosi sitten itsenäisyyspäivänä saimme tutustua sotaveteraani Hannes Hynöseen, joka sulatti monien sydämet. Ensi kuussa Hynönen olisi täyttänyt kunniakkaat 103-vuotta. Kaikkien suruksi saimme kuitenkin lukea, että hän menehtyi viime maanantaina &#8211; talvisodan alkamispäivänä 30. marraskuuta. Viimeisessä haastattelussaan ennen sairaalaan joutumista Hynönen jätti meille selkeäsanaisen viestin toteamalla, että: “viime kädessä Suomen turvana on puolustusliitto NATO ja Jumala”. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Sodan pelot nähneen ja tuskat kokeneen miehen sanoma on syytä ottaa vakavasti. Etenkin aikana, jolloin eurooppalaista vakautta ja rauhaa on loukattu toistuvasti. Kysymys on nyt siitä, että löytyykö meiltä päättäjiä, jotka ovat valmiita tekemään oikeat ja kaukokatseiset ratkaisut uskottavan puolustuskyvyn turvaamiseksi.</span></p>\n<p><span style="color: #000000; line-height: 1.5;">***</span></p>\n<p><span style="color: #000000; line-height: 1.5;">Hyvät ystävät!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Olen edellä pyrkinyt muistuttamaan, ettei kansallista turvallisuutta tule koskaan ottaa annettuna tai perustaa toiveajatteluun. Sen eteen on tehtävä yhdessä töitä ja uhrauksia niin arkielämässä kuin valtakunnan päätöksenteossa. Aivan kuten menneet sukupolvet ovat tehneet uhrauksia, jotta me saisimme syntyä itsenäiseen Suomeen eläen turvassa keskittyen yhteiskuntamme, perheemme ja itsemme kehittämiseen. Tämän tiedostaminen herättää meissä sotien jälkeisissä sukupolvissa syvää kiitollisuuden tunnetta. Kiitollisuus pitää näkyä myös teoissamme, joihin meillä on velvollisuutemme ja se täyttää mielemme sekä sydämemme erityisesti tänään.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Näillä sanoilla haluan toivottaa kaikille arvokasta ja hyvää itsenäisyyspäivää!</span></p>\n',
         date: "2015-12-06T08:23:54.000Z",
         tags: [
-          {
-            name: "Itsenäisyyspäivä",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Nato",
-          },
-          {
-            name: "Puhe",
-          },
-          {
-            name: "Terrorismi",
-          },
-          {
-            name: "Venäjä",
-          },
+          "Itsenäisyyspäivä",
+
+          "Kempele",
+
+          "Nato",
+
+          "Puhe",
+
+          "Terrorismi",
+
+          "Venäjä",
         ],
       },
     },
@@ -2936,21 +2345,15 @@ export const WPContent = {
           '<p><i><span style="font-weight: 400;">Puhe on pidetty Lions Club Kempele Auroran perustamisjuhlassa 4. joulukuuta 2015 Hotelli Pohjankievarissa. </span></i></p>\n<p><span style="font-weight: 400;">Arvoisat Lions-liiton jäsenet, hyvät naiset ja herrat!</span></p>\n<p><span style="font-weight: 400;">Minulla on ilo tuoda tähän tilaisuuteen valtuuston puheenjohtajana tervehdys koko kunnan puolesta. On suuri kunnia olla osana tätä hienoa hetkeä, kun tuore leijonayhdistys näkee päivänvalon. </span></p>\n<p><span style="font-weight: 400;">Kempeleessä Lions-toiminnalla on pitkät ja kunniakkaat perinteet. Erityisesti palvelu kotiseudun hyväksi on ollut lähellä leijonien sydäntä. Tätä arvokasta työtä on leimannut pyyteetön palvelun asenne ja halu tehdä hyvää. </span></p>\n<p><span style="font-weight: 400;">Jos pysähdymme hetkeksi miettimään, niin sanana pyyteettömyys aukeaa meille kauniina elämänasenteena.</span></p>\n<p><span style="font-weight: 400;">Henkilö, joka vapaasta tahdosta antaa pyyteettömästi jotain toiselle, saa takuulla itsekin jotain. Aivan, kuten kynttilä sytyttäessään toisen kynttilän, niin myös te pyyteettömällä työllänne annatte jotain toisille viemättä silti itseltä mitään. Toisin sanoen onnellinen on se, joka tekee toisen onnelliseksi. Tätä asennetta toivoisi näkevän yhteiskunnassa laajemminkin.</span></p>\n<p><span style="font-weight: 400;">Toivon, että leijonat pyrkivät myös jatkossa tarkastelemaan aikamme haasteita yksilön näkökulmasta. Vaikka säätäisimme kuinka monta lakia tai palkkaisimme lukemattoman määrän virkamiehiä, niin aina jää jäljelle ihmisiä, jotka eivät julkiselta vallalta saa tarvitsemaansa apua. </span></p>\n<p><span style="font-weight: 400;">Hyvät ystävät!</span></p>\n<p><span style="font-weight: 400;">Aikamme tarvitsee yksilöitä, jotka omilla ratkaisuilla ja toimilla näyttävät suuntaa. Tämä koskee niin kotiseutua kuin isänmaan johtopaikoilla toimivia henkilöitä. Olen vakuuttunut, että uuden Aurora-klubin toiminnassa “Me palvelemme”-periaate näkyy kirkkaasti johtotähtenä ja avun tarpeessa olevat pääsevät nauttimaan palveluistanne monipuolisesti. </span></p>\n<p><span style="font-weight: 400;">Lopuksi haluan lausua koko kunnan puolesta kiitoksen teille kaikille, joiden ansiosta tämäkin tilaisuus on! Ja onnittelut heille kaikille, jotka omana aikanaan valitsevat “Me palvelemme”-periaatteen elämäntavakseen.</span></p>\n',
         date: "2015-12-04T13:20:33.000Z",
         tags: [
-          {
-            name: "Charter Night",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Lions Club",
-          },
-          {
-            name: "Perustamisjuhla",
-          },
-          {
-            name: "Puhe",
-          },
+          "Charter Night",
+
+          "Kempele",
+
+          "Lions Club",
+
+          "Perustamisjuhla",
+
+          "Puhe",
         ],
       },
     },
@@ -2963,21 +2366,15 @@ export const WPContent = {
           '<p><span style="color: #000000;"><i><span style="font-weight: 400;">Puhe on pidetty Kempeleen lukion itsenäisyys- ja lakkiaisjuhlassa perjantaina 4. joulukuuta 2015.</span></i></span></p>\n<p>***</p>\n<p><span style="font-weight: 400; color: #000000;">Arvoisat juhlavieraat, hyvä lukion väki, tulevat ylioppilaat!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Olen iloinen, että olette aikanaan valinneet saman opinpolun kuljettavaksi, kuin minä ja monet muut kempeleläiset omassa nuoruudessamme. Tiedän kokemuksesta, että matka on takuulla tuntunut ajoittain yksinäiseltä ja polku edessä näyttänyt kiviseltä ja raskaalta nousta. Toisaalta tiedän, että vastapainoa tähän ainutlaatuiseen matkaan ovat tuoneet lukemattomat ystävät ja heidän kanssaan myöhäänkin venyneet muistorikkaat hetket. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Olen itse asiassa viime aikoina pohtinut, että millainen maailma olisi, jos emme olisi tehneet tätä valintaa? Omaisimmeko riittävän vahvoja valmiuksia jatko-opintoihin? Entä olisiko meistä työelämän huippuosaajiksi? Löytyisikö meistä riittävää viisautta tiedon kriittiseen käsittelyyn ja ajattelun taitoihin? </span></p>\n<p><span style="font-weight: 400; color: #000000;">Muistan elävästi, kuinka omissa ylioppilaskirjoituksissani minua jännitti aivan vietävästi. Eräs arvostamani opettaja kuitenkin rohkaisi meitä jännityksen hetkellä mieleenpainuvasti. Hän kertoi, että kirjoitusten aikana olemme viisaampia, kuin koskaan aikaisemmin tai myöhemmin elämässä. Ihmettelin tuolloin, mitä opettaja näillä sanoilla tarkoitti. Kysyin itseltäni, että miten juuri nyt voisin olla viisaampi kuin tulevaisuudessa &#8211; minullahan on vasta elämä edessä?</span></p>\n<p><span style="font-weight: 400; color: #000000;">Aivan kuten monta kertaa aikaisemminkin, niin oppiminen alkoi vasta siinä hetkessä, kun opettaja poistui luokasta. Ymmärsin pian, että hän oli itse asiassa aivan oikeassa. Olin lukioaikana saanut imeä itseeni valtavan määrän luotettavaa tutkimuspohjaista tietoa elämän eri osa-alueilta. En saanut oppia ainoastaan omista mielenkiinnon kohteistani, vaan hallitsin isoja asiakokonaisuuksia myös monesta muusta yleissivistävästä aiheesta, joiden arvon saatoin huomata vasta vuosien päästä. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Hyvä juhlaväki!</span></p>\n<p><span style="font-weight: 400; color: #000000;">Nähdäkseni lukiolla on yksi tehtävä ylitse muiden. Se on kriittiseen ajatteluun, lukemiseen ja tiedon käsittelyyn tähtääminen. On entistä tärkeämpää, että ihmiset osaavat kyseenalaistaa lukemansa ja erottaa disinformaation &#8211; eli tahallisen väärän tai harhaanjohtavan tiedon &#8211; oikeasta tutkimuspohjaisesta tiedosta. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Valitettavasti ajallemme ovat tyypillisiä MV-lehden tai Magneettimedian kaltaiset huuhaa-julkaisut, jotka pyrkivät tahallaan virheelliseen ja näennäistieteellisen tiedon levittämiseen. Isommassa mittakaavassa sama ilmiö on nähtävissä myös ulkopoliittisessa viestinnässä. Tutkijoiden mukaan Venäjä pyrkii aktiivisesti propagandakoneistollaan määrittelemään sen, miten ja mistä keskustellaan. Tämä ns. trolliarmeija-toiminta on systemaattista, koordinoitua ja johdettua toimintaa, jonka palveluksessa työskentelevät ihmiset keskittyvät niin venäjämieliseen some- ja lehtikommentointiin, blogien kirjoittamiseen, kuin hakukoneiden optimointiin.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Vaikka äskeinen oli äärimmäinen esimerkki, niin kriittistä ajattelua tarvitaan toki muissakin yhteyksissä. Tarvitsemme esimerkiksi kykyä nähdä asiantuntijoiden ajattelun sokeat pisteet, taitoa tulkita tilastoja oikein sekä tarkkaavaisuutta otsikoista elävän klikkijournalismin kanssa.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Hyvät tulevat ylioppilaat! </span></p>\n<p><span style="font-weight: 400; color: #000000;">Näin itsenäisyyspäivän alla, on syytä palauttaa mieleen sotaveteraanien perintönä jättämä lausahdus: “kaveria ei jätetä”. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Uskallan väittää, että ison osan myös tästä matkasta ovat tehneet ystävät. Toivottavasti ne ystävyyssuhteet, joita tässä rakennuksessa on solmittu ja vahvistettu vuosien aikana, kantavat vielä pitkälle. Vaikka tiet tältä osin erkanevat armeijan, jatko-opintojen tai töiden vuoksi, niin älkää unohtako ketään porukasta. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Olette yhdessä saaneet näiden vuosien aikana lukea tuhansia sivuja kurssikirjoja. Mitä ilmeisemmin olette suoriutuneet tästä työläästä tehtävästä erinomaisesti, kun saamme olla tänään yhdessä juhlistamassa merkkipäiväänne. Toivon lämpimästi, että jatkatte itsenne kehittämistä ja kriittisen ajattelun taitoa myös lukioaikojen jälkeen jatko-opintojen ja työn parissa. Vaikka ylioppilastutkinto on suoritettu, niin älkää koskaan lopettako oppimista.</span></p>\n<p><span style="font-weight: 400; color: #000000;">Lopuksi haluan kiittää koko kunnan puolesta kaikkia opettajia sekä koko lukion henkilökuntaa siitä, että olette osaltanne olleet mahdollistamassa uusien ylioppilaiden valmistumisen. Jokainen uusi valkolakki on saavutettu teidän ammattitaitonne seurauksena, josta on syytä olla ylpeä. </span></p>\n<p><span style="font-weight: 400; color: #000000;">Uusille ylioppilaille toivotan onnea ja menestystä sekä koko juhlaväelle hyvää lakkiais- ja itsenäisyyspäivää!</span></p>\n<p>&nbsp;</p>\n',
         date: "2015-12-04T12:54:24.000Z",
         tags: [
-          {
-            name: "Itsenäisyyspäivä",
-          },
-          {
-            name: "Juhlapuhe",
-          },
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Lakkiaiset",
-          },
-          {
-            name: "Lukio",
-          },
+          "Itsenäisyyspäivä",
+
+          "Juhlapuhe",
+
+          "Kempele",
+
+          "Lakkiaiset",
+
+          "Lukio",
         ],
       },
     },
@@ -2990,21 +2387,15 @@ export const WPContent = {
           '<p>TIEDOTE 21.11.2015<br />\nJULKAISUVAPAA: heti</p>\n<p><strong>KOKOOMUS VALITSI PIIRIEN LUOTTAMUSHENKILÖJOHDOT VUODELLE 2016</strong></p>\n<p>Pohjois-Pohjanmaan Kokoomus ja Kokoomusnaiset valitsivat Kempeleen kunnantalolla lauantaina 21.11. pidetyissä piirikokouksissaan luottamushenkilöjohdon vuodelle 2016. Kokoomuksen piirin puheenjohtajana jatkaa yrittäjä <strong>Tomi Kaismo</strong> Oulusta. Alkava kausi on Kaismon kahdeksas. Varapuheenjohtajiksi valittiin <strong>Hanna Saari</strong> Kalajoelta sekä <strong>Janne Heikkinen</strong> Kempeleestä. Naisten piirin puheenjohtajana jatkaa luokanopettaja <strong>Pia-Riitta Korvenheimo</strong> Oulusta. Naisten piirin varapuheenjohtajaksi valittiin <strong>Anna-Liisa Lämsä</strong> Oulusta. Omassa puheenvuorossaan Tomi Kaismo painotti tulevien kuntavaalien merkitystä ja antoi kentälle kiitoksen erinomaisella voimalla alkaneesta ehdokashankinnasta koko vaalipiirin alueella. ”Kiinnostus kuntavaalien ehdokkuutta kohtaan on ollut ajankohtaan nähden poikkeuksellisen suurta. Tämä enteilee hyvää kuntavaaleja ajatellen” Kaismo toteaa.</p>\n<p>Henkilövalintojen ja sääntömääräisten asioiden käsittelyn lisäksi kokouksissa kuultiin Kokoomuksen puoluesihteeri <strong>Minna Arven</strong> sekä kansanedustaja <strong>Mari-Leena Talvitien</strong> poliittiset tilannekatsaukset. Ajankohtaisista aiheista hallituksen sosiaali- ja terveyspalveluiden uudistus puhutti kokouksessa runsaasti. Alustajien mukaan hallituksen sote-ratkaisu oli linjakas ja merkittävä ja se antaa aidot mahdollisuudet ratkaista käytännön tason ongelmat palveluiden saatavuuteen ja integraatioon liittyen niin perusterveydenhuollon ja erikoissairaanhoidon kuin sosiaali- ja terveyspalveluiden välilläkin. Myös haasteet tunnustettiin. Kaikkia prosessiin liittyviä ratkaisuja ei vielä ole tehty, ja etenkin rahoitukseen liittyvät kokonaisuudet ovat vielä auki.</p>\n<p>Piirikokous korosti omassa keskustelussaan myös liikkuvuuden ja logistiikan merkitystä elinvoimaisuuden alueellisessa turvaamisessa. Nelostien ja Oulun sataman lisäksi mm. 8-tien perusparannukset ja raskaan liikenteen edellytykset ovat merkittävä kohde koko maakunnan kannalta. Hanhikiven voimalahanke yhdistää koko rannikkoseutua ja Oulua yhä tiiviimmäksi ja yhtenäisemmäksi työssäkäyntialueeksi. Myös tästä näkökulmasta sujuvat liikenneyhteydet 8-tien osalta täytyy huomioida ratkaistaessa tulevia hankkeita.</p>\n<p><strong>Pohjois-Pohjanmaan Kokoomuksen piirihallitus 2016</strong></p>\n<p>Puheenjohtaja Tomi Kaismo, Oulu</p>\n<p>Varapuheenjohtaja Janne Heikkinen, Kempele</p>\n<p>Varapuheenjohtaja Hanna Saari, Kalajoki</p>\n<p>Taloudenhoitaja Jorma Kivelä, Oulu</p>\n<p>Hallituksen jäsenet:</p>\n<p>Pirjo Bastman, Oulu</p>\n<p>Jarmo Husso, Oulu</p>\n<p>Jorma Kortesoja, Oulainen</p>\n<p>Pauli Korpi-Tassi, Ylivieska</p>\n<p>Mika Kukkonen, Oulu</p>\n<p>Teija Larikka, Raahe</p>\n<p>Pekka Simonen, Oulu</p>\n<p>Martti Turunen, Kuusamo</p>\n<p><strong>LISÄTIEDOT:</strong></p>\n<p>Tomi Kaismo<br />\nPuheenjohtaja, Pohjois-Pohjanmaan Kokoomus<br />\nGsm: 045 670 7600<br />\n<a href="mailto:tomi.kaismo@otc.fi">tomi.kaismo@otc.fi</a></p>\n<p>Pia-Riitta Korvenheimo<br />\nPuheenjohtaja, Pohjois-Pohjanmaan Kokoomusnaiset<br />\nGsm: 040 719 1171<br />\n<a href="mailto:pia-riitta.korvenheimo@ouka.fi">pia-riitta.korvenheimo@ouka.fi</a></p>\n<p>Jaakko Salovaara<br />\nToiminnanjohtaja, Pohjois-Pohjanmaan Kokoomus<br />\nGsm: 040 744 0689<br />\n<a href="mailto:jaakko.salovaara@kokoomus.fi">jaakko.salovaara@kokoomus.fi</a></p>\n',
         date: "2015-11-21T15:35:02.000Z",
         tags: [
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Kokoomus",
-          },
-          {
-            name: "Kokoomusnaiset",
-          },
-          {
-            name: "Oulu",
-          },
-          {
-            name: "Pohjois-Pohjanmaa",
-          },
+          "Kempele",
+
+          "Kokoomus",
+
+          "Kokoomusnaiset",
+
+          "Oulu",
+
+          "Pohjois-Pohjanmaa",
         ],
       },
     },
@@ -3016,17 +2407,7 @@ export const WPContent = {
         content:
           '<p><em>Tämä kirjoitus on laadittu yhdessä ystäväni ja valtio-opin opiskelijan Manolis Huukin kanssa. </em></p>\n<p><strong>Terrorismiin liittyviä lakipykäliä tiukennettava</strong></p>\n<p>Terrorismin vaikutus maailmalla ja erityisesti Euroopassa on lisääntynyt viimeisen kymmenen vuoden aikana. Eilen jouduimme todistamaan tätä kehitystä raadollisimmillaan Pariisin hyökkäysten ja kidnappausten muodossa.</p>\n<p>Isossa kuvassa on oleellista ymmärtää, että terroristien värväys-, rahoitus- ja toimintatavat ovat muuttuneet. Internetin leviäminen lähes jokaiseen kotitalouteen on tehnyt siitä tärkeän työvälineen myös terroristijärjestöille. Esimerkiksi eilisistä Pariisin brutaaleista tapahtumista ISIS-taistelijat riemuitsivat Twitterissä yhteisellä <a href="http://Terrorismiin liittyviä lakipykäliä tiukennettava">hashtagilla</a>.</p>\n<p>Terroristit pyrkivät rekrytoimaan sosiaalisen median ja erilaisten internet-sivujen kautta toimintaansa lisää taistelijoita. Esimerkiksi Syyrian ja Irakin tapauksessa ISIS käyttää huomattavat määrät resursseja internetissä tapahtuvaan värväystoimintaan, joista todisteina ovat sosiaalisessa mediassa (Facebook, Youtube) jaetut ammattimaisesti tehdyt ja jaetut videot sekä kuvat, joilla pyritään vetoamaan katsojaan.</p>\n<p>Terroristijärjestöjen viestintä on ollut ilmeisen onnistunutta myös Suomessa. Suojelupoliisin päällikön <strong>Antti Pelttarin</strong> <a href="http://yle.fi/uutiset/supon_pelttari_syyriaan_on_lahtenyt_yli_50_taistelijaa_suomesta/7659711">mukaan</a> Suomesta on lähtenyt yli 50 henkilöä  Syyrian konfliktialueelle. SUPO:n mukaan osa värväystoiminnasta tapahtui kotimaassa.</p>\n<p>Mediassa on käyty – syystäkin &#8211; pitkään keskustelua siitä, miten taisteluihin lähteminen voitaisiin estää. Ongelmaksi on osoittautunut muun muassa se, etteivät viranomaiset pysty takavarikoimaan passia tai estämään ulkomaille matkustamista sellaiselta henkilöltä, jota epäillään taisteluihin lähteväksi henkilöksi. Tähän epäkohtaan tulee lainsäätäjien eduskunnassa puuttua. <a href="http://www.uusisuomi.fi/kotimaa/79177-suomesta-lahtenyt-60-isis-taistelijaa-passit-voitava-takavarikoida">Esimerkiksi</a> Kanadassa passit voidaan takavarikoida henkilöiltä, joiden epäillään liittyneen tai pyrkivän liittymään Isisin riveihin konfliktialueilla.</p>\n<p>YK:n turvallisuusneuvosto <a href="http://yle.fi/uutiset/yk_maarasi_ulkomaisiin_sotiin_lahtevat_taistelijat_laittomiksi/7490667">määräsi</a> syyskuussa 2014 yksimielisesti kaikkia järjestön jäsenmaita kieltämään kansalaisiaan lähtemästä ulkomaalaisiin sotiin rangaistuksen uhalla. Tämän päätöslauselman taustana on tällä hetkellä käynnissä oleva Syyrian sisällissota, joka on eri tilastojen perusteella houkutellut n. 12 000 ulkomaalaista (ei-syyrialaista) taistelijaa taistelemaan konfliktissa. Päätöslauselma (S/RES/2178 (2014) siis määrittelee jokaista jäsenmaata, kuten myös Suomea toimiin, jotta turvallisuusneuvoston päätöslauselma toteutuisi.</p>\n<p>Tämänhetkiset terrorismiin viittaavat lainkohdat on <strong>Lipposen</strong> II hallituksen <a href="http://www.finlex.fi/fi/laki/ajantasa/1889/18890039001?search[type]=pika&amp;search[pika]=rikoslaki%2034#L34a">esityksestä</a> hyväksytty lähes kaksitoista vuotta sitten (Rikoslain luku 34a 24.1.2003/17 Terrorismirikoksista). Nykyisin voimassa oleva laki siis käsittelee kokonaisvaltaisesti terrorismin määritelmää, terroristijärjestön johtamista, terrori-iskun suunnittelua ja rahoitusta. Kuten esitysajankohdasta voidaan päätellä, aiempi esitys on pohjautunut syyskuun 11. terrori-iskujen jälkeisiin uhkakuviin. Tästä on yli kymmenen vuotta ja tällaisessa ajassa on Euroopan ja Suomen turvallisuuskenttä kokenut ison muutoksen puhuttaessa terrorismista.</p>\n<p>Lain pikaista uudistamista puoltaa muun muassa se tosiasia, että viestinnän muuttuminen on nopeuttanut propagandaviestintää ja kynnystä lähteä ulkomaille taisteluihin. Nykyisissä lainkohdissa puhutaan terrorismin tapauksessa kaikkein oleellisimmista nimikkeistä ja siitä, miten näiden toteuttamisesta rangaistaan. Laissa ei kuitenkaan ole muotoiltu pykälää, joka myös kieltäisi tai estäisi konfliktialueelle matkustamisen, jos voidaan suurella todennäköisyydellä epäillä ao. henkilön suunnittelevan taisteluihin osallistumista tai jos viranomaisilla on tieto henkilön värväytymisestä.</p>\n<p>Lakiin (rikoslain luvun 34a 24.1.2003/17 Terrorismirikoksista) tulisi lisätä kohta, joka käsittelee konfliktialueille tai terroristijärjestön taisteluihin osallistumisen rangaistavaksi. Lisäksi viranomaisille tulee antaa valtuudet estää maasta poistuminen, jos tavoitteena on jokin aiemmin mainituista syistä.</p>\n<p><strong>Janne Heikkinen</strong><br />\nKempeleen kunnanvaltuuston puheenjohtaja (kok.)</p>\n',
         date: "2015-11-14T01:38:41.000Z",
-        tags: [
-          {
-            name: "ISIS",
-          },
-          {
-            name: "Pariisi",
-          },
-          {
-            name: "Terrorismi",
-          },
-        ],
+        tags: ["ISIS", "Pariisi", "Terrorismi"],
       },
     },
     {
@@ -3048,17 +2429,7 @@ export const WPContent = {
         content:
           "<p>Tänään valtuusto käsittelee ensi vuoden verotusta. Resurssivaliokunnan ohjauksen mukaisesti kunnanhallitus esittää, että tuloveroprosentti säilyy ennallaan ja tiukkaa menokuria jatketaan.</p>\n<p>Samaan aikaan Kempeleen kunnanvaltuusto valmistelee talousarviota vuodelle 2016. Talousarvion lähtökohtana on säilyttää talouden tasapaino ja vahvistaa laadukkaita palveluita.</p>\n<p>Vuoden 2016 talousarviossa on asetettu etusijalle kuntalaisten hyvinvointi ja turvallisuus sekä yritysten toimintaedellytyksien parantaminen.</p>\n<p>Investoinnit ovat elinvoimaa vahvistavia ja uusia työpaikkoja mahdollistavia. Esimerkkinä VR:n asema-alueen kehittäminen ja käyttöönotto. Helsinki-Pasila ja Turku-Kupittaa mallinen junaliikenne avataan Oulu-Kempele välille ensi vuonna. Tähän liittyvät muutostyöt avaavat myös uuden itä-länsi suuntaisen kunnan sisäisen liikenteen Eteläsuomentielle.</p>\n<p><b>Alle olen listannut muutamia keskeisiä tavoitteita talousarvioon 2016:</b></p>\n<p><b>&#8211; Tuloveroprosenttia ei nosteta<br />\n&#8211; Prosessien menokasvut ovat maltillisia<br />\n&#8211; Yhteistyötä kolmannen sektorin toimijoiden kanssa vahvistetaan<br />\n&#8211; Uusia virkoja perustetaan ainoastaan vahvaan harkintaan perustuen<br />\n&#8211; Digitalisaatiota edistetään panostuksilla laitteistoon ja ohjelmistoihin</b></p>\n",
         date: "2015-11-09T12:10:26.000Z",
-        tags: [
-          {
-            name: "Kempele",
-          },
-          {
-            name: "Kuntaverotus",
-          },
-          {
-            name: "Talousarvio",
-          },
-        ],
+        tags: ["Kempele", "Kuntaverotus", "Talousarvio"],
       },
     },
     {
@@ -3069,17 +2440,7 @@ export const WPContent = {
         content:
           "<p>Suomessa on jo pitkään vallinnut kummallinen ilmapiiri laittomien lakkojen ympärillä. Toisin kuin muissa pohjoismaissa, meillä laittomia lakkoja järjestetään vähät välittäen niiden seurauksista. Tässä ovat kunnostautuneet erityisesti liittojohtajat, jotka kuittaavat laittomat lakot ja miljoonatappiot verovähennetyillä jäsenmaksutuloilla ja olankohautuksella. Laittomien lakkojen läpi sormien katsomisesta on tullut maan tapa &#8211; se on laillistettua rikollisuutta.</p>\n<p>Määritelmällisesti laiton lakko on lakko, joka loukkaa voimassa olevaa työehtosopimusta. Rikoksen määritelmä puolestaan sisältää laittomaan tekoon syyllistymisen. Mikäli jokin taho järjestää laittomuuksia järjestelmällisesti puhutaan järjestäytyneestä rikollisuudesta.</p>\n<p>Kotimaan laittomia lakkoja mittaavat tilastot eivät kestä vertailua suhteessa muihin Pohjoismaihin. Siinä missä Suomessa on vuosittain runsaat sata laitonta lakkoa, niin Ruotsissa niitä on keskimäärin kaksi. Myös kansainvälisesti vertailtuna Suomi lukeutuu varsin lakkoherkkiin maihin.</p>\n<p>Nykyinen seuraamusjärjestelmämme on puutteellinen, eikä se pysty ehkäisemään kuin nimellisesti laittomia lakkoja. Suomessa hyvityssakon maksimimäärä on huomattavasti pienempi verrattuna pohjoismaiseen käytäntöön, vain noin 30 000 euroa. Sanktioiden alhainen taso on tehnyt laittomista lakoista houkuttelevan kiristyskeinon ammattiliitoille. On käsittämätöntä, että laittomista lakoista määrätään liitoille vain muutamien tuhansien eurojen sakkoja. Sakko ei ole missään suhteessa oikeudenmukainen työnantajalle ja yhteiskunnalle aiheutuneisiin tappioihin nähden, jotka voivat kohota jo päivässä miljooniin euroihin.</p>\n<p>Selittävä tekijä Suomen ja muiden Pohjoismaiden laittomien lakkojen määrälliselle erolle löytyy lainsäädännöstä ja sopimisen kulttuurista. Suomessa palkansaaja ei ole velvollinen korvaamaan laittomasta lakosta aiheutuneita vahinkoja työnantajalle. Laittomaan lakkoon osallistuminen ei ole myöskään irtisanomisperuste. Sen sijaan kaikissa muissa Pohjoismaissa liitoilla on täysi vahingonkorvausvelvollisuus laittomista lakoista sekä työntekijöillä henkilökohtainen vastuu. Ruotsissa työehtoneuvottelut valmistellaan jo hyvissä ajoin ennen seuraavaa neuvottelukierrosta. Siellä tahtotila on yhteinen, kun sekä työntekijät että työnantajat haluavat puolustaa ruotsalaista työtä!</p>\n<p>Maamme tapa ei voi olla se, että järjestelmällisiin laittomuuksiin syyllistyvät työmarkkinajärjestöt eivät joudu asianmukaiseen korvausvelvollisuuteen aiheuttamastaan vahingosta. Tähän johtopäätökseen tuli myös pääministeri ja SDP:n puheenjohtaja <strong>Kalevi Sorsa</strong>, joka ryhdikkäästi 1980-luvulla nosti silloisia korvauksia laittomista lakoista ja sitoi lakkosakot indeksiin. Samaa rohkeutta kaivattaisiin nyt <strong>Sipilän</strong>hallitukselta, jonka tulisi lopettaa tämä epäterve maan tapa ja siitä hyssyttely.</p>\n<p>Lainsäädäntöä korvausvelvollisuuden suhteen tulee päivittää ennen kuin seuraavan palkkaratkaisun sorvaaminen syksyllä 2016 alkaa. Olisi vähintään kohtuullista, että työtaistelusta tulisi ilmoittaa reilusti etukäteen ja sitä edeltäisi työtuomioistuimen käsittely ja uhkasakon määrittely, mikäli lakko on laiton. Näin ollen laittoman lakon seuraukset olisivat kaikkien osapuolten tiedossa jo ennen lakkoa.</p>\n",
         date: "2015-09-26T18:15:14.000Z",
-        tags: [
-          {
-            name: "AY-liike",
-          },
-          {
-            name: "Lakot",
-          },
-          {
-            name: "maan tapa",
-          },
-        ],
+        tags: ["AY-liike", "Lakot", "maan tapa"],
       },
     },
     {
@@ -3090,20 +2451,7 @@ export const WPContent = {
         content:
           '<p>Euroopan unionissa kulutetaan nykyisin enemmän kalaa ja kalatuotteita kuin koskaan aikaisemmin sen historiassa. Moderni tekniikka ja kaupalliset rakenteet ovat mahdollistaneet sen, että kysynnän kasvuun on pystytty vastata. Ne ovat kuitenkin samanaikaisesti aiheuttaneet pyyntipaineen merkittävän kasvun Euroopan vesillä.</p>\n<p><span style="font-weight: 400;">Nykyisin huomattavan useita kalakantoja ylikalastetaan ja ekosysteemit, joiden elimellinen osa ne ovat, ovat päätyneet äärimmäisen uhanalaisiksi. Tämä siitä huolimatta, että käsillämme on saatavilla enemmän tieteellistä faktaa kalakantojen tilasta, kuin koskaan aikaisemmin. Suomi ei tee tässä poikkeusta, sillä esimerkiksi kotimaan 18:sta Itämeren luonnonlohikannasta on jäljellä enää kaksi. </span></p>\n<p><span style="font-weight: 400;">Ironiseksi nykytilanteen tekee se, että liikakalastuksen taustalla on elinkeinoa vahvistava massiivinen verorahoitteinen tukijärjestelmä. Erityisesti EU:n rooli on tältä osin ristiriitainen. Siinä missä EU:lta odotetaan samanaikaisesti kestävän kalastuksen periaatteiden toteuttamisen valvomista, niin se itse kannustaa kalastusalaa yhä tehokkaampaan liikakalastukseen. </span></p>\n<p><span style="font-weight: 400;">Nykyisin EU käyttää tappiollisen kalastussektorin tukemiseen vuosittain noin 3,3 miljardia euroa. Yksinään Suomi sai jäsenmaana vuonna 2009 yli 60 miljoonaa euroa tukia. Määrä oli moninkertainen suhteessa pyydetyn saaliin markkina-arvoon. Valtiontalouden tarkastusviraston mukaan suomalaisen elinkeinokalatalouden saamien tukien määrä on kaksinkertaistunut EU-jäsenyyden myötä. Tukimuodoista merkittävin on kalastusalusten polttoaineen verohelpotus, jonka avulla laivat pystyvät toimimaan aikaisempaa kauempana ja ajallisesti pidempiä pyyntimatkoja. </span></p>\n<p><span style="font-weight: 400;">Euroalue ja muu läntinen Eurooppa elää keskellä velkakriisiä, jossa etsitään alati uusia säästö- ja leikkauskohteita. Olisi vähintäänkin kohtuullista, että säästöt aloitettaisiin edellä mainitun kaltaisista ympäristölle ja kalakannoille haitallisista tuista. </span></p>\n<p><strong>Janne Heikkinen</strong></p>\n<p><span style="font-weight: 400;">Kempeleen kunnanvaltuuston puheenjohtaja (kok.)</span></p>\n<p><em>Kirjoitus on julkaistu Forum24-lehdessä.</em></p>\n',
         date: "2015-09-26T18:07:25.000Z",
-        tags: [
-          {
-            name: "EU",
-          },
-          {
-            name: "Euroopan unioni",
-          },
-          {
-            name: "Kalastus",
-          },
-          {
-            name: "Kalastuspolitiikka",
-          },
-        ],
+        tags: ["EU", "Euroopan unioni", "Kalastus", "Kalastuspolitiikka"],
       },
     },
     {
@@ -3114,17 +2462,7 @@ export const WPContent = {
         content:
           '<p>Suomi on hyvää kyytiä matkalla kohti omaa velkakriisiä. Julkisesta sektorista on muodostunut taloutemme kantokykyyn nähden aivan liian suuri menoerä. Vapaapudotusta vauhdittaa työmarkkinoiden osapuolet, jotka eivät suostu luopumaan saavutetuista etuuksista yhteiskunnan kokonaisedun hyväksi.</p>\n<p>Eräs räikeä esimerkki saavutetuista eduista, joista tulisi luopua, on julkisen sektorin laajentuneet lomaoikeudet. Sekä kuntien että valtion virkamiehet nauttivat tavallisiin työtätekeviin kansalaisiin nähden pidemmistä lomista. Joitain vuosia sitten lomapäivien laskentaa muutettiin julkisella sektorilla siten, että viikon kestävään lomaan vapaapäiviä lasketaan vain viisi aikaisemman kuuden sijaan. Toisin sanoen 30 päivän loma on julkisella sektorilla 6 viikkoa ja yksityisellä 5 viikkoa.</p>\n<p>Vielä epäoikeudenmukaisemmaksi lomien pituudet muuttuvat, kun henkilö on työskennellyt pitkään julkisella sektorilla. Valtion virka- ja työehtosopimusten mukaan yli 15 vuotta palvelleet ansaitsevat 38 lomapäivää lomanmääräytymisvuoden aikana. Eli 15 vuoden työuran jälkeen kunnissa ja valtiolla saa lähes 8 viikon loman, kun yksityissektorilla lomia on 5 viikkoa. Näin hullunkurinen tilanne on mahdollista ainoastaan, kun lomaoikeuksista päätetään työehtosopimuksissa, joiden neuvotteluissa työnantajan edustajina on kuntien työ- tai virkasuhteessa olevia henkilöitä.</p>\n<p>Kestävyysvajeessa kamppailevan kansantalouden näkökulmasta kysymys ei ole mistään marginaalisesta etuisuudesta. Yksinään kuntatyöntekijöitä on Suomessa jo arviolta yli 430 000. Lisäksi valtion viroissa on yli 80 000 henkilöä. Eräiden <a href="http://www.yrittajat.fi/fi-FI/uutisarkisto/a/etusivun-uutiset/virkamiesten-lomat-muiden-pituisiksi-saasto-perati-kaksi-miljardia" target="_blank">arvioiden</a> mukaan laajennetun lomaoikeuden poistamisella voitaisiin saavuttaa jopa kahden miljardin euron säästöt julkiseen talouteen.</p>\n<p>Eriarvoistavalle lomajärjestelylle on täysin mahdotonta nähdä moraalisesti kestävää perustetta. Etenkään tilanteessa, jossa palveluista joudutaan tinkimään ja kansalaiset maksamaan korotettuja kunnallisveroja. Tämän vuoksi seuraavan kerran neuvoteltaessa kunta-alan ja valtion virka- ja työehtosopimuksista tulisi työntekijöiden lomaoikeudet vähentää yksityissektorin lomien tasolle.</p>\n<p><strong>Janne Heikkinen</strong></p>\n<p>Kempeleen kunnanvaltuuston puheenjohtaja (kok.)</p>\n<p>&nbsp;</p>\n',
         date: "2015-09-01T18:12:57.000Z",
-        tags: [
-          {
-            name: "Julkinen sektori",
-          },
-          {
-            name: "leikkaukset",
-          },
-          {
-            name: "lomaoikeus",
-          },
-        ],
+        tags: ["Julkinen sektori", "leikkaukset", "lomaoikeus"],
       },
     },
     {
@@ -3225,11 +2563,7 @@ export const WPContent = {
         content:
           "<p>Presidentti Niinistö totesi pari viikkoa takaperin Euroopan kolkuttelevan kylmän sodan portteja. Todistamme näytöstä, jossa suurvalta-asemaa haikaileva Venäjä on miehittänyt osan Ukrainasta ja käyttää jatkuvasti suoria ja epäsuoria voimakeinoja naapurivaltioidensa horjuttamiseksi. </p>\n<p>Kansainvälinen yhteisö Euroopan Unionia ja Natoa myöten ovat osoittaneet solidaarisuuttaan Ukrainan kansaa kohtaan määräämällä Venäjälle erilaisia pakotteita kriisin lietsomisen takia. Ukrainan alueellista koskemattomuutta se ei ole kuitenkaan onnistunut takaamaan &#8211; Ukraina ei ole Nato-maa.</p>\n<p>Asemoituminen puolustusliittoon on mielekästä vielä näin hyvän sään aikana. Nato-keskustelua on leimannut se merkillinen piirre, että rauhallisina aikoina jäsenyys ei ole ajankohtaista ja kansainvälisien kriisien aikana hoetaan vastaavasti, että “ratkaisut tulee tehdä poutasäällä”. Tämä on ristiriitaista. Niin sanottu Nato-optio on keskustelua räikeästi harhaanjohtava konsepti, sillä jäsenyyden saaminen ei tapahdu kädenkäänteessä, vaan edellyttää mm. hyväksymismenettelyn kaikkien Nato-maiden parlamentissa.</p>\n<p>Edesmennyt jalkaväenkenraali Adolf Ehrnrooth totesi useaan kertaan elämänsä aikana, ettei Suomen enää koskaan tulisi jäädä yksin. Tähän huoleen on helppo yhtyä, sillä on epäselvää saisiko Suomi todellisessa kriisitilanteessa Ukrainan tavoin lainkaan sotilaallista apua. Tämän takia Suomen tulisi päättää viimeiset rippeet rähmällään olemisesta Moskovan edessä ja olla mukana “kaikissa niissä organisaatioissa, joihin demokraattiset länsimaat kuuluvat”, kuten presidentti Ahtisaari on moneen otteeseen todennut. Nato on turvallisuuden kannalta näistä keskeisin.</p>\n<p>Tilannetta kuvaavana ajatusleikkinä voidaan kysyä, että myöntäisitkö sinä palovakuutuksen sille, joka anoo tätä talon jo palaessa? </p>\n<p><strong>Janne Heikkinen<br />\nKempeleen kunnanhallituksen varapuheenjohtaja (Kok.)</strong></p>\n",
         date: "2014-09-01T10:33:29.000Z",
-        tags: [
-          {
-            name: "Nato",
-          },
-        ],
+        tags: ["Nato"],
       },
     },
     {

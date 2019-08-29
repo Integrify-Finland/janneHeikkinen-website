@@ -1,6 +1,5 @@
 import React, { useState } from "react"
 import { graphql } from "gatsby"
-import { switchToNums, switchToCat } from "../../utilities/switches"
 import Layout from "../../components/Layout"
 import BlogItem from "../../components/BlogItem"
 import SEO from "../../components/SEO"
@@ -26,6 +25,7 @@ const Blogi = ({ data }) => {
   }
 
   const allBlogs = [...contentfulBlog.edges, ...WP.edges]
+  console.log("allBlogs:", allBlogs)
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
   const categories = WP.edges
     .map(({ node }) => {
@@ -36,19 +36,19 @@ const Blogi = ({ data }) => {
     }, [])
 
   const contentfulCats = contentfulBlog.edges.map(({ node }) =>
-    node.categories.map(value => value)
+    node.categories.map(value => categories.push(value))
   )
 
-  const allCategories = [...categories, ...contentfulCats.join()]
+  const allCategories = [...categories]
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
 
-  const tags = WP.edges
+  const tags = allBlogs
     .filter(({ node }) => node.tags !== null)
     .reduce((acc, { node }) => {
       return [...acc, ...node.tags]
     }, [])
-    .map(tags => tags.name)
+    .map(tags => tags)
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()
 
@@ -67,8 +67,7 @@ const Blogi = ({ data }) => {
         return {
           node: {
             ...node,
-            tags:
-              node.tags !== null && node.tags.filter(tag => tag.name === value),
+            tags: node.tags !== null && node.tags.filter(tag => tag === value),
           },
         }
       })

@@ -9,7 +9,6 @@ import Section from "../../components/Section"
 import { selectImg } from "../../utilities/WPImages"
 import { formatDate } from "../../utilities/FormatDate"
 import { WPContent, WP } from "../../utilities/WPblogs.js"
-import { switchToCat } from "../../utilities/switches"
 
 const BlogPostTemplate = ({ data, location }) => {
   const { allContentfulBlog, contentfulBlog } = data
@@ -31,7 +30,7 @@ const BlogPostTemplate = ({ data, location }) => {
   const currentTags =
     currentBlog &&
     currentBlog.tags &&
-    currentBlog.tags.map(tag => tag.name).join(", ")
+    currentBlog.tags.map(tag => tag).join(", ")
 
   const createContentfulMarkup = () => {
     return { __html: contentfulBlog.body.childMarkdownRemark.html }
