@@ -25,7 +25,7 @@ const Blogi = ({ data }) => {
   }
 
   const allBlogs = [...contentfulBlog.edges, ...WP.edges]
-  console.log("allBlogs:", allBlogs)
+
   const [chosenBlogs, setChosenBlogs] = useState(allBlogs)
   const categories = WP.edges
     .map(({ node }) => {
