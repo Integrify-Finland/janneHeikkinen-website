@@ -38,7 +38,6 @@
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-  overflow: hidden;
   height: 100vh;
 
   -ms-overflow-style: none; // IE 10+
@@ -51,23 +50,27 @@
   @include for-phone-giant-landscape {
     height: 630px;
     background-attachment: scroll;
+    overflow: hidden;
   }
 
   @include for-phone-big-landscape {
     height: 457px;
     background-attachment: scroll;
+    overflow: hidden;
   }
 
   @include for-phone-only {
     height: 457px;
     max-height: 510px;
     background-attachment: scroll;
+    overflow: hidden;
   }
 
   @include for-phone-landscape {
     height: 431px;
     max-height: 510px;
     background-attachment: scroll;
+    overflow: hidden;
   }
 
   &__textbox {
