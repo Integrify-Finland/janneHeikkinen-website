@@ -44,6 +44,7 @@ const BlogPostTemplate = ({ data, location }) => {
     : formatDate(contentfulBlog.date)
   const URL = "https://janneheikkinen.fi"
   const WPdescription =
+    currentBlog &&
     currentBlog.content.replace(/<[^>]*>?/gm, "").substring(0, 450) + "..."
   return (
     <Layout>
