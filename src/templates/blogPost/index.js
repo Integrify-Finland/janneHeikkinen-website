@@ -21,10 +21,10 @@ const BlogPostTemplate = ({ data, location }) => {
   const currentWPContent = WPContent.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
-
   const currentBlog = WP.edges
     .filter(({ node }) => `/blogi/${node.slug}` === location.pathname)
     .map(blog => blog.node)[0]
+
   const currentCat = currentBlog && currentBlog.categories.join(", ")
 
   const currentTags =
@@ -42,7 +42,9 @@ const BlogPostTemplate = ({ data, location }) => {
   const date = currentBlog
     ? formatDate(currentBlog.date)
     : formatDate(contentfulBlog.date)
-
+  const URL = "https://janneheikkinen.fi"
+  const WPdescription =
+    currentBlog.content.replace(/<[^>]*>?/gm, "").substring(0, 450) + "..."
   return (
     <Layout>
       {contentfulBlog && (
@@ -76,18 +78,24 @@ const BlogPostTemplate = ({ data, location }) => {
           <meta
             name="og:image"
             property="og:image"
-            content={selectImg(currentBlog.id)}
+            content={`${URL}${selectImg(currentBlog.id)}`}
           />
-          {/* <meta
-                name="og:description"
-                property="og:description"
-                content={description}
-              /> */}
+          <meta
+            name="og:description"
+            property="og:description"
+            content={WPdescription}
+          />
           <meta name="twitter:title" content={currentBlog.title} />
-          {/* <meta name="twitter:description" content={description} /> */}
+          <meta name="twitter:description" content={WPdescription} />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta name="twitter:image:src" content={selectImg(currentBlog.id)} />
-          <meta name="twitter:image" content={selectImg(currentBlog.id)} />
+          <meta
+            name="twitter:image:src"
+            content={`${URL}${selectImg(currentBlog.id)}`}
+          />
+          <meta
+            name="twitter:image"
+            content={`${URL}${selectImg(currentBlog.id)}`}
+          />
         </Helmet>
       )}
 

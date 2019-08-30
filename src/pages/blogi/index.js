@@ -16,7 +16,7 @@ const Blogi = ({ data }) => {
   const { contentfulBlog } = data
 
   const [currentPage, setCurrentPage] = useState(1)
-  const [postsPerPage] = useState(8)
+  const [postsPerPage] = useState(10)
   const indexOfLastPost = currentPage * postsPerPage
   const indexOfFirstPost = indexOfLastPost - postsPerPage
   const paginate = pageNumber => {

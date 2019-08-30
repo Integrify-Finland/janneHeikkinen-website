@@ -21,11 +21,7 @@ const BlogItem = ({
     if (text && isContentful) {
       return <p>{text.substring(0, 450) + "..."}</p>
     } else if (text && !isContentful) {
-      return (
-        <div
-          dangerouslySetInnerHTML={{ __html: text.substring(0, 450) + "..." }}
-        />
-      )
+      return <>{text.replace(/<[^>]*>?/gm, "").substring(0, 450) + "..."}</>
     } else return "Sorry, no text"
   }
 
