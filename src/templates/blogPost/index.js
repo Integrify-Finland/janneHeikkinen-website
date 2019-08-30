@@ -92,7 +92,6 @@ const BlogPostTemplate = ({ data, location }) => {
       )}
 
       <div style={{ paddingTop: "128px", backgroundColor: "#edf5f8" }}>
-        <SEO title="blogi" />
         <Section isBlog>
           {contentfulBlog && (
             <BlogPost
