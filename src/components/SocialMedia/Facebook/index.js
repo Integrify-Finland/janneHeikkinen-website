@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from "react"
+import PropTypes from "prop-types"
 
-import './styles.scss'
+import "./styles.scss"
 
 class Facebook extends Component {
   state = {
@@ -14,7 +14,7 @@ class Facebook extends Component {
       window.FB.init({
         autoLogAppEvents: true,
         xfbml: true,
-        version: 'v3.2',
+        version: "v3.2",
       })
     }
     ;((d, s, id) => {
@@ -23,9 +23,9 @@ class Facebook extends Component {
       const js = d.createElement(s)
       js.id = id
       js.async = true
-      js.src = 'https://connect.facebook.net/fi_FI/sdk.js'
+      js.src = "https://connect.facebook.net/fi_FI/sdk.js"
       fjs.parentNode.insertBefore(js, fjs)
-    })(document, 'script', 'facebook-jssdk')
+    })(document, "script", "facebook-jssdk")
   }
 
   componentDidMount = () => {

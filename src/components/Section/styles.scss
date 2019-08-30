@@ -11,13 +11,12 @@
     @include for-phone-only {
       width: 100vw;
     }
-
   }
   &--blog-post {
     max-width: 95%;
   }
   &__children > * {
-    margin-bottom: $spacing-04;
+    margin-bottom: $spacing-04 !important;
     @include for-phone-only {
       margin-bottom: $spacing-02-50;
     }

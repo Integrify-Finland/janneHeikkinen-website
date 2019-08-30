@@ -8,7 +8,7 @@
   }
 
   @include for-phone-only {
-    padding: 0 $spacing-01;
+    width: 90%;
     text-align: center;
   }
 }
