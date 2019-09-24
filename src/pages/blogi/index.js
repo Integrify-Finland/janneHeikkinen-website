@@ -35,10 +35,6 @@ const Blogi = ({ data }) => {
       return accumulator.concat(currentValue)
     }, [])
 
-  const contentfulCats = contentfulBlog.edges.map(({ node }) =>
-    node.categories.map(value => categories.push(value))
-  )
-
   const allCategories = [...categories]
     .filter((value, i, arr) => arr.indexOf(value) === i)
     .sort()

@@ -10,7 +10,7 @@
   font-family: $font-family;
   background-color: $primary;
   transform: translateX(101%);
-  transition: transform 0.5s cubic-bezier(0.385, 0.035, 0.155, 1.465);
+  transition: transform 0.5s ease-in-out;
   z-index: 5000;
   padding: $spacing-01;
   padding-right: 0;
@@ -57,7 +57,6 @@
     line-height: 2rem;
     padding-bottom: $spacing-01;
     color: $secondary;
-
 
     &:active,
     &--active {

@@ -68,7 +68,7 @@ const BlogPost = ({
         )}
 
         <div className="blog-post__footer">
-          <div>
+          <>
             <div className="blog-post__categories">
               {categories && (
                 <>
@@ -83,7 +83,7 @@ const BlogPost = ({
                 </>
               )}
             </div>
-          </div>
+          </>
           <div className="blog-post__share-button-container">
             <FacebookShareButton
               url={shareUrl}
