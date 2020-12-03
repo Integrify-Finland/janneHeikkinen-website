@@ -7,16 +7,7 @@ import FacebookIcon from "../SocialMediaIcons/Facebook/index"
 import TwitterIcon from "../SocialMediaIcons/Twitter/index"
 import InstagramIcon from "../SocialMediaIcons/Instagram/index"
 
-const Footer = ({
-  firstPersonName,
-  secondPersonName,
-  firstPersonTitle,
-  secondPersonTitle,
-  firstPersonPhone,
-  secondPersonPhone,
-  firstPersonEmail,
-  secondPersonEmail,
-}) => {
+const Footer = ({ contactUs }) => {
   const year = new Date().getFullYear()
 
   const copyright = `Copyright ${String.fromCharCode(
@@ -56,34 +47,21 @@ const Footer = ({
         </div>
 
         <div className="footer__contact-container">
-          <div className="footer__contact1">
-            <h1>{firstPersonName}</h1>
-            <p>
-              {firstPersonTitle} <br />
-              Puhelin:
-              <br />
-              {firstPersonPhone}
-              <br />
-              Sähköposti:
-              <br />
-              {firstPersonEmail}
-            </p>
-          </div>
-
-          <div className="footer__contact2">
-            <h1>{secondPersonName}</h1>
-            <p>
-              {secondPersonTitle}
-              <br />
-              Puhelin:
-              <br />
-              {secondPersonPhone}
-              <br />
-              Sähköposti:
-              <br />
-              {secondPersonEmail}
-            </p>
-          </div>
+          {contactUs.map(({ node }) => (
+            <div className="footer__contact1">
+              <h1>{node.name}</h1>
+              <p>
+                {node.title} <br />
+                Puhelin:
+                <br />
+                {node.phoneNumber}
+                <br />
+                Sähköposti:
+                <br />
+                {node.email}
+              </p>
+            </div>
+          ))}
         </div>
 
         <p className="footer__copyright">{copyright}</p>
