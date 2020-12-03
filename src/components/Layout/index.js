@@ -22,7 +22,7 @@ const Layout = ({ children }) => {
       }
     }
   `)
-  console.log("data", data.contactUs.edges)
+
   return (
     <>
       <Navigation />
