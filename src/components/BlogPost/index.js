@@ -104,10 +104,10 @@ const BlogPost = ({
         </div>
       </div>
       <div className="blogPost-button-container">
-        <Link to={`blogi/${prevSlug}`}>
+        <Link to={`/blogi/${prevSlug}`}>
           <button className={prevClasses}>{"<-"} Edellinen</button>
         </Link>
-        <Link to={`blogi/${nextSlug}`}>
+        <Link to={`/blogi/${nextSlug}`}>
           <button className={nextClasses}>Seuraava {"->"}</button>
         </Link>
       </div>

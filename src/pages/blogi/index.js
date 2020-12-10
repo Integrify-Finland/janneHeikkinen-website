@@ -112,7 +112,7 @@ const Blogi = ({ data }) => {
                     image={img}
                     text={text}
                     isContentful={!!blog.node.entryImage}
-                    link={`blogi/${blog.node.slug
+                    link={`/blogi/${blog.node.slug
                       .toLowerCase()
                       .replace(/[']/gi, "")
                       .replace(/ /gi, "-")
