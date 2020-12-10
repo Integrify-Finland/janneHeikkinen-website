@@ -33,7 +33,7 @@ const Sidebar = ({
                 number={number}
                 image={img}
                 text={shortText}
-                link={`blogi/${node.slug
+                link={`/blogi/${node.slug
                   .toLowerCase()
                   .replace(/[']/gi, "")
                   .replace(/ /gi, "-")
