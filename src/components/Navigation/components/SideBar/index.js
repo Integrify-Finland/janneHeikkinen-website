@@ -38,7 +38,13 @@ const SideBar = ({ show, toggleMenu }) => {
           >
             Videot
           </Link>
-
+          <Link
+            to="/kuntavaalit"
+            className="mobile-menu__nav-link"
+            activeClassName="mobile-menu__nav-link--active"
+          >
+            Kuntavaalit
+          </Link>
           <Link to="/medialle" className="mobile-menu__nav-link">
             Medialle
           </Link>

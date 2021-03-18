@@ -1,0 +1,16 @@
+.kuntavaalit {
+  &__text {
+    p {
+      @include font-size-l;
+      line-height: 1.6rem;
+      color: $primary;
+      margin: 0;
+      margin-top: $spacing-00-50;
+    }
+
+    @include for-phone-only {
+      width: 90%;
+      margin: 0 auto;
+    }
+  }
+}

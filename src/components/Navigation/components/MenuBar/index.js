@@ -58,6 +58,14 @@ const MenuBar = ({ toggleMenu }) => (
         </Link>
 
         <Link
+          to="/kuntavaalit"
+          className="navbar__nav-link"
+          activeClassName="navbar__nav-link--active"
+        >
+          Kuntavaalit
+        </Link>
+
+        <Link
           to="/yhteys"
           className="navbar__nav-link"
           activeClassName="navbar__nav-link--active"

@@ -9,6 +9,7 @@ import Section from "../../components/Section"
 
 import "./styles.scss"
 const Medialle = ({ data }) => {
+  console.log(data)
   const { forMedia } = data
 
   return (
