@@ -9,7 +9,6 @@ import Section from "../../components/Section"
 import "./styles.scss"
 
 const Kuntavaalit = ({ data }) => {
-  // console.log(data)
   const { contentfulCandidate } = data
 
   const handleSplitTitle = str => {
@@ -65,7 +64,7 @@ export const query = graphql`
         }
       }
       image {
-        fluid {
+        fluid(quality: 100) {
           base64
           aspectRatio
           src
