@@ -11,15 +11,6 @@ import "./styles.scss"
 const Kuntavaalit = ({ data }) => {
   const { contentfulCandidate } = data
 
-  const handleSplitTitle = str => {
-    const hasBreak = str.includes("<br>")
-    if (hasBreak) {
-      return str.split("<br>")
-    }
-    return str.split("<br>")
-  }
-  console.log("contentfulCandidate.childMarkdownRemark:", contentfulCandidate)
-
   function createMarkup() {
     return {
       __html: contentfulCandidate.description.childMarkdownRemark.html,
