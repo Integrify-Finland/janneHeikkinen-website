@@ -19,10 +19,13 @@ const Kuntavaalit = ({ data }) => {
     }
     return str.split("<br>")
   }
+  console.log("contentfulCandidate.childMarkdownRemark:", contentfulCandidate)
 
-  const paragraphs = handleSplitTitle(
-    contentfulCandidate.description.description
-  )
+  function createMarkup() {
+    return {
+      __html: contentfulCandidate.description.childMarkdownRemark.html,
+    }
+  }
 
   return (
     <Layout>
@@ -41,11 +44,10 @@ const Kuntavaalit = ({ data }) => {
             />
           </a>
         </div>
-        <div className="kuntavaalit__text">
-          {paragraphs.map(p => (
-            <p>{p}</p>
-          ))}
-        </div>
+        <div
+          dangerouslySetInnerHTML={createMarkup()}
+          className="kuntavaalit-markup"
+        />
       </Section>
     </Layout>
   )
@@ -58,7 +60,9 @@ export const query = graphql`
     contentfulCandidate {
       id
       description {
-        description
+        childMarkdownRemark {
+          html
+        }
       }
       image {
         fluid {

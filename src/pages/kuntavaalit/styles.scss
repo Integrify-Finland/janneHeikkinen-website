@@ -14,3 +14,9 @@
     }
   }
 }
+.kuntavaalit-markup {
+  @include for-phone-only {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
