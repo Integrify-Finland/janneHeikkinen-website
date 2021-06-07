@@ -7,23 +7,23 @@
   @include for-ipad-pro-big-portrait {
     right: 10%;
     left: 10%;
-    top: 45%;
+    top: 12%;
   }
 
   @include for-tablet-portrait-down {
     right: 0;
     left: 0;
-    top: 45%;
+    top: 12%;
   }
 
   @include for-phone-big-landscape {
     right: 5%;
     left: 35%;
-    top: 15%;
+    top: 5%;
   }
 
   @include for-phone-only {
-    top: 39%;
+    top: 13.3%;
   }
 
   @include for-phone-small-landscape {
@@ -34,14 +34,18 @@
 }
 
 .header {
-  background-image: url("../Header/assets/heroBG.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  position: relative;
-  height: 100vh;
-
+  // background-image: url("../Header/assets/337.jpg");
+  // background-size: contain;
+  // background-repeat: no-repeat;
+  // // background-attachment: fixed;
+  // position: relative;
+  // height: 800px;
+  // width: 100%;
   -ms-overflow-style: none; // IE 10+
   scrollbar-width: none; // Firefox
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   &::-webkit-scrollbar {
     display: none; // Safari and Chrome
@@ -60,7 +64,7 @@
   }
 
   @include for-phone-only {
-    height: 457px;
+    height: 400px;
     max-height: 510px;
     background-attachment: scroll;
     overflow: hidden;
@@ -172,8 +176,8 @@
     padding-bottom: $spacing-02;
 
     @include for-tablet-portrait-down {
-      line-height: $spacing-04;
-      @include font-size-l-xxxx;
+      line-height: $spacing-03;
+      @include font-size-l-xxx;
       text-align: center;
     }
 
@@ -231,18 +235,18 @@
     }
 
     @include for-phone-big-landscape {
-      bottom: -16%;
+      bottom: -55%;
       animation-delay: 5000ms;
     }
 
     @include for-phone-only {
-      bottom: -19%;
+      bottom: -55%;
       padding: 0;
       animation-delay: 5000ms;
     }
 
     @include for-phone-landscape {
-      bottom: -25%;
+      bottom: -55%;
       animation-delay: 5000ms;
     }
   }
@@ -250,63 +254,66 @@
   &__image {
     // animation: image-animation 1400ms cubic-bezier(0.68, -0.15, 0.465, 1.35)
     //   600ms both;
-    max-height: 105%;
-    max-width: 120%;
-    left: 8%;
-    top: -5%;
-    position: absolute;
-    z-index: 2;
-    transform-origin: bottom;
+    // max-height: 105%;
+    // max-width: 120%;
+    // left: 8%;
+    // top: -5%;
+    // position: absolute;
+    // z-index: 2;
+    // transform-origin: bottom;
+    width: 88%;
+    display: flex;
+    margin: 0 auto;
 
     @include for-ipad-pro-big-landscape {
-      left: 1%;
+      // left: 1%;
     }
 
     @include for-ipad-pro {
-      top: 1%;
+      // top: 1%;
     }
 
     @include for-ipad-pro-landscape {
-      left: 1%;
-      height: 115%;
+      // left: 1%;
+      // height: 115%;
     }
 
     @include for-ipad-pro-big-portrait {
-      left: 1%;
-      height: 99%;
+      // left: 1%;
+      // height: 99%;
     }
 
     @include for-ipad-landscape-down {
-      left: 1%;
-      height: 99%;
+      // left: 1%;
+      // height: 99%;
     }
 
     @include for-ipad-portrait-down {
-      height: 99%;
-      left: -14%;
+      // height: 99%;
+      // left: -14%;
     }
 
     @include for-phone-big-landscape {
-      height: 452px;
-      animation-delay: 1600ms;
+      // height: 452px;
+      // animation-delay: 1600ms;
     }
 
     @include for-phone-only {
-      z-index: 1;
-      left: 0;
-      top: 2%;
-      height: 448px;
-      max-height: 450px;
-      animation-delay: 1600ms;
+      // z-index: 1;
+      // left: 0;
+      // top: 2%;
+      // height: 448px;
+      // max-height: 450px;
+      // animation-delay: 1600ms;
     }
 
     @include for-phone-landscape {
-      z-index: 1;
-      left: 1%;
-      top: -3%;
-      height: 444px;
-      max-height: 450px;
-      animation-delay: 1600ms;
+      // z-index: 1;
+      // left: 1%;
+      // top: -3%;
+      // height: 444px;
+      // max-height: 450px;
+      // animation-delay: 1600ms;
     }
   }
 }

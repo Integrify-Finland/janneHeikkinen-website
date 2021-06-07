@@ -3,7 +3,7 @@ import React, { useState } from "react"
 import classNames from "classnames"
 import PropTypes from "prop-types"
 import "./styles.scss"
-import janneImage from "./assets/janneHeader.png"
+import janneImage from "./assets/337.jpg"
 import Logo from "./assets/logo.svg"
 
 import Newsletter from "../Newsletter"
