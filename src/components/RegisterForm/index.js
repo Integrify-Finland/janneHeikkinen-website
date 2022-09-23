@@ -3,6 +3,7 @@ import NetlifyForm from "react-netlify-form"
 
 import Button from "../Button"
 import Checkbox from "../Checkbox"
+import Modal from "../Modal"
 import "./styles.scss"
 
 const RegisterForm = () => {
@@ -18,6 +19,7 @@ const RegisterForm = () => {
   const [disable, setDisable] = useState(true)
   const [isSubscribing, setIsSubscribing] = useState(false)
   const [isAgreeing, setIsAgreeing] = useState(false)
+  const [isModalOpen, setIsModalOpen] = useState(false)
 
   useEffect(() => {
     isPassed()
@@ -101,7 +103,9 @@ const RegisterForm = () => {
   }
 
   const renderForm = (msg, isDisabled = false) => {
-    console.log('isDisabled:', isDisabled)
+    if (isModalOpen) {
+      return <Modal setIsOpen={setIsModalOpen} setIsAgreeing={setIsAgreeing} />
+    }
     return (
       <>
         <div className="register-form__top">Liity mukaan</div>
@@ -205,8 +209,11 @@ const RegisterForm = () => {
           käsitellä tietojani tietosuojaselosteen mukaisesti. Liityn samalla
           Jannen uutiskirjeen tilaajaksi.
         </p>
+        <p className="terms terms-link" onClick={() => setIsModalOpen(true)}>
+          Lue tietosuojaselosteen.
+        </p>
         <div className="register-terms-actions">
-          <p className="terms">
+          <div className="terms">
             <Checkbox
               label="KYLLÄ!"
               isChecked={isSubscribing}
@@ -215,8 +222,8 @@ const RegisterForm = () => {
               name="subscribe"
               isPassed={isPassed}
             />
-          </p>
-          <p className="terms">
+          </div>
+          <div className="terms">
             <Checkbox
               label="Olen lukenut ja hyväksyn tietosuojaselosteen."
               isChecked={isAgreeing}
@@ -225,11 +232,14 @@ const RegisterForm = () => {
               id="agreeTerms"
               name="terms"
             />
-          </p>
+          </div>
         </div>
-        <div>
-          <Button variant="orange" size="md" label={msg} disabled={isDisabled || disable} />
-        </div>
+        <Button
+          variant="orange"
+          size="md"
+          label={msg}
+          disabled={isDisabled || disable}
+        />
       </>
     )
   }
