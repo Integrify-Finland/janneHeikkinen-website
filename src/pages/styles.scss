@@ -1,0 +1,17 @@
+.osallistu {
+  &__title {
+    color: $grey;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    @include font-size-l-xxx;
+    text-decoration: none;
+    border-bottom: 5px solid $secondary;
+
+    @include for-tablet-portrait-down {
+      text-align: left;
+      margin-bottom: $spacing-02;
+    }
+  }
+}
