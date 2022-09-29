@@ -56,6 +56,13 @@ const MenuBar = ({ toggleMenu }) => (
         >
           Medialle
         </Link>
+        <Link
+          to="/osallistu"
+          className="navbar__nav-link"
+          activeClassName="navbar__nav-link--active"
+        >
+          Osallistu
+        </Link>
 
         <Link
           to="/yhteys"

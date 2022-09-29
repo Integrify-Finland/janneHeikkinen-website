@@ -8,7 +8,7 @@ import Section from "../components/Section"
 
 import "./styles.scss"
 
-const Osallistu = ({ data }) => {
+const Osallistu = () => {
   return (
     <Layout>
       <SEO title="Osallistu" />
@@ -23,25 +23,3 @@ const Osallistu = ({ data }) => {
 }
 
 export default Osallistu
-
-// export const query = graphql`
-//   query {
-//     forMedia: contentfulForTheMedia {
-//       description {
-//         id
-//         description
-//       }
-//       pictures {
-//         fluid(maxWidth: 3200, quality: 100) {
-//           base64
-//           aspectRatio
-//           src
-//           srcSet
-//           srcWebp
-//           srcSetWebp
-//           sizes
-//         }
-//       }
-//     }
-//   }
-// `

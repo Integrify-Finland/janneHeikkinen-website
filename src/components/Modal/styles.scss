@@ -27,10 +27,13 @@
   }
 
   .modalContent {
-    padding: 10px;
+    padding: $spacing-02;
     font-size: 14px;
     color: #2c3e50;
     text-align: left;
+     > p {
+       @include font-size-m;
+     }
   }
 
   .modalActions {

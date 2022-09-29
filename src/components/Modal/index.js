@@ -79,7 +79,7 @@ const Modal = ({ setIsOpen, setIsAgreeing }) => {
             <p>
               Muutokset tähän tietosuojaselosteeseen Tätä tietosuojaselostetta
               voidaan päivittää aika ajoin esimerkiksi lainsäädännön muuttuessa.
-              Tämä tietosuojaseloste on viimeksi päivitetty X.X.2022.
+              Tämä tietosuojaseloste on viimeksi päivitetty 29.09.2022.
             </p>
           </div>
           <div className="modalActions">
@@ -91,10 +91,10 @@ const Modal = ({ setIsOpen, setIsAgreeing }) => {
                   setIsOpen(false)
                 }}
               >
-                Accept
+                Hyväksy
               </button>
               <button className="cancelBtn" onClick={() => setIsOpen(false)}>
-                Back
+                Takaisin
               </button>
             </div>
           </div>

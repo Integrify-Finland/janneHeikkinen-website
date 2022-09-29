@@ -39,10 +39,20 @@ const SideBar = ({ show, toggleMenu }) => {
             Videot
           </Link>
 
-          <Link to="/medialle" className="mobile-menu__nav-link">
+          <Link
+            to="/medialle"
+            className="mobile-menu__nav-link"
+            activeClassName="mobile-menu__nav-link--active"
+          >
             Medialle
           </Link>
-
+          <Link
+            to="/osallistu"
+            className="mobile-menu__nav-link"
+            activeClassName="mobile-menu__nav-link--active"
+          >
+            Osallistu
+          </Link>
           <Link
             to="/yhteys"
             className="mobile-menu__nav-link"

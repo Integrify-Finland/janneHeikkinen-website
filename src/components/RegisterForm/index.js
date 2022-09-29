@@ -200,8 +200,10 @@ const RegisterForm = () => {
         </p>
         <div className="invalid-feedback">{messageError}</div>
         <p className="terms">
-          LUPA HENKILÖTIETOJESI KÄSITTELYYN JA UUTISKIRJEEN TILAUS Jotta voimme
-          olla sinuun yhteydessä, tarvitsemme siihen suostumuksesi.
+          LUPA HENKILÖTIETOJESI KÄSITTELYYN JA UUTISKIRJEEN TILAUS
+        </p>
+        <p className="terms">
+          Jotta voimme olla sinuun yhteydessä, tarvitsemme siihen suostumuksesi.
         </p>
         <p className="terms">
           Voit milloin tahansa poistua tiimistäni tai perua uutiskirjeeni
@@ -210,7 +212,7 @@ const RegisterForm = () => {
           Jannen uutiskirjeen tilaajaksi.
         </p>
         <p className="terms terms-link" onClick={() => setIsModalOpen(true)}>
-          Lue tietosuojaselosteen.
+          Lue tietosuojaseloste.
         </p>
         <div className="register-terms-actions">
           <div className="terms">
