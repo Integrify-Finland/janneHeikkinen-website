@@ -48,7 +48,7 @@ const Footer = ({ contactUs }) => {
 
         <div className="footer__contact-container">
           {contactUs.map(({ node }) => (
-            <div className="footer__contact1">
+            <div className="footer__contact1" key={node.name}>
               <h1>{node.name}</h1>
               <p>
                 {node.title} <br />

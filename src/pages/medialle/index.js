@@ -10,18 +10,18 @@ import Section from "../../components/Section"
 import "./styles.scss"
 const Medialle = ({ data }) => {
   const { forMedia } = data
-
   return (
     <Layout>
       <SEO title="Medialle" />
       <Section>
-        <Media />
+        <Media text={forMedia.description.description} />
         <div className="medialle-images">
           {forMedia.pictures.map((data, i) => (
             <a
               target="_blank"
               rel="noopener noreferrer"
               href={`https://${data.fluid.src}`}
+              key={i}
             >
               <Image fluid={data.fluid} key={i} />
             </a>
