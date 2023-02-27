@@ -6,6 +6,7 @@ import kokoomusLogo from "./assets/kokoomus-logo.svg"
 import FacebookIcon from "../SocialMediaIcons/Facebook/index"
 import TwitterIcon from "../SocialMediaIcons/Twitter/index"
 import InstagramIcon from "../SocialMediaIcons/Instagram/index"
+import LinkedInIcon from "../SocialMediaIcons/Linkedin"
 
 const Footer = ({ contactUs }) => {
   const year = new Date().getFullYear()
@@ -35,7 +36,14 @@ const Footer = ({ contactUs }) => {
           >
             <TwitterIcon iconSize="big" />
           </a>
-
+          <a
+            href="https://www.linkedin.com/in/janne-heikkinen-5a6a9562/"
+            target="blank"
+            rel="noopener"
+            title="Go to Janne's LinkedIn profile"
+          >
+            <LinkedInIcon iconSize="big" />
+          </a>
           <a
             href="https://www.instagram.com/janneheikkinen/"
             target="blank"
@@ -48,7 +56,7 @@ const Footer = ({ contactUs }) => {
 
         <div className="footer__contact-container">
           {contactUs.map(({ node }) => (
-            <div className="footer__contact1">
+            <div className="footer__contact1" key={node.name}>
               <h1>{node.name}</h1>
               <p>
                 {node.title} <br />
