@@ -25,6 +25,13 @@ const SideBar = ({ show, toggleMenu }) => {
             Janne
           </Link>
           <Link
+            to="/vaalit"
+            className="mobile-menu__nav-link"
+            activeClassName="mobile-menu__nav-link--active"
+          >
+            Vaalit
+          </Link>
+          <Link
             to="/blogi"
             className="mobile-menu__nav-link"
             activeClassName="mobile-menu__nav-link--active"

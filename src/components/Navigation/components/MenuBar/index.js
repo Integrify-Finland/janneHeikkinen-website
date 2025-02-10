@@ -32,7 +32,13 @@ const MenuBar = ({ toggleMenu }) => (
         >
           Janne
         </Link>
-
+        <Link
+          to="/vaalit"
+          className="navbar__nav-link"
+          activeClassName="navbar__nav-link--active"
+        >
+          Vaalit
+        </Link>
         <Link
           to="/blogi"
           className="navbar__nav-link"
