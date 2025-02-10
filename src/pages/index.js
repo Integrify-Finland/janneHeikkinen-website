@@ -13,6 +13,8 @@ import { selectImg } from "../utilities/WPImages"
 import { formatDate } from "../utilities/FormatDate"
 
 const IndexPage = ({ data }) => {
+  console.log("Home page")
+
   const { contentfulBlog } = data
   const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
 
