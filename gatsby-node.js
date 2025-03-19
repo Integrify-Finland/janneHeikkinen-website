@@ -2,13 +2,13 @@ const path = require(`path`)
 const WP_NODE = require("./src/utilities/blogs-node")
 
 exports.createPages = ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions
-  createRedirect({
-    fromPath: `/vaalit`,
-    toPath: `/`,
-    isPermanent: true,
-    redirectInBrowser: true,
-  })
+  const { createPage } = actions
+  // createRedirect({
+  //   fromPath: `/vaalit`,
+  //   toPath: `/`,
+  //   isPermanent: true,
+  //   redirectInBrowser: true,
+  // })
 
   return graphql(`
     {
