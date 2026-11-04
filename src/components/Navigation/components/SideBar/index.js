@@ -39,13 +39,12 @@ const SideBar = ({ show, toggleMenu }) => {
             Blogi
           </Link>
           <Link
-            to="/videot"
+            to="/podcastit"
             className="mobile-menu__nav-link"
             activeClassName="mobile-menu__nav-link--active"
           >
-            Videot
+            Podcastit
           </Link>
-
           <Link
             to="/medialle"
             className="mobile-menu__nav-link"

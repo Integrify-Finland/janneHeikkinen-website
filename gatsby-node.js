@@ -1,6 +1,20 @@
 const path = require(`path`)
 const WP_NODE = require("./src/utilities/blogs-node")
 
+// Declared explicitly so the podcastit page query still works
+// when there are no published podcasts in Contentful
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+    type ContentfulPodcast implements Node {
+      topic: String
+      podcastName: String
+      host: String
+      date: Date @dateformat
+      url: String
+    }
+  `)
+}
+
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
   // createRedirect({

@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import "./styles.scss"
 
-const Resume = ({ opinnot, varusmies, tyo, luottamus }) => {
+const Resume = ({ opinnot, varusmies, tyo, luottamus, paattyneetLuottamus }) => {
   return (
     <>
       <h1 className="resume--title">Ansioluettelo</h1>
@@ -36,13 +36,23 @@ const Resume = ({ opinnot, varusmies, tyo, luottamus }) => {
         </section>
         <section className="resume__col-2">
           <div className="resume__col-2--wrapper">
-            <h1>Luottamustoimet</h1>
+            <h1>Nykyiset luottamustoimet</h1>
             <ul>
               {luottamus.map((el, i) => (
                 <li key={i}>{el}</li>
               ))}
             </ul>
           </div>
+          {paattyneetLuottamus && paattyneetLuottamus.length > 0 && (
+            <div className="resume__col-2--wrapper">
+              <h1>Päättyneet luottamustoimet</h1>
+              <ul>
+                {paattyneetLuottamus.map((el, i) => (
+                  <li key={i}>{el}</li>
+                ))}
+              </ul>
+            </div>
+          )}
         </section>
       </div>
     </>
@@ -53,6 +63,7 @@ export default Resume
 
 Resume.propTypes = {
   luottamus: PropTypes.array.isRequired,
+  paattyneetLuottamus: PropTypes.array,
   opinnot: PropTypes.array.isRequired,
   varusmies: PropTypes.array.isRequired,
   tyo: PropTypes.array.isRequired,

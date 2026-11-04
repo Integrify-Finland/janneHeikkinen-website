@@ -73,6 +73,9 @@
       width: 100%;
     }
     &--wrapper {
+      & + & {
+        margin-top: $spacing-04;
+      }
       h1 {
         color: $white;
       }
