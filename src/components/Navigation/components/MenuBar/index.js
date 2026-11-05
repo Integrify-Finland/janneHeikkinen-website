@@ -3,6 +3,7 @@ import { Link } from "gatsby"
 import Logo from "../assets/logo.svg"
 import FacebookIcon from "../../../SocialMediaIcons/Facebook/index"
 import InstagramIcon from "../../../SocialMediaIcons/Instagram/index"
+import LinkedInIcon from "../../../SocialMediaIcons/Linkedin"
 
 import "./styles.scss"
 
@@ -86,6 +87,16 @@ const MenuBar = ({ toggleMenu }) => (
           title="Go to Facebook"
         >
           <FacebookIcon iconSize="small" />
+        </a>
+
+        <a
+          href="https://www.linkedin.com/in/janne-heikkinen-5a6a9562/"
+          className="navbar__nav-media-link"
+          target="blank"
+          rel="noopener"
+          title="Go to Janne's LinkedIn profile"
+        >
+          <LinkedInIcon iconSize="small" />
         </a>
 
         <a
