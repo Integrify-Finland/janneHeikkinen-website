@@ -5,12 +5,7 @@ import { Link } from "gatsby"
 import classNames from "classnames"
 import defImage from "../../assets/images/thumbnail.jpg"
 
-import {
-  FacebookShareButton,
-  TwitterShareButton,
-  FacebookIcon,
-  TwitterIcon,
-} from "react-share"
+import { FacebookShareButton, FacebookIcon } from "react-share"
 
 import "./styles.scss"
 
@@ -92,14 +87,6 @@ const BlogPost = ({
             >
               <FacebookIcon size={64} round />
             </FacebookShareButton>
-
-            <TwitterShareButton
-              url={shareUrl}
-              quote={title}
-              className="blog-post__share-button"
-            >
-              <TwitterIcon size={64} round />
-            </TwitterShareButton>
           </div>
         </div>
       </div>

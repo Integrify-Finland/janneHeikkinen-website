@@ -27,7 +27,6 @@
     "gatsby-source-contentful": "2.1.4",
     "gatsby-source-filesystem": "^2.1.9",
     "gatsby-source-wordpress": "^3.1.4",
-    "gatsby-source-youtube-v2": "^1.0.1",
     "gatsby-transformer-remark": "^2.6.1",
     "gatsby-transformer-sharp": "^2.2.0",
     "instafeed.js": "^1.4.1",

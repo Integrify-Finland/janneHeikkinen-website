@@ -49,6 +49,7 @@ const Janne = ({ data }) => {
         varusmies={resume.varusmiespalvelus}
         tyo={resume.tyoelamassa}
         luottamus={resume.luottamustoimet}
+        paattyneetLuottamus={resume.pttyneetLuottamustoimet}
       />
     </Layout>
   )
@@ -63,6 +64,7 @@ export const query = graphql`
       varusmiespalvelus
       tyoelamassa
       luottamustoimet
+      pttyneetLuottamustoimet
     }
     aboutMe: contentfulAboutMe {
       kotiPaikka

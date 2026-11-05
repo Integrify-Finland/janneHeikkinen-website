@@ -2,8 +2,8 @@ import React from "react"
 import { Link } from "gatsby"
 import Logo from "../assets/logo.svg"
 import FacebookIcon from "../../../SocialMediaIcons/Facebook/index"
-import TwitterIcon from "../../../SocialMediaIcons/Twitter/index"
 import InstagramIcon from "../../../SocialMediaIcons/Instagram/index"
+import LinkedInIcon from "../../../SocialMediaIcons/Linkedin"
 
 import "./styles.scss"
 
@@ -48,11 +48,11 @@ const MenuBar = ({ toggleMenu }) => (
         </Link>
 
         <Link
-          to="/videot"
+          to="/podcastit"
           className="navbar__nav-link"
           activeClassName="navbar__nav-link--active"
         >
-          Videot
+          Podcastit
         </Link>
 
         <Link
@@ -90,13 +90,13 @@ const MenuBar = ({ toggleMenu }) => (
         </a>
 
         <a
-          href="https://twitter.com/heikkinenjanne"
+          href="https://www.linkedin.com/in/janne-heikkinen-5a6a9562/"
           className="navbar__nav-media-link"
           target="blank"
           rel="noopener"
-          title="Go to Twitter"
+          title="Go to Janne's LinkedIn profile"
         >
-          <TwitterIcon iconSize="small" />
+          <LinkedInIcon iconSize="small" />
         </a>
 
         <a
