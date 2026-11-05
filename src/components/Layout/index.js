@@ -6,6 +6,8 @@ import Footer from "../Footer"
 
 import Navigation from "../Navigation"
 
+import "./styles.scss"
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -24,12 +26,12 @@ const Layout = ({ children }) => {
   `)
 
   return (
-    <>
+    <div className="layout">
       <Navigation />
-      <main>{children}</main>
+      <main className="layout__main">{children}</main>
 
       <Footer contactUs={data.contactUs.edges} />
-    </>
+    </div>
   )
 }
 

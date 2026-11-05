@@ -4,7 +4,6 @@ import PropTypes from "prop-types"
 import "./styles.scss"
 import kokoomusLogo from "./assets/kokoomus-logo.svg"
 import FacebookIcon from "../SocialMediaIcons/Facebook/index"
-import TwitterIcon from "../SocialMediaIcons/Twitter/index"
 import InstagramIcon from "../SocialMediaIcons/Instagram/index"
 import LinkedInIcon from "../SocialMediaIcons/Linkedin"
 
@@ -28,14 +27,6 @@ const Footer = ({ contactUs }) => {
             <FacebookIcon iconSize="big" />
           </a>
 
-          <a
-            href="https://twitter.com/heikkinenjanne"
-            target="blank"
-            rel="noopener"
-            title="Go to Twitter"
-          >
-            <TwitterIcon iconSize="big" />
-          </a>
           <a
             href="https://www.linkedin.com/in/janne-heikkinen-5a6a9562/"
             target="blank"

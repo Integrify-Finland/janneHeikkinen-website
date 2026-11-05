@@ -1,0 +1,81 @@
+.podcastit {
+  @include for-phone-only {
+    padding: 0 $spacing-01-50;
+    box-sizing: border-box;
+  }
+  &__title {
+    color: $grey;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    @include font-size-l-xxx;
+    border-bottom: 5px solid $secondary;
+  }
+  &__empty {
+    text-align: center;
+    color: $primary;
+  }
+  &__list {
+    list-style-type: none;
+    margin: $spacing-04 auto 0;
+    padding: 0;
+    max-width: 900px;
+    @include for-phone-only {
+      margin-top: $spacing-01;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: $spacing-02 0;
+    border-bottom: 1px solid $light-grey;
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__info {
+    margin-right: $spacing-02;
+    @include for-phone-only {
+      margin-right: 0;
+      margin-bottom: $spacing-01;
+    }
+  }
+  &__topic {
+    color: $primary;
+    font-size: 1.3rem;
+    margin: 0 0 $spacing-00-50;
+    overflow-wrap: break-word;
+    @include for-phone-only {
+      font-size: 1.1rem;
+    }
+  }
+  &__meta {
+    color: $primary;
+    margin: 0 0 $spacing-00-25;
+  }
+  &__date {
+    color: $grey;
+    font-size: 0.9rem;
+  }
+  &__link {
+    flex-shrink: 0;
+    color: $white;
+    background-color: $secondary;
+    padding: $spacing-00-75 $spacing-02;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.9rem;
+    @include for-phone-only {
+      align-self: stretch;
+      text-align: center;
+      padding: $spacing-01 $spacing-02;
+    }
+    &:hover {
+      background-color: $primary;
+    }
+  }
+}

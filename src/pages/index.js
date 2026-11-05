@@ -8,17 +8,19 @@ import SocialMedia from "../components/SocialMedia/index"
 import Section from "../components/Section"
 import image from "../images/JANNE_HEIKKINEN_260619_77.jpg"
 import Header from "../components/Header"
+import MunicipalityCarousel from "../components/MunicipalityCarousel"
 import { WPContent } from "../utilities/WPblogs.js"
 import { selectImg } from "../utilities/WPImages"
 import { formatDate } from "../utilities/FormatDate"
 
 const IndexPage = ({ data }) => {
-  const { contentfulBlog } = data
+  const { contentfulBlog, municipalities } = data
   const allBlogs = [...contentfulBlog.edges, ...WPContent.edges]
 
   return (
     <Layout>
       <SEO title="Etusivu" />
+      <MunicipalityCarousel names={municipalities && municipalities.names} />
       <Header
         isAbout={false}
         Subtext={
@@ -74,6 +76,9 @@ export default IndexPage
 
 export const query = graphql`
   query {
+    municipalities: contentfulMunicipalities {
+      names
+    }
     contentfulBlog: allContentfulBlogPost(
       sort: { fields: [createdAt], order: DESC }
     ) {

@@ -1,0 +1,77 @@
+.municipality-carousel {
+  overflow: hidden;
+  padding: $spacing-01 0;
+  background-color: $white;
+  border-bottom: 1px solid $light;
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+
+  &__track {
+    display: flex;
+    width: max-content;
+    animation: municipality-carousel-scroll linear infinite;
+  }
+  &:hover &__track {
+    animation-play-state: paused;
+  }
+
+  &__list,
+  &__static {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  // Visually hidden unless reduced motion is on
+  &__static {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+
+  &__item {
+    flex-shrink: 0;
+    margin-right: $spacing-01;
+    padding: $spacing-00-50 $spacing-01;
+    border-radius: 999px;
+    background-color: $light;
+    color: $primary;
+    font-weight: 700;
+    white-space: nowrap;
+    @include for-phone {
+      font-size: 0.85rem;
+      padding: $spacing-00-25 $spacing-00-75;
+    }
+  }
+
+  // No movement for visitors who ask for less motion; the row scrolls by hand instead
+  @media (prefers-reduced-motion: reduce) {
+    overflow-x: auto;
+    -webkit-mask-image: none;
+    mask-image: none;
+    &__static {
+      position: static;
+      width: auto;
+      height: auto;
+      overflow: visible;
+      clip: auto;
+      padding: 0 $spacing-01;
+    }
+    &__track {
+      display: none;
+    }
+  }
+}
+
+@keyframes municipality-carousel-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
